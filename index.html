@@ -1,0 +1,160 @@
+<html>
+<head>
+ <title> Testing sitev2 </title>
+ <style> 
+
+:root {
+ --background-color: #fcf9f4;
+ --color: black;
+ --accent-color: darkorange;
+ --body-padding-top: 30px;
+ --body-padding-side: 15%;
+ --font: Garamond;
+ --code-font: Courier; 
+} 
+
+/* Font = garamond for serif, helvetica for sans */
+/*Begin Temp */
+
+div {
+  border: 0px solid black;
+} 
+
+
+
+
+/* End Temp */
+
+body {
+ background-color: var(--background-color);
+ color: var(--color);
+ padding: var(--body-padding-top) var(--body-padding-side) 0px var(--body-padding-side);
+ font-family: var(--font);
+} 
+
+#header-container {
+  display: flex;
+  flex-direction: row;
+  overflow: show;
+  align-content: center;
+  height: auto;
+}
+
+#header-laurel-logo-container {
+  flex: 1;
+  height: auto;
+  text-align: left;
+} 
+
+#header-laurel-logo {
+  width: 70px;
+  /* border-width: 2px;
+  border-color: black;
+  border-style: hidden dashed dashed hidden; */
+} 
+
+#header-title-container {
+  flex: 8;
+  padding: 0px 5px 0px 15px;
+}
+
+#header-navigation-container {
+  flex: 1;
+  line-height: 50%;
+}
+
+#header-navigation-icon-container {
+  height: 50%;
+  margin: 21px;
+  /*border: 2px solid black;
+  border-radius: 30px;*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2px;
+}
+
+#menu {
+  background-color: transparent;
+  border: 0px;
+}
+
+article {
+  height: 100%;
+  padding: 0px 90px 0px 90px;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+.quote {
+  border-width: 0px 0px 0px 2px;
+  border-style: solid;
+  border-color: #00000040;
+  padding: 0px 8px 0px 8px;
+  margin: 8px;
+  font-style: italic;
+}
+
+.code {
+  font-family: var(--code-font);
+  margin: 10px 10%;
+  background-color: #00000010;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 90%;
+}
+
+ </style>
+</head>
+<body>
+
+  <div id="header-container">
+    <div id="header-laurel-logo-container"> 
+      <img id="header-laurel-logo" src="laurel.png"> </img>
+    </div>
+    <div id="header-title-container">
+      <h1> Logan Graves</h1>
+    </div>
+    <div id="header-navigation-container">
+      <div id="header-navigation-icon-container">
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
+	<title>search-icon</title>
+	<style>
+		tspan { white-space:pre; }
+		#search-icon-circle { fill: none;stroke: #000000;stroke-linecap:round;stroke-width: 6; } 
+		#search-icon-handle { fill: none;stroke: #000000;stroke-linecap:round;stroke-width: 4 } 
+	</style>
+	<path id="search-icon-circle" class="shp0" d="M40.5 68C25.85 68 14 56.15 14 41.5C14 26.85 25.85 15 40.5 15C55.15 15 67 26.85 67 41.5C67 56.15 55.15 68 40.5 68Z" />
+	<path id="search-icon-handle" class="shp1" d="M61 62.56L63.56 60L85.04 81.48L82.48 84.04L61 62.56Z" />
+</svg> <button id="menu">
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
+	<title>menu-icon</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000;stroke: #000000;stroke-linecap:round;stroke-width: 1.5 } 
+	</style>
+	<path id="hamburger-top" class="shp0" d="M16.61 29.95L16.61 24.95L83.43 24.95L83.43 29.95L16.61 29.95Z" />
+	<path id="hamburger-mid" class="shp0" d="M16.61 51.95L16.61 46.95L83.43 46.95L83.43 51.95L16.61 51.95Z" />
+	<path id="hamburger-bottom" class="shp0" d="M16.61 73.95L16.61 68.95L83.43 68.95L83.43 73.95L16.61 73.95Z" />
+</svg></button>
+
+      </div>
+    </div>
+  </div>
+
+  <article> 
+  <h3> Hi! I'm Logan Graves, a high school student based in the bay area.</h3> 
+  <p> Welcome to my online playground! This website, entirely coded & designed by me, is a place for me to fool around with code, as well as write and post about what I'm interested in.</p>
+  <div class="quote"> 
+    <p> some quote text </p>
+  </div> 
+  <h2> Header 2 </h2> <h3> Header 3 </h3> <h4> Header 4 </h4> <h5> Header 5 </h5>
+  <div class="code"> <p> some code goes in here -- no syntax highlighting yet lul</p> </div>
+  <a href="https://logangraves.com">My Old Website</a>
+</article>
+
+<body>
+
+</html>
