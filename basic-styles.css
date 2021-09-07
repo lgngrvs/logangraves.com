@@ -1,0 +1,102 @@
+/* BEGIN THEME STYLES: EVERYTHING IN THIS SECTION IS THEME-RELATED, I.E. IS NOT PAGE-SPECIFIC AND IS REUSABLE */
+
+
+:root {
+ --background-color: #fcf9f4;
+ --color: black;
+ --accent-color: darkorange;
+ --body-padding-top: 30px;
+ --body-padding-side: 15%;
+ --font: Garamond;
+ --code-font: Courier; 
+} 
+
+/* Font = garamond for serif, helvetica for sans */
+/*Begin Temp */
+
+div {
+  border: 0px solid black;
+} 
+
+/* End Temp */
+
+body {
+ background-color: var(--background-color);
+ color: var(--color);
+ padding: var(--body-padding-top) var(--body-padding-side) 0px var(--body-padding-side);
+ font-family: var(--font);
+} 
+
+#header-container {
+  display: flex;
+  flex-direction: row;
+  overflow: show;
+  align-content: center;
+  height: auto;
+}
+
+#header-laurel-logo-container {
+  flex: 1;
+  height: auto;
+  text-align: left;
+} 
+
+#header-laurel-logo {
+  width: 70px;
+  /* border-width: 2px;
+  border-color: black;
+  border-style: hidden dashed dashed hidden; */
+} 
+
+#header-title-container {
+  flex: 8;
+  padding: 0px 5px 0px 15px;
+}
+
+#header-navigation-container {
+  flex: 1;
+  line-height: 50%;
+}
+
+#header-navigation-icon-container {
+  height: 50%;
+  margin: 21px;
+  /*border: 2px solid black;
+  border-radius: 30px;*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2px;
+}
+
+#menu {
+  background-color: transparent;
+  border: 0px;
+}
+
+article {
+  height: 100%;
+  padding: 0px 90px 0px 90px;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+.quote {
+  border-width: 0px 0px 0px 2px;
+  border-style: solid;
+  border-color: #00000040;
+  padding: 0px 8px 0px 8px;
+  margin: 8px;
+  font-style: italic;
+}
+
+.code {
+  font-family: var(--code-font);
+  margin: 10px 10%;
+  background-color: #00000010;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 90%;
+}
