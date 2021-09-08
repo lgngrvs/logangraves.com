@@ -60,14 +60,19 @@ body {
     justify-content: center;
     align-content: center;
     padding: 2px;
-    }
+}
 
 #menu {
     background-color: transparent;
     border: 0px;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 .is-active {
+    transition-property: all;
+    transition-duration: 1s;
+
     transform: rotateX(45deg);
     -moz-transform: rotateX(45deg);
     -webkit-transform:rotateX(45deg);
