@@ -22,10 +22,7 @@ body {
 /* HEADER STYLES */ 
 #header-container {
     display: flex;
-    flex-direction: row;
-    overflow: show;
     align-content: center;
-    height: auto;
 }
 
 #header-laurel-logo-container {
@@ -62,16 +59,16 @@ body {
     padding: 2px;
 }
 
-#menu {
+button {
     background-color: transparent;
     border: 0px;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.75s;
 }
 
 #hamburger-top.is-active {
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.75s;
     transform: rotate(45deg) translate(0px, 22px);
     -moz-transform: rotate(45deg) translate(0px, 22px);
     -webkit-transform: rotate(45deg) translate(0px, 22px);
@@ -86,7 +83,7 @@ body {
 
 #hamburger-bottom.is-active {
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.75s;
     transform: rotate(-45deg) translate(0px, -22px);
     -moz-transform: rotate(-45deg) translate(0px, -22px);
     -webkit-transform:rotate(-45deg) translate(0px, -22px);
@@ -95,7 +92,7 @@ body {
 
 .is-inactive {
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.75s;
     transform-origin: 50% 50%;
     transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -105,13 +102,13 @@ body {
 
 #nav.is-inactive {
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.75s;
     display: none;
 }
 
 #nav.is-active {
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.75s;
     display: block;
     width: 380px;
     position: absolute;
@@ -146,4 +143,38 @@ a {
     padding: 5px 20px;
     font-size: 90%;
     color: black;
+}
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 1000px) {
+    :root {
+        --body-padding-top: 8px;
+        --body-padding-side: 8px;
+    }
+
+    #header-title-container {
+        flex: 5;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #header-navigation-container {
+        height: 70px;
+    }
+
+    #header-navigation-icon-container {
+        display: flex;
+        height: 28px;
+        align-items: center;
+        flex: 4;
+        margin-right: 0px;
+    }
+
+    article {
+        padding: 0px 8px;
+    }
+    
 }
