@@ -147,7 +147,7 @@ a {
 
 /* MOBILE STYLES */
 
-@media only screen and (device-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     :root {
         --body-padding-top: 8px;
         --body-padding-side: 8px;
