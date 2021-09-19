@@ -64,6 +64,11 @@ button {
     border: 0px;
     transition-property: all;
     transition-duration: 0.75s;
+    position: relative;
+}
+
+#menu {
+    z-index: 2;
 }
 
 #hamburger-top.is-active {
@@ -90,7 +95,7 @@ button {
     transform-origin: 50% 50%;
 }
 
-.is-inactive {
+path.is-inactive {
     transition-property: all;
     transition-duration: 0.75s;
     transform-origin: 50% 50%;
@@ -100,19 +105,45 @@ button {
     opacity: 1;
 }
 
+nav {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 0px 0px 50% 50%;
+    overflow: hidden;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
 #nav.is-inactive {
     transition-property: all;
-    transition-duration: 0.75s;
-    display: none;
+    transition-duration: 0.5s;
+    width: 0px;
+    height: 0px;
+    z-index: -1;
 }
 
 #nav.is-active {
     transition-property: all;
-    transition-duration: 0.75s;
-    display: block;
-    width: 380px;
-    position: absolute;
-    left: 20%;
+    transition-duration: 0.5s;
+    width: 90%;
+    height: 100%;
+    transform-origin: top left;
+    z-index: 1;
+}
+
+nav > div {
+    position: fixed;
+    top: 25%;
+    right: 30%;
+}
+
+nav > div > a {
+    position: relative;
+    font-weight: bolder;
+    font-size: 50px;
 }
 
 /*  ARTICLE STYLES */
@@ -120,6 +151,7 @@ button {
 article {
     height: 100%;
     padding: 0px 90px 0px 90px;
+    background-color: var(--background-color);
 }
 
 a {
