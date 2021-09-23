@@ -65,6 +65,7 @@ button {
     transition-property: all;
     transition-duration: 0.75s;
     position: relative;
+    cursor: pointer;
 }
 
 #menu {
@@ -123,6 +124,7 @@ nav {
     width: 0px;
     height: 0px;
     z-index: -1;
+    transition-delay: 0.25s;
 }
 
 #nav.is-active {
@@ -134,10 +136,19 @@ nav {
     z-index: 1;
 }
 
-nav > div {
+nav.is-inactive > div {
+    position: fixed;
+    top: -40%;
+    right: 30%;
+    transition: 0.75s;
+}
+
+nav.is-active > div {
     position: fixed;
     top: 25%;
     right: 30%;
+    transition: 1s;
+    transition-delay: 0.25s;
 }
 
 nav > div > a {
