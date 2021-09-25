@@ -12,7 +12,9 @@
 
   <div id="header-container">
     <div id="header-laurel-logo-container">
+      <a href="index">
       <img id="header-laurel-logo" src="assets/laurel.png"> </img>
+      </a>
     </div>
     <div id="header-title-container">
       <h1> Logan Graves</h1>
