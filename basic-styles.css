@@ -1,6 +1,5 @@
 /* THEME STYlES*/
 
-
 :root {
     --background-color: #fcf9f4;
     --color: black;
@@ -119,7 +118,7 @@ nav {
 
 nav.is-inactive {
     transition-property: all;
-    transition-duration: 0.6s;
+    transition-duration: 0.5s;
     border-radius: 0px 0px 50% 50%;
     width: 0px;
     height: 0px;
@@ -129,7 +128,7 @@ nav.is-inactive {
 
 nav.is-active {
     transition-property: all;
-    transition-duration: 0.6s;
+    transition-duration: 0.5s;
     border-radius: 0px;
     width: 90%;
     height: 100%;
@@ -137,11 +136,19 @@ nav.is-active {
     z-index: 1;
 }
 
+nav > a {
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
+    cursor: pointer;
+    font-size: 50px;
+}
+
 nav.is-inactive > a {
     position: fixed; 
     top: -40%;
     right: 30%;
-    transition: 0.5s cubic-bezier(0, 0.25, 0.75, 1);
+    transition: 0.4s cubic-bezier(0, 0.25, 0.75, 1);
     transition-property: all;
     font-weight: bolder;
     font-size: 50px;
@@ -152,9 +159,13 @@ nav.is-active > a {
     position: fixed;
     top: 25%;
     right: 30%;
-    transition: 0.5s cubic-bezier(0, 0.25, 0.75, 1);
-    font-weight: bolder;
-    font-size: 50px;
+    transition: top 0.4s cubic-bezier(0, 0.25, 0.75, 1), color 0.3s linear 0s;
+}
+
+nav.is-active > a:hover {
+    transition: color 0.3s linear 0s;
+    color: black;
+    -webkit-text-stroke: 1.5px black;
 }
 
 /* Animation on open*/
@@ -164,29 +175,29 @@ nav.is-active a:nth-child(1) {
 }
 
 nav.is-active a:nth-child(2) {
-    transition-delay: 0.1s;
+    transition-delay: 0.08s;
     top: calc(30% + 110px);
 }
 nav.is-active a:nth-child(3) {
-    transition-delay: 0.2s;
+    transition-delay: 0.16s;
     top: calc(30% + 55px);
 }
 
 nav.is-active a:nth-child(4) {
-    transition-delay: 0.3s;
+    transition-delay: 0.24s;
     top: 30%;
 }
 
 /* Animation on close */
 nav.is-inactive a:nth-child(1) {
-    transition-delay: 0.3s;
+    transition-delay: 0.24s;
 }
 
 nav.is-inactive a:nth-child(2) {
-    transition-delay: 0.2s;
+    transition-delay: 0.16s;
 }
 nav.is-inactive a:nth-child(3) {
-    transition-delay: 0.1s;
+    transition-delay: 0.08s;
 }
 
 nav.is-inactive a:nth-child(4) {
@@ -194,6 +205,24 @@ nav.is-inactive a:nth-child(4) {
 }
 
 /*  ARTICLE STYLES */
+
+h2 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+h2 > a {
+    transition: 0.3s all;
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
+    cursor: pointer;
+}
+
+h2 > a:hover {
+    transition: 0.3s all;
+    color: black;
+    -webkit-text-stroke: 1.5px black;
+}
 
 article {
     height: 100%;
@@ -223,6 +252,9 @@ a {
     font-size: 90%;
     color: black;
 }
+
+
+
 
 /* MOBILE STYLES */
 
