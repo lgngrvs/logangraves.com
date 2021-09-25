@@ -110,7 +110,6 @@ nav {
     position: absolute;
     right: 0px;
     top: 0px;
-    border-radius: 0px 0px 50% 50%;
     overflow: hidden;
     display: flex;  
     align-items: center;
@@ -118,43 +117,80 @@ nav {
     background-color: var(--background-color);
 }
 
-#nav.is-inactive {
+nav.is-inactive {
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.6s;
+    border-radius: 0px 0px 50% 50%;
     width: 0px;
     height: 0px;
     z-index: -1;
     transition-delay: 0.25s;
 }
 
-#nav.is-active {
+nav.is-active {
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.6s;
+    border-radius: 0px;
     width: 90%;
     height: 100%;
     transform-origin: top left;
     z-index: 1;
 }
 
-nav.is-inactive > div {
-    position: fixed;
+nav.is-inactive > a {
+    position: fixed; 
     top: -40%;
     right: 30%;
-    transition: 0.75s;
+    transition: 0.5s cubic-bezier(0, 0.25, 0.75, 1);
+    transition-property: all;
+    font-weight: bolder;
+    font-size: 50px;
 }
 
-nav.is-active > div {
+nav.is-active > a {
+    transition-property: all;
     position: fixed;
     top: 25%;
     right: 30%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-
-nav > div > a {
-    position: relative;
+    transition: 0.5s cubic-bezier(0, 0.25, 0.75, 1);
     font-weight: bolder;
     font-size: 50px;
+}
+
+/* Animation on open*/
+
+nav.is-active a:nth-child(1) {
+    top: calc(30% + 165px);
+}
+
+nav.is-active a:nth-child(2) {
+    transition-delay: 0.1s;
+    top: calc(30% + 110px);
+}
+nav.is-active a:nth-child(3) {
+    transition-delay: 0.2s;
+    top: calc(30% + 55px);
+}
+
+nav.is-active a:nth-child(4) {
+    transition-delay: 0.3s;
+    top: 30%;
+}
+
+/* Animation on close */
+nav.is-inactive a:nth-child(1) {
+    transition-delay: 0.3s;
+}
+
+nav.is-inactive a:nth-child(2) {
+    transition-delay: 0.2s;
+}
+nav.is-inactive a:nth-child(3) {
+    transition-delay: 0.1s;
+}
+
+nav.is-inactive a:nth-child(4) {
+    transition-delay: 0s;
 }
 
 /*  ARTICLE STYLES */
@@ -214,6 +250,10 @@ a {
         align-items: center;
         flex: 4;
         margin-right: 0px;
+    }
+
+    nav.is-active {
+        width: 100%
     }
 
     article {
