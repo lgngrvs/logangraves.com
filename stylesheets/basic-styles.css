@@ -107,7 +107,7 @@ path.is-inactive {
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 0px;
     overflow: hidden;
