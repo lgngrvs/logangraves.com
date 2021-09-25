@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title> logangraves.com - Testing Site v2 </title>
-  <link rel="stylesheet" type="text/css" href="basic-styles.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/basic-styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"/>
 </head>
 
 <body>
@@ -74,14 +75,14 @@
     </div>
   </div>
   <nav id="nav" class="is-inactive">
-      <a href="/index">Index</a>
-      <a href="/me">Me</a>
-      <a href="/posts">Posts</a>
-      <a href="/pages">Pages</a>
+      <a href="index">Index</a>
+      <a href="me">Me</a>
+      <a href="posts">Posts</a>
+      <a href="pages">Pages</a>
   </nav>
 
   <article>
-    <h2> Hi! I'm Logan Graves, a bay area high school student interested in <a>writing,</a> <a>STEM,</a> and <a>sports.</a></h2>
+    <h2> Hi! I'm Logan Graves, a bay area high school student interested in <a title="This link doesn't currently work lol">writing,</a> <a title="No href :D">STEM,</a> and <a title="This link doesn't work either">sports.</a></h2>
     <p> Welcome to my online playground! This website, entirely coded & designed by me, is a place for me to fool around
       with code, as well as write and post about what I'm interested in.</p>
     <div class="quote">
@@ -96,7 +97,20 @@
     </div>
     <a href="https://logangraves.com">My Old Website</a>
   </article>
-  <script src="theme-operations.js"></script>
+  
+  <footer>
+    <p class="footer-column" id="footer-license"> &#127279; 2021 Logan Graves <i>[some license at some point]</i></p> 
+    <p class="footer-column" id="footer-links"> <a href="sitemap"> sitemap</a> <b> ·</b> feed (currently unavailable)<b>·</b> <a href="https://logan-graves.github.io/logangraves.com/" target="_blank">source</a></p>
+    <!-- 
+      Note that in the above link I have no justification for making it open in a new tab 
+      (target="_blank") other than "I like it that way". 
+      I am going to use my own site, and sorry css-tricks (https://css-tricks.com/use-target_blank/), 
+      I'm not going to follow this minor better practice, at least for now.
+    -->
+  </footer>
+
+
+  <script src="scripts/theme-operations.js"></script>
 
 </body>
 

@@ -9,6 +9,7 @@
     --font: Garamond;
     --sans-font: Helvetica;
     --code-font: Courier; 
+    --font-size: 18px;
 } 
 
 body {
@@ -226,7 +227,7 @@ h2 > a:hover {
 
 article {
     height: 100%;
-    padding: 0px 90px 0px 90px;
+    padding: 0px 90px 24px 90px;
     background-color: var(--background-color);
 }
 
@@ -253,14 +254,39 @@ a {
     color: black;
 }
 
+p {
+    font-size: var(--font-size);
+}
 
+/* FOOTER STYLES */
+footer {
+    display: flex;
+    opacity: .5;
+    border-top: 1px solid #00000050;
+}
 
+.footer-column {
+    flex: 1;
+}
+
+#footer-links {
+    text-align: right;
+}
+
+footer a {
+    color: var(--color);
+}
+
+footer a:hover {
+    opacity: 1;
+}
 
 /* MOBILE STYLES */
 
 @media screen and (max-width: 1000px) {
     :root {
         --body-padding-top: 8px;
+        border-top: 1px black;
         --body-padding-side: 8px;
     }
 
