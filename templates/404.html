@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>404</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}404 Error{% endblock %}
+{% block content %} 
   <h1> 404 Not Found: There's nothing at this URL :( </h1>
-</body>
+  <p>(try searching?)</p>
+{% endblock %}

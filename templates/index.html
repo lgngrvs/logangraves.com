@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Index of logangraves.com</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <!--link href="static/page_styles.css" type="text/css" --> <!-- I don't remember how to do these and I'm offline :( -->
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Index of logangraves.com{% endblock %}
+{% block content %} 
     <h1 style="text-align: center;">logangraves.com -- site pages</h1>
     {% for post in posts %}
         <div class='post'>
@@ -15,4 +8,4 @@
             <p>{{ post['content'] }}</p>
         </div>
     {% endfor %}
-</body>
+{% endblock %}

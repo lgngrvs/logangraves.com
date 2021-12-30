@@ -1,6 +1,6 @@
 # "Flask Run" to start development server locally. 
 
-from flask import Flask, render_template, Markup
+from flask import Flask, render_template, Markup, request
 import sqlite3 
 from markupsafe import escape
 
@@ -101,3 +101,25 @@ def show_tag(tag):
         return f""" <h5>Displaying tag "{tag}"</h5> <p> No posts found with tag "{tag}." </p>"""
     else:
         return render_template('tag.html', posts=relevant_posts, tag=tag)
+
+@app.route("/search", methods=["POST"])
+def search(): 
+    search_query = request.form.get("search")
+    search_query = escape(search_query)
+    connection = get_db_connection()
+    connection.row_factory = sqlite3.Row
+    print(search_query)
+    relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}'").fetchall()
+    relevant_posts = list(relevant_posts)
+    x = 0
+    print(relevant_posts)
+    for temp_post in relevant_posts: 
+        temp_post = dict(temp_post)
+        for key, value in temp_post.items(): 
+            new_value = Markup(value).unescape()
+            temp_post[key] = new_value
+        relevant_posts[x] = temp_post
+        x += 1
+    print(relevant_posts)
+
+    return render_template('search.html', search=search_query, posts=relevant_posts)

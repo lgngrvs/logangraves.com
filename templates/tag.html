@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>post</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Tag results{% endblock %}
+{% block content %} 
     <h5>Displaying tag "{{ tag }}"</h5> 
     {% for post in posts %}
         <div class='post'>
@@ -14,4 +8,4 @@
             <p>{{ post['content'] }}</p>
         </div>
     {% endfor %}
-</body>
+{% endblock %}

@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Post: {{ post["title"] }}</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <!--link href="static/page_styles.css" type="text/css" --> <!-- I don't remember how to do these and I'm offline :( -->
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Post: {{ post["title"] }}{% endblock %}
+{% block content %}
   <p>Created: {{ post["timestamp"] }}</p>
   <h1>{{ post["title"] }}</h1>
   <h5>Tags: {{ post["tags"].replace(",", ", ") }} </h5>
   <p>{{ post["content"] }}</p>
-</body>
+{% endblock %}
