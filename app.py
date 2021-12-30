@@ -22,7 +22,9 @@ def get_posts():
 @app.route("/")
 def index():
     posts = get_posts()
-    """
+    #some sort of object
+    posts = list(posts)
+    #posts is a tuple containing objects? 
     x = 0
     print(posts)
     for temp_post in posts: 
@@ -30,15 +32,16 @@ def index():
         for key, value in temp_post.items(): 
             new_value = Markup(value).unescape()
             temp_post[key] = new_value
+        print("temp post is currently")
         print(temp_post)
         posts[x] = temp_post
         x += 1
+    print("posts in current state")
     print(posts)
-    """
     return render_template('index.html', posts=posts)
 
 @app.route("/posts/<i>")
-def show_post(i):
+def show_post_number(i):
     i = escape(i)
     try: 
         i = int(i)
@@ -56,10 +59,9 @@ def show_post(i):
 def show_post_slug(slug):
     slug = escape(slug)
     connection = get_db_connection()
-    connection.row_factory = sqlite3.Row
-    post_number = connection.execute(f"SELECT * FROM posts WHERE slug='{slug}';").fetchone()
+    found_post = connection.execute(f"SELECT * FROM posts WHERE slug='{slug}';").fetchone()
     try: 
-        post = dict(post_number)
+        post = dict(found_post)
         # print(post)
         for key, value in post.items(): 
             new_value = Markup(value).unescape()
@@ -69,3 +71,33 @@ def show_post_slug(slug):
         return render_template("page.html", post=post)
     except TypeError: 
         return render_template("404.html")
+
+
+@app.route("/tag/<tag>")
+def show_tag(tag):
+    tag = escape(tag)
+    print("------------- Tag query: " + tag)
+    connection = get_db_connection()
+    connection.row_factory = sqlite3.Row
+    relevant_posts = connection.execute(f"SELECT * FROM posts WHERE tags MATCH '{tag},'").fetchall()
+    # find all posts with the tag
+    relevant_posts = list(relevant_posts)
+    # turn results into a list
+    #try: 
+    x = 0
+    print(relevant_posts)
+    for temp_post in relevant_posts: 
+        temp_post = dict(temp_post)
+        for key, value in temp_post.items(): 
+            new_value = Markup(value).unescape()
+            temp_post[key] = new_value
+        print("temp post is currently")
+        print(temp_post)
+        relevant_posts[x] = temp_post
+        x += 1
+    print("posts in current state")
+    print(relevant_posts)
+    if not(relevant_posts): 
+        return f""" <h5>Displaying tag "{tag}"</h5> <p> No posts found with tag "{tag}." </p>"""
+    else:
+        return render_template('tag.html', posts=relevant_posts, tag=tag)
