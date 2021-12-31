@@ -6,6 +6,7 @@ from markupsafe import escape
 
 
 app = Flask(__name__)
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 def get_db_connection(): 
     connection = sqlite3.connect('database.db')

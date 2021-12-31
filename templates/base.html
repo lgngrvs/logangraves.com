@@ -8,8 +8,15 @@
   <link rel="stylesheet" href="static/page_styles.css" type="text/css">
 </head>
 <body>
+    <nav>
+    <div>
+    </div>
     <form action="{{ url_for('search') }}" method="POST">
-        <input type="text" placeholder="search..." name="search"> <button type="submit">Go</button>
+      <input type="text" placeholder="search..." name="search"> <button type="submit">Go</button>
     </form>
+    </nav>
     {% block content %}  {% endblock %}
+    <footer>
+      <p><span class='reversed-text'>©</span> Logan Graves 2021 (all rights reversed?)</p> 
+    </footer>
 </body>
