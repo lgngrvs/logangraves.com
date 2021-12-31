@@ -2,7 +2,9 @@ from slugify import slugify
 from flask import Markup
 import sqlite3
 
-# Title and content are meant to be variables, not straight up text.
+"""
+----- THIS FILE IS NO LONGER USED; USE post_parser.py INSTEAD ------
+"""
 
 def add_to_db(title, tags, content):
     slug = slugify(title)

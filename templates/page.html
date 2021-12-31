@@ -4,5 +4,5 @@
   <p>Created: {{ post["timestamp"] }}</p>
   <h1>{{ post["title"] }}</h1>
   <h5>Tags: {{ post["tags"].replace(",", ", ") }} </h5>
-  <p>{{ post["content"] }}</p>
+  {{ post["content"] | safe }}
 {% endblock %}
