@@ -5,18 +5,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
-  <link rel="stylesheet" href="static/page_styles.css" type="text/css">
+  <link rel="stylesheet" href="/static/page_styles.css" type="text/css">
 </head>
 <body>
     <nav>
-    <div>
-    </div>
+    <div id="space"> </div>
+    <div id="navlinks"><div></div><a href='/'> Home </a><a href='/about'> About </a><a href='/index'> Index </a></div>
     <form action="{{ url_for('search') }}" method="POST">
       <input type="text" placeholder="search..." name="search"> <button type="submit">Go</button>
     </form>
     </nav>
-    {% block content %}  {% endblock %}
-    <footer>
-      <p><span class='reversed-text'>©</span> Logan Graves 2021 (all rights reversed?)</p> 
-    </footer>
+    <div id="page-wrap">
+      <div id="content-wrap">
+        {% block content %}  {% endblock %}
+      </div>
+      <footer>
+        <p><span class='reversed-text'>©</span> Logan Graves 2021 (all rights reversed?)</p> 
+        <div id="footlinks"><a href='/'>Home</a><a href='/about'>About</a><a href='/index'>Index</a></div>
+        <form action="{{ url_for('search') }}" method="POST">
+          <input type="text" placeholder="search..." name="search"> <button type="submit">Go</button>
+        </form>
+      </footer>
+    </div>
 </body>

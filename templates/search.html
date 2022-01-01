@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block title %}Search results{% endblock %}
 {% block content %}
+    <h1> Search </h1>
     <p><i>Results for "{{ search }}"</i></p> 
     {% if posts %}
         {% for post in posts %}
             <div class='post'>
-                <h2>{{ post['title'] }}</h2>
+                <a href="{{ url_for('show_post_slug', slug=post['slug']) }}"><h2>{{ post['title'] }}</h2></a>
                 <h5>Tags: {{ post['tags'] }}</h5> 
                 <p>{{ post['content'] | safe }}</p>
             </div>

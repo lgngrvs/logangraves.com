@@ -23,13 +23,15 @@
 
 body {
     font-family: var(--serif-font);
-    padding: 0 10% 10% 10%;
     background-color: var(--background-color);
     color: var(--color);
 }
 
+#content-wrap {
+    padding: 0px 10% 10% 10%;
+}
+
 button, input {
-    background-color: transparent;
     border-radius: 0;
     border: 2px solid var(--color);
     font-family: var(--mono-font);
@@ -44,43 +46,105 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 
+h1 {
+    font-size: 30px;
+}
+
 h5 {
     font-weight: normal;
+    font-size: 15px;
+    margin: 5px 0px;
 }
 
 a {
     color: inherit;
 }
 
+/*
+a {
+    color: inherit;
+    text-decoration: none;
+    background-image: -webkit-linear-gradient(gainsboro, gainsboro);
+    background-image: linear-gradient(gainsboro, gainsboro);
+    background-repeat: no-repeat;
+    background-size: 100% 0;
+    background-position: 0 111%;
+    -webkit-transition: background-size .25s ease-in;
+    transition: background-size .25s ease-in;
+    padding: 2px 2px 0px 0;
+    border-bottom: 2px solid lightgray;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover {
+    background-size: 100% 88%;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+*/
+p {
+    font-size: 20px;
+}
+
 nav {
     display: flex;
     position: fixed;
     width: 100%;
+    left: 0px;
+    z-index: 2;
+    height: 40px;
+    align-items: center;
 }
 
+#space {
+    flex: 4;
+}
 
-nav > div {
+#navlinks {
+    flex: 1;
+    display: flex;
+}
+
+#navlinks > a {
+    font-family: 'Space Mono';
+    font-weight: bold;
+    margin: 0px 15px;
+}
+#navlinks > div {
     flex: 2;
 }
 
+#footlinks {
+    text-align: center;
+    margin: 10px;
+}
+
+#footlinks > * {
+    margin: 10px;
+}
+
 nav > form {
-    flex: 1;
+    flex: 2;
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     margin: 0px;
-    position: absolute;
-    top: 100vh;
+    position: static;
     left: 0px;
-    background-color: var(--dark-background-color);
+    border-top: 2px solid gray;
+    /*background-color: var(--dark-background-color);*/
     text-align: center;
     height: 100px;
+    padding-bottom: 20px;
 }
 
 footer > * {
     font-family: var(--mono-font);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .reversed-text {
@@ -92,11 +156,26 @@ footer > * {
     -ms-transform: scale(-1, 1);
 }
 
+.cutout {
+    transition: 0.3s all;
+    color: transparent;
+    background-image: none;
+    -webkit-text-stroke: 3px black;
+    border: none;
+}
+
+.cutout:hover {
+    transition: 0.3s all;
+    color: black;
+    background-image: none;
+    border: none;
+    -webkit-text-stroke: 3px black;
+}
+
 #created {
     font-size: 15px;
     margin: 0px;
 }
-
 /*
 .background-title {
     opacity: .3;
