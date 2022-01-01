@@ -1,9 +1,8 @@
-# "Flask Run" to start development server locally. 
-
 from flask import Flask, render_template, Markup, request
 import sqlite3 
 from markupsafe import escape
-
+from dotenv import load_dotenv
+# load_dotenv()
 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -21,6 +20,10 @@ def get_posts():
     return posts
 
 @app.route("/")
+def home(): 
+    return render_template("home.html")
+
+@app.route("/index")
 def index():
     posts = get_posts()
     #some sort of object
@@ -41,6 +44,7 @@ def index():
     print(posts)
     return render_template('index.html', posts=posts)
 
+"""
 @app.route("/posts/<i>")
 def show_post_number(i):
     i = escape(i)
@@ -55,6 +59,7 @@ def show_post_number(i):
         return render_template("page.html", post = post)
     except ValueError: 
         return render_template("404.html")
+"""
 
 @app.route("/<slug>")
 def show_post_slug(slug):
@@ -68,8 +73,10 @@ def show_post_slug(slug):
             new_value = Markup(value).unescape()
             post[key] = new_value
         # print(post)
-
-        return render_template("page.html", post=post)
+        if post['type'] == "post": 
+            return render_template("post.html", post=post)
+        elif post['type'] == "page":
+            return render_template("page.html", post=post)
     except TypeError: 
         return render_template("404.html")
 
@@ -107,20 +114,25 @@ def show_tag(tag):
 def search(): 
     search_query = request.form.get("search")
     search_query = escape(search_query)
-    connection = get_db_connection()
-    connection.row_factory = sqlite3.Row
-    print(search_query)
-    relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}'").fetchall()
-    relevant_posts = list(relevant_posts)
-    x = 0
-    print(relevant_posts)
-    for temp_post in relevant_posts: 
-        temp_post = dict(temp_post)
-        for key, value in temp_post.items(): 
-            new_value = Markup(value).unescape()
-            temp_post[key] = new_value
-        relevant_posts[x] = temp_post
-        x += 1
-    print(relevant_posts)
+    if search_query == "":
+        render_template("no_search.html")
+    else:    
+        connection = get_db_connection()
+        connection.row_factory = sqlite3.Row
+        print(search_query)
+        relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}'").fetchall()
+        relevant_posts = list(relevant_posts)
+        x = 0
+        print(relevant_posts)
+        for temp_post in relevant_posts: 
+            temp_post = dict(temp_post)
+            for key, value in temp_post.items(): 
+                new_value = Markup(value).unescape()
+                temp_post[key] = new_value
+            relevant_posts[x] = temp_post
+            x += 1
+        print(relevant_posts)
+        return render_template('search.html', search=search_query, posts=relevant_posts)
 
-    return render_template('search.html', search=search_query, posts=relevant_posts)
+if __name__ == '__main__':
+    app.run(debug=True)

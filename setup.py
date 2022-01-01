@@ -2,4 +2,4 @@
 import init_db
 import post_parser_script
 import os
-os.system('flask run')
+os.system('py app.py')

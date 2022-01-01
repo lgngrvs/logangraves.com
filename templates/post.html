@@ -1,9 +1,11 @@
 {% extends "base.html" %}
-{% block title %}{{ post["title"] }}{% endblock %}
+{% block title %}Post: {{ post["title"] }}{% endblock %}
 {% block content %}
   <article>
     <header></header>
       <h1 style="max-width: 600px; margin-bottom: 10px;">{{ post["title"] }}</h1>
+      <p id='created'>Created: {{ post["timestamp"] }}</p>
+      <h5>Tags: {{ post["tags"].replace(",", ", ") }} </h5>
     </header>
   {{ post["content"] | safe }}
   </article>
