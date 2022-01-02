@@ -34,6 +34,10 @@ for filename in list_of_file_names:
 
     connection = sqlite3.connect("database.db")
     cursor = connection.cursor()
-    connection.execute(f"INSERT INTO posts (timestamp, type, title, slug, tags, content) VALUES ('{date}', '{content_type}', '{title}', '{slug}', '{tags}', '{content}')")
-    connection.commit()
-    connection.close()
+    test = connection.execute(f"SELECT * FROM posts where content LIKE '{content}'").fetchone()
+    if test == None:
+        connection.execute(f"INSERT INTO posts (timestamp, type, title, slug, tags, content) VALUES ('{date}', '{content_type}', '{title}', '{slug}', '{tags}', '{content}')")
+        connection.commit()
+        connection.close()
+    else: 
+        pass
