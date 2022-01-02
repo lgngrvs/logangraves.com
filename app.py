@@ -5,7 +5,7 @@ from flask import Flask, render_template, Markup, request
 import sqlite3 
 from markupsafe import escape
 from dotenv import load_dotenv
-# load_dotenv()
+load_dotenv()
 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = False
