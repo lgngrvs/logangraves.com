@@ -138,4 +138,4 @@ def search():
         return render_template('search.html', search=search_query, posts=relevant_posts)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
