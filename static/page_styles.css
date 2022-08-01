@@ -4,6 +4,7 @@
     --color: #385e72;*/
     --background-color: white;
     --dark-background-color: #e0e0e0;
+    --code-background-color: #efefef;
     --color: black;
     --serif-font: 'Garamond', serif;
     --sans-font: 'Helvetica', sans-serif;
@@ -39,7 +40,31 @@ button, input {
 
 blockquote {
     font-style: italic;
+    background-color: var(--code-background-color);
+    padding: 15px;
+    border-left: 10px solid var(--dark-background-color);
 }
+
+code {
+    background-color: var(--code-background-color);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+pre {
+    background-color: var(--code-background-color);
+    padding: 10px;
+    width: fit-content;
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+pre > code {
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 0px;
+}
+
 
 h1, h2, h3, h4, h5 {
     font-family: var(--mono-font);
@@ -48,6 +73,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-size: 30px;
+    padding-top: 10px;
 }
 
 h5 {
@@ -81,6 +107,7 @@ a:hover {
 
 p {
     font-size: 20px;
+    line-height: 30px;
 }
 
 nav {

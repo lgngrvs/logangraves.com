@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.config["TEMPLATES_AUTO_RELOAD"] = False
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 def get_db_connection(): 
     connection = sqlite3.connect('database.db')
@@ -138,4 +138,4 @@ def search():
         return render_template('search.html', search=search_query, posts=relevant_posts)
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
