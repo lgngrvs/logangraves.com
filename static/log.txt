@@ -21,3 +21,7 @@ So I didn't use WTForms, I just did some basic form parsing stuff that I only ha
 2021-12-31
 Work time: 6 hours (total 22) [these estimates are on the high end, I think]
 I did mostly frontend stuff today: the site looks nice now. I feel very cool. I also began adding distinction between types of posts within the db: now only db entries of "type: post" will render the metadata in the page (e.g. the date and the tags) whereas "pages" will only load the title. Next up: probably some security, and getting it deployed on heroku. However, I do feel like it might be bad for me to put it up on a server this early on; security is pretty bad right now and I don't know if I feel like dealing with that kind of thing. On the upside, (and I hadn't realized this) I can pentest my own site! I think I want to put it up, if only so that I can show it off to my family and my technical friends.
+
+2022-08-02
+Work time: 3 hours maybe idk
+I've been working on just random stuff, fixing some issues handling 404s and such, as well as setting up my identities page. I think I'm getting close to having a fully-publishable site, but I have a few more things to do -- one major issue I'm seeing is I'm getting a lot of FOUCs, both when testing locally and on the heroku box. It's really irritating; script is at the end and CSS in the head, but apparently it's not acceptable to prevent it.

@@ -137,5 +137,10 @@ def search():
         print(relevant_posts)
         return render_template('search.html', search=search_query, posts=relevant_posts)
 
+@app.errorhandler(404)
+def not_found(error): 
+    return render_template("404.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -2,11 +2,15 @@
 {% block title %}Index of logangraves.com{% endblock %}
 {% block content %} 
     <h1>Index</h1>
+    <p><i>Every page on this site, alphabetically.</i></p>
+    <br> <hr> <br>
     <!--h2  class="background-title" style="text-align: center;">Index</h2-->
     {% for post in posts %}
         <div class='post'>
-            <h2><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
+            <h2 style="display:inline-block"><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
+            <p style="display:inline-block"> • https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</p> 
             <p>{{ post['content'] | safe }}</p>
+            <br><hr><br>
         </div>
     {% endfor %}
 {% endblock %}
