@@ -3,7 +3,7 @@ Date: 2022-08-01
 Tags: 
 Type: page
 
-> This is a reproduction of the [identities.txt](static/identities.txt) file, but using formatting to make it nice and readable, since despite some effor the plain text is not. It contains various accounts that aren't available for proof through keybase/keyoxide, so instead I am posting them on here. 
+> This is a reproduction of the [identities.txt](static/identities.txt) file, but using formatting to make it nice and readable, since despite some effort the plain text is not. It contains various accounts that aren't available for proof through keybase/keyoxide, so instead I am posting them on here. 
 
 > To verify this file, download [the plain text version](static/identities.txt) and [the signature](static/identities.txt.sig).
 
@@ -30,7 +30,7 @@ Social Media:
 
 - *@lgngrvs@fosstodon.org on Mastodon (account pending approval)*
 
-Note that I won't add/follow you on Instagram and Snapchat if I don't know you.
+Note that I won't add/follow you on Instagram and Snapchat if I don't know you. Both of those sites are quite a bit more personal than others, and I'd prefer not to make my social graph available to strangers.
 
 Instant Message:
 

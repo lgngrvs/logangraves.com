@@ -45,6 +45,10 @@ blockquote {
     border-left: 10px solid var(--dark-background-color);
 }
 
+.blockquote-noitalics {
+    font-style: normal;
+}
+
 code {
     background-color: var(--code-background-color);
     padding: 5px;
@@ -120,6 +124,10 @@ nav {
     align-items: center;
 }
 
+li {
+    font-size: 20px;
+}
+
 #space {
     flex: 4;
 }
@@ -193,6 +201,10 @@ footer > * {
     background-image: none;
     border: none;
     -webkit-text-stroke: 3px black;
+}
+
+#home-cutout-asterisk:hover{
+    color: darkgray;
 }
 
 #created {

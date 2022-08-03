@@ -2,8 +2,27 @@
 {% block title %}Index of logangraves.com{% endblock %}
 {% block content %} 
     <h1>Index</h1>
-    <p><i>Every page on this site, alphabetically.</i></p>
-    <br> <hr> <br>
+    <blockquote class="blockquote-noitalics">
+        <h2> Sitemap </h2>
+        <p><b>Specially-written pages:</b></p>
+        <ul>
+            <li><a href="/"> Home </a></li>
+            <li><a href="/index">Index</a> (you are here)</li>
+        </ul>
+        <p><b>Posts:</b></p>
+        <ul>
+            {% for post in posts %}
+            <li><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></li>
+            {% endfor %}
+        </ul>
+        <p><b>Static files:</b> <i>(I haven't written the code to dynamically generate this so it's not a full list)</i> </p>
+        <ul>
+            <li><a href="/static/identities.txt">identities.txt</a></li>
+            <li><a href="/static/identities.txt.sig">identities.txt.sig</a></li>
+            <li><a href="/static/log.txt">log.txt</a></li>
+        </ul>
+    </blockquote>
+    <br><hr><br>
     <!--h2  class="background-title" style="text-align: center;">Index</h2-->
     {% for post in posts %}
         <div class='post'>
