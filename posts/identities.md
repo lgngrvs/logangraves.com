@@ -14,9 +14,9 @@ Type: page
 
 Email:
 
-- `me(at)logangraves(dot)com` on Zoho Email *(This is my primary email; I'll be switching from Zoho to Proton hopefully in November 2022.)*
+- `me (at) logangraves (dot) com` on Zoho Email *(This is my primary email; I'll be switching from Zoho to Proton hopefully in November 2022.)*
 
-- `logangraves(at)proton(dot)me` on Protonmail *(Use this one for now if you want the benefit of E2EE on Proton.)*
+- `logangraves (at) proton (dot) me` on Protonmail *(Use this one for now if you want the benefit of E2EE on Proton.)*
 
 - *????(at)lgngrvs.me* on *???* *(This is here because I plan to set up a shortened email eventually; don't actually try to email this address.)*
 

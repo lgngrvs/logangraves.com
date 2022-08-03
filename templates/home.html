@@ -2,10 +2,22 @@
 {% block title %}Index of logangraves.com{% endblock %}
 {% block content %} 
     <h1>Home</h1>
-    <div style="padding:20px 50px 10px 50px;"> 
-    <h2 style="font-size: 50px;">I'm Logan<a class="cutout" id="home-cutout-asterisk" href="#asterisk" style="position: relative; top: -8px">*</a>, an American high school student.</h2>
-    <p style="font-size:30px; line-height: 50px;">This is my blog/website/coding playground/identity hub. Here you'll see most of my public writing, both code and words, as well as a few secrets lying around here and there. ;)</p></div>
-    <h2 style="font-size:50px; line-height: 60px; text-align: center;"><a class="cutout" href="index">Index</a> • <a class="cutout" href="about">About</a> • <a class="cutout" href="/identities">Identities</a></h2>
-    <br> <br>
-    <p id="asterisk">* I've gone by various names over time; you might know me as e.g. Tadhg. Feel free to call me whatever feels comfortable to you.</p>
+    <div id="home-padding-div"> 
+        <br class="mobile-only">
+        <h2 id="home-lead-h2">I'm Logan<a class="cutout" id="home-cutout-asterisk" href="#asterisk">*</a>, an American high school student.</h2>
+        <p id="home-lead-p">This is my blog/website/coding playground/identity hub. Here you'll see most of my public writing, both code and words, as well as a few secrets lying around here and there. ;)</p></div>
+        <br class="mobile-only">
+        <p class="mobile-only">The three most important pages on this site: </p> 
+        <h2 id="home-navigation-links">
+            <a class="cutout" href="index">Index</a> 
+            <br class="mobile-only">
+            <span class="desktop-only"> • </span> 
+            <a class="cutout" href="about">About</a> 
+            <br class="mobile-only">
+            <span class="desktop-only"> • </span>
+            <a class="cutout" href="/identities">Identities</a>
+        </h2>
+        <br class="desktop-only"><br>
+        <p id="asterisk">* I've gone by various names over time; you might know me as e.g. Tadhg. Feel free to call me whatever feels comfortable to you.</p>
+    </div>
 {% endblock %}

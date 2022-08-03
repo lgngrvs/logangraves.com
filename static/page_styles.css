@@ -5,12 +5,8 @@
     --serif-font: 'Garamond', serif;
     --sans-font: 'Helvetica', sans-serif;
     --mono-font: 'Space Mono', 'Courier', monospace;
-}
 
-/* ======= Color Schemes =======*/
-
-/* Light */
-:root { 
+    /* Light Mode Theme:*/
     --background-color: white;
     --border-background-color: #e0e0e0;
     --code-background-color: #efefef;
@@ -18,6 +14,7 @@
     --link-underline-color: lightgray;
     --color: black;
 }
+
 /* Tan Color Scheme
 (to be used when I add theme functionality
 
@@ -30,6 +27,7 @@
     --color: black;
 }*/
 
+/*Dark mode theme (based on system preference */
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #191A1a;
@@ -40,6 +38,7 @@
         --color: #e7e6e5;
     }    
 }
+
 
 @font-face {
     font-family: 'Space Mono';
@@ -57,6 +56,10 @@ body {
     font-family: var(--serif-font);
     background-color: var(--background-color);
     color: var(--color);
+}
+
+.mobile-only {
+    display: none;
 }
 
 #content-wrap {
@@ -111,6 +114,7 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: 30px;
     padding-top: 4px;
+    max-width: 600px;
 }
 
 h5 {
@@ -237,8 +241,38 @@ footer > * {
     -webkit-text-stroke: 3px var(--color);
 }
 
+/* Should I split these into a separate CSS file? */
+
+#home-padding-div {
+    padding: 20px 50px 10px 50px;
+}
+
+#home-lead-h2 {
+    font-size: 50px;
+}
+
+#home-cutout-asterisk {
+    position: relative; 
+    top: -8px;
+}
+
 #home-cutout-asterisk:hover{
     color: var(--link-underline-color);
+}
+
+#home-lead-p {
+    font-size:30px; 
+    line-height: 50px;
+}
+
+#home-navigation-links {
+    font-size:50px; 
+    line-height: 60px; 
+    text-align: center;
+}
+
+#index-post-link {
+    display: inline-block;
 }
 
 #created {
@@ -257,3 +291,79 @@ footer > * {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }*/
+
+/* MOBILE STYLES (at bottom of page in order to override)*/ 
+@media only screen and (max-width: 987px) {
+
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: inherit;
+    }
+
+    h1 {
+        text-align: center; 
+        font-size: 20px;
+        padding-top: 10px;
+        max-width: 100%
+    }
+
+    #home-padding-div {
+        padding: 0px;
+    }
+
+    #home-lead-h2 {
+        font-size: 30px;
+        margin: 40px 0px 40px 0px;
+        
+    }
+    
+    #home-cutout-asterisk {
+        -webkit-text-stroke: 2px var(--color);
+    }
+
+    #home-lead-p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #home-navigation-links {
+        font-size: 25px; 
+        line-height: 35px; 
+        text-align: center;
+    }
+
+    #home-navigation-links > a {
+        -webkit-text-stroke: 1px var(--color);
+    }
+    
+    #asterisk {
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .post {
+        max-width: calc(100vw - 72px);
+        overflow-wrap: break-word;
+    }
+
+    blockquote {
+        margin: 8px;
+    }
+
+    pre {
+        overflow: scroll;
+        max-width: 100%;
+
+    }
+    
+    pre > code {
+        display: inline-block;
+    }
+
+    #index-post-link {
+        display: none;
+    }
+}
