@@ -5,7 +5,7 @@ Type: page
 
 **Welcome to logangraves.com!** I'm Logan*, an American high school student, and this is my website/blog/coding playground/online identity hub. Here you'll see most of my public writing, both code and words; I wrote this site's back and front-ends from scratch using Python and the web suite, so I've had a lot of fun with the site and its features... and its secrets ;). I explain more in my blog post on the subject, but to make a long story short, it's a learning project for me. Because of its experimental nature (primarily the fact that I wrote it to generate dynamically and have a search function), it's very likely that there are vulnerabilities. If you find one, or if you just want to check out the source, it's on [my Github](https://github.com/lgngrvs/logangraves.com). 
 
-I've gone by various names in the past; for example, some important people in my life know me as Tadhg, but to most people at home (as well as on my birth certificate) I go by Logan. Call me whatever feels comfortable to you, though -- nicknames or just totally different names are fine! :)
+\*I've gone by various names in the past; for example, some important people in my life know me as Tadhg, but to most people at home (as well as on my birth certificate) I go by Logan. Call me whatever feels comfortable to you, though -- nicknames or just totally different names are fine! :)
 
 ## Interests and Topics of Conversation
 Since one of my primary goals of having a website is to have a way to start conversations with interesting people, I figured I might include a section on things I'm interested in talking about. If you see something you like, feel free to [contact me](/identities). In fact, please do!

@@ -7,8 +7,19 @@
     --mono-font: 'Space Mono', 'Courier', monospace;
 }
 
-/* Color Schemes */
-/* Tan */
+/* ======= Color Schemes =======*/
+
+/* Light */
+:root { 
+    --background-color: white;
+    --border-background-color: #e0e0e0;
+    --code-background-color: #efefef;
+    --link-background-color: gainsboro;
+    --link-underline-color: lightgray;
+    --color: black;
+}
+/* Tan Color Scheme
+(to be used when I add theme functionality
 
 :root { 
     --background-color: #faf9f3;
@@ -17,35 +28,24 @@
     --link-background-color: #ebe9d3;
     --link-underline-color: #dbd3a8;
     --color: black;
+}*/
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #191A1a;
+        --border-background-color: #3b3d3e;
+        --code-background-color: #282828;
+        --link-background-color: #808080; 
+        --link-underline-color: #707070;
+        --color: #e7e6e5;
+    }    
 }
-
-/* Light */
-/*
-:root { 
-    --background-color: white;
-    --border-background-color: #e0e0e0;
-    --code-background-color: #efefef;
-    --link-background-color: gainsboro;
-    --link-underline-color: lightgray;
-    --color: black;
-}*/
-
-
-/*Dark (based on Dark Reader extension auto generation): */
-/*
-:root {
-    --background-color: #191A1a;
-    --border-background-color: #3b3d3e;
-    --code-background-color: #282828;
-    --link-background-color: #808080; 
-    --link-underline-color: #707070;
-    --color: #e7e6e5;
-}*/
 
 @font-face {
     font-family: 'Space Mono';
     src: url('fonts/SpaceMono-Regular.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Space Mono';
     src: url('fonts/SpaceMono-Bold.ttf') format('truetype');
@@ -238,7 +238,7 @@ footer > * {
 }
 
 #home-cutout-asterisk:hover{
-    color: var(--link-background-color);
+    color: var(--link-underline-color);
 }
 
 #created {

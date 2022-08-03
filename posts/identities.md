@@ -26,7 +26,7 @@ Social Media:
 
 - `@lgngrvs` on Snapchat (no link)
 
-- `@lgngrvs` on Twitter ([https://twitter.com/lgngrvs](https://www.instagram.com/lgngrvs/))
+- `@lgngrvs` on Twitter ([https://twitter.com/lgngrvs](https://www.twitter.com/lgngrvs/))
 
 - *@lgngrvs@fosstodon.org on Mastodon (account pending approval)*
 
@@ -36,7 +36,7 @@ Instant Message:
 
 - `@lgngrvs` on Wire ([https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae](https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae))
 
-- My phone number on Signal, Whatsapp, SMS, etc. *(email me and maybe I'll give it to you)*
+- My phone number on Signal, Whatsapp, SMS, etc. *(feel free to reach out to me over email to get my number, I just do not want to publish this information for obvious reasons)*
 
 You can DM me on the above social media, but most likely I will not respond as I do not actively use the platforms.
 
