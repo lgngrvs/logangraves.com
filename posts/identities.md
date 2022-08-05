@@ -3,7 +3,7 @@ Date: 2022-08-01
 Tags: 
 Type: page
 
-> This is a reproduction of the [identities.txt](static/identities.txt) file, but using formatting to make it nice and readable, since despite some effort the plain text is not. It contains various accounts that aren't available for proof through keybase/keyoxide, so instead I am posting them on here. 
+> This is a nice-looking version of [identities.txt](static/identities.txt). It contains various accounts that aren't available for proof through keybase/keyoxide, so instead I am posting them on here. 
 
 > To verify this file, download [the plain text version](static/identities.txt) and [the signature](static/identities.txt.sig).
 
@@ -14,11 +14,11 @@ Type: page
 
 Email:
 
-- `me (at) logangraves (dot) com` on Zoho Email *(This is my primary email; I'll be switching from Zoho to Proton hopefully in November 2022.)*
+- `me (at) logangraves (dot) com` on regular email *(in the process of switching to proton)*
 
-- `logangraves (at) proton (dot) me` on Protonmail *(Use this one for now if you want the benefit of E2EE on Proton.)*
+- `logangraves (at) proton (dot) me` on Proton *(if you want protonmail e2ee)*
 
-- *????(at)lgngrvs.me* on *???* *(This is here because I plan to set up a shortened email eventually; don't actually try to email this address.)*
+- *????(at)lgngrvs.me* on *???* *(here for when I eventually add a shortened email address)*
 
 Social Media:
 
@@ -28,9 +28,9 @@ Social Media:
 
 - `@lgngrvs` on Twitter ([https://twitter.com/lgngrvs](https://www.twitter.com/lgngrvs/))
 
-- *@lgngrvs@fosstodon.org on Mastodon (account pending approval)*
+- `@lgngrvs@fosstodon.org` on Mastodon ([https://fosstodon.org/@lgngrvs](https://fosstodon.org/@lgngrvs))
 
-Note that I won't add/follow you on Instagram and Snapchat if I don't know you. Both of those sites are quite a bit more personal than others, and I'd prefer not to make my social graph available to strangers.
+Note that I won't add/follow you on Instagram and Snapchat if I don't know you.
 
 Instant Message:
 
