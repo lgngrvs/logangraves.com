@@ -24,7 +24,7 @@ Social Media:
 
 - `@lgngrvs` on Instagram ([https://www.instagram.com/lgngrvs/](https://www.instagram.com/lgngrvs/))
 
-- `@lgngrvs` on Snapchat (no link)
+- `@lgngrvs` on Snapchat
 
 - `@lgngrvs` on Twitter ([https://twitter.com/lgngrvs](https://www.twitter.com/lgngrvs/))
 
