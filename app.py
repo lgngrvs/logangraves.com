@@ -5,6 +5,10 @@ from flask import Flask, render_template, Markup, request
 import sqlite3 
 from markupsafe import escape
 from dotenv import load_dotenv
+from feedgen.feed import FeedGenerator
+from flask import make_response
+from datetime import datetime
+from dateutil.tz import tzoffset
 load_dotenv()
 
 app = Flask(__name__)
@@ -33,18 +37,18 @@ def index():
     posts = list(posts)
     #posts is a tuple containing objects? 
     x = 0
-    print(posts)
+    #print(posts)
     for temp_post in posts: 
         temp_post = dict(temp_post)
         for key, value in temp_post.items(): 
             new_value = Markup(value).unescape()
             temp_post[key] = new_value
-        print("temp post is currently")
-        print(temp_post)
+        #print("temp post is currently")
+        #print(temp_post)
         posts[x] = temp_post
         x += 1
-    print("posts in current state")
-    print(posts)
+    # print("posts in current state")
+    # print(posts)
     return render_template('index.html', posts=posts)
 
 """
@@ -136,6 +140,62 @@ def search():
             x += 1
         print(relevant_posts)
         return render_template('search.html', search=search_query, posts=relevant_posts)
+
+"""
+posts = get_posts()
+    #some sort of object
+    posts = list(posts)
+    #posts is a tuple containing objects? 
+    x = 0
+    #print(posts)
+    for temp_post in posts: 
+        temp_post = dict(temp_post)
+        for key, value in temp_post.items(): 
+            new_value = Markup(value).unescape()
+            temp_post[key] = new_value
+        #print("temp post is currently")
+        #print(temp_post)
+        posts[x] = temp_post
+        x += 1
+    # print("posts in current state")
+    # print(posts)
+"""
+
+@app.route("/rss.xml")
+def rss():
+    feed = FeedGenerator()
+    feed.title("All Posts - logangraves.com")
+    feed.description("Feed containing all posts and pages (e.g. the about page) from logangraves.com.")
+    feed.language("en")
+    feed.link(href="https://logangraves.com/rss.xml", rel="self")
+    feed.logo("https://logangraves.com/static/favicon.png")
+
+    # Duplicated code from /index app route because it already works and I don't want to make an entire new function that may break something
+    posts = get_posts()
+    posts = list(posts)
+    x = 0
+    for temp_post in posts: 
+        temp_post = dict(temp_post)
+        for key, value in temp_post.items(): 
+            new_value = Markup(value).unescape()
+            temp_post[key] = new_value
+        posts[x] = temp_post
+        x += 1
+
+    for post in posts: # get_news() returns a list of articles from somewhere
+        fe = feed.add_entry()
+        fe.title(post["title"])
+        fe.link(href="https://logangraves.com/" + post["slug"])
+        fe.description(post["content"])
+        fe.author(name="Logan Graves", email="me@logangraves.com")
+        postDatetime = datetime.strptime(post["timestamp"], '%Y-%m-%d')
+        postDatetime = postDatetime.replace(tzinfo=tzoffset("UTC+0",0))
+        fe.pubDate(postDatetime)
+
+    response = make_response(feed.rss_str())
+    response.headers.set('Content-Type', 'application/rss+xml')
+    return response
+
 
 @app.errorhandler(404)
 def not_found(error): 
