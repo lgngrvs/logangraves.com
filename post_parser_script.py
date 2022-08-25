@@ -29,14 +29,15 @@ for filename in list_of_file_names:
     content_type = Markup.escape(whole_post_list[3][6:]).strip("\n")
     content = Markup.escape(markdown.markdown(whole_post_list[4]))
     slug = slugify(whole_post_list[0][2:])
+    wordcount = len(whole_post_list[4].split(" "))
 
-    print(title, slug, date, tags, content_type, content, sep=" || ")
+    print(title, slug, date, tags, content_type, content, wordcount, sep=" || ")
 
     connection = sqlite3.connect("database.db")
     cursor = connection.cursor()
     test = connection.execute(f"SELECT * FROM posts where content LIKE '{content}'").fetchone()
     if test == None:
-        connection.execute(f"INSERT INTO posts (timestamp, type, title, slug, tags, content) VALUES ('{date}', '{content_type}', '{title}', '{slug}', '{tags}', '{content}')")
+        connection.execute(f"INSERT INTO posts (timestamp, type, title, slug, tags, content, wordcount) VALUES ('{date}', '{content_type}', '{title}', '{slug}', '{tags}', '{content}', '{wordcount}')")
         connection.commit()
         connection.close()
     else: 
