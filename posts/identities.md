@@ -12,16 +12,19 @@ The following text contains my PGP key, as well as a list of all of the online a
 ## Accounts
 
 Domains:
+
 - [logangraves.com](https://logangraves.com)
 - lgngrvs.me
 
 Email:
+
 - `me[at]logangraves[dot]com` (with Proton E2EE)
 - You may also recieve emails from my .edu address (not added here because it would reveal where I go to school) 
 
 Instant Message:
+
 - lgngrvs#9505 on Discord
-- @lgngrvs on Wire (https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae)
+- @lgngrvs on [Wire](https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae)
 - [My Phone Number] on Signal, Whatsapp, SMS, etc. (Reach out via other media and I will be happy to give it to you)
 
 Social Media: 
@@ -34,6 +37,7 @@ Social Media:
 - `@lgngrvs@fosstodon.org` on [Mastodon](https://fosstodon.org/@lgngrvs)
 
 Other: 
+
 - `@lgngrvs` on [GitHub](https://github.com/lgngrvs)
 - `@lgngrvs` on [Keybase](https://keybase.io/lgngrvs)
 - `AC8135FDE909A64AA52857E40BB85E8C028EA6A4` on [Keyoxide](https://keyoxide.org/AC8135FDE909A64AA52857E40BB85E8C028EA6A4)
