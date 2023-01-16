@@ -2,24 +2,28 @@ The following text contains all of the online accounts that I claim to own publi
 
 === Accounts ===
 
-Email:
-- me[at]logangraves[dot]com on regular email (in the process of switching to proton)
-- logangraves[at]proton[dot]me on Proton (if you want protonmail e2ee)
-- ????[at]lgngrvs.me (here for when I eventually add a shortened email address)
+Domains:
+- logangraves.com
+- lgngrvs.me
 
-Social Media:
+Email:
+- me[at]logangraves[dot]com (with Proton E2EE)
+- You may also recieve emails from my .edu address (not added here because it would reveal where I go to school)
+
+Instant Message:
+- lgngrvs#9505 on Discord
+- @lgngrvs on Wire (https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae)
+- [My Phone Number] on Signal, Whatsapp, SMS, etc. (Reach out via other media and I will be happy to give it to you)
+
+Social Media: 
+
+(note: I am generally inactive on social media. The above methods are preferred.) 
+
 - @lgngrvs on Instagram (https://www.instagram.com/lgngrvs/)
-- @lgngrvs on Snapchat
+- @lgngrvs on Snap
 - @lgngrvs on Twitter (https://twitter.com/lgngrvs)
 - @lgngrvs@fosstodon.org on Mastodon (https://fosstodon.org/@lgngrvs)
 
-(Note that I won't add/follow you on Instagram and Snapchat if I don't know you.)
-
-Instant Message:
-- @lgngrvs on Wire (https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae)
-- [My Phone Number] on Signal, Whatsapp, SMS, etc. (feel free to reach out to me over email to get my number, I just do not want to publish this information for obvious reasons)
-
-(You can DM me on the above social media, but most likely I will not respond as I do not actively use the platforms.)
 
 Other: 
 - @lgngrvs on GitHub (https://github.com/lgngrvs)
