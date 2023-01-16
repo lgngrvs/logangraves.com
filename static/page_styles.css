@@ -88,7 +88,7 @@ blockquote {
 code {
     background-color: var(--code-background-color);
     padding: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 pre {

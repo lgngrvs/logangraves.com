@@ -23,9 +23,9 @@ Email:
 
 Instant Message:
 
-- lgngrvs#9505 on Discord
-- @lgngrvs on [Wire](https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae)
-- [My Phone Number] on Signal, Whatsapp, SMS, etc. (Reach out via other media and I will be happy to give it to you)
+- `lgngrvs#9505` on Discord
+- `@lgngrvs` on [Wire](https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae)
+- `[My Phone Number]` on Signal, Whatsapp, SMS, etc. (Reach out via other media and I will be happy to give it to you)
 
 Social Media: 
 
