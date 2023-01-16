@@ -12,8 +12,8 @@ The following text contains my PGP key, as well as a list of all of the online a
 ## Accounts
 
 Domains:
-- ([logangraves.com])
-- ([lgngrvs.me])
+- [logangraves.com](https://logangraves.com)
+- lgngrvs.me
 
 Email:
 - `me[at]logangraves[dot]com` (with Proton E2EE)
