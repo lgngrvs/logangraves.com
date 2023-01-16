@@ -7,46 +7,36 @@ Type: page
 
 > To verify this file, download [the plain text version](static/identities.txt) and [the signature](static/identities.txt.sig).
 
-
-**The following text contains my PGP key, as well as a list of all of the online accounts that I claim to own publicly, with links where applicable. I am one of many people named Logan Graves; if you see an account under that name, assume that if I do not explicitly claim it (on keybase, keyoxide, or here) that it is a different person with the same name or an impostor, *even if they have the @lgngrvs username.***
+The following text contains my PGP key, as well as a list of all of the online accounts that I claim to own publicly, with links where applicable. I am one of many people named Logan Graves; if you see an account under that name, assume that if I do not explicitly claim it (on keybase, keyoxide, or here) that it is a different person with the same name or an impostor, *even if they have the @lgngrvs username.*
 
 ## Accounts
 
+Domains:
+- ([logangraves.com])
+- ([lgngrvs.me])
+
 Email:
-
-- `me (at) logangraves (dot) com` on regular email *(in the process of switching to proton)*
-
-- `logangraves (at) proton (dot) me` on Proton *(if you want protonmail e2ee)*
-
-- *????(at)lgngrvs.me* on *???* *(here for when I eventually add a shortened email address)*
-
-Social Media:
-
-- `@lgngrvs` on Instagram ([https://www.instagram.com/lgngrvs/](https://www.instagram.com/lgngrvs/))
-
-- `@lgngrvs` on Snapchat
-
-- `@lgngrvs` on Twitter ([https://twitter.com/lgngrvs](https://www.twitter.com/lgngrvs/))
-
-- `@lgngrvs@fosstodon.org` on Mastodon ([https://fosstodon.org/@lgngrvs](https://fosstodon.org/@lgngrvs))
-
-Note that I won't add/follow you on Instagram and Snapchat if I don't know you.
+- `me[at]logangraves[dot]com` (with Proton E2EE)
+- You may also recieve emails from my .edu address (not added here because it would reveal where I go to school) 
 
 Instant Message:
+- lgngrvs#9505 on Discord
+- @lgngrvs on Wire (https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae)
+- [My Phone Number] on Signal, Whatsapp, SMS, etc. (Reach out via other media and I will be happy to give it to you)
 
-- `@lgngrvs` on Wire ([https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae](https://account.wire.com/user-profile/?id=38b65f2f-dc17-41e8-a3e9-7f74cf6338ae))
+Social Media: 
 
-- My phone number on Signal, Whatsapp, SMS, etc. *(feel free to reach out to me over email to get my number, I just do not want to publish this information for obvious reasons)*
+*(note: I am generally inactive on social media. The above methods are preferred.)* 
 
-You can DM me on the above social media, but most likely I will not respond as I do not actively use the platforms.
+- `@lgngrvs` on [Instagram](https://www.instagram.com/lgngrvs/)
+- `@lgngrvs` on Snap
+- `@lgngrvs` on [Twitter](https://twitter.com/lgngrvs)
+- `@lgngrvs@fosstodon.org` on [Mastodon](https://fosstodon.org/@lgngrvs)
 
 Other: 
-
-- `@lgngrvs` on GitHub ([https://github.com/lgngrvs](https://github.com/lgngrvs))
-
-- `@lgngrvs` on Keybase ([https://keybase.io/lgngrvs](https://keybase.io/lgngrvs))
-
-- `AC8135FDE909A64AA52857E40BB85E8C028EA6A4` (that's my PGP key fingerprint) on Keyoxide ([https://keyoxide.org/AC8135FDE909A64AA52857E40BB85E8C028EA6A4](https://keyoxide.org/AC8135FDE909A64AA52857E40BB85E8C028EA6A4))
+- `@lgngrvs` on [GitHub](https://github.com/lgngrvs)
+- `@lgngrvs` on [Keybase](https://keybase.io/lgngrvs)
+- `AC8135FDE909A64AA52857E40BB85E8C028EA6A4` on [Keyoxide](https://keyoxide.org/AC8135FDE909A64AA52857E40BB85E8C028EA6A4)
 
 ## PGP Key
 
@@ -54,7 +44,7 @@ Fingerprint: `AC8135FDE909A64AA52857E40BB85E8C028EA6A4`
 
 Public Key: 
 
-<pre><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+<pre><code>——BEGIN PGP PUBLIC KEY BLOCK——
 
 mQGNBGEEqXEBDADkM0lkh4gnjxsNn5FIo48QLjv7w/faCamre5bx8zz80+va6MRw
 7+yh9nIDfS7f89oqhjDh/ym3OGvzT70eC97xJev210RVQi+muLRMKOJuqu8GE147
@@ -94,4 +84,4 @@ c1qInRUvpZWuJWbAduiA7hf5rMS8zg6ixNnF5FpCsk+xABl1/r7GGCN3c18mykfw
 YaOTroJwTfhY6yRV0Ul+5KCbWzXwtQwqe1+ZkZatQmdAgbB71NjEi8GNd3S1E1f7
 Zgy19FJgp2fbn7gjvA==
 =f7Rs
------END PGP PUBLIC KEY BLOCK-----</code></pre>
+——END PGP PUBLIC KEY BLOCK——</code></pre>
