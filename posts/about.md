@@ -9,7 +9,7 @@ Hi, I’m Logan.
 
 I’m an American high school student. My interests encompass every possible subject, but I especially think about philosophy, AI, language, cognitive science, computer science, and mathematics. My current preoccupation involves exploring those subjects, and life in general, as informal and formal systems. 
 
-At school I’m involved in student government, sports, and I run a few clubs in addition to regular classes. I’m always looking to meet new people, so don’t hesitate to reach out!
+At school I’m involved in student government, sports, and I run a few clubs in addition to regular classes. Right now I’m living in the Bay Area, and I’m always down to meet up. Don’t hesitate to reach out!
 
 ## Reach out
 - Email `me at logangraves dot com`
