@@ -11,7 +11,7 @@ Type: post
 ## I. Jordan Peterson, Wielder of Order
 Jordan Peterson is interesting.
 
-From what I can see of him, he's in many ways a regular political pundit -- proseletyzing for conservatism, to struggling young men in particular, often through rhetorical shows of strength by "destroying feminists" and their ilk -- and I'd normally write him off in terms of intellectual contribution for being so. Normally. 
+From what I can see of him, he's in many ways a regular political pundit -- proselytizing for conservatism, to struggling young men in particular, often through rhetorical shows of strength by "destroying feminists" and their ilk -- and I'd normally write him off in terms of intellectual contribution for being so. Normally. 
 
 Peterson's background as an intellectual makes him a bit of a stranger kind of pundit. He was an assistant professor in Psychology at Harvard before taking a tenure post at the University of Toronto. [Old Harvard newspaper articles](https://www.thecrimson.com/article/1995/4/26/jordan-peterson-pharvard-students-may-know/?page=single) reveal some pretty satisfied students. In 1999, years before his political breakout, he published a book titled *Maps of Meaning:* initially intended to be his application for tenure at Harvard, its bibliography included Dante, Dostoevsky, Arendt, Nietzsche, Wittgenstein, and a number of other intellectual all-stars. Reviews tended to be favorable, though Peterson himself has said he didn't recieve much serious criticism.
 
