@@ -13,6 +13,7 @@
     --link-background-color: gainsboro;
     --link-underline-color: lightgray;
     --color: black;
+    --hr-color: black;
 }
 
 /* Tan Color Scheme
@@ -36,6 +37,7 @@
         --link-background-color: #808080; 
         --link-underline-color: #707070;
         --color: #e7e6e5;
+        --hr-color: dimgray;
     }    
 }
 
@@ -217,6 +219,12 @@ footer > * {
     font-family: var(--mono-font);
     font-size: 15px;
 }
+
+.post-hr {
+    color: var(--hr-color);
+}
+
+/* Homepage Styles */
 
 .reversed-text {
     display: inline-block;

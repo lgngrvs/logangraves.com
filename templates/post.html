@@ -3,7 +3,7 @@
 {% block content %}
   <article>
     <header></header>
-      <h1 style="max-width: 600px; margin-bottom: 10px;">{{ post["title"] }}</h1>
+      <h1 style="max-width: 600px; margin-bottom: 10px; padding-top: 60px;">{{ post["title"] }}</h1>
       <p id='created'>First Published: {{ post["timestamp"] }}</p>
       <h5>Tags: {{ post["tags"].replace(",", ", ") }} • {{ post["wordcount"] }} words</h5>
 
