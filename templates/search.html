@@ -6,9 +6,9 @@
     {% if posts %}
         {% for post in posts %}
             <div class='post'>
-                <a href="{{ url_for('show_post_slug', slug=post['slug']) }}"><h2>{{ post['title'] }}</h2></a>
+                <h2><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
                 <h5>Tags: {{ post['tags'] }}</h5> 
-                <p>{{ post['content'] | safe }}</p>
+                <!--p>{{ post['content'] | safe }}</p-->
             </div>
         {% endfor %}
     {% else %}
