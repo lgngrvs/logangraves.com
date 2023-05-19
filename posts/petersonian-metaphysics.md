@@ -1,4 +1,4 @@
-# Petersonian Metaphysics, and the future of Political Philosophy
+# Peterson and Political Metaphysics
 Date: 2023-05-14
 Tags: #philosophy #politics
 Type: post

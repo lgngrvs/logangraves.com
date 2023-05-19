@@ -29,7 +29,7 @@
             <h2 style="display:inline-block"><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
             <p id="index-post-link"> • https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</p> 
             <!--p>{{ post['content'] | safe }}</p-->
-            <br><hr><br>
+            <br><hr class="post-hr">
         </div>
     {% endfor %}
 {% endblock %}
