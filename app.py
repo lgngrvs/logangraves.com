@@ -37,7 +37,7 @@ def index():
     #some sort of object
     posts = list(posts)
     #posts is a tuple containing objects? 
-    print(len(posts))
+    # print(len(posts))
 
     x = 0
     #print(posts)
@@ -46,8 +46,8 @@ def index():
         for key, value in temp_post.items(): 
             new_value = Markup(value).unescape()
             temp_post[key] = new_value
-        print("temp post is currently")
-        print(temp_post)
+        # print("temp post is currently")
+        # print(temp_post)
         posts[x] = temp_post
         x += 1
     # print("posts in current state")
@@ -94,27 +94,27 @@ def show_post_slug(slug):
 @app.route("/tag/<tag>")
 def show_tag(tag):
     tag = escape(tag)
-    print("------------- Tag query: " + tag)
+    # print("------------- Tag query: " + tag)
     connection = get_db_connection()
     connection.row_factory = sqlite3.Row
-    relevant_posts = connection.execute(f"SELECT * FROM posts WHERE tags MATCH '{tag},'").fetchall()
+    relevant_posts = connection.execute(f"SELECT * FROM posts WHERE tags MATCH '[{tag}]'").fetchall()
     # find all posts with the tag
     relevant_posts = list(relevant_posts)
     # turn results into a list
     #try: 
     x = 0
-    print(relevant_posts)
+    # print(relevant_posts)
     for temp_post in relevant_posts: 
         temp_post = dict(temp_post)
         for key, value in temp_post.items(): 
             new_value = Markup(value).unescape()
             temp_post[key] = new_value
-        print("temp post is currently")
+        # print("temp post is currently")
         print(temp_post)
         relevant_posts[x] = temp_post
         x += 1
-    print("posts in current state")
-    print(relevant_posts)
+    # print("posts in current state")
+    # print(relevant_posts)
     if not(relevant_posts): 
         return f""" <h5>Displaying tag "{tag}"</h5> <p> No posts found with tag "{tag}." </p>"""
     else:
@@ -149,26 +149,31 @@ def search():
 
 @app.route("/search", methods=["GET"])
 def search(): 
-    search_query = escape(request.args.get("q"))
-    if search_query == "":
+    search_query = escape(request.args.get("q")).replace("(", " ").replace(")", " ")
+    print(search_query)
+    try: 
+        if search_query == "": 
+            print("search is none")
+            return render_template("no_search.html")
+        else:
+            connection = get_db_connection()
+            connection.row_factory = sqlite3.Row
+            # print(search_query)
+            relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}'").fetchall()
+            relevant_posts = list(relevant_posts)
+            x = 0
+            # print(relevant_posts)
+            for temp_post in relevant_posts: 
+                temp_post = dict(temp_post)
+                for key, value in temp_post.items(): 
+                    new_value = Markup(value).unescape()
+                    temp_post[key] = new_value
+                relevant_posts[x] = temp_post
+                x += 1
+            # print(relevant_posts)
+            return render_template('search.html', search=search_query, posts=relevant_posts)
+    except TypeError:
         render_template("no_search.html")
-    else:    
-        connection = get_db_connection()
-        connection.row_factory = sqlite3.Row
-        print(search_query)
-        relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}'").fetchall()
-        relevant_posts = list(relevant_posts)
-        x = 0
-        print(relevant_posts)
-        for temp_post in relevant_posts: 
-            temp_post = dict(temp_post)
-            for key, value in temp_post.items(): 
-                new_value = Markup(value).unescape()
-                temp_post[key] = new_value
-            relevant_posts[x] = temp_post
-            x += 1
-        print(relevant_posts)
-        return render_template('search.html', search=search_query, posts=relevant_posts)
 
 """
 posts = get_posts()
@@ -230,6 +235,8 @@ def rss():
 def not_found(error): 
     return render_template("404.html")
 
+# @app.errorhandler
+
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

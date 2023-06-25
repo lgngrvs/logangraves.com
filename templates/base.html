@@ -24,7 +24,7 @@
         <p><span class='reversed-text'>©</span> Logan Graves 2023 (all rights reversed?)</p> 
         <div id="footlinks"><a href='/'>Home</a><a href='/about'>About</a> <a href='/now'> Now</a><a href='/identities'>Identities</a><a href='/index'>Index</a><a href='/rss.xml'>RSS</a></div>
         <br>
-        <form action="{{ url_for('search') }}" method="GET">
+        <form action="{{ url_for('search') }}" method="GET" class="mobile-only">
           <input type="text" placeholder="search..." name="q"> <button type="submit">Go</button>
         </form>
         <br>
