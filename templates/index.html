@@ -12,25 +12,27 @@
             <li><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></li>
             {% endfor %}
         </ul>
-        <p><b>Static files:</b> <i>(I haven't written the code to dynamically generate this so it's not a full list)</i> </p>
+        <p><b>Notable static files:</b></p>
         <ul>
             <li><a href="/static/identities.txt">identities.txt</a></li>
             <li><a href="/static/identities.txt.sig">identities.txt.sig</a></li>
             <li><a href="/static/log.txt">log.txt</a></li>
         </ul>
-        <ul>
-            {% for file in static %}
-            
-        </ul>
+
     </blockquote>
-    <br><hr><br>
-    <!--h2  class="background-title" style="text-align: center;">Index</h2-->
+    <h2 class="background-title" style="font-size:30px;">Posts</h2>
+
+    <br><br>
     {% for post in posts %}
         <div class='post'>
             <h2 style="display:inline-block"><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
             <p id="index-post-link"> • https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</p> 
-            <!--p>{{ post['content'] | safe }}</p-->
-            <br><hr class="post-hr">
+            <p>{{ post['content'][:1000] | safe }}... </strong></i></em></code></p>
+
         </div>
+        <p><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">Read more</a></p>
+        <br>
+        <hr class="post-hr">
     {% endfor %}
+    
 {% endblock %}
