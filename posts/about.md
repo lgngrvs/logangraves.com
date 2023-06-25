@@ -1,5 +1,5 @@
 # About
-Date: 2023-01-15
+Date: 2023-06-24
 Tags: 
 Type: page
 
@@ -7,9 +7,13 @@ Hi, I’m Logan.
 
 ## Briefly
 
-I’m an American high school student. My interests encompass every subject, but I especially think about philosophy, AI, language, cognitive science, computer science, and mathematics. My current preoccupation involves exploring those subjects, and life in general, as informal and formal systems. 
+I’m an American high school student. 
 
-At school I’m involved in student government, sports, and I run a few clubs in addition to regular classes. Right now I’m living in the Bay Area, and I’m always down to meet up. Don’t hesitate to reach out!
+To quote an online friend, "I want to learn everything," though I especially like philosophy, AI, linguistics, cognitive science, computer science, and mathematics. 
+
+In no real order of importance, my hobbies include thinking, writing, reading, soccer, hanging out with friends, student government, music, geopolitics. *(Hobbies subject to change)*
+
+For info on what I'm up to right now, see [Now](https://logangraves.com/now)
 
 ## Reach out
 - Email `me at logangraves dot com`
