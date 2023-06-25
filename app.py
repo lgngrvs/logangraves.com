@@ -169,7 +169,7 @@ def search():
             x += 1
         print(relevant_posts)
         return render_template('search.html', search=search_query, posts=relevant_posts)
-        
+
 """
 posts = get_posts()
     #some sort of object
@@ -232,4 +232,4 @@ def not_found(error):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
