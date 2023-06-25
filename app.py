@@ -1,4 +1,5 @@
-# a quick script so that I don't have to do the same 3 commands over and over. 
+# this is what runs.
+
 import init_db
 import post_parser_script
 from flask import Flask, render_template, Markup, request
@@ -36,6 +37,8 @@ def index():
     #some sort of object
     posts = list(posts)
     #posts is a tuple containing objects? 
+    print(len(posts))
+
     x = 0
     #print(posts)
     for temp_post in posts: 
@@ -43,8 +46,8 @@ def index():
         for key, value in temp_post.items(): 
             new_value = Markup(value).unescape()
             temp_post[key] = new_value
-        #print("temp post is currently")
-        #print(temp_post)
+        print("temp post is currently")
+        print(temp_post)
         posts[x] = temp_post
         x += 1
     # print("posts in current state")
@@ -117,6 +120,8 @@ def show_tag(tag):
     else:
         return render_template('tag.html', posts=relevant_posts, tag=tag)
 
+# Old POST search method. Switched to GET because it looks nicer. 
+'''
 @app.route("/search", methods=["POST"])
 def search(): 
     search_query = request.form.get("search")
@@ -140,7 +145,31 @@ def search():
             x += 1
         print(relevant_posts)
         return render_template('search.html', search=search_query, posts=relevant_posts)
+'''
 
+@app.route("/search", methods=["GET"])
+def search(): 
+    search_query = escape(request.args.get("q"))
+    if search_query == "":
+        render_template("no_search.html")
+    else:    
+        connection = get_db_connection()
+        connection.row_factory = sqlite3.Row
+        print(search_query)
+        relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}'").fetchall()
+        relevant_posts = list(relevant_posts)
+        x = 0
+        print(relevant_posts)
+        for temp_post in relevant_posts: 
+            temp_post = dict(temp_post)
+            for key, value in temp_post.items(): 
+                new_value = Markup(value).unescape()
+                temp_post[key] = new_value
+            relevant_posts[x] = temp_post
+            x += 1
+        print(relevant_posts)
+        return render_template('search.html', search=search_query, posts=relevant_posts)
+        
 """
 posts = get_posts()
     #some sort of object
