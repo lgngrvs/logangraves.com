@@ -28,7 +28,12 @@
     --color: black;
 }*/
 
+.light-mode-hidden {
+    display:none;
+}
+
 /*Dark mode theme (based on system preference */
+
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #191A1a;
@@ -39,6 +44,14 @@
         --color: #e7e6e5;
         --hr-color: dimgray;
     }    
+
+    .dark-mode-hidden {
+        display:none;
+    }
+
+    .light-mode-hidden {
+        display:inherit;
+    }
 }
 
 
@@ -259,6 +272,12 @@ footer > * {
 
 #home-lead-h2 {
     font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#home-lead-logo {
+    height: 60px;
+    width: 60px;
 }
 
 #home-cutout-asterisk {
@@ -274,6 +293,7 @@ footer > * {
     font-size:30px; 
     line-height: 50px;
 }
+
 
 #home-navigation-links {
     font-size:50px; 
@@ -332,9 +352,13 @@ footer > * {
 
     #home-lead-h2 {
         font-size: 30px;
-        margin: 40px 0px 40px 0px;
-        
+        margin: 40px 0px 20px 0px;
     }
+    #home-lead-logo {
+        height: 40px;
+        width: 40px;
+    }
+    
     
     #home-cutout-asterisk {
         -webkit-text-stroke: 2px var(--color);

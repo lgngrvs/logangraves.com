@@ -1,16 +1,13 @@
 {% extends "base.html" %}
-{% block title %}Index of logangraves.com{% endblock %}
+{% block title %}Index • Logan Graves{% endblock %}
 {% block content %} 
     <h1>Index</h1>
     <blockquote class="blockquote-noitalics">
         <h2> Sitemap </h2>
-        <p><b>Specially-written pages:</b></p>
+        <p><b>Regular Pages</b></p>
         <ul>
             <li><a href="/"> Home </a></li>
             <li><a href="/index">Index</a> (you are here)</li>
-        </ul>
-        <p><b>Posts:</b></p>
-        <ul>
             {% for post in posts %}
             <li><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></li>
             {% endfor %}
@@ -20,6 +17,10 @@
             <li><a href="/static/identities.txt">identities.txt</a></li>
             <li><a href="/static/identities.txt.sig">identities.txt.sig</a></li>
             <li><a href="/static/log.txt">log.txt</a></li>
+        </ul>
+        <ul>
+            {% for file in static %}
+            
         </ul>
     </blockquote>
     <br><hr><br>
