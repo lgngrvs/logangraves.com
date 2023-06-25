@@ -2,4 +2,4 @@
 import init_db
 import post_parser_script
 import os
-os.system('py app.py')
+os.system('python3 app.py')

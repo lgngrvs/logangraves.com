@@ -12,7 +12,7 @@ list_of_file_names = [f'{parent_directory}{file}' for file in list_of_file_names
 print(list_of_file_names)
 
 for filename in list_of_file_names: 
-    print("running for loop")
+    # print("running for loop")
     whole_post_list = []
 
     with open(filename) as file:
@@ -31,8 +31,8 @@ for filename in list_of_file_names:
     slug = slugify(whole_post_list[0][2:])
     wordcount = len(whole_post_list[4].split(" "))
 
-    print(title, slug, date, tags, content_type, content, wordcount, sep=" || ")
-
+    # print(title, slug, date, tags, content_type, content, wordcount, sep=" || ")
+    print("Added " + title)
     connection = sqlite3.connect("database.db")
     cursor = connection.cursor()
     test = connection.execute(f"SELECT * FROM posts where content LIKE '{content}'").fetchone()
