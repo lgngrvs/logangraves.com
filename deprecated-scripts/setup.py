@@ -1,4 +1,4 @@
-# a quick script so that I don't have to do the same 3 commands over and over. 
+# THIS FILE IS DEPRECATED 
 import init_db
 import post_parser_script
 import os
