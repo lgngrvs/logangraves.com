@@ -1,3 +1,4 @@
+# THIS FILE IS DEPRECATED
 import markdown
 from slugify import slugify
 from flask import Markup

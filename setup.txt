@@ -1,0 +1,7 @@
+for future reference: 
+- venv is already installed
+- create new venv
+- pip install -r requirements.txt
+- python3 app.py
+
+there u go

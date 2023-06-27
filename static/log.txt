@@ -37,3 +37,10 @@ So since I'm flying home from very far away, and I can't sleep on the plane beca
 2022-08-25 
 Work time: 30 minutes
 I haven't updated this in a while, so I missed a few commits. I'll try to not miss much more. I just added a word count feature while off-task in class.
+
+2023-06-25
+work time: 4 hours
+it's like 2:30 am but i just switched the search function to GET instead of POST cause it's nicer. also the reason my post wasn't working was that the title was "about" and it was supposed to be "now". I remain goofy.
+
+2023-06-25
+tested PUT and DELETE requests to make sure that the server won't accept them. (nc 127.0.0.1 5000 < deprecated-scripts/PUT.txt) i started escaping parentheses from searches by just replacing them with spaces so that the search will still work -- couldn't figure out how to escape it the "proper way" if there is one. I suspect there's a parentheses compatibility setting that I could turn off and that's probably something i could do, or i could just REMOVE IT

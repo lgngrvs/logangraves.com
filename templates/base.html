@@ -11,9 +11,9 @@
 <body>
     <nav class="desktop-only">
       <div id="space"> </div>
-      <div id="navlinks"><div></div><a href='/'> Home </a><a href='/about'> About </a><a href='/identities'> Identities </a><a href='/index'> Index </a></div>
-      <form action="{{ url_for('search') }}" method="POST">
-        <input type="text" placeholder="search..." name="search"> <button type="submit">Go</button>
+      <div id="navlinks"><div></div><a href='/'> Home </a><a href='/about'> About </a><a href='/now'> Now </a><a href='/identities'> Identities </a><a href='/index'> Index </a></div>
+      <form action="{{ url_for('search') }}" method="GET">
+        <input type="text" placeholder="search..." name="q"> <button type="submit">Go</button>
       </form>
     </nav>
     <div id="page-wrap">
@@ -21,11 +21,11 @@
         {% block content %}  {% endblock %}
       </div>
       <footer>
-        <p><span class='reversed-text'>©</span> Logan Graves 2021 (all rights reversed?)</p> 
-        <div id="footlinks"><a href='/'>Home</a><a href='/about'>About</a><a href='/identities'>Identities</a><a href='/index'>Index</a><a href='/rss.xml'>RSS</a></div>
+        <p><span class='reversed-text'>©</span> Logan Graves 2023 (all rights reversed?)</p> 
+        <div id="footlinks"><a href='/'>Home</a><a href='/about'>About</a> <a href='/now'> Now</a><a href='/identities'>Identities</a><a href='/index'>Index</a><a href='/rss.xml'>RSS</a></div>
         <br>
-        <form action="{{ url_for('search') }}" method="POST">
-          <input type="text" placeholder="search..." name="search"> <button type="submit">Go</button>
+        <form action="{{ url_for('search') }}" method="GET" class="mobile-only">
+          <input type="text" placeholder="search..." name="q"> <button type="submit">Go</button>
         </form>
         <br>
         <a rel="me" href="https://fosstodon.org/@lgngrvs"></a>
