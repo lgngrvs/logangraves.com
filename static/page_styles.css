@@ -210,6 +210,11 @@ li {
     margin: 10px;
 }
 
+#src-link {
+    font-family: var(--sans-font);
+    color: var(--link-underline-color);
+}
+
 nav > form {
     flex: 2;
 }

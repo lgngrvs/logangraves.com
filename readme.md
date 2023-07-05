@@ -1,8 +1,25 @@
 # logangraves.com: now with a backend and a frontend!
-This is the development branch for my personal website, what will eventually be located on my domain [logangraves.com](https://logangraves.com). I don't have a 'stable' branch right now because it's running on a Heroku box; I just upload my code whenever it's stable and then keep it like that till the next version.
+This is the current stable version of my personal website, located on my (apex) domain [logangraves.com](https://logangraves.com). It's running on a [Heroku](https://heroku.com) box. 
 
 ## About
-I have built a back- and front-end from scratch (mostly), using [Flask](https://flask.palletsprojects.com/) and a SQLite database. Yes, I am aware that there will be issues with security if I build my own backend; I've done my best to escape user input in the url and in the search bars to prevent XSS, but I'm not experienced in web security so I'm not really sure what else I can do. Let's just say it's free incident response training if I get pwned.
+Back- and front-ends written 'from scratch' using [Flask](https://flask.palletsprojects.com/) and a SQLite database, and no CSS/HTML frameworks. Site doesn't use JS (see `# JavaScript`), does not contain any trackers, does not measure traffic and avoids collecting data wherever possible (all of this as of Jun 27 2023, since its inception a long time ago). 
+
+## Security 
+I did my best to prevent most common injection attacks and tested extensively. All user inputs are escaped. Let me know if you find a vulnerability (feel free to open an issue) and I will fix it; let's just say it's free incident response training if I get pwned!
+
+*(well not really, i can just turn the site off in heroku dashboard lol)*
+
+## JavaScript
+JS can do cool things. My site can do cool things without JS. I believe in a lightweight internet free of tracking, advertising, data-mining, and most of all, popups and the various annoyances I need to install entire browser extensions to prevent. On principle, therefore, I avoid using JS whenever that is possible. (All animations on this site are done with CSS only.)
+
+*I reserve the right to use JS for fun programming projects on here in the future though. If I do that, the JS part will be isolated from the main site and will only load when specifically visited.*
 
 ## Usage
-To run the site, install the venv or whatever + the requirements in requirements.txt, and run `py setup.py`. `setup.py` invokes the other necessary scripts; just go to `127.0.0.1:5000/` to see the results assuming that port isn't already used.
+To run the site locally:
+
+1. Clone the repo
+2. Open a `venv` in the directory (optional but recommended)
+3. `pip install -r requirements.txt` to install dependencies in the venv
+4. Make sure your port 5000 is open
+5. Run `app.py`
+6. View test site in browser (127.0.0.1:5000)

@@ -4,4 +4,8 @@ for future reference:
 - pip install -r requirements.txt
 - python3 app.py
 
+or if you're restarting your venv 
+- source .venv/bin/activate
+
+
 there u go
