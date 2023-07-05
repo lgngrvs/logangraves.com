@@ -1,0 +1,5 @@
+reminder for myself
+
+if you have a bug it is because of this
+
+stop committing debug=True!!!!!!!!
