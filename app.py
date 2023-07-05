@@ -40,7 +40,7 @@ def index():
     # print(len(posts))
 
     x = 0
-    #print(posts)
+    print("Posts include: " + str(posts))
     for temp_post in posts: 
         temp_post = dict(temp_post)
         for key, value in temp_post.items(): 
