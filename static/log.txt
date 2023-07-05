@@ -44,3 +44,6 @@ it's like 2:30 am but i just switched the search function to GET instead of POST
 
 2023-06-25
 tested PUT and DELETE requests to make sure that the server won't accept them. (nc 127.0.0.1 5000 < deprecated-scripts/PUT.txt) i started escaping parentheses from searches by just replacing them with spaces so that the search will still work -- couldn't figure out how to escape it the "proper way" if there is one. I suspect there's a parentheses compatibility setting that I could turn off and that's probably something i could do, or i could just REMOVE IT
+
+2023-07-04 
+STOP FORGETTING TO TURN OFF DEBUG MODE -- IF YOU HAVE AN ISSUE WHERE POSTS ARE LOADING TWICE IT'S BECAUSE OF THAT! In other news, past couple of days I updated the site a bit -- added a source link at the bottom of the website and removed the search bar from the footer cause I don't think it was needed. also, i added a post for my prompts library.
