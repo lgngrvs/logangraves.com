@@ -17,6 +17,8 @@ Here's what I'm up to as of late June, 2023:
 
 - **Music.** Getting better at improv on piano and guitar. 
 
+- **Linear Algebra.** I'm teaching myself linear algebra for AI. 
+
 - **Learning about cars.** I got a very old car. I'm learning how it works, and how to fix it. I looooove thermodynamics :D
 
 - **Writing.** I like to write about what I'm thinking about, and sometimes I publish it here. I'm slow to add posts to this blog, though; I want to make sure anything that goes up here is representative of me. I will often post drafts of varying quality on my [drafts site](https://drafts.logangraves.com) to get feedback on them. *(Disclaimer: drafts may be easy to misinterpret, and they are not necessarily representative of my thoughts.)* 
