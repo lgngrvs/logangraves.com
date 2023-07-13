@@ -1,0 +1,38 @@
+.centered {
+    text-align: center;
+}
+
+#scroll-parent {
+    width: 100vw; 
+    height:40px;
+    position: absolute; 
+    left: 0px;
+    border-width: 2px 0px 2px 0px; 
+    border-color: black; 
+    border-style: solid;
+}
+
+.scroll-logo {
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    animation: scroll 10s linear infinite;
+    height: 40px;
+    width: 40px;
+}
+
+.follow-class {
+    margin:30px;
+    animation: copy 10s linear infinite;
+
+}
+
+
+@keyframes scroll {
+    from {
+        left: 100%;
+      }
+      to {
+        left: -5%;
+    }
+}

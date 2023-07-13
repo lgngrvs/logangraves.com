@@ -7,6 +7,7 @@
   <meta name="description" content="Personal website for Logan Graves, an American high school student."/>
   <link rel="stylesheet" href="/static/page_styles.css" type="text/css">
   <link rel="shortcut icon" type="image/jpg" sizes="128x128" href="/static/favicon.png">
+  {% block headextensions %} {% endblock %}
 </head>
 <body>
     <nav class="desktop-only">
@@ -29,7 +30,7 @@
           <input type="text" placeholder="search..." name="q"> <button type="submit">Go</button>
         </form>
         <br>
-        <a rel="me" href="https://fosstodon.org/@lgngrvs"></a>
+        <a rel="me" href="https://fosstodon.org/@lgngrvs" style="display:none;"></a>
       </footer>
     </div>
 </body>

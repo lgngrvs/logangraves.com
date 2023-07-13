@@ -230,6 +230,9 @@ def rss():
     response.headers.set('Content-Type', 'application/rss+xml')
     return response
 
+@app.route("/playground")
+def playground(): 
+    return render_template("playground.html")
 
 @app.errorhandler(404)
 def not_found(error): 
