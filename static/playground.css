@@ -30,7 +30,16 @@
 
 @keyframes scroll {
     from {
-        left: 100%;
+        left: 110%;
+      }
+      to {
+        left: -10%;
+    }
+}
+
+@keyframes copy {
+    from {
+        left: 115%;
       }
       to {
         left: -5%;

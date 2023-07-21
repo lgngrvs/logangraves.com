@@ -1,7 +1,12 @@
 window.onload = function() {
-    var element = document.getElementById("scroll-logo-basic");
-    setTimeout(createCopy(element), 5000)
-    console.log("test")
+    let element = document.getElementById("scroll-logo-basic");
+    for (var i = 1; i < 23; i++) {
+        time = i * 430
+        setTimeout(function() {
+            createCopy(element);
+            console.log("new element");
+        }, time)
+    }
 };
 
 function createCopy(e) {
