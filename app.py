@@ -20,12 +20,27 @@ def get_db_connection():
     connection.row_factory = sqlite3.Row
     return connection
 
-def get_posts():
+def get_all():
     connection = get_db_connection()
     connection.row_factory = sqlite3.Row
-    posts = connection.execute('SELECT * FROM posts').fetchall()
+    posts = connection.execute('SELECT * FROM posts').fetchall() # gets everything in the database, posts and pages.
     connection.close()
     return posts
+
+def get_only_posts(): 
+    connection = get_db_connection()
+    connection.row_factory = sqlite3.Row
+    posts_only = connection.execute("SELECT * FROM posts WHERE type = 'post'").fetchall()
+    connection.close()
+    return posts_only
+
+def get_only_pages(): 
+    connection = get_db_connection()
+    connection.row_factory = sqlite3.Row
+    pages_only = connection.execute("SELECT * FROM posts WHERE type = 'page'").fetchall()
+    connection.close()
+    return pages_only
+
 
 @app.route("/")
 def home(): 
@@ -33,26 +48,37 @@ def home():
 
 @app.route("/index")
 def index():
-    posts = get_posts()
-    #some sort of object
-    posts = list(posts)
-    #posts is a tuple containing objects? 
-    # print(len(posts))
+
+    posts_only = list(get_only_posts())
+    pages_only = list(get_only_pages())
+
+    print("Posts include: " + str(posts_only))
+    print("Pages include: " + str(pages_only))
 
     x = 0
-    print("Posts include: " + str(posts))
-    for temp_post in posts: 
+    for temp_post in posts_only: 
         temp_post = dict(temp_post)
         for key, value in temp_post.items(): 
             new_value = Markup(value).unescape()
             temp_post[key] = new_value
         # print("temp post is currently")
         # print(temp_post)
-        posts[x] = temp_post
+        posts_only[x] = temp_post
         x += 1
-    # print("posts in current state")
-    # print(posts)
-    return render_template('index.html', posts=posts)
+
+    y=0
+
+    for temp_page in pages_only: 
+        temp_page = dict(temp_page)
+        for key, value in temp_page.items(): 
+            new_value = Markup(value).unescape()
+            temp_page[key] = new_value
+        # print("temp post is currently")
+        # print(temp_post)
+        pages_only[y] = temp_page
+        y += 1
+
+    return render_template('index.html', posts=posts_only, pages=pages_only)
 
 """
 @app.route("/posts/<i>")
@@ -60,7 +86,7 @@ def show_post_number(i):
     i = escape(i)
     try: 
         i = int(i)
-        posts = get_posts()
+        posts = get_all()
         # print(posts)
         post = dict(posts[i])
         for key, value in post.items(): 
@@ -176,7 +202,7 @@ def search():
         render_template("no_search.html")
 
 """
-posts = get_posts()
+posts = get_all()
     #some sort of object
     posts = list(posts)
     #posts is a tuple containing objects? 
@@ -205,7 +231,7 @@ def rss():
     feed.logo("https://logangraves.com/static/favicon.png")
 
     # Duplicated code from /index app route because it already works and I don't want to make an entire new function that may break something
-    posts = get_posts()
+    posts = get_all()
     posts = list(posts)
     x = 0
     for temp_post in posts: 

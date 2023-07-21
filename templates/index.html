@@ -4,13 +4,22 @@
     <h1>Index</h1>
     <blockquote class="blockquote-noitalics">
         <h2> Sitemap </h2>
-        <p><b>Regular Pages</b></p>
+        <p><b>Blog Pages</b></p>
         <ul>
             <li><a href="/"> Home </a></li>
             <li><a href="/index">Index</a> (you are here)</li>
+
+            {% for page in pages %}
+            <li><a href="{{ url_for('show_post_slug', slug=page['slug']) }}">{{ page['title'] }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <p><b>Blog Posts</b></p>
+        <ul>
             {% for post in posts %}
             <li><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></li>
             {% endfor %}
+
         </ul>
         <p><b>Notable static files:</b></p>
         <ul>
