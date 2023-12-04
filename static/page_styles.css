@@ -5,6 +5,8 @@
     --serif-font: 'Garamond', serif;
     --sans-font: 'Helvetica', sans-serif;
     --mono-font: 'Space Mono', 'Courier', monospace;
+    --nav-font: 'Helmet', 'Helvetica', sans-serif;
+    --header-font: 'Helmet', 'Helvetica', sans-serif;
 
     /* Light Mode Theme:*/
     --background-color: white;
@@ -66,6 +68,17 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Helmet Neue';
+    src: url('fonts/HelmetNeue-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Helmet';
+    src: url('fonts/Helmet-Regular.ttf') format("truetype");
+}
+
+
 
 body {
     font-family: var(--serif-font);
@@ -82,10 +95,11 @@ body {
 }
 
 button, input {
-    border-radius: 0;
+    border-radius: 5;
     color: var(--color);
     border: 2px solid var(--border-background-color);
-    background-color: var(--code-background-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     font-family: var(--mono-font);
 }
 
@@ -122,8 +136,8 @@ pre > code {
 
 
 h1, h2, h3, h4, h5 {
-    font-family: var(--mono-font);
-    font-weight: bold;
+    font-family: var(--nav-font);
+    text-transform: uppercase;
 }
 
 h1 {
@@ -150,14 +164,15 @@ a {
     background-position: 0 111%;
     -webkit-transition: background-size .25s ease-in;
     transition: background-size .25s ease-in;
-    padding: 1px;
+    padding: 2px;
     border-bottom: 2px solid var(--link-underline-color);
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    border-radius: 3px;
 }
 
 a:hover {
-    background-size: 100% 95%;
+    background-size: 100% 99%;
     cursor: pointer;
     border-bottom: 2px solid var(--color);
 }
@@ -193,9 +208,10 @@ li {
 }
 
 #navlinks > a {
-    font-family: 'Space Mono';
+    font-family: var(--nav-font);
     font-weight: bold;
     margin: 0px 15px;
+    font-size: 20px;
 }
 #navlinks > div {
     flex: 2;
