@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block title %}Index • Logan Graves{% endblock %}
 {% block content %} 
-    <h1>Index</h1>
-    <blockquote class="blockquote-noitalics">
+    <h1 style="max-width: 600px; margin-bottom: 10px;">Index</h1>
+    <!--blockquote class="blockquote-noitalics">
         <h2> Sitemap </h2>
         <p><b>Blog Pages</b></p>
         <ul>
@@ -29,14 +29,15 @@
         </ul>
 
     </blockquote>
-    <h2 class="background-title" style="font-size:30px;">Posts</h2>
+    <h2 class="background-title" style="font-size:30px;">Posts</h2-->
 
     <br><br>
     {% for post in posts %}
         <div class='post'>
             <h2 style="display:inline-block"><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
-            <p id="index-post-link"> • https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</p> 
-            <p>{{ post['content'][:1000] | safe }}... </strong></i></em></code></p>
+            <br>
+            <p id="index-post-link"><i>https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</i></p> 
+            <p>{{ post['content'][:100] | safe }}...</strong></i></em></em></code></p>
 
         </div>
         <p><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">Read more</a></p>
