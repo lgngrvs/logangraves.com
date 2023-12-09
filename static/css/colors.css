@@ -1,0 +1,59 @@
+:root {
+    /*
+    --background-color: #d9e4ec;
+    --color: #385e72;*/
+    --serif-font: 'Garamond', serif;
+    --sans-font: 'Helvetica', sans-serif;
+    --mono-font: 'Space Mono', 'Courier', monospace;
+    --nav-font: 'Helmet', 'Helvetica', sans-serif;
+    --header-font: 'Helmet', 'Helvetica', sans-serif;
+
+    /* Light Mode Theme:*/
+    --background-color: white;
+    --border-background-color: #e0e0e0;
+    --code-background-color: #efefef;
+    --link-background-color: gainsboro;
+    --link-underline-color: lightgray;
+    --color: black;
+    --hr-color: black;
+}
+
+/* Tan Color Scheme
+(to be used when I add theme functionality
+
+:root { 
+    --background-color: #faf9f3;
+    --border-background-color: #eeebd7;
+    --code-background-color: #f5f4e9;
+    --link-background-color: #ebe9d3;
+    --link-underline-color: #dbd3a8;
+    --color: black;
+}*/
+
+.light-mode-hidden {
+    display:none;
+}
+
+/*Dark mode theme (based on system preference */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212;
+        --border-background-color: #3b3d3e;
+        --code-background-color: #242424;
+        --link-background-color: #6b6b6b; 
+        --link-underline-color: #5e5e5e;
+        --color: #e7e6e5;
+        --hr-color: dimgray;
+        --gradient-bottom: #1e1e1e;
+        --gradient-top: var(--background-color);
+    }    
+
+    .dark-mode-hidden {
+        display:none;
+    }
+
+    .light-mode-hidden {
+        display:inherit;
+    }
+}

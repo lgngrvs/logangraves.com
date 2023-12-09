@@ -17,7 +17,7 @@
 header {
     padding-bottom: 30px;
     background-image: linear-gradient(var(--gradient-top), var(--gradient-top), var(--gradient-bottom));
-    border-bottom: 2px solid var(--color);
+    border-bottom: 2px solid var(--);
 }
 
 
