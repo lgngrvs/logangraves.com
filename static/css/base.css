@@ -261,6 +261,29 @@ footer > * {
     font-size: 18px;
 }
 
+/* Index.html Styles */
+
+.post {
+    /*border: 2px solid var(--link-underline-color);*/
+    padding: 35px;
+    border-radius: 40px;
+    max-width: 70%;
+    display: block;
+    margin: auto
+}
+
+.post-title-link {
+    font-family: var(--sans-font);
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.index-tags {
+    font-family: var(--sans-font);
+    text-transform: none;
+}
+
 #index-post-link {
     display: inline-block;
 }
