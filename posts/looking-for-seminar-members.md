@@ -2,6 +2,7 @@
 Date: 2023-01-15
 Tags: #classifieds
 Type: post
+Desc: A public call for people interested in philosophy. 
 
 I figured I’d just put this on my website to encourage serendipity. 
 

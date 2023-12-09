@@ -2,6 +2,7 @@
 Date: 2023-01-15
 Tags: 
 Type: page
+Desc:
 
 > This is a nice-looking version of [identities.txt](static/identities.txt). It contains various accounts that aren't available for proof through keybase/keyoxide, so instead I am posting them on here. 
 
