@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block title %}{{ post["title"] }} • Logan Graves{% endblock %}
 {% block content %}
+  <link rel="stylesheet" href="/static/css/posts.css" type="text/css">
   <article>
-    <header></header>
-      <h1 style="max-width: 600px; margin-bottom: 10px; padding-top: 60px;">{{ post["title"] }}</h1>
+    <header>
+      <h1 class="post-heading">{{ post["title"] }}</h1>
       <p id='created'>First Published: {{ post["timestamp"] }}</p>
       <h5>Tags: {{ post["tags"].replace(",", ", ") }} • {{ post["wordcount"] }} words</h5>
-
     </header>
   {{ post["content"] | safe }}
   </article>
