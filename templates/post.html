@@ -5,6 +5,7 @@
   <article>
     <header>
       <h1 class="post-heading">{{ post["title"] }}</h1>
+      <p id="post-subheading" style="font-family: var(--sans-font)">{{ post["description"] | safe }}</p>
       <p id='created'>First Published: {{ post["timestamp"] }}</p>
       <h5>Tags: {{ post["tags"].replace(",", ", ") }} • {{ post["wordcount"] }} words</h5>
     </header>

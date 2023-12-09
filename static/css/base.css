@@ -11,11 +11,11 @@
     src: url('/fonts/SpaceMono-Bold.ttf') format('truetype');
     font-weight: bold;
 }
-
+/*
 @font-face {
     font-family: 'Helmet Neue';
     src: url('/static/fonts/HelmetNeue-Regular.otf') format("opentype");
-}
+}*/
 
 @font-face {
     font-family: 'Helmet';
@@ -54,6 +54,10 @@ h1 {
     z-index: 10; 
     position: relative;
     width: fit-content;
+}
+
+h2 {
+    font-size: 28px;
 }
 
 h3 {
@@ -153,6 +157,7 @@ blockquote {
     background-color: var(--code-background-color);
     padding: 15px;
     border-left: 10px solid var(--border-background-color);
+    border-radius: 30px;
 }
 
 .blockquote-noitalics {
@@ -196,7 +201,7 @@ nav {
 }
 
 li {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 
@@ -292,10 +297,6 @@ footer > * {
     height: 100px;
 }
 
-#created {
-    font-size: 15px;
-    margin: 0px;
-}
 
 /* MOBILE STYLES (at bottom of page in order to override)*/ 
 @media only screen and (max-width: 987px) {
@@ -308,50 +309,23 @@ footer > * {
         display: inherit;
     }
 
+    #content-wrap {
+        padding: 0px 10%;
+    }
+
     h1 {
-        text-align: center; 
+        display: block;
+        margin: auto;
         font-size: 20px;
-        padding-top: 10px;
+        padding: 10px;
         max-width: 100%;
+        width: fit-content;
         margin-bottom: 11px;
     }
 
     h5 {
         text-align: center;
         margin-bottom: 15px;
-    }
-
-    #home-padding-div {
-        padding: 0px;
-    }
-
-    #home-lead-h2 {
-        font-size: 30px;
-        margin: 40px 0px 20px 0px;
-    }
-    #home-lead-logo {
-        height: 40px;
-        width: 40px;
-    }
-    
-    
-    #home-cutout-asterisk {
-        -webkit-text-stroke: 2px var(--color);
-    }
-
-    #home-lead-p {
-        font-size: 18px;
-        line-height: 30px;
-    }
-
-    #home-navigation-links {
-        font-size: 25px; 
-        line-height: 35px; 
-        text-align: center;
-    }
-
-    #home-navigation-links > a {
-        -webkit-text-stroke: 1px var(--color);
     }
     
     #asterisk {
@@ -376,9 +350,17 @@ footer > * {
     
     pre > code {
         display: inline-block;
+        overflow: scroll;
+    }
+    code {
+        word-wrap: break-word;
     }
 
     #index-post-link {
         display: none;
+    }
+
+    #footlinks a {
+        line-height: 30px;
     }
 }
