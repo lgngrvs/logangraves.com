@@ -8,7 +8,7 @@ Welcome to Logangraves.com!
 
 This website serves a couple of purposes, and will continally evolve as I evolve myself. Here are some important functions: 
 
-1. **Hosting thoughts.** A major function of this site is to host ideas that I'm developing or have encountered. Things I post here are things I'm interested in talking about — the hope is that someone who finds them equally interesting will be inspired to start a conversation. (Hint: My preferred contact methods are on my [about page](https://logangraves.com/about)!). Also, writing ideas down allows me to develop my thoughts; this site is a place I can post the products of that process.
+1. **Hosting thoughts.** A major function of this site is to host ideas that I'm developing or have encountered. Things I post here are things I'm interested in talking about — the hope is that someone who finds them equally interesting will be inspired to start a conversation. (Hint: My preferred contact methods are on my [about page](https://logangraves.com/about)!) Also, writing ideas down allows me to develop my thoughts; this site is a place I can post the products of that process.
 
 2. **Verifying my identity.** This site also serves as a central link in my online identity web, hosting my PGP keys as well as a signed list of identites. In other words, this site hosts the cryptographic means to verify I am me, as well as every online presence I publicly claim to operate. Any accounts that are not listed on this website should be assumed to be another Logan Graves; if there's ever confusion over whether I own an online account or identity (or if someone with the name Logan Graves is me), this site will (hopefully) be able to resolve it. See [Identities](https://logangraves.com/identities) for more info.
 
