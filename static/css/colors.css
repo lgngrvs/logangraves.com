@@ -16,6 +16,8 @@
     --link-underline-color: lightgray;
     --color: black;
     --hr-color: black;
+    --gradient-bottom: #f0f0f0;
+    --gradient-top: var(--background-color);
 }
 
 /* Tan Color Scheme
