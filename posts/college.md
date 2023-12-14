@@ -4,7 +4,7 @@ Tags:
 Type: post
 Desc: An attempt to gain perspective on college admissions, and a philosophy of rejection. 
 
-*Decisions are starting to roll in for the class of 2024—for many they've already come in. The following is a note to myself that others might appreciate, an attempt to keep my perspective in all the emotion and stress.*
+*Decisions are starting to roll in for the class of 2024—for many they've already arrived. The following is a note to myself that others might appreciate, an attempt to keep my perspective in all the emotion and stress.*
 
 ## I. It’s likely not your fault, and it’s probably a good thing.
 
