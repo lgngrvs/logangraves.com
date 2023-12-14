@@ -1,7 +1,7 @@
 # Poems
 Date: 2023-12-12
 Tags: #art
-Type: page
+Type: post
 Desc: Some of my favorite poems.
 
 ## Ozymandias
@@ -42,3 +42,58 @@ in this radiant wilderness.<br>
 *Council Oak Books, 2002.*
 
 *via Poetry Is Not A Luxury ([Instagram](https://www.instagram.com/p/C0CxAZLSyYV/))*
+
+---
+
+## Hymn of Apollo
+*by Percy Bysshe Shelley*
+
+I.<br>
+The sleepless Hours who watch me as I lie,<br>
+Curtained with star-inwoven tapestries,<br>
+From the broad moonlight of the sky,<br>
+Fanning the busy dreams from my dim eyes,--<br>
+Waken me when their Mother, the gray Dawn,<br>
+Tells them that dreams and that the moon is gone.<br>
+
+II.<br>
+Then I arise, and climbing Heaven's blue dome,<br>
+I walk over the mountains and the waves,<br>
+Leaving my robe upon the ocean foam;<br>
+My footsteps pave the clouds with fire; the caves<br>
+Are filled with my bright presence, and the air<br>
+Leaves the green Earth to my embraces bare.<br>
+
+III.<br>
+The sunbeams are my shafts, with which I kill<br>
+Deceit, that loves the night and fears the day;<br>
+All men who do or even imagine ill<br>
+Fly me, and from the glory of my ray<br>
+Good minds and open actions take new might,<br>
+Until diminished by the reign of Night.<br>
+
+IV.<br>
+I feed the clouds, the rainbows, and the flowers,<br>
+With their ethereal colors; the Moon's globe,<br>
+And the pure stars in their eternal bowers,<br>
+Are cinctured with my power as with a robe;<br>
+Whatever lamps on Earth or Heaven may shine,<br>
+Are portions of one power, which is mine.<br>
+
+V.<br>
+I stand at noon upon the peak of Heaven;<br>
+Then with unwilling steps I wander down<br>
+Into the clouds of the Atlantic even;<br>
+For grief that I depart they weep and frown:<br>
+What look is more delightful than the smile<br>
+With which I soothe them from the western isle?<br>
+
+VI.<br>
+I am the eye with which the Universe<br>
+Beholds itself, and knows it is divine;<br>
+All harmony of instrument or verse,<br>
+All prophecy, all medicine, is mine,<br>
+All light of art or nature; - to my song<br>
+Victory and praise in its own right belong.<br>
+
+*via AllPoetry ([website](https://allpoetry.com/Hymn-of-Apollo))*
