@@ -5,15 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Personal website for Logan Graves, an American high school student."/>
-  <link rel="stylesheet" href="/static/page_styles.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/base.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/colors.css" type="text/css">
   <link rel="shortcut icon" type="image/jpg" sizes="128x128" href="/static/favicon.png">
 </head>
 <body>
     <nav class="desktop-only">
       <div id="space"> </div>
-      <div id="navlinks"><div></div><a href='/'> Home </a><a href='/about'> About </a><a href='/now'> Now </a><a href='/identities'> Identities </a><a href='/index'> Index </a></div>
+      <div id="navlinks"><div></div><a href='/'> HOME </a><a href='/about'> ABOUT </a><a href='/now'> NOW </a><a href='/identities'> IDENTITIES </a><a href='/index'> INDEX </a></div>
       <form action="{{ url_for('search') }}" method="GET">
-        <input type="text" placeholder="search..." name="q"> <button type="submit">Go</button>
+        <input type="text" placeholder="Search..." name="q"> <!--button type="submit">Go</button-->
       </form>
     </nav>
     <div id="page-wrap">

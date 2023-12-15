@@ -2,6 +2,7 @@
 Date: 2023-07-04
 Tags: #ai
 Type: post
+Desc: A public archive of role prompts I've used to elicit more useful answers from LLMs.
 
 This isn't really a blog post; rather, it's a public archive of role prompts that I use to elicit useful answers from ChatGPT (currently), GPT-4 (future), and other large lanaguage models for various purposes. 
 

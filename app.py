@@ -23,7 +23,7 @@ def get_db_connection():
 def get_all():
     connection = get_db_connection()
     connection.row_factory = sqlite3.Row
-    posts = connection.execute('SELECT * FROM posts').fetchall() # gets everything in the database, posts and pages.
+    posts = connection.execute('SELECT * FROM posts;').fetchall() # gets everything in the database, posts and pages.
     connection.close()
     return posts
 
@@ -53,6 +53,12 @@ def index():
     pages_only = list(get_only_pages())
 
     print("Posts include: " + str(posts_only))
+    def get_timestamp(element):
+        return(element[1])
+    posts_only.sort(reverse=True, key=get_timestamp)
+    for i in posts_only: 
+        print(i[1])
+
     print("Pages include: " + str(pages_only))
 
     x = 0

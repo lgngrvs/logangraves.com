@@ -1,0 +1,30 @@
+/* Styles specific to blog posts */
+
+.post-hr {
+    color: var(--hr-color);
+}
+
+.post-heading {
+    text-align: center; 
+    font-size: 40px;
+    max-width: 600px; 
+    margin-bottom: 10px; 
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#post-subheading {
+    font-family: var(--sans-font);
+}
+
+header {
+    padding: 0px 30px 30px;
+    background-image: linear-gradient(var(--gradient-top), var(--gradient-top), var(--gradient-bottom));
+    border-bottom: 2px solid var(--);
+}
+
+#created {
+    font-size: 15px;
+    font-family: var(--sans-font);
+}

@@ -34,15 +34,15 @@
     <br><br>
     {% for post in posts %}
         <div class='post'>
-            <h2 style="display:inline-block"><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
-            <br>
-            <p id="index-post-link"><i>https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</i></p> 
-            <p>{{ post['content'][:100] | safe }}...</strong></i></em></em></code></p>
-
+            <h5 class="index-tags">{{ post["timestamp"] }} • Tags: {{ post['tags'] }}</p>
+            <h2 class="post-title-link"><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
+            <!--p id="index-post-link"><i>https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</i></p--> 
+            <!--p>{{ post['content'][:100] | safe }}...</strong></i></em></em></code></p-->
+            <p>{{ post['description'] | safe }}</p>
+            <p><a href="{{ url_for('show_post_slug', slug=post['slug']) }}" class="big-button" style="font-size: 18px; height: fit-content;">Read more</a></p>
         </div>
-        <p><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">Read more</a></p>
         <br>
-        <hr class="post-hr">
+        <!--hr class="post-hr"-->
     {% endfor %}
     
 {% endblock %}

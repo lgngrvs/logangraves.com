@@ -2,8 +2,7 @@
 Date: 2023-05-14
 Tags: #philosophy #politics
 Type: post
-
-### How Jordan Peterson's metaphysical politics might show us what's in store for our American future.
+Desc: How Jordan Peterson's metaphysical politics might show us what's in store for our American future.
 
 *Author's note: This is more political than I'd like to be -- as they say, [politics is the mind-killer](https://www.lesswrong.com/posts/9weLK2AJ9JEt2Tt8f/politics-is-the-mind-killer) --  but... it's hard to write apolitically about politics and a political pundit. I don't usually write about politics in public, so I'm still getting better at it.*
 
