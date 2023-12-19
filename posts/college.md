@@ -1,6 +1,6 @@
 # Resolutions on the college process
 Date: 2023-12-14
-Tags: 
+Tags: #cognitive-tuning
 Type: post
 Desc: An attempt to gain perspective on college admissions, and a philosophy of rejection. 
 

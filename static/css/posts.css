@@ -28,3 +28,17 @@ header {
     font-size: 15px;
     font-family: var(--sans-font);
 }
+
+h2 {
+    margin-top: 60px;
+}
+
+/* MOBILE ONLY STYLES */
+
+@media only screen and (max-width: 987px) {
+
+    .post-heading {
+        font-size: 35px;
+    }
+
+}
