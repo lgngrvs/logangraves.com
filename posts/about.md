@@ -12,7 +12,7 @@ I’m an American high school student.
 
 To quote an online friend, "I want to learn everything," though I especially like philosophy, AI, linguistics, cognitive science, computer science, and mathematics. 
 
-In no real order of importance, my hobbies include thinking, writing, reading, soccer, hanging out with friends, student government, music, geopolitics. *(Hobbies subject to change)*
+Some other things I like include thinking, writing, reading, bouldering, hanging out with friends, student government, music, and geopolitics.
 
 For info on what I'm up to right now, see [Now](https://logangraves.com/now)
 
