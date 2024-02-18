@@ -13,7 +13,7 @@ from dateutil.tz import tzoffset
 load_dotenv()
 
 app = Flask(__name__)
-app.config["TEMPLATES_AUTO_RELOAD"] = True
+app.config["TEMPLATES_AUTO_RELOAD"] = False
 
 def get_db_connection(): 
     connection = sqlite3.connect('database.db')
