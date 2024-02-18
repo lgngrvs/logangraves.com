@@ -8,7 +8,7 @@ Here's what I'm up to as of Mid-February, 2024:
 
 - **Enjoying senior year.** I finally finished my last college application essay! I'm trying to strike the right balance "doing cool stuff" with "having unproductive fun."
 
-- **Building social infrastructure.** I'm working on building new ways to connect people — two projects in particular are helping build a community around AI and Cognition for curious high school students, and figuring out how to connect people in the [FABRIC](https://fabric.camp) alumni community.
+- **Building [social infrastructure.](https://logangraves.com/social-infrastructure)** I'm working on building new ways to connect people — two projects in particular are helping build a community around AI and Cognition for curious high school students, and figuring out how to connect people in the [FABRIC](https://fabric.camp) alumni community.
 
 - **Building AI skills.** Trying to get an intuitive understanding of transformers and a couple other important architectures, so eventually (ASAP?) I can build my own stuff with them.
 

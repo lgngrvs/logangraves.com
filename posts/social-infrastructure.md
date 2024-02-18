@@ -93,7 +93,7 @@ This was, in a large part, I suspect, because the people who run the camp put a 
 
 It was also because the people there were all sparkly themselves — the camp had an effective *selection mechanism*. For PAIR, this was a multi-stage application process — they were able to select a small number of people from a large pool of interested applicants, applicants who were already self selecting based on interest in the camp's topics.
 
-Using PAIR as a case study on effective social infrastructure, that's what I've come up with. Effective social infrastructure has (1) effective selection mechanisms for deciding who to connect and (2) strong supportive cultural aspects that enable effective connection between the people who it does connect.
+Using PAIR as a case study on effective social infrastructure, this is what I've come up with: effective social infrastructure has (1) effective selection mechanisms for deciding who to connect and (2) strong supportive cultural aspects that enable effective connection between the people who it does connect.
 
 The problem is that PAIR is limited in scope. It only scales to the capacity of the people who run the camps; they run ~4 camps/year; at ~30 attendees per camp, and probably ~2000 applicants each year (maybe more, maybe less, I'm giving a well-educated guess), meaning  they're serving *less than 10%* of the people that are interested in the camps. That's without including the number of returning attendees. 
 
@@ -101,7 +101,7 @@ Also, they're limited by publicity, and applications. I'm guessing that nowhere 
 
 So for the people that get in it's *awesome.* But there are lots of bottlenecks, leaving the other >90% of people who didn't get lucky or didn't quite make the cut to fend for themselves. 
 
-I don't want to just build for the people who get in. I want to build for the people who *don't even know about these things exist*.
+I don't want to just build for the people who get in. I want to build for the people who *don't even know that these things exist*.
 
 ## V. Selection mechanisms
 
