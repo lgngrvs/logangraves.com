@@ -59,6 +59,14 @@
     text-align: center;
 }
 
+#home-profile-photo {
+    max-width: 40%; 
+    display: block; 
+    margin:0 auto; 
+    border-radius: 50%; 
+    border: 3px solid var(--color);
+}
+
 
 /*
 .background-title {
@@ -111,5 +119,9 @@
 
     #home-navigation-links > a {
         -webkit-text-stroke: 1px var(--color);
+    }
+
+    #home-profile-photo {
+        max-width: 70%; 
     }
 }

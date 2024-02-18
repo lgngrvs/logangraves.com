@@ -302,12 +302,11 @@ footer > * {
 /* MOBILE STYLES (at bottom of page in order to override)*/ 
 @media only screen and (max-width: 987px) {
     p {
-        font-size: 16px;
         line-height: 28px;
     }
 
     li {
-        font-size: 16px;
+        font-size: 22px;
         line-height: 28px;
     }
 
@@ -325,8 +324,7 @@ footer > * {
 
     h1 {
         display: block;
-        margin: auto;
-        font-size: 17px;
+        margin: 30px auto 0px;
         padding: 10px;
         max-width: 100%;
         width: fit-content;
@@ -372,6 +370,10 @@ footer > * {
 
     #footlinks a {
         line-height: 30px;
+    }
+
+    footer > * {
+        font-size: 16px;
     }
 
 }

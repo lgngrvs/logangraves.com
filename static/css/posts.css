@@ -21,7 +21,7 @@
 header {
     padding: 0px 30px 30px;
     background-image: linear-gradient(var(--gradient-top), var(--gradient-top), var(--gradient-bottom));
-    border-bottom: 2px solid var(--);
+    z-index: 1
 }
 
 #created {
@@ -31,6 +31,17 @@ header {
 
 h2 {
     margin-top: 60px;
+}
+
+h1 {
+    z-index: 1;
+}
+
+
+/* Class so that I can embed right-align text in markdown files */
+
+.right-align {
+    text-align: right;
 }
 
 /* MOBILE ONLY STYLES */

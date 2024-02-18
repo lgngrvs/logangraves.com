@@ -1,6 +1,6 @@
 # Poems
 Date: 2023-12-12
-Tags: #art
+Tags: #art #poetry
 Type: post
 Desc: Some of my favorite poems.
 
@@ -97,3 +97,118 @@ All light of art or nature; - to my song<br>
 Victory and praise in its own right belong.<br>
 
 *via AllPoetry ([website](https://allpoetry.com/Hymn-of-Apollo))*
+
+<hr>
+
+## Ode on a Grecian Urn
+*by John Keats*
+
+Thou still unravish'd bride of quietness,
+
+&emsp;Thou foster-child of silence and slow time,
+
+Sylvan historian, who canst thus express
+
+&emsp;A flowery tale more sweetly than our rhyme:
+
+What leaf-fring'd legend haunts about thy shape
+
+&emsp;Of deities or mortals, or of both,
+
+&emsp;&emsp;In Tempe or the dales of Arcady?
+
+&emsp;What men or gods are these? What maidens loth?
+
+What mad pursuit? What struggle to escape?
+
+&emsp;&emsp;What pipes and timbrels? What wild ecstasy?
+
+<br>
+
+Heard melodies are sweet, but those unheard
+
+&emsp;Are sweeter; therefore, ye soft pipes, play on;
+
+Not to the sensual ear, but, more endear'd,
+
+&emsp;Pipe to the spirit ditties of no tone:
+
+Fair youth, beneath the trees, thou canst not leave
+
+&emsp;Thy song, nor ever can those trees be bare;
+
+&emsp;&emsp;Bold Lover, never, never canst thou kiss,
+
+Though winning near the goal yet, do not grieve;
+
+&emsp;She cannot fade, though thou hast not thy bliss,
+
+&emsp;&emsp;For ever wilt thou love, and she be fair!
+
+<br>
+
+Ah, happy, happy boughs! that cannot shed
+
+&emsp;Your leaves, nor ever bid the Spring adieu;
+
+And, happy melodist, unwearied,
+
+&emsp;For ever piping songs for ever new;
+
+More happy love! more happy, happy love!
+
+&emsp;For ever warm and still to be enjoy'd,
+
+&emsp;&emsp;For ever panting, and for ever young;
+
+All breathing human passion far above,
+
+&emsp;That leaves a heart high-sorrowful and cloy'd,
+
+&emsp;&emsp;A burning forehead, and a parching tongue.
+
+<br>
+
+Who are these coming to the sacrifice?
+
+&emsp;To what green altar, O mysterious priest,
+
+Lead'st thou that heifer lowing at the skies,
+
+&emsp;And all her silken flanks with garlands drest?
+
+What little town by river or sea shore,
+
+&emsp;Or mountain-built with peaceful citadel,
+
+&emsp;&emsp;Is emptied of this folk, this pious morn?
+
+And, little town, thy streets for evermore
+
+&emsp;Will silent be; and not a soul to tell
+
+&emsp;&emsp;Why thou art desolate, can e'er return.
+
+<br>
+
+O Attic shape! Fair attitude! with brede
+
+&emsp;Of marble men and maidens overwrought,
+
+With forest branches and the trodden weed;
+
+&emsp;Thou, silent form, dost tease us out of thought
+
+As doth eternity: Cold Pastoral!
+
+&emsp;When old age shall this generation waste,
+
+&emsp;&emsp;Thou shalt remain, in midst of other woe
+
+Than ours, a friend to man, to whom thou say'st,
+
+&emsp;"Beauty is truth, truth beauty,—that is all
+
+&emsp;&emsp;Ye know on earth, and all ye need to know."
+
+*via [Poetry Foundation](https://www.poetryfoundation.org/poems/44477/ode-on-a-grecian-urn)*
