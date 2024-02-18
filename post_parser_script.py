@@ -30,7 +30,7 @@ for filename in list_of_file_names:
     desc = Markup.escape(markdown.markdown(whole_post_list[4][6:]))
     print(desc)
     content = Markup.escape(markdown.markdown(whole_post_list[5]))
-    slug = slugify(whole_post_list[0][2:])
+    slug = slugify(filename)[6:][:-3]
     wordcount = len(whole_post_list[5].split(" "))
 
     # print(title, slug, date, tags, content_type, content, wordcount, sep=" || ")
