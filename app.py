@@ -227,6 +227,10 @@ posts = get_all()
     # print(posts)
 """
 
+@app.route('/contact')
+def contact():
+    return redirect("https://logangraves.com/about", code=302)
+
 @app.route("/rss.xml")
 def rss():
     feed = FeedGenerator()

@@ -21,5 +21,6 @@ For info on what I'm up to right now, see [Now](https://logangraves.com/now)
 ## Reach out
 - Email `me at logangraves dot com`
 - Wire me `@lgngrvs`
-- DM me on Discord at `lgngrvs#9505`
+- DM me on Discord at `lgngrvs`
+- Schedule a 1-on-1 on my [Cal.com](https://cal.com/logangraves)
 - More contact/identities info available [here](https://logangraves.com/identities)
