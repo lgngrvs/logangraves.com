@@ -23,6 +23,14 @@ Desc: Things we could talk about :)
 - Does it matter how the author *intended* you to interpret a work of art? Are all interpretations valid, even politically inconvenient ones?
 - Jorge Luis Borges  :) 
 
+**Music**
+- Meaning in music: is it different from language? 
+- *Meaningless* music, emotionally evocative without an intended concrete meaning (e.g. Ravel's *Pavane*)
+- *Gaspard de la Nuit* (I am so down bad for Ravel) 
+- Love and harmony (*Liebenstraum*)
+- The deconstruction of music as an art form; music that makes you suffer (e.g. 100 gecs *xXXi_wud_nvrstøp_ÜXXx*)
+- Melodic metal, the aesthetics of screaming lol (Loathe, *Screaming*)
+
 **Myths and anthropology**
 
 - Religion as a pre-packaged sense of meaning for everyone (inc. community, self-transcendance/meaning, ritual, epistemic grounding, tradition/culture)
