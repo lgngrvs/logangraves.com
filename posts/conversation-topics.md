@@ -1,7 +1,7 @@
 # Conversation topics
 Date: 2023-12-08
-Tags: 
-Type: page
+Tags: #meta #philosophy #ai
+Type: post
 Desc: Things we could talk about :)
 
 
