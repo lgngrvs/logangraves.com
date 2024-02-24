@@ -1,5 +1,5 @@
 # Conversation topics
-Date: 2023-12-08
+Date: 2024-02-24
 Tags: #meta #philosophy #ai
 Type: post
 Desc: Things we could talk about :)
