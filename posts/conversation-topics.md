@@ -12,37 +12,37 @@ Desc: Things we could talk about :)
 - Can you systematize ethics
 - Thoughts on analytic philosophy vs. continental philosophy 
 - What is the point of philosophy?
-- People i can probably talk about, in sort of descending order of competence: wittgenstein, sartre, de beauvoir, camus, rorty, kant, plato, nietzsche, maybe russell, maybe aristotle and a little aquinas
-- Are aesthetics and morality the same thing (i think so) 
+- People I can probably talk about, in sort of descending order of competence: Wittgenstein, Sartre, de Beauvoir, Camus, Rorty, Kant, Plato, Nietzsche, maybe Russell, maybe Aristotle and a little Aquinas
+- Are aesthetics and morality the same thing (I think so) 
 
 **Literature**
 
 - Why do we read literature? (literature being some sort of writing that is valued for more than just entertainment/fluff)
-- Why do we write literature? is it related to why we read it, or is it a distinct motivation? what implications might that have for consuming literature? 
-- Wtf is going on with finnegans wake. he can't be just trolling right? right???
-- Does it matter how the author *intended* you to interpret a work of art? are all interpretations valid, even politically inconvenient ones?
+- Why do we write literature? is it related to why we read it, or is it a distinct motivation? What implications might that have for consuming literature? 
+- Wtf is going on with Finnegans Wake... he can't be just trolling right? right???
+- Does it matter how the author *intended* you to interpret a work of art? Are all interpretations valid, even politically inconvenient ones?
 - Jorge Luis Borges  :) 
 
 **Myths and anthropology**
 
-- Religion as a pre-packaged sense of meaning for everyone
-- Religion as a memetically-evolved pre-packaged sense of meaning for everyone
-- Co-opting or respecting religious aesthetics: is "holiness" worthy of respect? is it worthy of subversion? 
-- Pantheons and stories: greek, roman, egyptian, aztec, inca, scandinavian, indian, chinese, etc.
+- Religion as a pre-packaged sense of meaning for everyone (inc. community, self-transcendance/meaning, ritual, epistemic grounding, tradition/culture)
+- Religion as a *memetically-evolved* pre-packaged sense of meaning for everyone
+- Co-opting or respecting religious aesthetics: is "holiness" worthy of respect? Is it worthy of subversion? 
+- Pantheons and stories: Greek, Roman, Egyptian, Aztec, Inca, Scandinavian, Indian, Chinese, etc.
 - Thoughts on ritual as a good in itself
 
 **AI+Alignment**
 
 - What is intelligence
-- What does "aligned ai" even look like? ai with common sense? a benevolent god? 
-- Alignment policy: how do we balance safe development of ai with risk of state monopolies on ai? 
-- Is "objective morality" just an effective coordination mechanism between agents? is supermoral ai a meaningful idea ([banger](https://www.lesswrong.com/posts/umJMCaxosXWEDfS66/moral-reality-check-a-short-story))
+- What does "aligned ai" even look like? AI with common sense? A benevolent god? 
+- Alignment policy: how do we balance safe development of AI with risk of state monopolies on ai? 
+- Is "objective morality" just an effective coordination mechanism between agents? Is supermoral AI a meaningful idea ([banger](https://www.lesswrong.com/posts/umJMCaxosXWEDfS66/moral-reality-check-a-short-story))
 
 **AI-Human Analogs**
 
 - Why are LLM prompting techniques useful on humans
 - Do inner and outer alignment have corresponding analogs in humans? (human alignment theory) 
-- What is your value function? what is my value function? is it some weird multidimensional piecewise function? don't tell me it's a continuous high-dimensional surface
+- What is your value function? What is my value function? Is it some weird multidimensional piecewise function? Don't tell me it's a continuous high-dimensional surface
 
 **Language**
 
@@ -61,26 +61,27 @@ Desc: Things we could talk about :)
 - What does "I" refer to
 - Where does the self reside, if it resides anywhere?
 - What is love/what are the constituent things bundled into "love"? is it really just evolutionary chemical soup? 
-- What does it mean to be "rationalist"? is that even a good thing to pursue?
-- Experiences with psychedelics -- i   unfortunately do not have any, so you'd have to tell me about urs :P
+- What does it mean to be "rationalist"? Is that even a desirable thing to pursue?
+- Experiences with psychedelics -- I unfortunately do not have any, so you'd have to tell me about yours :P
 
 **Math and stuff**
-
-- Gödel and Tarski
+- Cantor (set theory, diagonalization!!)
+- Whitehead and Russell (type theory, *Principia Mathematica*, the urge to find real foundations)
+- Gödel and Tarski (Incompleteness and indefinability in strong formal systems)
 - Category theory
 - What even is math? The study of abstract structures?
 
-**Programming**
+**Computer Science**
 
-- What do you actually use functional programming for i don't get it and am stubbornly unwilling to actually take time to figure it out
+- What do you actually use functional programming for I don't get it and am stubbornly unwilling to actually take time to figure it out
 - How do you get complex computers from electrical circuits? this isn't even, like, emergent behavior it's just crazy levels of abstraction
-- Are computers basically magic? do we live in an era of magic
-- Turing machines, computability theory, lambda calculus (I know of but not really *about* these things; why are they useful?) 
+- Are computers basically magic? Do we live in an era of magic (yeah)
+- Church and Turing (Computability, Lambda calculus, Church-Turing thesis, Halting problem)
 
-**maybe technical stuff; I'm still skilling up but**
+**Maybe technical stuff; I'm still skilling up but**
 
 - Thoughts on, idk, transformers vs. mamba? better architectures? are there systematic judgments about what makes better architectures or are we just flailing around
-- Building RAGs (I mention this because I want to build my own)
+- Building RAGs (I mention this because I want to build my own, even though context windows are getting big enough that they probably will be pointless pretty soon)
 
 **(Geo)politics**
 
@@ -100,8 +101,8 @@ Desc: Things we could talk about :)
 - What is "culture" (in a community, in a society)
 - Interesting projects we/I/you could build
 - Personal knowledge management
-- Integrating llms into life effectively
+- Integrating LLMs into life effectively
 - Semiotics?
 - Antimemetics????
 
-(incomplete list obviously) 
+(this is an incomplete list obviously and it will be continually expanded) 
