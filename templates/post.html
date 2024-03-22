@@ -5,10 +5,11 @@
   <article>
     <header>
       <h1 class="post-heading">{{ post["title"] }}</h1>
-      <p id="post-subheading" style="font-family: var(--sans-font)">{{ post["description"] | safe }}</p>
-      <p id='created'>First Published: {{ post["timestamp"] }}</p>
+      <span id="post-subheading"><i>{{ post["description"] | safe }}</i></span>
+      <p id='created'>{{ post["timestamp"] }}</p>
       <h5>Tags: {{ post["tags"].replace(",", ", ") }} • {{ post["wordcount"] }} words</h5>
     </header>
   {{ post["content"] | safe }}
   </article>
+  <p style="text-align:center;"><a id="home-footer-link" href="/">Home</a></p>
 {% endblock %}

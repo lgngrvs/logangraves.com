@@ -2,18 +2,25 @@
     /*
     --background-color: #d9e4ec;
     --color: #385e72;*/
-    --serif-font: 'Garamond', serif;
+
+    --serif-font: 'Spectral', serif;
     --sans-font: 'Helmet Neue', 'Helvetica', sans-serif;
-    --mono-font: 'Space Mono', 'Courier', monospace;
+    --mono-font: 'Helmet', 'Courier', monospace;
     --nav-font: 'Helmet', 'Helvetica', sans-serif;
-    --header-font: 'Helmet', 'Helvetica', sans-serif;
+    --header-font: 'Spectral';
 
     /* Light Mode Theme:*/
+
+    --nice-div-color: rgb(249, 247, 246);
+    --bullet-color: rgb(184, 184, 184);
+    
+    --link-background-color: rgba(221, 188, 187, 0.376);
+    --link-color: rgb(227, 86, 82);
+    --link-underline-color: rgba(227, 87, 82, 0.544);
+
     --background-color: white;
     --border-background-color: #e0e0e0;
-    --code-background-color: #efefef;
-    --link-background-color: gainsboro;
-    --link-underline-color: lightgray;
+    --code-background-color: rgb(245,245,245);
     --color: black;
     --hr-color: black;
     --gradient-bottom: #f0f0f0;
@@ -40,12 +47,15 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --nice-div-color: rgb(30, 30, 30);
+        --bullet-color: rgb(90,90,90);
+
         --background-color: #121212;
         --border-background-color: #3b3d3e;
         --code-background-color: #242424;
         --link-background-color: #6b6b6b; 
         --link-underline-color: #5e5e5e;
-        --color: #e7e6e5;
+        --color: rgb(200,200,200);
         --hr-color: dimgray;
         --gradient-bottom: #1e1e1e;
         --gradient-top: var(--background-color);

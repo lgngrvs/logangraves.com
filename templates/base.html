@@ -10,27 +10,10 @@
   <link rel="shortcut icon" type="image/jpg" sizes="128x128" href="/static/favicon.png">
 </head>
 <body>
-    <nav class="desktop-only">
-      <div id="space"> </div>
-      <div id="navlinks"><div></div><a href='/'> HOME </a><a href='/about'> ABOUT </a><a href='/now'> NOW </a><a href='/identities'> IDENTITIES </a><a href='/index'> INDEX </a></div>
-      <form action="{{ url_for('search') }}" method="GET">
-        <input type="text" placeholder="Search..." name="q"> <!--button type="submit">Go</button-->
-      </form>
-    </nav>
-    <div id="page-wrap">
-      <div id="content-wrap">
-        {% block content %}  {% endblock %}
-      </div>
-      <footer>
-        <p><span class='reversed-text'>©</span> Logan Graves 2023 (all rights reversed?)</p> 
-        <div id="footlinks"><a href='/'>Home</a><a href='/about'>About</a> <a href='/now'> Now</a><a href='/identities'>Identities</a><a href='/index'>Index</a><a href='/rss.xml'>RSS</a></div>
-        <br>
-        <div id="src-link"> <a href="https://github.com/lgngrvs/logangraves.com">source</a></div>
-        <form action="{{ url_for('search') }}" method="GET" class="mobile-only">
-          <input type="text" placeholder="search..." name="q"> <button type="submit">Go</button>
-        </form>
-        <br>
-        <a rel="me" href="https://fosstodon.org/@lgngrvs"></a>
-      </footer>
+  <div id="nice-looking-color-div"></div>
+  <div id="page-wrap">
+    <div id="content-wrap">
+      {% block content %}  {% endblock %}
     </div>
+  </div>
 </body>

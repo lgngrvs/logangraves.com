@@ -24,6 +24,7 @@ Desc: Things we could talk about :)
 - Jorge Luis Borges  :) 
 
 **Music**
+
 - Meaning in music: is it different from language? 
 - *Meaningless* music, emotionally evocative without an intended concrete meaning (e.g. Ravel's *Pavane*)
 - *Gaspard de la Nuit* (I am so down bad for Ravel) 

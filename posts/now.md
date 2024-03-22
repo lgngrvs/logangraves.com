@@ -10,7 +10,9 @@ Here's what I'm up to as of Mid-February, 2024:
 
 - **Building [social infrastructure.](https://logangraves.com/social-infrastructure)** I'm working on building new ways to connect people — two projects in particular are helping build a community around AI and Cognition for curious high school students, and figuring out how to connect people in the [FABRIC](https://fabric.camp) alumni community.
 
+
 - **Building AI skills.** Trying to get an intuitive understanding of transformers and a couple other important architectures, so eventually (ASAP?) I can build my own stuff with them.
+
 
 - **Automating executive function.** I'm trying to build a system to augment (or, if you please, partially outsource) my executive function. One of the things I struggle with is "capturing free agency," i.e. making progress on non-mandatory but interesting projects, so I'm trying to create an automated workflow back-and-forth between my task manager, LLMs, and my obsidian knowledge base. 
 	- Ideally this'll eventually become the foundation for a broader "[synthetic neocortex running on localhost](https://x.com/speer_ai/status/1757494324806259074?s=20)" kind of setup — but I don't want to waste energy building something that might not even work for me.
