@@ -210,6 +210,10 @@ a:not(#home-footer-link):hover {
         font-size: 12pt;
     }
 
+    #content-wrap {
+        padding: 5% 8% 0 8%;
+    }
+
     h5 {
         text-align: center;
         margin-bottom: 15px;
