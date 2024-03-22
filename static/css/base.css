@@ -205,11 +205,7 @@ a:not(#home-footer-link):hover {
     .mobile-only {
         display: inherit;
     }
-
-    body {
-        font-size: 12pt;
-    }
-
+    
     #content-wrap {
         padding: 5% 8% 0 8%;
     }
