@@ -74,6 +74,7 @@ Desc: Things we could talk about :)
 - Experiences with psychedelics -- I unfortunately do not have any, so you'd have to tell me about yours :P
 
 **Math and stuff**
+
 - Cantor (set theory, diagonalization!!)
 - Whitehead and Russell (type theory, *Principia Mathematica*, the urge to find real foundations)
 - Gödel and Tarski (Incompleteness and indefinability in strong formal systems)
