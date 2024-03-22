@@ -4,7 +4,7 @@ Tags:
 Type: page
 Desc:
 
-Hi! I'm logan, an American high school student.
+Hi! I'm Logan, an American high school student.
 
 To quote an online friend, "I want to learn everything," though I especially like philosophy, AI, linguistics, cognitive science, computer science, and mathematics. 
 
