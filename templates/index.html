@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Index • Logan Graves{% endblock %}
 {% block content %} 
-    <h1 style="max-width: 600px; margin-bottom: 10px;">Index</h1>
+    <h1>Index</h1>
     <!--blockquote class="blockquote-noitalics">
         <h2> Sitemap </h2>
         <p><b>Blog Pages</b></p>
@@ -34,12 +34,12 @@
     <br class="desktop-only"><br class="desktop-only">
     {% for post in posts %}
         <div class='post'>
-            <h5 class="index-tags">{{ post["timestamp"] }} • Tags: {{ post['tags'] }}</p>
-            <h2 class="post-title-link"><a style="font-family:'Spectral'"href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
+            <h5 class="index-tags">{{ post["timestamp"] }}</p>
+            <h2 class="post-title-link"><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
             <!--p id="index-post-link"><i>https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</i></p--> 
             <!--p>{{ post['content'][:100] | safe }}...</strong></i></em></em></code></p-->
             <p>{{ post['description'] | safe }}</p>
-            <p><a href="{{ url_for('show_post_slug', slug=post['slug']) }}" class="big-button" style="font-size: 18px; height: fit-content;">Read more</a></p>
+            <i><h5>{{ post['tags'] }}</h5></i>
         </div>
         <br>
         <!--hr class="post-hr"-->
