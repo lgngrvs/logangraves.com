@@ -9,6 +9,7 @@ Hi! I recently redesigned the site, and am working on some more fundamental/abst
 ## What's new
 
 I: 
+
 - changed the font to just one font (spectral) at different weights, (except for code blocks)
 - changed the alignment
 - removed the nav bar and search box
