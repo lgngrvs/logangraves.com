@@ -130,7 +130,7 @@ li {
     margin-bottom: 0.5em;
 }
 
-a:not(#home-footer-link) {
+a {
     font-variant: small-caps;
     font-weight: 400;
     text-transform: capitalize;
@@ -143,13 +143,18 @@ a:not(#home-footer-link) {
     transition: all 0.3s;
 }
 
-a:not(#home-footer-link):hover {
+a:hover {
     cursor: pointer;
     border-bottom: 0.1em solid var(--link-underline-color);
     color: var(--link-underline-color);
 }
 
 #home-footer-link {
+    font-variant: normal;
+    font-weight: 300;
+
+    border: none;    
+
     color: var(--link-background-color);
     text-decoration: none;
     transition: all 0.3s;
@@ -159,6 +164,8 @@ a:not(#home-footer-link):hover {
     color: var(--link-underline-color);
     text-decoration: none;
     transition: all 0.3s;
+
+    cursor: pointer;
 }
 
 
@@ -173,11 +180,20 @@ a:not(#home-footer-link):hover {
     margin: auto
 }
 
-.post-title-link {
+.post-title {
     text-transform: capitalize;
     font-size: 30px;
     line-height: 40px;
 }
+
+.post-title-link {
+    border-bottom: 0px;
+}
+
+.post-title-link:hover {
+    border-bottom: 0px;
+}
+
 
 .index-tags {
     text-transform: none;
