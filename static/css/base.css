@@ -180,6 +180,11 @@ a:hover {
     margin: auto
 }
 
+.post > div {
+    display:flex; 
+    flex:1;
+}
+
 .post-title {
     text-transform: capitalize;
     font-size: 30px;
