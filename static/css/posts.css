@@ -6,7 +6,7 @@
 
 .post-heading {
     text-align: center; 
-    font-size: 40px;
+    font-size: 2.1em;
     max-width: 600px; 
     margin-bottom: 10px; 
     padding-top: 60px;
@@ -34,6 +34,11 @@ h2 {
     margin-top: 60px;
 }
 
+#post-img {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 0.3em;
+}
 
 
 /* Class so that I can embed right-align text in markdown files */
@@ -42,9 +47,63 @@ h2 {
     text-align: right;
 }
 
+
+article > p:first-of-type::first-letter {
+    /*color: var(--bullet-color);*/
+    font-size: 3em;
+    line-height: 80%;
+    float: left;
+    font-weight: 300;
+    padding: 5px;
+}
+
+article > p:first-of-type::first-line {
+    font-variant: small-caps;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
 /* MOBILE ONLY STYLES */
 
 @media only screen and (max-width: 987px) {
 
+    header {
+        background:none;
+        padding-top: 0em;
+        padding-bottom: 0em;
+        padding-left: 5px;
+    }
+
+    .post-heading {
+        font-size: 1.63em;
+        text-align: left;
+        padding-top: 0em; 
+        margin: 0em;
+    }
+
+    header > h5 {
+        text-align: left; 
+        margin-top: 0.5em;
+    }
+
+    
+
+    #post-img {
+        min-height: 16em;
+        object-fit: cover;
+        border-radius: 6px;
+
+    }
+
+    #post-subheading {
+        display:none;
+    }
+
+    #created {
+        margin: 0em;
+        text-align: left;
+        font-style: italic;
+        color: var(--bullet-color)
+    }
 
 }

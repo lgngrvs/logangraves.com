@@ -6,10 +6,16 @@
     <header>
       <h1 class="post-heading">{{ post["title"] }}</h1>
       <span id="post-subheading"><i>{{ post["description"] | safe }}</i></span>
-      <p id='created'>{{ post["timestamp"] }}</p>
-      <h5>Tags: {{ post["tags"].replace(",", ", ") }} • {{ post["wordcount"] }} words</h5>
+      <p id='created' class="desktop-only">{{ post["timestamp"] }}</p>
+      <h5><span class="post-tags">{{ post["tags"].replace(",", ", ") }} • </span>{{ post["wordcount"] }} words</h5>
     </header>
+  <br class="desktop-only">
+  <br class="desktop-only">
+  <img id="post-img" src="static/images/{{ post['slug'] }}.png">
+  <br class="desktop-only">
+  <br class="desktop-only">
   {{ post["content"] | safe }}
+  <p id='created' class="mobile-only">Published {{ post["timestamp"] }}</p>
   </article>
   <p style="text-align:center;"><a id="home-footer-link" href="/">Home</a></p>
 {% endblock %}
