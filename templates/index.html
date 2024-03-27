@@ -33,13 +33,18 @@
 
     <br class="desktop-only"><br class="desktop-only">
     {% for post in posts %}
-        <div class='post'>
-            <div class="post-img-container">
-                <img source="/static/images/garden.png"
-            </div>
-            <div class="post-text-container">
+        <style>
+            #content-wrap {
+                padding: 0px;
+            }
+        </style>
+        <div class='index-post'>
+                <div class="index-post-img-container">
+                    <img class="index-post-img" src="static/images/{{ post['slug'] }}.png">
+                </div>
+                <div class="index-post-text-container">
                 <h5 class="index-tags">{{ post["timestamp"] }}</p>
-                <h2 class="post-title"><a class="post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
+                <h2 class="index-post-title"><a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
                 <!--p id="index-post-link"><i>https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</i></p--> 
                 <!--p>{{ post['content'][:100] | safe }}...</strong></i></em></em></code></p-->
                 <p>{{ post['description'] | safe }}</p>

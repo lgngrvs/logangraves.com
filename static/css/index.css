@@ -1,0 +1,75 @@
+
+/* ========== INDEX.HTML STYLES ========== */
+
+.index-post {
+    border-bottom: 2px solid var(--nice-div-color);
+    padding: 20px 35px;
+    max-width: 70%;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+.index-post-img-container {
+    flex: 1;
+    overflow: hidden;
+}
+
+.index-post-img {
+    height: 100%;
+    width: 100%;
+    transform: scale(2); 
+    object-fit: cover;
+    /*display:inline-block;*/
+}
+
+.index-post-text-container {
+    flex:1;
+    padding: 1em 2em;
+}
+
+.index-post-title {
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.index-post-title-link {
+    border-bottom: 0px;
+}
+
+.index-post-title-link:hover {
+    border-bottom: 0px;
+}
+
+
+.index-tags {
+    text-transform: none;
+}
+
+#index-post-link {
+    display: inline-block;
+}
+
+.spacing {
+    height: 100px;
+}
+
+.post h5 {
+    margin-top: 0.2em;
+}
+
+
+/* MOBILE STYLES (at bottom of page in order to override)*/ 
+@media only screen and (max-width: 987px) {
+    
+    .index-post {
+        max-width: calc(100vw - 72px);
+        overflow-wrap: break-word;
+    }
+
+    #index-post-link {
+        display: none;
+    }
+
+}

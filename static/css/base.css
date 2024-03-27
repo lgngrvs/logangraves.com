@@ -18,7 +18,7 @@
     src: url('/static/fonts/Helmet-Regular.ttf') format("truetype");
 }
 
-/* General body styles */
+/* ========== General Body/Content Wrapper styles ==========*/
 
 body {
     font-family: var(--serif-font);
@@ -29,7 +29,6 @@ body {
 }
 
 
-
 .mobile-only {
     display: none;
 }
@@ -37,8 +36,6 @@ body {
 #content-wrap {
     padding: 5% 20% 0 20%;
 }
-
-/* adds that nice gray bar on the side */
 
 #nice-looking-color-div {
     position: fixed; 
@@ -54,7 +51,8 @@ body {
     margin: 0px 0px 0px 40px;
 }
 
-/* Page Element Styles (headers, links, buttons, blockquotes, etc.) */
+/* ========== Text Element Styles ========== */
+/*     e.g. headers, bold text, and links    */
 
 h1, h2, h3, h4, h5 {
     font-family: var(--header-font);
@@ -73,6 +71,31 @@ h5 {
 strong {
     font-weight: 600;
 }
+
+
+a {
+    font-variant: small-caps;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    color: var(--link-color); 
+    border-bottom: 0.1em solid var(--link-color);    
+
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:hover {
+    cursor: pointer;
+    border-bottom: 0.1em solid var(--link-underline-color);
+    color: var(--link-underline-color);
+}
+
+
+/*  ========== Page Element Styles ==========  */
+/*  E.g. blockquotes, code, preformatted text, */
+/*                 and lists.                  */
 
 blockquote {
     font-style: italic;
@@ -130,24 +153,7 @@ li {
     margin-bottom: 0.5em;
 }
 
-a {
-    font-variant: small-caps;
-    font-weight: 400;
-    text-transform: capitalize;
-    text-decoration: none;
-
-    color: var(--link-color); 
-    border-bottom: 0.1em solid var(--link-color);    
-
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-a:hover {
-    cursor: pointer;
-    border-bottom: 0.1em solid var(--link-underline-color);
-    color: var(--link-underline-color);
-}
+/* ========== The "back to home" button. ========== */
 
 #home-footer-link {
     font-variant: normal;
@@ -167,55 +173,6 @@ a:hover {
 
     cursor: pointer;
 }
-
-
-
-/* Index.html Styles */
-
-.post {
-    border-bottom: 2px solid var(--nice-div-color);
-    padding: 20px 35px;
-    max-width: 70%;
-    display: block;
-    margin: auto
-}
-
-.post > div {
-    display:flex; 
-    flex:1;
-}
-
-.post-title {
-    text-transform: capitalize;
-    font-size: 30px;
-    line-height: 40px;
-}
-
-.post-title-link {
-    border-bottom: 0px;
-}
-
-.post-title-link:hover {
-    border-bottom: 0px;
-}
-
-
-.index-tags {
-    text-transform: none;
-}
-
-#index-post-link {
-    display: inline-block;
-}
-
-.spacing {
-    height: 100px;
-}
-
-.post h5 {
-    margin-top: 0.2em;
-}
-
 
 /* MOBILE STYLES (at bottom of page in order to override)*/ 
 @media only screen and (max-width: 987px) {
