@@ -47,3 +47,7 @@ tested PUT and DELETE requests to make sure that the server won't accept them. (
 
 2023-07-04 
 STOP FORGETTING TO TURN OFF DEBUG MODE -- IF YOU HAVE AN ISSUE WHERE POSTS ARE LOADING TWICE IT'S BECAUSE OF THAT! In other news, past couple of days I updated the site a bit -- added a source link at the bottom of the website and removed the search bar from the footer cause I don't think it was needed. also, i added a post for my prompts library.
+
+2024-03-27
+work time: 10 hours? since the past couple weeks at least
+Haven't written here in a while. Made a bunch of updates to my site recently. Trying to update more. Est. work time: 10 hours?
