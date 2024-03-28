@@ -17,7 +17,8 @@
 
 header {
     padding: 0px 30px 30px;
-    background-image: linear-gradient(var(--gradient-top), var(--gradient-top), var(--gradient-bottom));
+    /*background-image: linear-gradient(var(--gradient-top), var(--gradient-top), var(--gradient-bottom));
+    */
     z-index: 1
 }
 
