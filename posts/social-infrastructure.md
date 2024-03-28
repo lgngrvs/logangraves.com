@@ -4,9 +4,10 @@ Tags: #building
 Type: post
 Desc: On building connections, filtering problems, and sparkly people.
 
+I use *social infrastructure* to refer to a process or institution that connects people in ways they otherwise wouldn't be connected. It's jargon that hopefully makes intuitive sense, but it's important enough of an idea to me that I think it's worth giving a much deeper account of what I mean by it, and what I think of the concept.
+
 ## TL;DR
 
-- I use *social infrastructure* to mean a process or institution that connects people in ways they otherwise wouldn't be connected.
 - Finding people, at scale, with specific personal characteristics is really difficult, because quantifiable measures (like test scores) are *very* imperfect proxies. 
 - In particular, I'm talking about what I call "sparkliness:" roughly, the mix of intelligence, curiosity, and agency. Lots of sparkly people exist, and lots more people would become sparkly given an environment that nurtured it, but there's a surprising lack of infrastructure to connect them.
 - Building social infrastructure is how I've seen this problem solved before on a small scale (at summer programs like [FABRIC](https://fabric.camp) and other small communities).

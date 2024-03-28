@@ -4,8 +4,11 @@ Tags: #meta #philosophy #ai
 Type: post
 Desc: Things we could talk about :)
 
+The most interesting conversation topic to me is "what's your story" — what's your life like? How'd you end up in *[x place I met you]*, what do you think about the future and your place in it? 
 
-- *Most important to me: "what's your story" (i.e. like what's your life like, how'd you end up in [x place I met you], what do u think about the future and your place in it)* 
+I'm trying to do a better job of avoiding the tendency to outsource my identity to things external to me, like knowledge or awards. Common interests are great places to start, but I think the person behind them — that person's unique mix of influences and experiences, heuristics, etc. — are what makes the conversation importantly distinct from, say, a speech-to-text conversation with an LLM.
+
+Well, anyway. 
 
 **Philosophy**
 
