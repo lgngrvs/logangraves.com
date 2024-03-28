@@ -28,17 +28,20 @@
 }
 
 .index-post-text-container {
-    flex:2;
+    flex:3;
     padding: 1em 2em;
 }
 
 .index-post-title {
-    text-transform: capitalize;
+    text-transform: normal;
     font-size: 30px;
     line-height: 40px;
 }
 
 .index-post-title-link {
+    font-variant: normal;
+    font-weight:300;
+    color: var(--color);
     border-bottom: none;
 }
 
@@ -80,9 +83,8 @@
     }
 
     .index-post-title-link {
-        font-variant:normal;
         border-bottom: 0.1em solid var(--link-background-color);
-    }    
+    }
     
     .index-post-title-link:hover {
         color: var(--link-underline-color);
