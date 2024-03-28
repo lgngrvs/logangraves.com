@@ -15,7 +15,7 @@
 }
 
 .index-post-img-container {
-    flex: 2;
+    flex: 1;
     overflow: hidden;
 }
 
@@ -125,7 +125,7 @@
         flex:1;
     }
     .index-post-img {
-        max-height: 80%;
+        max-height: 60%
     }
 
 }
