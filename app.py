@@ -10,10 +10,15 @@ from feedgen.feed import FeedGenerator
 from flask import make_response
 from datetime import datetime
 from dateutil.tz import tzoffset
+import os
 load_dotenv()
 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = False
+
+@app.context_processor
+def utility_processor():
+    return dict(file_exists=file_exists)
 
 def get_db_connection(): 
     connection = sqlite3.connect('database.db')
@@ -41,6 +46,8 @@ def get_only_pages():
     connection.close()
     return pages_only
 
+def file_exists(path):
+    return os.path.exists(path)
 
 @app.route("/")
 def home(): 

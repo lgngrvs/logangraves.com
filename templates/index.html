@@ -34,7 +34,8 @@
     <br class="desktop-only"><br class="desktop-only">
     {% for post in posts %}
         <div class='index-post'>
-                {% if file_exists("static/images/{{ post['slug'] }}.png") %}
+                {% set path = "static/images/" + post['slug'] + ".png" %}
+                {% if file_exists(path) %}
                 <div class="index-post-img-container">
                     <img class="index-post-img" src="static/images/{{ post['slug'] }}.png">
                 </div>
