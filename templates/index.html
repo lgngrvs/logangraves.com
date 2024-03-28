@@ -34,16 +34,15 @@
     <br class="desktop-only"><br class="desktop-only">
     {% for post in posts %}
         <div class='index-post'>
-            {# set path = "static/images/" + post['slug'] + ".png" #}
+            {% set path = "static/images/" + post['slug'] + ".webp" %}
             
-            {# if file_exists(path) #}
-                <!--div class="index-post-img-container">
-                    <img class="index-post-img" src="static/images/{{ post['slug'] }}.png">
-                </div-->
-            {# else #}
-                <!--div style="flex:1; background-color:var(--nice-div-color)"></div-->
-            {# endif #}
-            <div style="flex:1; background-color:var(--nice-div-color)"></div>
+            {% if file_exists(path) %}
+                <div class="index-post-img-container">
+                    <img class="index-post-img" src="static/images/{{ post['slug'] }}.webp">
+                </div>
+            {% else %}
+                <div style="flex:1; background-color:var(--nice-div-color)"></div>
+            {% endif %}
             <div class="index-post-text-container">
                 <h5 class="index-date">{{ post["timestamp"] }}</p>
                 <h2 class="index-post-title"><a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>

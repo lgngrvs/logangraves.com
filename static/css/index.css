@@ -22,7 +22,6 @@
 .index-post-img {
     height: 100%;
     width: 100%;
-    transform: scale(2); 
     object-fit: cover;
     /*display:inline-block;*/
 }
@@ -126,8 +125,4 @@
     .index-post-img-container {
         flex:1;
     }
-    .index-post-img {
-        max-height: 60%
-    }
-
 }

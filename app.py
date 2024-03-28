@@ -59,7 +59,9 @@ def index():
     posts_only = list(get_only_posts())
     pages_only = list(get_only_pages())
 
-    print("Posts include: " + str(posts_only))
+    print("Posts include: ")
+    for post in posts_only:
+        print(post['title'])
     def get_timestamp(element):
         return(element[1])
     posts_only.sort(reverse=True, key=get_timestamp)
