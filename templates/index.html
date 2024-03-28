@@ -34,23 +34,28 @@
     <br class="desktop-only"><br class="desktop-only">
     {% for post in posts %}
         <div class='index-post'>
-                {% set path = "static/images/" + post['slug'] + ".png" %}
-                {% if file_exists(path) %}
+            {% set path = "static/images/" + post['slug'] + ".png" %}
+            {% if file_exists(path) %}
                 <div class="index-post-img-container">
                     <img class="index-post-img" src="static/images/{{ post['slug'] }}.png">
                 </div>
-                {% endif %}
-                <div class="index-post-text-container">
-                <h5 class="index-tags">{{ post["timestamp"] }}</p>
+            {% else %}
+                <div style="flex:1; background-color:var(--nice-div-color)"></div>
+            {% endif %}
+            <div class="index-post-text-container">
+                <h5 class="index-date">{{ post["timestamp"] }}</p>
                 <h2 class="index-post-title"><a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
                 <!--p id="index-post-link"><i>https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</i></p--> 
                 <!--p>{{ post['content'][:100] | safe }}...</strong></i></em></em></code></p-->
-                <p>{{ post['description'] | safe }}</p>
-                <i><h5>{{ post['tags'] }}</h5></i>
+                <div class="index-post-description">{{ post['description'] | safe }}</div>
+                <i><h5 class="index-tags">{{ post['tags'] }}</h5></i>
             </div>
+            {% if not(file_exists(path)) %}
+                <div class="desktop-only" style="flex:1;"></div>
+            {% endif %}
         </div>
         <br>
         <!--hr class="post-hr"-->
     {% endfor %}
-    
+    <p style="text-align:center;"><a id="home-footer-link" href="/">< Home</a></p>
 {% endblock %}

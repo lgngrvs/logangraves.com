@@ -10,10 +10,13 @@
       <h5><span id="post-tags">{{ post["tags"].replace(",", ", ") }} • </span>{{ post["wordcount"] }} words</h5>
     </header>
   <br class="desktop-only">
-  <br class="desktop-only">
-  <img id="post-img" src="static/images/{{ post['slug'] }}.png">
-  <br class="desktop-only">
-  <br class="desktop-only">
+  {% set post_image = "static/images/" + post['slug'] + ".png" %}
+  {% if file_exists(post_image) %}
+    <br class="desktop-only">
+    <img id="post-img" src="static/images/{{ post['slug'] }}.png">
+    <br class="desktop-only">
+    <br class="desktop-only">
+  {% endif %}
   {{ post["content"] | safe }}
   <p id='created' class="mobile-only">Published {{ post["timestamp"] }}</p>
   </article>
