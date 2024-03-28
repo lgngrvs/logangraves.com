@@ -54,7 +54,9 @@ article > p:first-of-type::first-letter {
     line-height: 80%;
     float: left;
     font-weight: 300;
-    padding: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    position: relative;
 }
 
 article > p:first-of-type::first-line {
@@ -86,17 +88,19 @@ article > p:first-of-type::first-line {
         margin-top: 0.5em;
     }
 
-    
 
     #post-img {
         min-height: 16em;
         object-fit: cover;
         border-radius: 6px;
-
     }
 
     #post-subheading {
         display:none;
+    }
+
+    #post-tags {
+        display: none;
     }
 
     #created {

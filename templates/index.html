@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Index • Logan Graves{% endblock %}
 {% block content %} 
+    <link rel="stylesheet" href="/static/css/index.css" type="text/css">
     <h1>Index</h1>
     <!--blockquote class="blockquote-noitalics">
         <h2> Sitemap </h2>
@@ -30,18 +31,14 @@
 
     </blockquote>
     <h2 class="background-title" style="font-size:30px;">Posts</h2-->
-
     <br class="desktop-only"><br class="desktop-only">
     {% for post in posts %}
-        <style>
-            #content-wrap {
-                padding: 0px;
-            }
-        </style>
         <div class='index-post'>
+                {% if file_exists("static/images/{{ post['slug'] }}.png") %}
                 <div class="index-post-img-container">
                     <img class="index-post-img" src="static/images/{{ post['slug'] }}.png">
                 </div>
+                {% endif %}
                 <div class="index-post-text-container">
                 <h5 class="index-tags">{{ post["timestamp"] }}</p>
                 <h2 class="index-post-title"><a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>

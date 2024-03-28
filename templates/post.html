@@ -7,7 +7,7 @@
       <h1 class="post-heading">{{ post["title"] }}</h1>
       <span id="post-subheading"><i>{{ post["description"] | safe }}</i></span>
       <p id='created' class="desktop-only">{{ post["timestamp"] }}</p>
-      <h5><span class="post-tags">{{ post["tags"].replace(",", ", ") }} • </span>{{ post["wordcount"] }} words</h5>
+      <h5><span id="post-tags">{{ post["tags"].replace(",", ", ") }} • </span>{{ post["wordcount"] }} words</h5>
     </header>
   <br class="desktop-only">
   <br class="desktop-only">

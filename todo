@@ -1,9 +1,9 @@
 [x] Reduce title font size on mobile
 [x] improve the index page
-[ ] add post images
+[x] add post images
 [ ] make index work on mobile 
     - flex direction: down?
-[ ] add post images on mobile
+[x] add post images on mobile
 [ ] make posts without images ok using jinja logic
 [ ] distinguish between "post-types"
     - essays?

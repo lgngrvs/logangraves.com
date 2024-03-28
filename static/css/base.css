@@ -80,7 +80,7 @@ a {
     text-decoration: none;
 
     color: var(--link-color); 
-    border-bottom: 0.1em solid var(--link-color);    
+    border-bottom: 0.1em solid var(--link-background-color);    
 
     -webkit-transition: all 0.3s;
     transition: all 0.3s;

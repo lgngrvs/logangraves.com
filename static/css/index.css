@@ -1,6 +1,10 @@
 
 /* ========== INDEX.HTML STYLES ========== */
 
+#content-wrap {
+    padding: 0px;
+}
+
 .index-post {
     border-bottom: 2px solid var(--nice-div-color);
     padding: 20px 35px;
