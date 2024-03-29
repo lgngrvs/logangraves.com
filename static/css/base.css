@@ -137,7 +137,7 @@ li p {
     display: inline;
 }
 
-li::before {
+ul > li::before {
     content: "•";
     color: var(--bullet-color);
     display: inline-block;
@@ -149,8 +149,12 @@ li::before {
     top: 0.1em;
 }
 
-li {
+ul > li {
     margin-bottom: 0.5em;
+}
+
+ol > li::marker {
+    color: var(--bullet-color);
 }
 
 /* ========== The "back to home" button. ========== */
