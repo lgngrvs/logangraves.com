@@ -10,7 +10,8 @@ Here's what I'm up to as of April 2024:
 - Trying to [solve all the problems in my life](open-problems)
 - Meeting lots of people and expanding my online presence thoughtfully
 - Trying to do projects instead of meta-projects
-
+- **Figuring out where tf I'm going to college!!**
+- Trying to figure out how to balance information and pretense on this website
 
 ## Coming up 
 
@@ -29,5 +30,5 @@ Here's what I'm up to as of April 2024:
 **Far future** (medium to low confidence)
 
 - Working in AI 
-- Maybe grad school?? Lowkey I don't have long AI timelines though
+- Maybe grad school?? Lowkey not sure if this is worth the time tradeoff
 - Saving the world lol

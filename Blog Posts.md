@@ -7,9 +7,23 @@
 - ~~open problems~~
 - goals for 2024
 - follow-up on college resolutions post
-	- Should make an
-- monk mode/"deep work" is what matters, not systematicity or comprehensiveness. 
+	- Should make an "edge" here
+- fragment: monk mode/"deep work" is what matters, not systematicity or comprehensiveness. 
 	- in other words, *doing shit,* *building shit* is the most important thing.
+- parables on love
+- cantor, godel, tarski
+- that insane long political culture essay
+- mystic's manifesto
+- lingustic inflation
+- on secret societies
+- how i build x thing
+- against annotation
+- What should I work on? (list of projects)
+- everything is actually just applied rationality
+	- philosophy, science, literary analysis, etc.
+	- illusory one-dimensionality. 
+	- creative spirit
+	- and, like, mysticism
 
 
 
@@ -19,3 +33,4 @@
 		- I saw someone's pkm work like this
 - rather than having lots of short pages? have longer, denser pages?
 - *Publish blog posts as in-progress notes from my obsidian?*
+- ok, actually it might be a problem to do this — i need to remember to git commit and everything.

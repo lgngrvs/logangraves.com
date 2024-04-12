@@ -2,12 +2,11 @@
 
 import init_db
 import post_parser_script
-from flask import Flask, render_template, Markup, request
+from flask import Flask, render_template, Markup, request, redirect, make_response
 import sqlite3 
 from markupsafe import escape
 from dotenv import load_dotenv
 from feedgen.feed import FeedGenerator
-from flask import make_response
 from datetime import datetime
 from dateutil.tz import tzoffset
 import os

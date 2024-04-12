@@ -11,3 +11,6 @@
     - notes?
 [x] fix numbered lists
 [ ] add open problems
+[ ] add privacy-respecting analytics
+[ ] add fancy bullet points
+[ ] add reading list
