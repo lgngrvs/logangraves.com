@@ -11,6 +11,7 @@ Hi! I'm Logan, an American high school student.
 I'm really interested in building [social infrastructure](social-infrastructure) — connecting (and connecting with) people, and building tools to make that easier.
 
 My research interests include: 
+
 - **AI-human analogs**, particularly with regards to *cognitive architectures* (e.g. modeling AI architectures off psychology's models of human cognition)
 - Other kinds of interesting techniques (e.g. LLM debate)
 - **Prompt engineering** — eliciting responses at the edges of the distribution of outputs (in strangeness, usefulness)
