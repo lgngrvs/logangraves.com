@@ -1,0 +1,128 @@
+
+/* ========== INDEX.HTML STYLES ========== */
+
+#content-wrap {
+    padding: 0px;
+}
+
+.index-post {
+    border-bottom: 2px solid var(--nice-div-color);
+    padding: 20px 35px;
+    max-width: 70%;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+.index-post-img-container {
+    flex: 1;
+    overflow: hidden;
+}
+
+.index-post-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /*display:inline-block;*/
+}
+
+.index-post-text-container {
+    flex:3;
+    padding: 1em 2em;
+}
+
+.index-post-title {
+    text-transform: normal;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.index-post-title-link {
+    font-variant: normal;
+    font-weight:300;
+    color: var(--color);
+    border-bottom: none;
+}
+
+
+.index-post-title-link:hover {
+    border-bottom: 0px;
+}
+
+
+.index-date {
+    text-transform: none;
+}
+
+#index-post-link {
+    display: inline-block;
+}
+
+.spacing {
+    height: 100px;
+}
+
+.post h5 {
+    margin-top: 0.2em;
+}
+
+
+/* MOBILE STYLES (at bottom of page in order to override)*/ 
+@media only screen and (max-width: 987px) {
+    
+    .index-post {
+        max-width: calc(100vw - 72px);
+        overflow-wrap: break-word;
+        padding: 20px 0px;
+    }
+
+    .index-post-title {
+        font-size: 14pt;
+        line-height: 1.5em;
+    }
+
+    .index-post-title-link {
+        border-bottom: 0.1em solid var(--link-background-color);
+    }
+    
+    .index-post-title-link:hover {
+        color: var(--link-underline-color);
+        border-bottom: 0.1em solid var(--link-underline-color);
+    }
+
+    .index-post-text-container {
+        padding: 0px 0px 0px 18px;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .index-post-text-container > * > * {
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+
+
+    .index-tags {
+        display:none;
+    }
+
+    .index-date {
+        display:none;
+    }
+
+    .index-post-description {
+        font-size: 12.5pt;
+    }
+
+    .index-post-description-no-img {
+        font-style: italic;
+        text-align: center;
+    }
+
+    .index-post-img-container {
+        flex:1;
+    }
+}

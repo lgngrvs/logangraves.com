@@ -3,60 +3,13 @@
 {% block content %} 
     <link rel="stylesheet" href="/static/css/index.css" type="text/css">
     <h1>Index</h1>
-    <!--blockquote class="blockquote-noitalics">
-        <h2> Sitemap </h2>
-        <p><b>Blog Pages</b></p>
-        <ul>
-            <li><a href="/"> Home </a></li>
-            <li><a href="/index">Index</a> (you are here)</li>
-
-            {% for page in pages %}
-            <li><a href="{{ url_for('show_post_slug', slug=page['slug']) }}">{{ page['title'] }}</a></li>
-            {% endfor %}
-        </ul>
-
-        <p><b>Blog Posts</b></p>
-        <ul>
-            {% for post in posts %}
-            <li><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></li>
-            {% endfor %}
-
-        </ul>
-        <p><b>Notable static files:</b></p>
-        <ul>
-            <li><a href="/static/identities.txt">identities.txt</a></li>
-            <li><a href="/static/identities.txt.sig">identities.txt.sig</a></li>
-            <li><a href="/static/log.txt">log.txt</a></li>
-        </ul>
-
-    </blockquote>
-    <h2 class="background-title" style="font-size:30px;">Posts</h2-->
     <br class="desktop-only"><br class="desktop-only">
+    <ul>
     {% for post in posts %}
-        <div class='index-post'>
-            {% set path = "static/images/" + post['slug'] + ".webp" %}
-            
-            {% if file_exists(path) %}
-                <div class="index-post-img-container">
-                    <img class="index-post-img" src="static/images/{{ post['slug'] }}.webp">
-                </div>
-            {% else %}
-                <div style="flex:1; background-color:var(--nice-div-color)"></div>
-            {% endif %}
-            <div class="index-post-text-container">
-                <h5 class="index-date">{{ post["timestamp"] }}</p>
-                <h2 class="index-post-title"><a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></h2>
-                <!--p id="index-post-link"><i>https://logangraves.com{{ url_for('show_post_slug', slug=post['slug']) }}</i></p--> 
-                <!--p>{{ post['content'][:100] | safe }}...</strong></i></em></em></code></p-->
-                <div class="index-post-description">{{ post['description'] | safe }}</div>
-                <i><h5 class="index-tags">{{ post['tags'] }}</h5></i>
-            </div>
-            {# if not(file_exists(path)) #}
-                <!--div class="desktop-only" style="flex:1;"></div-->
-            {# endif #}
-        </div>
-        <br>
-        <!--hr class="post-hr"-->
+        <li>
+            <a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a>
+        </li>
     {% endfor %}
+    </ul>
     <p style="text-align:center;"><a id="home-footer-link" href="/">< Home</a></p>
 {% endblock %}

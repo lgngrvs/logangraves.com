@@ -1,7 +1,7 @@
 # Poems
 Date: 2023-12-12
 Tags: #art #poetry
-Type: post
+Type: page
 Desc: Some of my favorite poems.
 
 ## Ozymandias

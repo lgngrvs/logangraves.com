@@ -15,8 +15,9 @@
     --bullet-color: rgb(184, 184, 184);
     
     --link-background-color: rgba(221, 188, 187, 0.376);
-    --link-color: rgb(227, 86, 82);
-    --link-underline-color: rgba(227, 87, 82, 0.544);
+    /* old color: --link-color: rgb(227, 86, 82);*/
+    --link-color: rgb(113, 113, 113);
+    --link-color: rgb(113, 113, 113);
 
     --background-color: white;
     --border-background-color: #e0e0e0;
@@ -55,6 +56,7 @@
         --code-background-color: #242424;
         --link-background-color: #6b6b6b; 
         --link-underline-color: #5e5e5e;
+        --link-color: rgb(161, 161, 161);
         --color: rgb(200,200,200);
         --hr-color: dimgray;
         --gradient-bottom: #1e1e1e;

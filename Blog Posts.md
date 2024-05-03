@@ -24,6 +24,9 @@
 	- illusory one-dimensionality. 
 	- creative spirit
 	- and, like, mysticism
+- **How to have ideas** ^f552dc
+	- Read stuff intently, ask lots of questions — learn the answers or figure out how to answer those questions yourself 
+- What is a [[Schellling points]] (with ref to [[Proj.Social infrastructure|Social infrastructure]])
 
 
 

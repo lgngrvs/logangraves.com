@@ -6,6 +6,8 @@ Desc: On building connections, filtering problems, and sparkly people.
 
 I use *social infrastructure* to refer to a process or institution that connects people in ways they otherwise wouldn't be connected. It's jargon that hopefully makes intuitive sense, but it's important enough of an idea to me that I think it's worth giving a much deeper account of what I mean by it, and what I think of the concept.
 
+*[This post](https://www.lesswrong.com/posts/PCrTQDbciG4oLgmQ5/sapir-whorf-for-rationalists) by Duncan Sabien might explain what's going on here if you're wondering.*
+
 ## TL;DR
 
 - Finding people, at scale, with specific personal characteristics is really difficult, because quantifiable measures (like test scores) are *very* imperfect proxies. 
