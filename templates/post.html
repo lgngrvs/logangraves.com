@@ -21,4 +21,17 @@
   <p id='created' class="mobile-only">Published {{ post["timestamp"] }}</p>
   </article>
   <p style="text-align:center;"><a id="home-footer-link" href="/">Home</a></p>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
 {% endblock %}

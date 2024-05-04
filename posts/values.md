@@ -10,6 +10,7 @@ Desc:
 There are many meanings to "good." (This is an understatement) 
 
 You can think of some of them like this: 
+
 - **Instrumental**: good i.e. *useful*, a thing is good insofar as it helps you change the world into a state that you prefer
 - **Epistemological**: good i.e. (superficially) *true*, as in this thing helps me make more accurate predictions about the world
 - **Aesthetic/moral**: good as in, uh... good. Good? Beautiful? Moral?

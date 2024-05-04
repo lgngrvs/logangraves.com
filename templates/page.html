@@ -3,10 +3,14 @@
 {% block content %}
   <article>
     <header></header>
-      <h1>{{ post["title"] }}</h1>
-      <h5>{{ post["wordcount"] }} words</h5>
+      <h1 id="page-title">{{ post["title"] }}</h1>
+      <!--h5>{{ post["wordcount"] }} words</h5-->
     </header>
+    <br>
   {{ post["content"] | safe }}
   </article>
   <p style="text-align:center;"><a id="home-footer-link" href="/">< Home</a></p>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+  </script>
 {% endblock %}

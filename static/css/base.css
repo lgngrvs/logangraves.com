@@ -115,6 +115,7 @@ code {
     font-family: var(--mono-font);
     padding: 0.15em;
     border-radius: 0.3em;
+    word-wrap: break-word;
 }
 
 pre {
@@ -159,6 +160,19 @@ ol > li {
 }
 
 ol > li::marker {
+    color: var(--bullet-color);
+}
+
+hr {
+    color: var(--bullet-color); 
+    border-bottom: 0px;
+    width: 50%;
+    margin-top: 2em;
+}
+
+/* Styling the title bar for pages. */
+
+#page-title {
     color: var(--bullet-color);
 }
 

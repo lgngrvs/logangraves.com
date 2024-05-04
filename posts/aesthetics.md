@@ -9,7 +9,7 @@ Desc:
 > Haha, what a wicked and ironic comment bro. Now try saying something true and beautiful.
 
 - Textbooks on programming and formal logic
-- Democracy
+- Liberal Democracy and globalization
 - Wikipedia
 - Jorge Luis Borges, especially *Tlon, Uqbar, Orbus Tertius*
 - Memetics and Anti-memetics

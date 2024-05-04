@@ -29,6 +29,10 @@
 - What is a [[Schellling points]] (with ref to [[Proj.Social infrastructure|Social infrastructure]])
 
 
+**Knoweldge**
+- how transformers work
+- set theory and the foundations of mathematics
+
 
 **site organization**
 - add fragments, notes, etc. (in addition to post types and stuff?)
