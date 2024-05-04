@@ -4,31 +4,27 @@ Tags:
 Type: page
 Desc:
 
-Here's what I'm up to as of April 2024: 
+Here's what I'm up to as of May 2024: 
 
-- Enjoying my last couple months in high school
+- Enjoying the last vestiges of high school
 - Trying to [solve all the problems in my life](open-problems)
-- Meeting lots of people and expanding my online presence thoughtfully
-- Trying to do projects instead of meta-projects
-- **Figuring out where tf I'm going to college!!**
-- Trying to figure out how to balance information and pretense on this website
+- Learning for the sake of learning.
 
 ## Coming up 
 
 **Near future** (high confidence)
 
-- Graduating
-- Enjoying my last couple months with friends
-- Making something out of the summer
+- Graduating high school
+- Spending the summer learning as much as possible, having ideas, and traveling with my best friend
+- Starting my undergraduate degree in [Symbolic Systems](https://majors.stanford.edu/majors/symbolic-systems) at Stanford 
 
 **Future** (medium to high confidence)
 
-- Going back to a rat camp
-- Studying intelligent systems in college 
+- Attending a rat camp as a JC/returner
 - Conducting research
 
 **Far future** (medium to low confidence)
 
 - Working in AI 
-- Maybe grad school?? Lowkey not sure if this is worth the time tradeoff
+- Maybe grad school?
 - Saving the world lol
