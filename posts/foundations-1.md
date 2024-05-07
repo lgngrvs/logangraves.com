@@ -37,24 +37,24 @@ I found that, when learning about philosophy, anchoring myself in time and traci
 --- 
 ### 🗝️ Key ideas in Set theory: Set and Subset
 - **Set**: A collection of distinct objects. 
-    - E.g. $A = \{1, 2, 3\}$
+    - E.g. $A = \\{1, 2, 3\\}$
 - **Subset**: Set B is a subset of A if every element contained in B is also in A. 
-	- $B = \{2, 3\}$, therefore $B \subset A$
-	- $B = \{4, 5\}$, therefore $B \not\subset A$
+	- $B = \\{2, 3\\}$, therefore $B \subset A$
+	- $B = \\{4, 5\\}$, therefore $B \not\subset A$
 	- *Not* like a folder/hierarchy kind of thing. It's not that Set A contains   *only* Set B, and set B contains the elements; There's no hierarchy to sets. You're just selecting pieces of them.
-- **The empty set:** written as $\varnothing$ or just $\{\}$, the empty set just doesn't have anything in it. (It's actually insanely useful and important.)
+- **The empty set:** written as $\varnothing$ or just $\\{\\}$, the empty set just doesn't have anything in it. (It's actually insanely useful and important.)
 
 --- 
 ### 🗝️ Key ideas in Set Theory: Power Sets
 
 - The **Power set** of set $A$, written as  $\mathcal{P}(A)$ , is the set of all possible subsets of $A$, including $A$ itself and the empty set (the set containing no elements, often denoted as $\varnothing$ ). 
-	- For example, given that $$A = \{0, 1, 2\},$$ we can say that $$\mathcal{P}(A) = \{\varnothing, \{0\}, \{1\}, \{2\}, \{0, 1\}, \{1, 2\}, \{0, 2\}, \{0, 1, 2\}\}$$
+	- For example, given that $$A = \\{0, 1, 2\\},$$ we can say that $$\mathcal{P}(A) = \\{\varnothing, \\{0\\}, \\{1\\}, \\{2\\}, \\{0, 1\\}, \\{1, 2\\}, \\{0, 2\\}, \\{0, 1, 2\\}\\}$$
 - Think of this as *all possible ways to group the elements in set A*: to make each subset you're allowed to take any number of items from A, however you choose. (You can't add extra elements, though.)
 
 --- 
 ### 🗝️ Key ideas in Set Theory: Cardinality
 - **Cardinality**: How many elements are in a set
-	- $A = \{1, 2, 3\}$, therefore $|A| = 3$
+	- $A = \\{1, 2, 3\\}$, therefore $|A| = 3$
 - Cardinality will be an integer if the set is finite. 
 - If the set is infinite, it gets more complicated.
 - Cardinality is also related to the notion of Isomorphism, correspondence, etc. I'll get there in a sec. For now we need to talk a little about how set theory let us deal with infinity.
@@ -70,8 +70,8 @@ I found that, when learning about philosophy, anchoring myself in time and traci
 - One of the cool things that set theory lets us do is talk about different kinds of infinity. 
 - First, a quick review of important sets: 
 	- The natural numbers, $\mathbb{N}$, are the numbers that we count with "naturally" — they're basically the most basic idea of numbers. 
-		- You can list them out in order: $\mathbb{N} = \{1, 2, 3, 4, 5 ...\}$
-	- The integers, $\mathbb{Z}$ (just by convention I guess), are all the whole numbers. They stretch out on both sides of 0: $\mathbb{z} = \{... -3, -2,  -1,  0,  1,  2,  3, ...\}$
+		- You can list them out in order: $\mathbb{N} = \\{1, 2, 3, 4, 5 ...\\}$
+	- The integers, $\mathbb{Z}$ (just by convention I guess), are all the whole numbers. They stretch out on both sides of 0: $\mathbb{z} = \\{... -3, -2,  -1,  0,  1,  2,  3, ...\\}$
 	- The real numbers, $\mathbb{R}$, are all the numbers that we might normally talk about. This contains all the natural numbers, 0, fractions, infinite decimals, etc. 
 		- Any normal "number" you might operate with in reality is a real number. 
 		- You can't list out the real numbers in order — where do you start? 0? then what? 0.1, or 0.001, or 0.0000000001? or 1? 
@@ -88,7 +88,7 @@ I found that, when learning about philosophy, anchoring myself in time and traci
 	- The natural numbers are well-ordered, because there's no way to define a subset of them that isn't well-ordered.
 	- The real numbers $\mathbb{R}$ are not well-ordered, because we can define a subset that does not have a least element, for example $(0,1)$. 
 - Well-ordered sets use the relation $<$, less than. There are other orderings of sets, which allow for flexibility, though. 
-- They get pretty complicated, but for example lexicographic ordering for letters turns $\{b,g,f,a\}$ into $\{a,b,f,g\}$ (since "less than" doesn't make sense for letters).
+- They get pretty complicated, but for example lexicographic ordering for letters turns $\\{b,g,f,a\\}$ into $\\{a,b,f,g\\}$ (since "less than" doesn't make sense for letters).
 
 --- 
 ### Interlude: Bijections 
@@ -126,15 +126,16 @@ I found that, when learning about philosophy, anchoring myself in time and traci
 - *(For finite decimals we'll just add add 0s on the end to make them the same length as our infinite decimals.)*
 - I'm going to use just some random numbers for illustration: 
 
-| Index   | Number |     |     |     |     |     |     |
-| ------- | ------ | --- | --- | --- | --- | --- | --- |
-| ***1*** | 0.     | 1   | 0   | 0   | 0   | 0   | ... |
-| ***2*** | 0.     | 7   | 7   | 7   | 7   | 7   | ... |
-| ***3*** | 0.     | 7   | 1   | 8   | 2   | 8   | ... |
-| ***4*** | 0.     | 1   | 0   | 2   | 0   | 1   | ... |
-| ***5*** | 0.     | 9   | 9   | 0   | 0   | 0   | ... |
-| ***6*** | 0.     | 3   | 9   | 8   | 4   | 6   | ... |
-| ...     | ...    | ... | ... | ... | ... | ... |     |
+
+ Index   | Number |   .  |  .   |  .   |   .  |   .  |   .
+ ------- | ------ | ----- | ----- | ----- | ----- | ----- | ----- 
+ ***1*** | 0.     | 1   | 0   | 0   | 0   | 0   | ... 
+ ***2*** | 0.     | 7   | 7   | 7   | 7   | 7   | ... 
+ ***3*** | 0.     | 7   | 1   | 8   | 2   | 8   | ... 
+ ***4*** | 0.     | 1   | 0   | 2   | 0   | 1   | ... 
+ ***5*** | 0.     | 9   | 9   | 0   | 0   | 0   | ... 
+ ***6*** | 0.     | 3   | 9   | 8   | 4   | 6   | ... 
+ ...     | ...    | ... | ... | ... | ... | ... |  ..   
 
 (Using a markdown table is hard for this visually, sorry, so feel free to watch this [video version](https://youtu.be/0HF39OWyl54?feature=shared&t=72) created by Trefor Bazett or just search "diagonalization argument demonstration" or something like that online. I'm sure that there are plenty of other representations out there, this is just one that works well enough and which I found within like 5 minutes of searching.) 
 
@@ -182,7 +183,7 @@ I found that, when learning about philosophy, anchoring myself in time and traci
 ^44ec4a
 
 - Ok, so finite sets are pretty easy to deal with; cardinality makes sense because you can just count the objects in the set.
-- But when we start getting infinite sets, how do we compare their sizes formally? How do we deal with precise positions within those sets — say, if we define a set as $\mathbb{N} \cup \{0\}$, i.e. $\{1,2,3,4,...,0\}$? What position is 0 in? %% Need to define order for this to make sense though%% 
+- But when we start getting infinite sets, how do we compare their sizes formally? How do we deal with precise positions within those sets — say, if we define a set as $\mathbb{N} \cup \\{0\\}$, i.e. $\\{1,2,3,4,...,0\\}$? What position is 0 in? %% Need to define order for this to make sense though%% 
 - We need notation and concepts to deal with different kinds of infinity. 
 - One of Cantor's most important contributions to math was his ideas about *transfinite numbers,* numbers that were meaningfully different in size but all bigger than the natural numbers — so infinite, but in different ways. Let's see what that means.
 
@@ -194,8 +195,8 @@ I found that, when learning about philosophy, anchoring myself in time and traci
 
 ### 🗝️ Cardinals pt. 2
 
-- Let's go back to our example,  $\mathbb{N} \cup \{0\}$. The cardinality of $\mathbb{N}$ is $\aleph_0$. Adding one more number into that set will not change its already-infinite cardinality. 
-	- We can prove this by defining a function $f$ that maps $\mathbb{N}$ onto $\mathbb{N} \cup \{0\}$; intuitively, $f$ is a bijection between the two sets. Their cardinality is the same, because we can draw a 1-1 correspondence between element $n$ in $\mathbb{N}$ and $n-1$ in $\mathbb{N} \cup \{0\}$.  ==Unsure about this tbh==
+- Let's go back to our example,  $\mathbb{N} \cup \\{0\\}$. The cardinality of $\mathbb{N}$ is $\aleph_0$. Adding one more number into that set will not change its already-infinite cardinality. 
+	- We can prove this by defining a function $f$ that maps $\mathbb{N}$ onto $\mathbb{N} \cup \\{0\\}$; intuitively, $f$ is a bijection between the two sets. Their cardinality is the same, because we can draw a 1-1 correspondence between element $n$ in $\mathbb{N}$ and $n-1$ in $\mathbb{N} \cup \\{0\\}$.  ==Unsure about this tbh==
 - But we still need to be able to talk about the individual indexes — because if we insert $0$ at the end of the set, what index would have? How do we talk about *where in the set it is?*
 - For this we need *ordinal numbers*.
 
@@ -203,7 +204,7 @@ I found that, when learning about philosophy, anchoring myself in time and traci
 
 - Cantor defined $\omega$, the number after all the natural numbers have been counted. 
 	- So you go, $1,2,3,4\ldots, \omega, \omega + 1$, etc.
-	- If we define a set $\mathbb{N} \cup \{0\}$, $0$ would be at the $\omega$-th place in the set — after all the natural numbers have been counted. ==is this correct==
+	- If we define a set $\mathbb{N} \cup \\{0\\}$, $0$ would be at the $\omega$-th place in the set — after all the natural numbers have been counted. ==is this correct==
 - It's important now to distinguish between *order* and size — *ordinals* and *cardinals.* $\omega + 1$ isn't *bigger* than $\omega$, it just comes *after* $\omega$. 
 - Ok, now let's see how far we can go now that we have $\omega$. $\omega, \omega +1, \omega +2, ..., \omega + \omega$ ($\omega + \omega$ makes sense intuitively as the union between two sets with cardinality $\aleph_0$, say, "count all the even numbers, and then count all the odd numbers."). We can rewrite $\omega + \omega$ as $2\omega$ for shorthand. 
 - Then we can keep going, past $3\omega, 4\omega, ... \omega * \omega$. ($\omega * \omega$ = $\omega^2$; we can imagine this intuitively as a countably infinite list of countable infinities.)
@@ -215,7 +216,7 @@ I found that, when learning about philosophy, anchoring myself in time and traci
 	- What is $\epsilon_0$ 
 
 ### Operations on Ordinals
-- Note here that addition and multiplication are *not commutative.* $1 + \omega$ is equal to $\omega$ *(prove this by proving $\mathbb{N}\cup \{0\} = \mathbb{N}$)* but not $\omega + 1$ . Similarly, $2 * \omega$  is not equal to $\omega * 2$. 
+- Note here that addition and multiplication are *not commutative.* $1 + \omega$ is equal to $\omega$ *(prove this by proving $\mathbb{N}\cup \\{0\\} = \mathbb{N}$)* but not $\omega + 1$ . Similarly, $2 * \omega$  is not equal to $\omega * 2$. 
 	- This is weird and tells you a lot more about the nature of ordinals. 
 
 It was at this point that I decided to try out a textbook. [Math Stack Exchange](https://math.stackexchange.com/questions/251490/textbooks-on-set-theory) recommended this one, so I'm gonna try it.
@@ -228,15 +229,15 @@ I tried it, and it just has a bunch of stuff that I don't really care about. I f
 - For future self: To come back to this, [this video](https://www.youtube.com/watch?v=5NSg_wJkEMc) seems like it might be good.
 - [This video series](https://www.youtube.com/watch?v=kv5k56b3XNA) also looks really good.
 
-# Feedback from Agniv
+# Feedback
 > 
 >  Notes:
 >     
->     1. This is the beginning
+>    1. This is the beginning
 >     2. Informal (bad pun) but ultimately correct)
 >     3. Confusion here is good. We can't actually define a set or an object. Just things we think it should do. We have a universe. Do we know it? No. We impose law.
 >     4. Subset Correct, add union/intersection. Or XOR if you want.
->     5. Made a shit joke at ASPR about how the powerset of the people at camp is even in size. I think add that its 2^|size of set| (explain in finite case)
+>     5. Made a shit joke at [...] about how the powerset of the people at camp is even in size. I think add that its 2^|size of set| (explain in finite case)
 >     6. Introduce cardinality here, so ignore 5 (or swap them). Infinite is indeed more complicated.
 >     7. Ahhh, Call me the predictor. Remove the tidbits for 5-6, you name it here and this is good.
 >     8. "List them out in order" i think is a little vague. The intuition I carry is if I count for any element in the set I'll eventually reach it. Normal is a 'math word' technically but it is fine here.
@@ -250,4 +251,5 @@ I tried it, and it just has a bunch of stuff that I don't really care about. I f
 >     16. Whats the unsure bit about, I think that should be correct, good lead in
 >     17. Effectively yes, that's the intuition for omega. The buildup goes hard. Use tetration._
 >     18. Yep, ordinal operations are weird. This and 19 to me show you have a basic intuition for stuff and r ready
->     for 10 add injectivity was my only real comment
+>     
+> for 10 add injectivity was my only real comment

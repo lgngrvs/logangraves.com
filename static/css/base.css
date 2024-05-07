@@ -89,7 +89,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    border-bottom: 0.1em solid var(--link-underline-color);
+    border-bottom: 0.1em solid var(--color);
     color: var(--link-underline-color);
 }
 
@@ -123,12 +123,16 @@ pre {
     padding: 10px;
     width: fit-content;
     padding-top: 0px;
+    max-width: 100%;
 }
 
 pre > code {
     background-color: transparent;
     padding: 0px;
     border-radius: 0px;
+    overflow: scroll;
+    max-width: 100%;
+    width: fit-content;
 }
 
 ul {
@@ -168,6 +172,29 @@ hr {
     border-bottom: 0px;
     width: 50%;
     margin-top: 2em;
+}
+
+.center {
+    text-align: center;
+}
+
+.page-tags {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.tag {
+    font-variant: normal;
+    font-weight: 300;
+    color: var(--link-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.tag:hover {
+    color: var(--color);
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 /* Styling the title bar for pages. */

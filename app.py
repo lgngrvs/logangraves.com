@@ -48,6 +48,7 @@ def get_only_pages():
 def file_exists(path):
     return os.path.exists(path)
 
+
 @app.route("/")
 def home(): 
     return render_template("home.html")
@@ -58,16 +59,19 @@ def index():
     posts_only = list(get_only_posts())
     pages_only = list(get_only_pages())
 
-    print("Posts include: ")
-    for post in posts_only:
-        print(post['title'])
+    # Print statements for debug when needed
+    # print("Posts include: ")
+    # for post in posts_only:
+    #    print(post['title'])
+
     def get_timestamp(element):
         return(element[1])
     posts_only.sort(reverse=True, key=get_timestamp)
-    for i in posts_only: 
-        print(i[1])
 
-    print("Pages include: " + str(pages_only))
+    # for i in posts_only: 
+    #    print(i[1])
+    # 
+    # print("Pages include: " + str(pages_only))
 
     x = 0
     for temp_post in posts_only: 
@@ -118,11 +122,16 @@ def show_post_slug(slug):
     found_post = connection.execute(f"SELECT * FROM posts WHERE slug='{slug}';").fetchone()
     try: 
         post = dict(found_post)
+
         # print(post)
+
         for key, value in post.items(): 
             new_value = Markup(value).unescape()
             post[key] = new_value
+        
+        post["tags_list"] = post['tags'].replace("#", "").split(" ")
         # print(post)
+
         if post['type'] == "post": 
             return render_template("post.html", post=post)
         elif post['type'] == "page":

@@ -9,10 +9,11 @@ Wander around if you please. I'm rewiring everything here.
 
 Hypertext creates a graph-like structure instead of a linear hierarchy, which is more like how I think. And I [prefer](/values) it — [aesthetically](/aesthetics).
 
-It also lowers the bar for posting interesting things. I'm done writing blog posts for the time being. They don't make me feel sparkly. [This one](/social-infrastructure) is pretty good though.
+It also lowers the bar for posting interesting things. I'm done writing blog posts for the time being. They don't make me feel sparkly. ([This one](/social-infrastructure) is pretty good though.)
 
-Some things I'm interested in talking about: [conversation topics](/conversation-topics)
+- Some things I'm interested in talking about: [conversation topics](/conversation-topics)
+- Here are some [poems](/poems).
 
-Here are some [poems](/poems).
+*Note: Your URLs are not safe! I'll try to avoid changing the links to my blog posts, but any page in the garden (i.e. any page without the word count indicated) may be subsumed back into the aetherial churn, returned once again from its sparkling identity to the primordial unity.*
 
-*Sorry if URLs break at some point in the future. Oh well, ephemerality. Just copy-paste the text from the site if you want to save something.*
+*If you want to archive something on this website, copy-pasting the text or printing to pdf are good options, or you can link to the file in the [github](https://github.com/lgngrvs/logangraves.com) history under a commit where it's in the state you want to keep it in.*

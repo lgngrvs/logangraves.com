@@ -100,10 +100,6 @@ article > p:first-of-type::first-line {
         display:none;
     }
 
-    #post-tags {
-        display: none;
-    }
-
     #created {
         margin: 0em;
         text-align: left;

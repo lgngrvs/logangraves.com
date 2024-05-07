@@ -15,8 +15,8 @@ for filename in list_of_file_names:
     if filename[6] == ".": 
         pass
     else: 
-        print("Preparing to add post \"" + str(filename) + "\"")
-        print(list_of_file_names)
+        # print("Preparing to add post \"" + str(filename) + "\"")
+        # print(list_of_file_names)
         whole_post_list = []
 
         with open(filename) as file:
@@ -31,8 +31,8 @@ for filename in list_of_file_names:
         date = Markup.escape(whole_post_list[1][6:]).strip("\n")
         tags = Markup.escape(whole_post_list[2][6:]).strip("\n")
         content_type = Markup.escape(whole_post_list[3][6:]).strip("\n")
-        desc = Markup.escape(markdown.markdown(whole_post_list[4][6:]))
-        content = Markup.escape(markdown.markdown(whole_post_list[5]))
+        desc = Markup.escape(markdown.markdown(whole_post_list[4][6:], extensions=["tables"]))
+        content = Markup.escape(markdown.markdown(whole_post_list[5], extensions=["tables"]))
         slug = slugify(filename)[6:][:-3]
         wordcount = len(whole_post_list[5].split(" "))
 

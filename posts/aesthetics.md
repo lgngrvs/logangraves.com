@@ -1,12 +1,12 @@
 # Aesthetics
 Date: 2024-05-03
-Tags: 
+Tags:
 Type: page
 Desc: 
 
-*in no particular order:*
-
 > Haha, what a wicked and ironic comment bro. Now try saying something true and beautiful.
+
+*in no particular order:*
 
 - Textbooks on programming and formal logic
 - Liberal Democracy and globalization
