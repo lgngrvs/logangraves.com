@@ -7,12 +7,16 @@ Desc:
 
 Wander around if you please. I'm rewiring everything here.
 
-Hypertext creates a graph-like structure instead of a linear hierarchy, which is more like how I think. And I [prefer](/values) it — [aesthetically](/aesthetics).
+Hypertext creates a graph-like structure instead of a linear hierarchy, which is more like how I think. (And I [prefer](/values) it aesthetically.)
 
-It also lowers the bar for posting interesting things. I'm done writing blog posts for the time being. They don't make me feel sparkly. ([This one](/social-infrastructure) is pretty good though.)
+I'm done writing essays on this blog for the time being. They don't make me feel [sparkly](sparkliness.md). 
 
-- Some things I'm interested in talking about: [conversation topics](/conversation-topics)
+## links
+- [Things I love](/aesthetics)
+- [Conversation topics](/conversation-topics)
 - Here are some [poems](/poems).
+- [Essay](/social-infrastructure) on "social infrastructure"
+
 
 *Note: Your URLs are not safe! I'll try to avoid changing the links to my blog posts, but any page in the garden (i.e. any page without the word count indicated) may be subsumed back into the aetherial churn, returned once again from its sparkling identity to the primordial unity.*
 

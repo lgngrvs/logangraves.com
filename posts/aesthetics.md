@@ -5,6 +5,7 @@ Type: page
 Desc: 
 
 ([what is this?](aesthetics-what))
+
 *see also [conversation topics](conversation-topics) and [what i should be doing](/doing)*
 
 
