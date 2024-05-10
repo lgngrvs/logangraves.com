@@ -4,6 +4,8 @@ Tags: notes, ai
 Type: 
 Desc: describing how transformers work in a way that's intuitive to me
 
+*note: images won't work yet due to differences between local workspace and my website urls. check back once this post is finished and the images will work probably*
+
 ## meta: how to learn this
 basically i want to learn by explaining how transformers work. why they work... different question.
 
