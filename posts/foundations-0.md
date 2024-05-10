@@ -2,7 +2,7 @@
 Date: 2024-02-01
 Tags: #mathematics #notes
 Type: post
-Desc: My notes, attempting an introduction to the foundations of mathematics.
+Desc: The beginning of my notes attempting an introduction to the foundations of mathematics.
 
 ### About
 

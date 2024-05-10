@@ -1,6 +1,6 @@
 # Aesthetics
 Date: 2024-05-03
-Tags:
+Tags: 
 Type: page
 Desc: 
 

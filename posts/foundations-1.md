@@ -2,7 +2,7 @@
 Date: 2024-02-01
 Tags: #mathematics #notes
 Type: post
-Desc:
+Desc: Introduction to basic set theory, ordinals, and cardinals.
 
 These are my markdown notes for an in-progress project; see below sections for details. I've found that I learn best by grouping information into small sequential chunks, and writing it as if it's an explainer (except the goal is for me to understand by writing it and the audience is an afterthought, so I might skip some stuff I don't feel like writing out) published directly from my Obsidian vault. 
 

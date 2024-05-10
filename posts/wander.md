@@ -14,8 +14,9 @@ I'm done writing essays on this blog for the time being. They don't make me feel
 ## links
 - [Things I love](/aesthetics)
 - [Conversation topics](/conversation-topics)
-- Here are some [poems](/poems).
+- Some [poems](/poems).
 - [Essay](/social-infrastructure) on "social infrastructure"
+- [Notes on things](/tag/notes)
 
 
 *Note: Your URLs are not safe! I'll try to avoid changing the links to my blog posts, but any page in the garden (i.e. any page without the word count indicated) may be subsumed back into the aetherial churn, returned once again from its sparkling identity to the primordial unity.*
