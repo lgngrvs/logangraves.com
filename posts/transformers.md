@@ -1,8 +1,10 @@
-# how do transformers actually work
+# how do transformers actually work?
 Date: 2024-05-09
 Tags: notes, ai
-Type: 
+Type: post
 Desc: describing how transformers work in a way that's intuitive to me
+
+Transformers are a cutting-edge architecture for learning from data that can be processed sequentially, e.g. images, audio, and text. I'm learning how they work by writing a post about them. This will be a pretty messy post, following my thoughts as I try and grok it. I may write a cleaned-up version later.
 
 *note: images won't work yet due to differences between local workspace and my website urls. check back once this post is finished and the images will work probably*
 
@@ -152,13 +154,54 @@ to figure out what the output actually is, I should probably figure out multi-he
 
 let's look at mhsa i guess
 
-### 1.3 mutli-head self-attention
+### 1.3 attention?? (multi-head self-attention)
 
 ![[selfattention-udl.png]]
 
-this diagram makes some sense — you do some sort of calculation to produce the attention, and then you multiply it to the inputs to get outputs?
+this diagram makes some sense — you do some sort of calculation using $K, Q, V$ to produce the attention matrix, and then you multiply it to the inputs to get outputs?
 
 > A self-attention block $sa[•]$ takes $N$ inputs $x1, . . . , xN$ , each of dimension $D × 1$, and returns $N$ output vectors of the same size.
 
-Ok so the outputs are vectors. are they... tokens?
+Ok so the outputs of self-attention are vectors. are they... tokens?
+
+No! looking back at the residual stream thing above, these are *not* tokens. the attention matrix is added to the original input — this is the *add* in *add & norm.* 
+
+Ok. So we have this idea, that the attention matrix is computed and then added to the inputs. What actually does the attention matrix represent — what's going on?
+
+Let's take a look at the 3b1b [attention video](https://www.youtube.com/watch?v=eMlx5fFNoYc&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=6) to try and understand the diagram above at the beginning of section 1.3.
+
+> The aim of a transformer is to progressively adjust these embeddings so that they don't merely encode an individual word, but they instead bake in some much, much richer contextual meaning.
+>(Timestamp: 01:28-01:35)
+
+This tells us something super useful! the attention mechanism computes the relations of a bunch of words to one another. 
+
+What's happening here is that individual vectors represent the token *out of context.* (well, that along with the position of the word in the sentence, which I'll look more into later.) It's a very rough guess at meaning.
+
+Attention is *adding context* to each embedding's meaning, based on their relationships with one another — it's adding to the vector in order to make the word represent its meaning *in the sentence that the transformer is seeing it,* not just the abstracted-away meaning of the word.
+
+Continuing on with the 3b1b video this gets even more interesting. Since the transformer model is sequential (i.e. it works token-by-token, going forward through the sentence) the next token is predicted based *only on the last token.* 
+
+We were wondering earlier what the outputs of the model are: the model spits out a highly-refined version of all the embeddings, a matrix where the attention mechanisms have now adjusted the values on the vectors. 
+
+Adjusted *so much so* that now it somehow contains *all the information in the whole passage.* Then we predict the next token based *only on this final token.* Woah!
+
+#### 1.3.1 How Does attention work: Query, Keys, Values
+
+To understand how multi-head self-attention works, let's keep looking at the original diagram: 
+
+![[Screenshot 2024-05-11 at 12.58.27 PM.png]]
+We have a reasonable guess at what's happening overall. 
+
+1. Input is turned into tokens with positional encodings
+	- What's happening: The raw text input is turned into vectors, which roughly represent the abstract meaning of words. Positional encodings add position data on top of this
+2. **Multi-head attention**: With those embeddings as input, we compute attention for each word relative to each other word.
+	- we do scaled dot-product attention a couple times
+	- this has that query, key, values thing going on idk what that means though
+
+What I want to start doing is turning this into code, or at least pseudo-code, that reflects what I've talked about.
+
+here's what we have so far: 
+
+![[Screenshot 2024-05-11 at 1.24.48 PM.png]]
+now i want to high-level cover the rest of the model.
 
