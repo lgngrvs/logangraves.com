@@ -9,7 +9,7 @@ Wander around if you please. I'm rewiring everything here.
 
 Hypertext creates a graph-like structure instead of a linear hierarchy, which is more like how I think. (And I [prefer](/values) it aesthetically.)
 
-I'm done writing essays on this blog for the time being. They don't make me feel [sparkly](sparkliness.md). 
+I'm done writing essays on this blog for the time being. They don't make me feel [sparkly](sparkliness). 
 
 ## links
 - [Things I love](/aesthetics)
