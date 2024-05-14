@@ -1,4 +1,4 @@
-# Godel, Tarski, Hilbert, and the Foundations of Mathematics
+# Godel, Tarski, Hilbert, and the Foundations of Mathematics: Part 0
 Date: 2024-02-01
 Tags: #mathematics #notes
 Type: post

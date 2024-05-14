@@ -198,10 +198,8 @@ hr {
 }
 
 mjx-container {
-    max-width: 100%;
+    max-inline-size: 100%;
     overflow: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: var(--link-background-color);
 }
 
 
