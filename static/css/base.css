@@ -178,6 +178,19 @@ th {
     font-weight: 700;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: var(--nice-div-color);
+}
+
+td {
+    padding: 0.25em;
+
+}
+
 .center {
     text-align: center;
 }
@@ -256,8 +269,21 @@ mjx-container {
         display: inherit;
     }
 
+    #page-wrap {
+        margin: 0px 0px 0px 20px;
+    }
+
     #content-wrap {
         padding: 5% 8% 0 8%;
+    }
+
+    #nice-looking-color-div {
+        position: fixed; 
+        top:0px;
+        left:0px;
+        background-color: var(--nice-div-color);
+        width: 20px;
+        height: 100%;
     }
 
     h5 {

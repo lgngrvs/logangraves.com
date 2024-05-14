@@ -5,7 +5,7 @@ Type: page
 Desc: 
 
 
-<br>
+<br class="desktop-only">
 <div style="text-align: center">
 <p><em>Come into the garden, Maud,</em><br>
 <em>For the black bat, night, has flown,</em>  </p>
