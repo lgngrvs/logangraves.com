@@ -197,6 +197,14 @@ hr {
     cursor: pointer;
 }
 
+mjx-container {
+    max-width: 100%;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--link-background-color);
+}
+
+
 /* Styling the title bar for pages. */
 
 #page-title {
