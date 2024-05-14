@@ -28,7 +28,7 @@ Desc: A non-exhaustive list of open problems in my life.
     - Is putting pressure on myself the right decision at this stage in my life? I want to [do great work](https://paulgraham.com/greatwork.html) (obligatory paulg reference, sorry), but I don't want to burn out.
     - And I only get one summer after senior year.
 
-3. **Where should I go to college?**
+3. ~~**Where should I go to college?**~~
     - Offers from [redacted], [redacted], ... [redacted]
     - Mostly *information-gathering* right now; I think I know what I'm looking for (at a very, very high level, rigor + support together)
 
