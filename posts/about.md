@@ -4,13 +4,22 @@ Tags:
 Type: page
 Desc:
 
-Hi! I'm Logan. I'm an incoming college freshman studying Symbolic Systems at Stanford. 
+Hi! I'm Logan. 🦎 I'm an incoming college freshman studying Symbolic Systems at Stanford. 
 
-**I want to learn everything** is usually what I lead with. Early on I got into philosophy in search of a foundation for a systematic understanding of the world; most of my other interests subsequently developed from that same point.
+**Briefly:**
+
+- I want to learn everything; 
+- I think AI is the most interesting, impactful, and tractable field in my lifetime;
+- I love philosophy, even though philosophy doesn't really work;
+- I think we should believe things and [love things](/aesthetics) anyway.
+
+**Not Briefly:**
+
+*I want to learn everything* is usually what I lead with. Early on I got into philosophy in search of a foundation for a systematic understanding of the world; most of my other interests subsequently developed from that same point.
 
 Math, computer science, and logic study the extensions of fundamental logical systems. Cognitive science and linguistics allow us to understand how perception and language shape meaning and cognition; building artificial intelligence, while instrumental in itself, necessarily reflects on our understandings of ourselves — modeling our distribution of language so well as to create meaning itself; what it means to be an agent, or to be intelligent.
 
-I think AI is the most interesting developing field right now, and it'll be the most transformative force of my lifetime. I'm grateful to be growing up at a time where I can help shape its future to make sure it goes well.
+I think AI is the most interesting developing field right now, and it'll be the most transformative force of my lifetime, because it fundamentally shifts the kinds of problems that we can apply the speed, scalability, and precision of computers to. I'm grateful to be growing up at a time where I can witness with wonder the process of that expansion, and help shape its future to ensure it goes well.
 
 My research interests include: 
 
@@ -30,7 +39,7 @@ In the absence of coherent abstract values, I turn to people, and to vibes, and 
 
 An incomplete list of things I love can be found on the [Aesthetics](/aesthetics) page.
 
-Some other things I care about and enjoy include hanging out with friends, bouldering, writing blog posts, un-designing, writing and playing music, the interrobang (`‽`), and watching [minecraft videos](https://hermitcraft.com/).
+Some other things I care about and enjoy include hanging out with friends, bouldering, hiking, writing, un-designing, writing and playing music, the interrobang (`‽`), and watching [minecraft videos](https://hermitcraft.com/).
 
 For info on what I'm up to right now, see [Now](now).
 
@@ -43,3 +52,5 @@ For info on what I'm up to right now, see [Now](now).
 More contact/identities info available [here](identities). :]
 
 *(Psst! Here are some [conversation topics](conversation-topics) I might enjoy)
+
+(-‿-) (✿◠‿◠) \ (•◡•) /

@@ -1,4 +1,4 @@
-# Aesthetics
+# Aesthetics; or, Things That I Love
 Date: 2024-05-03
 Tags: 
 Type: page
