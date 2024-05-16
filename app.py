@@ -284,6 +284,10 @@ def rss():
     return response
 
 
+@app.route("/you")
+def you():
+    return render_template("you.html")
+
 @app.errorhandler(404)
 def not_found(error): 
     return render_template("404.html")

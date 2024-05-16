@@ -19,7 +19,11 @@ Aesthetics — judging the beauty of a thing — and ethics are the same thing, 
 
 There are surely intuitive things to believe in. I *believe* fully in beauty and in moral values. Some ideas like "human flourishing" are so obviously *good* that it feels like absurd contrarianism to dispute that they are worthwhile ends — and yet, there is no abstract argument that I can make to support the idea that humans achieving a sense of personal meaning is a good thing.
 
-I think this extends to truth as well — though I believe this in a purely abstract sense, in that there is no way to derive any first belief. It seems obvious that, well, my subjective experience is in some sense *real*, but I could continue down an [infinite chain](/regress) of beliefs until I reach nothing or I reach a circle. (Systems may be internally consistent but there is no external reference to validate them against.)
+I think this extends to truth as well — though this relation makes sense only in a very abstract way, in that there is no way to derive any first belief. It seems obvious that, well, my subjective experience is in some sense *real*, but I could continue down an [infinite chain](/regress) of beliefs until I reach nothing or I reach a circle. Systems may be internally consistent, sure, but there is no external reference to validate them against.
+
+> "Yes please give me an INFINITE REGRESS OF BELIEFS. Please give me a COHERENT INTERCONNECTED STRUCTURE OF BELIEF that is SELF-JUSTIFYING " 
+> 
+> -[Statements dreamed up by the utterly Deranged](/static/epistemology.txt)
 
 I am not a nihilist. I am the opposite of the nihilist. Values are just independent of reason.
 
