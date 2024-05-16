@@ -72,6 +72,14 @@ I'm done writing essays on this blog for the time being. They don't make me feel
         <td>On infinite regress</td>
         <td style="text-align: right"> <a href="/regress">Regress</a></td>
     </tr>
+    <tr>
+        <td>In-progress notes on transformers</td>
+        <td style="text-align: right"> <a href="/transformers">Transformers</a></td>
+    </tr>
+    <tr>
+        <td>In-progress notes on set theory</td>
+        <td style="text-align: right"> <a href="/foundations-0">Foundations</a></td>
+    </tr>
 </table>
 
 <br>
