@@ -29,6 +29,8 @@ I'm done writing essays on this blog for the time being. They don't make me feel
 <br>
 <br>
 
+<img class="page-img" src="static/images/wander.webp">
+
 <h2 class="center">Contents</h2>
 
 <table class="table-of-contents">

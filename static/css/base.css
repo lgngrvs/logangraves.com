@@ -214,9 +214,17 @@ td {
     cursor: pointer;
 }
 
-mjx-container {
+mjx-container { 
+    /* MathJax; doesn't actually do much lol */
     max-inline-size: 100%;
     overflow: scroll;
+}
+
+
+.page-img {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 0.3em;
 }
 
 

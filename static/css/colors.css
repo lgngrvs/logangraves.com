@@ -72,4 +72,8 @@
     .light-mode-hidden {
         display:inherit;
     }
+
+    img {
+        filter: brightness(.8) contrast(1.2);
+    }
 }
