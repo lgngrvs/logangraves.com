@@ -8,6 +8,7 @@ Transformers are a cutting-edge architecture for learning from data that can be 
 
 *note: images won't work yet due to differences between local workspace and my website urls. check back once this post is finished and the images will work probably*
 
+Ideally I will eventually be able to write my own textbook on this or something. maybe this is hubris but i feel like i could explain this way better than the existing resources do, save maybe for 3b1b. At least, from fundamentals.
 ## meta: how to learn this
 basically i want to learn by explaining how transformers work. why they work... different question.
 
@@ -204,4 +205,78 @@ here's what we have so far:
 
 ![[Screenshot 2024-05-11 at 1.24.48 PM.png]]
 now i want to high-level cover the rest of the model.
+
+![[Screenshot 2024-05-15 at 10.06.54 PM.png]]
+
+#### attention head (ignore me for now)
+> The ELI5 for attention head is really not easy.
+> 
+> We start with one representation for each word, and with an MLP we produce 3 new representations for each word. Then we mix these representations in a way that allows us to produce one final contextualized representation for each word.
+> 
+> The "not easy part" is how we mix it. In a way it doesn't really matter, we could say "we tried many things and this one is the best". We could also just show the maths. But that's not an explanation.
+> 
+> One representation is "how I interpret this main word with all other secondary words", another representation is "how this word as a secondary word should be interpreted when all other words are perceived as the main word", and a final representation is "what should I keep from this word to build a final representation". It's hard to explain it if you didn't see the maths. I'm not able to do a real ELI5 on this. If you implement it by yourself it's usually more clear.
+> 
+> The transformer is just a bunch of attention heads. If you get the attention head, the rest is easy.
+
+
+## what does feed forward do
+
+answer: https://www.reddit.com/r/LanguageTechnology/comments/gsyw10/comment/fs8veo8/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+(is this true? doubt)
+
+> Before that layer, a given element is partitioned by heads. If you had a 32 dimensional vector with eight heads, then elements 0-3 are functions of other position's 0-3. Elements 4-7 are functions of other position's 4-7. One head can't talk to another. To mix them, you have a linear layer. To mix them expressively, follow that with a nonlinearity?
+
+
+
+ok, so sorta maybe. basically, attention is a linear transformation. if you have 70 linear transformations, they can all be combined into one single transformation. having multiple linear layers is pointless, because they're equivalent to a single linear transformation. (why is this? matrix transformations can be composed into a single equivalent transformation)  
+
+
+## Encoder Vs. Decoder
+
+Part of the reason transformers are so hard is that there are lots of different ways they're used, and so different people try to teach them to you in different purpose-specific ways.
+
+One of the core ways that I was confused when I was trying to figure this out was the concept of the encoder vs. the decoder.
+
+In the original *attention is all you need* paper, they have both an encoder and a decoder. Initially I was like WTF? why is this here? And the complicated structure threw me off. I got sidetracked trying to figure out the difference, and when tutorials showed how to do both i was kinda crying. 
+
+It turns out that was dumb. It's actually not that deep.
+
+The encoder/decoder thing is specific for machine translation and similar tasks. Something like, "the encoder generates a nice representation of the input sentence" and then "the decoder goes word-by-word and generates the translation, using the generated representation from the encoder for context"
+
+ChatGPT:
+
+> Yes, there are several applications of transformers where only the encoder or the decoder component is utilized, instead of both:
+> 
+> 1. **Encoder-Only Applications:**
+>    - **BERT (Bidirectional Encoder Representations from Transformers):** This model uses only the transformer encoder. It's designed to pre-train deep bidirectional representations by conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications.
+>    - **Sentence Embeddings:** Transformers that use only the encoder can be employed to generate dense vector representations of sentences, which can then be used in various NLP tasks such as semantic search, clustering, and information retrieval.
+>    - **Document Classification:** In this use case, the encoder processes the text of a document and outputs a representation that can be used for classification tasks, like determining the topic of a document or detecting the sentiment.
+> 
+> 2. **Decoder-Only Applications:**
+>    - **GPT (Generative Pre-trained Transformer):** In contrast to BERT, GPT uses only the transformer decoder. It is trained on a language modeling objective and is used for generating text. GPT models are trained to predict the next word in a sentence and can generate coherent and contextually relevant text over extended passages.
+>    - **Image Generation:** Models like DALL-E, which use a transformer-based architecture for generating images from textual descriptions, primarily employ a decoder-like architecture. These models interpret and convert textual descriptions into coherent visual representations without the need for an encoder processing textual inputs.
+> 
+> In each of these cases, the chosen architecture (encoder-only or decoder-only) aligns with the specific requirements of the task. Encoder-only models excel in applications where the entire input needs to be understood, while decoder-only models are fit for generative tasks where the output is sequentially produced based on some form of input (like a prompt for text generation or a conditioning image/text in multimodal tasks). These models demonstrate the flexibility and adaptability of the transformer architecture to a wide range of tasks beyond the encoder-decoder setups typically seen in machine translation.
+
+GPTs are only decoders. *You don't need to stress about this lol!* Just think about one half of the diagram from attention is all you need.
+
+
+![[CDC23534-7708-4BC3-A9A2-AD2B378D8BE6.png]]
+
+[3b1b video!!](https://www.youtube.com/watch?v=LyGKycYT2v0&pp=ygULZG90IHByb2R1Y3Q%3D)
+
+
+
+Ok now I'm skipping a bunch because I don't feel like logging the learning I did. 
+
+Basically I learned how Key and Queries work — they're two different matrices and they correspond to each other but they're different so that attention doesn't have to be bidirectional.
+
+Wow, positional encodings seem complicated but maybe they aren't. 
+
+Now I'm interested in learning about parallelization and stuff. I wonder if there's a good textbook on the development of ML architectures. Wait, actually, there probably is. Wikipedia is pretty good for this.
+
+[[Parallel computing]]
+
+![[History of Language Models.png]]
 

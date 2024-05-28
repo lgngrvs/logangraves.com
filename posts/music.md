@@ -11,6 +11,7 @@ Desc:
 - Phillip Glass, String Quartet No. 3, movement VI.
 - Ravel, *Gaspard de la Nuit*, especially movement III (*"Scarbo"*)
 - Liszt, *Liebestraume* (you know, the one everyone knows)
+- Mendelssohn, *Elijah, Op. 70, Part 1*: “Blessed Are All They That Fear Him”
 
 ## hip hop, reggaeton, and associates
 - Burna Boy + Stormzy, *Real Life*

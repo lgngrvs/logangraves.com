@@ -66,6 +66,7 @@ Desc:
 - free online lectures (e.g. MIT [opencourseware](https://ocw.mit.edu/), [stanford online](https://www.youtube.com/@stanfordonline/videos))
 - A book club (if you run one please invite me)
 - becoming the type of person who gets invited to book clubs
+- [textfiles.com](http://textfiles.com/)
 
 > The "alphabet song" is a fragment of a much longer ballad, a list of every glyph, every name, every planet—when the angels sing it, you'll remember
 > (from [neoltitude](https://twitter.com/ctrlcreep/status/1773156537084604558))

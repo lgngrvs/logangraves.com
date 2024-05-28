@@ -9,6 +9,7 @@ Desc: A non-exhaustive list of open problems in my life.
 <p style="text-align:center"><i>Don't you want to see what you're capable of?</i></p>
 
 <br>
+(this hasn't been updated since March 2024. Come back later and I'll have a better list.)
 
 1. **How do I most effectively make use of the resources that surround me?**
     - The Bay Area
@@ -29,8 +30,9 @@ Desc: A non-exhaustive list of open problems in my life.
     - And I only get one summer after senior year.
 
 3. ~~**Where should I go to college?**~~
-    - Offers from [redacted], [redacted], ... [redacted]
-    - Mostly *information-gathering* right now; I think I know what I'm looking for (at a very, very high level, rigor + support together)
+    - ~~Offers from [redacted], [redacted], ... [redacted]~~
+    - ~~Mostly *information-gathering* right now; I think I know what I'm looking for (at a very, very high level, rigor + support together)~~
+    - Resolved: I picked stanford
 
 3. **How do I self-align effectively?**
     - Simple low-hanging rationality techniques
@@ -38,6 +40,10 @@ Desc: A non-exhaustive list of open problems in my life.
         - *Reflect in the moment on your optimal policy*
     - Sleeping a lot more would probably help with this
         - Key bottleneck to solving this problem: how do I convince myself to sleep more?
+	- You can choose to be happy
+		- Gratefulness habit sounds dumb but is insanely effective
+		- Setting expectations effectively; the more that you can model the world — and the more that you can *underestimate* how good outcomes will be — the less negative surprisal you will have and the more positive surprisal you will have
+		- Expectation/Desire is the root of suffering. Accept instead of expecting.
 
 
 Relevant idea: [You have access to your optimal policy at all times](https://x.com/shauseth/status/1627947822632017921?s=46):
