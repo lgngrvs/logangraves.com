@@ -15,7 +15,7 @@ Desc:
 <em>And the musk of the rose is blown.</em>  </p>
 <p><em>For a breeze of morning moves,</em><br>
 <em>And the planet of Love is on high,</em>  </p>
-<p><em>Beginning to faint in the light that she loves</em></p>
+<p><em>Beginning to faint in the light that she loves</em><br>
 <em>In a bed of daffodil sky,</em>  </p>
 <p><em>To faint in the light of the sun she loves,</em><br>
 <em>To faint in his light, and to die.</em></p>
