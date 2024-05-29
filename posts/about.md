@@ -29,7 +29,7 @@ My research interests include:
 - **Mechanistic interpretability** — especially where mech interp can tell us new information about language or concepts. (It's still insane to me that we can have things like word2vec and semantic similarity metrics.)
 - **Moral philosophy and philosophy of language**, especially with regards to what "morality" even looks like in non-human intelligent systems.
 
-Yet, all of these things said, if there is one thing that philosophy has taught me, it is ironically that there are domains that logic, that philosophy's traditional rational method, cannot touch. There *are no* foundations or systematic understandings — at least, none that are securely founded.
+Yet, all of these things said, if there is one thing that philosophy has taught me, it is ironically that there are domains that logic, that philosophy's traditional rational method, cannot touch. There *are no*  systematic understandings — at least, none that are securely founded.
 
 Philosophy does not make progress in the way that other fields do, because it is fundamentally distinct from them. It is more fundamental. There is no canonical metaphysics, no canonical epistemology, no canonical aesthetics, no canonical ethics, in the way that there are, say, canonical representations of classical mechanics. To me it philosophy is a process of clarification — what *can* be thought, and the consequences of doing so.
 

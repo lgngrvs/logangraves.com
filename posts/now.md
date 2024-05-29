@@ -4,17 +4,21 @@ Tags:
 Type: page
 Desc:
 
-Here's what I'm up to as of *late May, 2024*. 
+Updated *late May, 2024*. 
 
-I have now graduated high school! I'm figuring out my summer plans still, but I'm hoping to get a simple part-time job and spend the rest of my time learning. 
+> There is no choice but to become cracked in everything at once. How difficult of an endeavor that seems to be! — yet, it is the only worthwhile path upon which to travel.
 
-I feel *hungry* again — I want to learn everything again, and I'm enjoying the process of doing so. I haven't felt this joyful in a while. God I love learning stuff
+In mid-may 2024 I graduated high school. Not coincidentally, I started to feel *hungry* again, like I did when I was younger, the feeling of wanting to contain the whole universe inside of me, to be bursting open with multitudes. I'm making up for lost time!
+
+I continue to feel like I'm stuck straddling two worlds. Perhaps they will unite at their limits.
+
+I'm probably going to start a web design agency. Email me if you're interested in being an early client.
 
 Currently reading: 
-- *Introduction to Computing Systems* by Patt and Patel — extremely fun textbook that takes you from transistors up the levels of abstraction to high-level programming.
+- *Introduction to Computing Systems* by Patt and Patel — textbook that takes you from transistors up the levels of abstraction to high-level programming.
 - *What the Buddha Taught* by Dr. Walpola Rahula, an introduction to Theravada Buddhism. Rahula was a monk and a professor of History and Religions at Northwestern.
-- *Bach, Beethoven, and the Boys* by David Barber, a short book on the history of western music. 
 - Various stories from *Collected Fictions* a compendium of short stories by Jorge Luis Borges translated by Andrew Hurley
+- *Bach, Beethoven, and the Boys* by David Barber, a short book on the history of western music.
 - Various transformers resources & papers
 
 ## Coming up 
