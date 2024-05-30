@@ -11,7 +11,6 @@ article > p:first-of-type::first-line {
     position: fixed; 
     top:0px;
     left:0px;
-    background-color: var(--nice-div-color);
     width: initial;
     height: 100%;
     opacity: 0.7;
@@ -43,6 +42,20 @@ article > p:first-of-type::first-line {
 
     #nice-looking-color-img {
         display:none;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    #top-border {
+        opacity: 1;
+    }
+    #bottom-border {
+        opacity: 1;
+    }
+    #nice-looking-color-img {
+        opacity: 1;
+        filter:brightness(1.1);
     }
 
 }
