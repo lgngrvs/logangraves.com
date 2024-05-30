@@ -14,7 +14,7 @@ Desc:
 LOOK at what EPISTEMOLOGISTS have been demanding your Respect for all this time, with all the language & logic we built for them (This is REAL Epistemology, done by REAL Epistemologers):
 
 
-<img src="/static/images/acdc.PNG" style="border: 1px solid black; width: 30%;">
+<img src="/static/images/acdc.png" style="border: 1px solid black; width: 30%;">
 
 **?????**
 
