@@ -264,8 +264,12 @@ mjx-container {
 /* MOBILE STYLES (at bottom of page in order to override)*/ 
 @media only screen and (max-width: 987px) {
 
+    #home-font-size-container {
+        font-size: 15pt;
+    }
+
     body {
-        font-size: 12pt;
+        font-size: 13pt;
     }
 
     .desktop-only {
@@ -292,7 +296,7 @@ mjx-container {
         width: 20px;
         height: 100%;
     }
-    
+
     h5 {
         text-align: center;
         margin-bottom: 15px;
