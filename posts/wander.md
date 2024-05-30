@@ -1,5 +1,5 @@
 # Wander the garden
-Date: 2024-05-03
+Date: 2024-05-29
 Tags: 
 Type: page
 Desc: 
@@ -20,16 +20,26 @@ Desc:
 <p><em>To faint in the light of the sun she loves,</em><br>
 <em>To faint in his light, and to die.</em></p>
 </div>
-
 <br>
 
-Hypertext creates a graph-like structure instead of a linear hierarchy, which is more like how I think. (And I [prefer](/values) it aesthetically.)
+## Introduction
 
-I'm done writing essays on this blog for the time being. They don't make me feel [sparkly](sparkliness). 
-<br>
+The world is a very big place. Everyone we will ever know, *could* ever know, is in it. The paths in front of us are perpetually infinite, but our time here is not. 
+
+The world is a very big place, and most of it is on the internet. Embedded in the hypertext edifice are more people than we could ever meet, more knowledge than we could contain, more opportunity than we could take advantage of. The better we are at connecting into and traversing this network, the easier it is to grasp the best versions of our futures and pull them closer. 
+
+We can also create new nodes in the network for others to find — we can place parts of ourselves onto the internet, create our own digital simulacra that [act as long and complex search queries](https://www.henrikkarlsson.xyz/p/search-query) for people in some aspect like us. The internet is social infrastructure; (That's the main goal of this place, anyway.)
+
+As far as personal simulacra go, this one is, like, *okay*, since it's not exclusively for self-representation. It's more like a garden than it is a portrait. I plant the seeds, then cultivate, prune, nurture the plants; I design the paths in from and out to the dense forest surroundings, leave some hidden amusements for the observant, refine and change the garden as I myself grow. I luxuriate here on foggy afternoons and bring what I'm reading with me.
+
 <br>
 
 <img class="page-img" src="static/images/wander.webp">
+<p class="center" style="position: relative; top: -1em;">Literally me (or you, actually, that's fine too)</p>
+
+But though I am its architect, I am not meant to be the only person who plods around in here. Others who roam the garden have their own relationship to it, their own thoughts and responses to it — that's how I hope you'll treat this place. If you'd like, pluck a couple of flowers and take them with you, or take some stems for a garden of your own.
+
+<br>
 
 <h2 class="center">Contents</h2>
 
@@ -45,6 +55,10 @@ I'm done writing essays on this blog for the time being. They don't make me feel
     <tr>
         <td>Things to talk about</td>
         <td style="text-align: right"><a href="/conversation-topics">Conversation Topics</a></td>
+    </tr>
+    <tr>
+        <td>About me</td>
+        <td style="text-align: right"><a href="/about">About</a></td>
     </tr>
     <tr>
         <td>My notes</td>
