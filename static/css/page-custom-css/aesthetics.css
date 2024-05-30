@@ -47,15 +47,23 @@ article > p:first-of-type::first-line {
 }
 
 @media (prefers-color-scheme: dark) {
-    #top-border {
-        opacity: 1;
+
+    #drop-cap {
+        -webkit-filter: invert(100%) brightness(1.15);
+        filter: invert(100%) brightness(1.15);
     }
+    
+    #top-border {
+        opacity: 0.85;
+    }
+
     #bottom-border {
-        opacity: 1;
+        opacity: 0.85;
     }
     #nice-looking-color-img {
-        opacity: 1;
+        opacity: 0.85;
         filter:brightness(1.1);
+        -webkit-filter:brightness(1.1);
     }
 
 }
