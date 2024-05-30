@@ -1,0 +1,48 @@
+article > p:first-of-type::first-line {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-size: 1.2em; 
+    line-height: 1em;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+#nice-looking-color-img {
+    position: fixed; 
+    top:0px;
+    left:0px;
+    background-color: var(--nice-div-color);
+    width: initial;
+    height: 100%;
+    opacity: 0.7;
+}
+
+#top-border {
+    width: 100%;
+    opacity: 0.7;
+}
+
+#bottom-border {
+    transform: scaleX(-1);
+    width: 100%;
+    opacity: 0.7;
+}
+
+#drop-cap {
+    float:left; 
+    height: 4em; 
+    margin: 5px 5px 0px 0px;
+}
+
+
+/* MOBILE STYLES (at bottom of page in order to override)*/ 
+@media only screen and (max-width: 987px) {
+    #drop-cap {
+        margin: 2px 5px 0px 0px;
+    }
+
+    #nice-looking-color-img {
+        display:none;
+    }
+
+}

@@ -5,7 +5,8 @@ Type: page
 Desc:  
 
 > So perhaps the old trinity of Truth, Goodness, and Beauty is not simply the decorous and antiquated formula it seemed to us at the time of our selfconfident materialistic youth. If the tops of these three trees do converge, as thinkers used to claim, and if the all too obvious and the overly straight sprouts of Truth and Goodness have been crushed, cut down, or not permitted to grow, then perhaps the whimsical, unpredictable, and ever surprising shoots of Beauty will force their way through and soar up to that very spot, thereby fulfilling the task of all three.
-~Alexandr Solzhenitsyn, [Nobel Lecture 1970](https://isi.org/intercollegiate-review/solzhenitsyn-explains-ldquobeauty-will-save-the-worldrdquo/)
+>
+>~Alexandr Solzhenitsyn, [Nobel Lecture 1970](https://isi.org/intercollegiate-review/solzhenitsyn-explains-ldquobeauty-will-save-the-worldrdquo/)
 
 The [aesthetics](/aesthetics) page is filled with things I think are good or beautiful. ([These are the same thing](/values) I think.) This is not limited to art; actually, this is mostly stuff that is not art. 
 

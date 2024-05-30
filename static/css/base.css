@@ -46,7 +46,6 @@ body {
     height: 100%;
 }
 
-
 #page-wrap {
     margin: 0px 0px 0px 40px;
 }
@@ -293,7 +292,7 @@ mjx-container {
         width: 20px;
         height: 100%;
     }
-
+    
     h5 {
         text-align: center;
         margin-bottom: 15px;

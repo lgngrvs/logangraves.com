@@ -4,14 +4,18 @@ Tags:
 Type: page
 Desc: 
 
-([what is this?](aesthetics-what))
+<img src="/static/images/drop-caps/scotch-t.webp" id="drop-cap" alt="the letter t, scotch-style drop cap">here is no choice but to become cracked in everything at once. How difficult of an endeavor that seems! — yet, it is the only worthwhile path upon which to travel. You know this; you know this to be right. And there is, in the end, only to do what you *know* to be right. 
 
-*see also [conversation topics](conversation-topics) and [what i should be doing](/doing)*
+*There is* a choice for you, the choice between living fully and dying slowly. It is written: kill not the part of you that is cringe, kill the part that cringes.
+
+([What is this page?](aesthetics-what))
+
+<img src="/static/images/top-border.webp" id="top-border">
 
 
 > Haha, what a wicked and ironic comment bro. Now try saying something true and beautiful.
-
-*in no particular order:*
+> 
+> ~Tage Erlinger
 
 - Textbooks on programming and formal logic
 - Liberal Democracy and globalization
@@ -45,7 +49,8 @@ Desc:
 - Failing to understand things correctly
 - crying tears of happiness
 
-> Kill not the part of you that is cringe, kill the part that cringes.
+> The "alphabet song" is a fragment of a much longer ballad, a list of every glyph, every name, every planet—when the angels sing it, you'll remember
+> (from [neoltitude](https://twitter.com/ctrlcreep/status/1773156537084604558))
 
 - everything on the [music page](/music)
 - a hike in the verdant forest
@@ -68,6 +73,8 @@ Desc:
 - becoming the type of person who gets invited to book clubs
 - [textfiles.com](http://textfiles.com/)
 
-> The "alphabet song" is a fragment of a much longer ballad, a list of every glyph, every name, every planet—when the angels sing it, you'll remember
-> (from [neoltitude](https://twitter.com/ctrlcreep/status/1773156537084604558))
+<img src="/static/images/nice-border.webp" id="nice-looking-color-img"><img src="/static/images/nice-border.webp" id="nice-looking-color-img" style="right: 0px; left:auto;">
 
+<img src="/static/images/top-border.webp" id="bottom-border">
+
+*see also [conversation topics](conversation-topics) and [what i should be doing](/doing)*
