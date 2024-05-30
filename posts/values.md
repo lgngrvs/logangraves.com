@@ -23,7 +23,7 @@ I think this extends to truth as well — though this relation makes sense only 
 
 > "Yes please give me an INFINITE REGRESS OF BELIEFS. Please give me a COHERENT INTERCONNECTED STRUCTURE OF BELIEF that is SELF-JUSTIFYING " 
 > 
-> -[Statements dreamed up by the utterly Deranged](/static/epistemology.txt)
+> -[Statements dreamed up by the utterly Deranged](epistemology)
 
 I am not a nihilist. I am the opposite of the nihilist. Values are just independent of reason.
 

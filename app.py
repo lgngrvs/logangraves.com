@@ -136,6 +136,9 @@ def show_post_slug(slug):
             return render_template("post.html", post=post)
         elif post['type'] == "page":
             return render_template("page.html", post=post)
+        elif post['type'] == "barebones":
+            return render_template("barebones.html", post=post)
+
     except TypeError: 
         return render_template("404.html")
 
