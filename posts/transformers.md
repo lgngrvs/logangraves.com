@@ -1,6 +1,6 @@
 # how do transformers actually work?
 Date: 2024-05-09
-Tags: notes, ai
+Tags: notes ai
 Type: post
 Desc: describing how transformers work in a way that's intuitive to me
 

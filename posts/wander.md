@@ -24,11 +24,11 @@ Desc:
 
 ## Introduction
 
-The world is a very big place. Everyone we will ever know, *could* ever know, is in it. The paths in front of us are perpetually infinite, but our time here is not. 
+The world is a big place. Everyone we will ever know, *could* ever know, is in it. The paths in front of us are perpetually infinite, but our time here is not. 
 
-The world is a very big place, and most of it is on the internet. Embedded in the hypertext edifice are more people than we could ever meet, more knowledge than we could contain, more opportunity than we could take advantage of. The better we are at connecting into and traversing this network, the easier it is to grasp the best versions of our futures and pull them closer. 
+The world is a big place, and most of it is on the internet. Embedded in the hypertext edifice are more people than we could ever meet, more knowledge than we could contain, more opportunity than we could take advantage of. The better we are at connecting into and traversing this network, the easier it is to grasp the best versions of our futures and pull them closer. 
 
-We can also create new nodes in the network for others to find — we can place parts of ourselves onto the internet, create our own digital simulacra that [act as long and complex search queries](https://www.henrikkarlsson.xyz/p/search-query) for people in some aspect like us. The internet is social infrastructure; (That's the main goal of this place, anyway.)
+We can also create new nodes in the network for others to find — we can place parts of ourselves onto the internet, create our own digital simulacra that [act as long and complex search queries](https://www.henrikkarlsson.xyz/p/search-query) for people in some aspect like us. (That's the main goal of this place, anyway.)
 
 As far as personal simulacra go, this one is, like, *okay*, since it's not exclusively for self-representation. It's more like a garden than it is a portrait. I plant the seeds, then cultivate, prune, nurture the plants; I design the paths in from and out to the dense forest surroundings, leave some hidden amusements for the observant, refine and change the garden as I myself grow. I luxuriate here on foggy afternoons and bring what I'm reading with me.
 
@@ -41,7 +41,7 @@ But though I am its architect, I am not meant to be the only person who plods ar
 
 <br>
 
-<h2 class="center">Contents</h2>
+<h2 class="center">Selected Contents</h2>
 
 <table class="table-of-contents">
     <tr>
@@ -49,52 +49,56 @@ But though I am its architect, I am not meant to be the only person who plods ar
         <th style="text-align: right">Page</th>
     </tr>
     <tr>
-        <td>Things I love</td>
-        <td style="text-align: right"><a href="/aesthetics">Aesthetics</a></td>
+        <th style="text-align: left">1. Self</hd>
+        <td></td>
     </tr>
     <tr>
-        <td>Things to talk about</td>
-        <td style="text-align: right"><a href="/conversation-topics">Conversation Topics</a></td>
-    </tr>
-    <tr>
-        <td>About me</td>
+        <td class="table-indented"><span class="table-number">1.1</span> About me</td>
         <td style="text-align: right"><a href="/about">About</a></td>
     </tr>
     <tr>
-        <td>My notes</td>
-        <td style="text-align: right"> <a href="/tag/notes">#notes</a></td>
-    </tr>
-    <tr>
-        <td>What I'm doing</td>
+        <td class="table-indented"><span class="table-number">1.2</span> What I'm doing</td>
         <td style="text-align: right"> <a href="/now">Now</a></td>
     </tr>
     <tr>
-        <td>What I <em>should</em> be doing</td>
-        <td style="text-align: right"> <a href="/doing">Doing</a></td>
+        <td class="table-indented"><span class="table-number">1.3a</span> Aesthetics; or, things I love</td>
+        <td style="text-align: right"><a href="/aesthetics">Aesthetics</a></td>
     </tr>
-    <tr>
-        <td>Music I like</td>
+        <tr>
+        <td class="table-indented"><span class="table-number">1.3b</span> Music I like</td>
         <td style="text-align: right"> <a href="/music">Music</a></td>
     </tr>
     <tr>
-        <td>On values</td>
+        <td class="table-indented"><span class="table-number">1.4</span> Things I like to talk about</td>
+        <td style="text-align: right"><a href="/conversation-topics">Conversation Topics</a></td>
+    </tr>
+    <tr>
+        <th style="text-align: left">2. Writing</hd>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="table-indented"><span class="table-number">2.1</span> How to think about values</td>
         <td style="text-align: right"> <a href="/values">Values</a></td>
     </tr>
     <tr>
-        <td>On social infrastructure</td>
-        <td style="text-align: right"> <a href="/social-infrastructure">Social Infrastructure</a></td>
+        <td class="table-indented"><span class="table-number">2.2</span> Connecting people</td>
+        <td style="text-align: right"> <a href="/social-infrastructure">Social infrastructure</a></td>
     </tr>
     <tr>
-        <td>On infinite regress</td>
+        <td class="table-indented"><span class="table-number">2.3</span> On infinite regress problems</td>
         <td style="text-align: right"> <a href="/regress">Regress</a></td>
     </tr>
     <tr>
-        <td>In-progress notes on transformers</td>
-        <td style="text-align: right"> <a href="/transformers">Transformers</a></td>
+        <td class="table-indented"><span class="table-number">2.4</span> Some thoughts on design</td>
+        <td style="text-align: right"> <a href="/less-design">Less design</a></td>
     </tr>
     <tr>
-        <td>In-progress notes on set theory</td>
-        <td style="text-align: right"> <a href="/foundations-0">Foundations</a></td>
+        <td class="table-indented"><span class="table-number">2.5</span> Think a little less</td>
+        <td style="text-align: right"> <a href="/complexity-from-simplicity">Complex from simple</a></td>
+    </tr>
+    <tr>
+        <td><i>Stuff tagged notes</i></td>
+        <td style="text-align: right"> <a href="/tag/notes">#notes</a></td>
     </tr>
 </table>
 
