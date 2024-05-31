@@ -130,6 +130,8 @@ def show_post_slug(slug):
             post[key] = new_value
         
         post["tags_list"] = post['tags'].replace("#", "").split(" ")
+        post["date_formatted"] = str(datetime.strptime(post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
+
         # print(post)
 
         if post['type'] == "post": 

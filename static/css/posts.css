@@ -1,5 +1,9 @@
 /* Styles specific to blog posts */
 
+header {
+    padding: 60px 30px 30px;
+}
+
 .post-hr {
     color: var(--hr-color);
 }
@@ -9,18 +13,11 @@
     font-size: 1.8em;
     max-width: 600px; 
     margin-bottom: 10px; 
-    padding-top: 60px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-header {
-    padding: 0px 30px 30px;
-    /*background-image: linear-gradient(var(--gradient-top), var(--gradient-top), var(--gradient-bottom));
-    */
-    z-index: 1;
-}
 
 #post-subheading {
     text-align: center;
@@ -28,7 +25,10 @@ header {
 
 #created {
     font-size: 15px;
-    text-align: center;
+    color: var(--link-underline-color);
+    font-style: italic;
+    margin: 0px;
+    font-size: 0.8em;
 }
 
 h2 {
@@ -41,13 +41,11 @@ h2 {
     border-radius: 0.3em;
 }
 
-
 /* Class so that I can embed right-align text in markdown files */
 
 .right-align {
     text-align: right;
 }
-
 
 article > p:first-of-type::first-letter {
     /*color: var(--bullet-color);*/
@@ -89,7 +87,6 @@ article > p:first-of-type::first-line {
         margin-top: 0.5em;
     }
 
-
     #post-img {
         min-height: 16em;
         object-fit: cover;
@@ -98,13 +95,6 @@ article > p:first-of-type::first-line {
 
     #post-subheading {
         display:none;
-    }
-
-    #created {
-        margin: 0em;
-        text-align: left;
-        font-style: italic;
-        color: var(--bullet-color)
     }
 
 }

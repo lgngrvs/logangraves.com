@@ -4,25 +4,23 @@
   <link rel="stylesheet" href="/static/css/posts.css" type="text/css">
   <article>
     <header>
+      <h5 id='created' class="desktop-only">{{ post["date_formatted"] }}</h5>
       <h1 class="post-heading">{{ post["title"] }}</h1>
       <span id="post-subheading"><i>{{ post["description"] | safe }}</i></span>
-      <p id='created' class="desktop-only">{{ post["timestamp"] }}</p>
       <h5> {% if post["tags"] %} {% for tag in post["tags_list"] %} <a class="tag" href="/tag/{{ tag }}">#{{ tag }}</a> {% endfor %} • {% endif %} {{ post["wordcount"] }} words</h5>
     </header>
   {% if "notes" in post["tags"] %}
       <blockquote><i>Posts tagged "notes" represent my current knowledge and may be incorrect or misleading.</i></blockquote>
-  {% else %}
-    <br class="desktop-only">
+      <br>
   {% endif %}
   {% set post_image = "static/images/" + post['slug'] + ".webp" %}
   {% if file_exists(post_image) %}
-    <br class="desktop-only">
     <img id="post-img" src="static/images/{{ post['slug'] }}.webp">
     <br class="desktop-only">
     <br class="desktop-only">
   {% endif %}
   {{ post["content"] | safe }}
-  <p id='created' class="mobile-only">Published {{ post["timestamp"] }}</p>
+  <br class="mobile-only">
   </article>
   <p style="text-align:center;"><a id="home-footer-link" href="/">Home</a></p>
   <script>

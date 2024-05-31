@@ -32,7 +32,7 @@ for filename in list_of_file_names:
         tags = Markup.escape(whole_post_list[2][6:]).strip("\n")
         content_type = Markup.escape(whole_post_list[3][6:]).strip("\n")
         desc = Markup.escape(markdown.markdown(whole_post_list[4][6:], extensions=["tables"]))
-        content = Markup.escape(markdown.markdown(whole_post_list[5], extensions=["tables"]))
+        content = Markup.escape(markdown.markdown(whole_post_list[5], extensions=["tables", "footnotes"]))
         slug = slugify(filename)[6:][:-3]
         wordcount = len(whole_post_list[5].split(" "))
 
