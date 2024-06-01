@@ -19,7 +19,7 @@ School is at the same time *kind of boring*. The class content isn't really  cha
 
 But doing that is difficult, too, because school requests that you spend at least 6 hours on campus, then a couple hours of homework, if you're taking advanced classes. Doing all the stuff that you "need to do" in order to succeed (according to the school) leaves you with little time or mental effort left. Your alternative is to take incredibly, mind-numbingly easy classes with people who will clown on you for reading books. 
 
-![[Screenshot 2024-05-17 at 11.13.23 PM.png]]
+<img src="/static/images/miller-grove.png">
 <p style="text-align: center"><i>Literally you lol</i></p>
 
 (Which, like, if that's you, have fun idrc but hating books will not take you very far. There's lots of cool stuff in books.)

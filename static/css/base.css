@@ -270,6 +270,10 @@ mjx-container {
     cursor: pointer;
 }
 
+article > p > img {
+    max-width: 100%;
+}
+
 /* MOBILE STYLES (at bottom of page in order to override)*/ 
 @media only screen and (max-width: 987px) {
 
