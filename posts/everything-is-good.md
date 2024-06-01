@@ -87,7 +87,7 @@ In return, I decided, I'd get something more valuable: *I get to grow up around 
 
 I'm really happy I did. Because while it *was* difficult, it *was* grindy, it was a local minimum, **most of the ways that I suffered ended up forcing me to become awesome** — forcing me to become **someone I'm really excited to be.**
 
-***I think the path I took is actually much closer to the* global optimum *than I thought.***
+***I think the path I took is actually much closer to the global optimum than I thought.***
 
 We can look at how I spent my time — the extracurriculars and stuff — not as just "getting status anxiety'd" or whatever into doing stuff I didn't care about, but as doing the things locally available that seemed as close to valuable as I could find, and throwing myself into them. I did some shit that was really f****** hard for me. But I did it because it seemed *valuable,* and I grew a huge amount because of it. 
 

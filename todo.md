@@ -15,7 +15,9 @@
 [x] add latex support
 [ ] update the readme for JS Stuff (cause i had to add js for latex)
 [ ] add reading list
-[ ] start using tags again
+[x] start using tags again
+[ ] add collage
+[ ] add, like, a nature scene or something. a place to relax.
 
 
 long-term features
