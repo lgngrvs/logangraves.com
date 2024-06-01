@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 {% block title %}{{ post["title"] }} • Logan Graves{% endblock %}
+{% block previewtext %}
+{%if post["description"] != "" %}
+  {{ post["description"] }}
+{% else %}
+  Personal website for Logan Graves, an American high school student.
+{% endif %}
+{% endblock %}
 
 {% block head_items %}
   {% set page_special_css = "static/css/page-custom-css/" + post['slug'] + ".css" %}

@@ -1,5 +1,22 @@
 {% extends "base.html" %}
 {% block title %}{{ post["title"] }} • Logan Graves{% endblock %}
+
+{% block previewtext %}
+{%if post["description"] != "" %}
+  {{ post["description"] }}
+{% else %}
+  Personal website for Logan Graves, an American high school student.
+{% endif %}
+{% endblock %}
+
+{% block head_items %} 
+  {% set post_image = "static/images/" + post['slug'] + ".webp" %}
+  {% if file_exists(post_image) %}
+    <link rel="image_src" src="{{ post_image }}"> 
+  {% endif %}
+{% endblock %}
+
+
 {% block content %}
   <link rel="stylesheet" href="/static/css/posts.css" type="text/css">
   <article>
