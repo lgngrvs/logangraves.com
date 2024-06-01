@@ -15,6 +15,7 @@ I continue to feel like I'm stuck straddling two worlds. Perhaps they will unite
 I'm probably going to start a web design agency. Email me if you're interested in being an early client.
 
 Currently reading: 
+
 - *Introduction to Computing Systems* by Patt and Patel — textbook that takes you from transistors up the levels of abstraction to high-level programming.
 - *What the Buddha Taught* by Dr. Walpola Rahula, an introduction to Theravada Buddhism. Rahula was a monk and a professor of History and Religions at Northwestern.
 - Various stories from *Collected Fictions* a compendium of short stories by Jorge Luis Borges translated by Andrew Hurley
