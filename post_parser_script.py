@@ -31,7 +31,8 @@ for filename in list_of_file_names:
         date = Markup.escape(whole_post_list[1][6:]).strip("\n")
         tags = Markup.escape(whole_post_list[2][6:]).strip("\n")
         content_type = Markup.escape(whole_post_list[3][6:]).strip("\n")
-        desc = Markup.escape(markdown.markdown(whole_post_list[4][6:], extensions=["tables"]))
+        description = Markup.escape(markdown.markdown(whole_post_list[4][6:], extensions=["tables"]))
+        descriptionplain = Markup.escape(whole_post_list[4][6:]).strip("\n")
         content = Markup.escape(markdown.markdown(whole_post_list[5], extensions=["tables", "footnotes"]))
         slug = slugify(filename)[6:][:-3]
         wordcount = len(whole_post_list[5].split(" "))
@@ -42,7 +43,7 @@ for filename in list_of_file_names:
         cursor = connection.cursor()
         test = connection.execute(f"SELECT * FROM posts where slug LIKE '{slug}'").fetchone()
         if test == None:
-            connection.execute(f"INSERT INTO posts (timestamp, type, title, slug, tags, content, description, wordcount) VALUES ('{date}', '{content_type}', '{title}', '{slug}', '{tags}', '{content}', '{desc}', '{wordcount}')")
+            connection.execute(f"INSERT INTO posts (timestamp, type, title, slug, tags, content, description, descriptionplain, wordcount) VALUES ('{date}', '{content_type}', '{title}', '{slug}', '{tags}', '{content}', '{description}', '{descriptionplain}', '{wordcount}')")
             connection.commit()
             connection.close()
         else: 

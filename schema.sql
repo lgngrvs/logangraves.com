@@ -8,6 +8,7 @@ CREATE VIRTUAL TABLE posts USING fts4 (
     slug TEXT NOT NULL,
     tags TEXT NOT NULL,
     description TEXT NOT NULL,
+    descriptionplain TEXT NOT NULL,
     content TEXT NOT NULL,
     wordcount INTEGER
 );
