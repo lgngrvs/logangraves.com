@@ -28,10 +28,12 @@ Well, anyway.
 
 **Music**
 
-- Meaning in music: is it different from language? 
+*see also [Music I like](/music)*
+
+- Meaning in music: is it different from language?
 - *Meaningless* music, emotionally evocative without an intended concrete meaning (e.g. Ravel's *Pavane*)
 - *Gaspard de la Nuit* (I am so down bad for Ravel) 
-- Love and harmony (*Liebenstraum*)
+- Love in harmony (*Liebestraum*)
 - The deconstruction of music as an art form; music that makes you suffer (e.g. 100 gecs *xXXi_wud_nvrstøp_ÜXXx*)
 - Melodic metal, the aesthetics of screaming lol (Loathe, *Screaming*)
 
