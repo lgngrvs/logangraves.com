@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ post["title"] }} • Logan Graves{% endblock %}
+{% block title %}{{ post["title"] }}{% endblock %}
 
 {% block previewtext %}
 {%if post["description"] != "" %}
@@ -10,9 +10,11 @@
 {% endblock %}
 
 {% block head_items %} 
+  <meta property="og:title" content="{{ post['title'] }}"> 
+
   {% set post_image = "static/images/" + post['slug'] + ".webp" %}
   {% if file_exists(post_image) %}
-    <meta property="og:image" content="{{ post_image }}"> 
+    <meta property="og:image" content="{{ 'https://logangraves.com/' + post_image }}"> 
   {% endif %}
 {% endblock %}
 
