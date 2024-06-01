@@ -1,4 +1,6 @@
 **essays**
+- You should make a personal website
+
 - on status anxiety/being late to the party
 	- status anxiety is unfounded, but it's a signal of growing (reconcile these two things) 
 	- *being late to the party b/c i got there myself*

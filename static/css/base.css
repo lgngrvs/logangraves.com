@@ -278,11 +278,11 @@ article > p > img {
 @media only screen and (max-width: 987px) {
 
     #home-font-size-container {
-        font-size: 15pt;
+        font-size: 17pt;
     }
 
     body {
-        font-size: 13pt;
+        font-size: 15pt;
     }
 
     .desktop-only {
