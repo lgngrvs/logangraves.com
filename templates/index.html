@@ -1,15 +1,42 @@
 {% extends "base.html" %}
 {% block title %}Index • Logan Graves{% endblock %}
-{% block content %} 
+{% block content %}
     <link rel="stylesheet" href="/static/css/index.css" type="text/css">
+    <div id="index-wrapper">
     <h1>Index</h1>
     <br class="desktop-only"><br class="desktop-only">
-    <ul>
+    <h2>Blog posts on this website </h2>
+    <p>Coherent written pieces with structure and some sort of argumentation. (Mostly.)</p>
+    <table id="index-table">
     {% for post in posts %}
+        <tr class="index-row">
+            <td class="index-img-container-container">
+                {% set post_image = "static/images/" + post['slug'] + ".webp" %}
+                {% if file_exists(post_image) %}
+                    <div class="index-img-container">
+                        <img class="index-img" src="static/images/{{ post['slug'] }}.webp">
+                    </div>
+                {% else %}
+                    <div class="index-filler-div">
+                        <p>:)</p>
+                    </div>
+                {% endif %}
+            </td>
+            <td>
+                <p><a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></p>{% set desc = post["description"] %}{% if desc != "" %}<p><i>{{ desc | safe }}</i></p>{% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+    <h2> Pages on this website </h2>
+    <p>Things that I don't feel like embedding in prose, smaller ideas, pages with frequent changes</p>
+    <ul>
+    {% for page in pages %}
         <li>
-            <a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a>
+            <a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=page['slug']) }}">{{ page['title'] }}</a>
         </li>
     {% endfor %}
     </ul>
     <p style="text-align:center;"><a id="home-footer-link" href="/">< Home</a></p>
+    </div>
 {% endblock %}
