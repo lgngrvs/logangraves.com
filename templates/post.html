@@ -14,8 +14,8 @@
 
   {% set post_image = "static/images/" + post['slug'] + ".webp" %}
   {% if file_exists(post_image) %}
-    <meta property="og:image:url" content="'static/images/'' + post['slug'] + '.png'"> 
-    <meta property="og:image" content="'static/images/'' + post['slug'] + '.png'"> 
+    <meta property="og:image:url" content="{{ 'static/images/'' + post['slug'] + '.png' }}"> 
+    <meta property="og:image" content="{{'static/images/'' + post['slug'] + '.png'}}"> 
 
   {% endif %}
 {% endblock %}
