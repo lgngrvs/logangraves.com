@@ -24,6 +24,10 @@ table {
     .table-number {
         display:none;
     }
+
+    .table-of-contents {
+        margin-left: 0em;
+    }
 }
 
 tr:nth-child(even) {
