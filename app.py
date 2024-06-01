@@ -53,6 +53,16 @@ def file_exists(path):
 def home(): 
     return render_template("home.html")
 
+
+# ======== The index Page ========
+# 
+#   Sets up the index page 
+#   properly (supposedly) but
+#   because of heroku stuff it
+#   has weird behavior 
+#   sometimes.
+#  
+
 @app.route("/index")
 def index():
 
@@ -98,22 +108,12 @@ def index():
 
     return render_template('index.html', posts=posts_only, pages=pages_only)
 
-"""
-@app.route("/posts/<i>")
-def show_post_number(i):
-    i = escape(i)
-    try: 
-        i = int(i)
-        posts = get_all()
-        # print(posts)
-        post = dict(posts[i])
-        for key, value in post.items(): 
-            new_value = Markup(value).unescape()
-            post[key] = new_value
-        return render_template("page.html", post = post)
-    except ValueError: 
-        return render_template("404.html")
-"""
+
+# ======== does most of the regular processing ========
+# 
+#   Most stuff is a /<slug> thing so this does most of
+#   the web server work.
+# 
 
 @app.route("/<slug>")
 def show_post_slug(slug):
@@ -145,6 +145,9 @@ def show_post_slug(slug):
         return render_template("404.html")
 
 
+
+# ======== TAGS ========
+
 @app.route("/tag/<tag>")
 def show_tag(tag):
     tag = escape(tag)
@@ -174,32 +177,9 @@ def show_tag(tag):
     else:
         return render_template('tag.html', posts=relevant_posts, tag=tag)
 
-# Old POST search method. Switched to GET because it looks nicer. 
-'''
-@app.route("/search", methods=["POST"])
-def search(): 
-    search_query = request.form.get("search")
-    search_query = escape(search_query)
-    if search_query == "":
-        render_template("no_search.html")
-    else:    
-        connection = get_db_connection()
-        connection.row_factory = sqlite3.Row
-        print(search_query)
-        relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}'").fetchall()
-        relevant_posts = list(relevant_posts)
-        x = 0
-        print(relevant_posts)
-        for temp_post in relevant_posts: 
-            temp_post = dict(temp_post)
-            for key, value in temp_post.items(): 
-                new_value = Markup(value).unescape()
-                temp_post[key] = new_value
-            relevant_posts[x] = temp_post
-            x += 1
-        print(relevant_posts)
-        return render_template('search.html', search=search_query, posts=relevant_posts)
-'''
+
+
+# ======== SEARCH ========
 
 @app.route("/search", methods=["GET"])
 def search(): 
@@ -229,29 +209,15 @@ def search():
     except TypeError:
         render_template("no_search.html")
 
-"""
-posts = get_all()
-    #some sort of object
-    posts = list(posts)
-    #posts is a tuple containing objects? 
-    x = 0
-    #print(posts)
-    for temp_post in posts: 
-        temp_post = dict(temp_post)
-        for key, value in temp_post.items(): 
-            new_value = Markup(value).unescape()
-            temp_post[key] = new_value
-        #print("temp post is currently")
-        #print(temp_post)
-        posts[x] = temp_post
-        x += 1
-    # print("posts in current state")
-    # print(posts)
-"""
+# ======== /contact redirect ========
 
 @app.route('/contact')
 def contact():
     return redirect("https://logangraves.com/about", code=302)
+
+
+
+# ======== RSS FEED ========
 
 @app.route("/rss.xml")
 def rss():
@@ -288,7 +254,7 @@ def rss():
     response.headers.set('Content-Type', 'application/rss+xml')
     return response
 
-
+# === HEHE ===
 @app.route("/you")
 def you():
     return render_template("you.html")
@@ -296,8 +262,6 @@ def you():
 @app.errorhandler(404)
 def not_found(error): 
     return render_template("404.html")
-
-# @app.errorhandler
 
 
 if __name__ == '__main__':
