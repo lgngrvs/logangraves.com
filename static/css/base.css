@@ -147,7 +147,7 @@ ul > li::before {
     color: var(--bullet-color);
     display: inline-block;
     width: 0.75em;
-    margin-left: -0.5em;
+    margin-left: -1em;
     font-size: 30px;
     line-height: 0;
     position: relative; 
