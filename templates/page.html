@@ -2,7 +2,7 @@
 {% block title %}{{ post["title"] }} • Logan Graves{% endblock %}
 {% block previewtext %}
 {%if post["description"] != "" %}
-  {{ post["description"] }}
+  {{ post["description"] | safe }}
 {% else %}
   Personal website for Logan Graves, an American high school student.
 {% endif %}

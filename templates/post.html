@@ -3,7 +3,7 @@
 
 {% block previewtext %}
 {%if post["description"] != "" %}
-  {{ post["description"] }}
+  {{ post["description"] | safe }}
 {% else %}
   Personal website for Logan Graves, an American high school student.
 {% endif %}
@@ -12,7 +12,7 @@
 {% block head_items %} 
   {% set post_image = "static/images/" + post['slug'] + ".webp" %}
   {% if file_exists(post_image) %}
-    <link rel="image_src" src="{{ post_image }}"> 
+    <meta property="og:image" content="{{ post_image }}"> 
   {% endif %}
 {% endblock %}
 
