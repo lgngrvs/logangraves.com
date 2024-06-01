@@ -104,6 +104,8 @@ But though I am its architect, I am not meant to be the only person who plods ar
 
 <br>
 
+A more systematic list is available at the [index](/index).
+
 *Note: Your URLs are not safe! I'll try to avoid changing the links to my blog posts, but any page in the garden (i.e. any page without the word count indicated) may be subsumed back into the aetherial churn, returned once again from its sparkling identity to the primordial unity.*
 
 *If you want to archive something on this website, copy-pasting the text or printing to pdf are good options, or you can link to the file in the [github](https://github.com/lgngrvs/logangraves.com) history under a commit where it's in the state you want to keep it in.*

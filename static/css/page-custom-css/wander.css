@@ -6,10 +6,6 @@ table {
     border-collapse: collapse;
 }
 
-tr:nth-child(even) {
-    background-color: rgb(23, 23, 23);
-}
-
 .table-number {
     font-weight: 600;
 }
@@ -28,4 +24,8 @@ tr:nth-child(even) {
     .table-number {
         display:none;
     }
+}
+
+tr:nth-child(even) {
+    background-color: var(--subtle-background-darker);
 }
