@@ -14,7 +14,8 @@
 
   {% set post_image = "static/images/" + post['slug'] + ".webp" %}
   {% if file_exists(post_image) %}
-    <meta property="og:image" content="{{ 'https://logangraves.com/' + post_image }}"> 
+    <meta property="og:image:url" content="{{ 'https://logangraves.com/' + post_image }}"> 
+
   {% endif %}
 {% endblock %}
 
