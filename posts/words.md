@@ -2,7 +2,7 @@
 Date: 2023-12-18
 Tags: #language
 Type: post
-Desc: My favorite words and why they're fun.
+Desc: Words! Words! Words!
 
 One day I'd like to write an ode to all of these words, to say why they are special to me. For now, it's just a list.
 
@@ -71,13 +71,13 @@ Religious syncretism produces [interesting results](https://en.wikipedia.org/wik
 
 (I like having a more broad term encompassing "interdisciplinary.")
 
-## 8. **facile**
+## 9. **facile**
 
 (adj) Simplistic or superficial. (Facile is polysemic; it also means "easy to comprehend or do.")
 
 I just like this word better than its synonyms. Something about it feels more appropriate to me.
 
-## 11. **amaurotic**
+## 10. **amaurotic**
 
 (adj) Regarding a condition of blindness without any perceptible change in the appearance of the eye.
 
@@ -85,14 +85,14 @@ This is, well, medical jargon, but its metaphorical usage is useful, and I've se
 
 For example, a formerly knowledgeable organization that subtly decays until it's no longer a useful source of knowledge might be described as amaurotic. It's become blind, but that's not obvious from the outside.
 
-## 12. **superogatory**
+## 11. **superogatory**
 
 (adj) Doing more than is required by duty. 
 
 This is a word that's especially useful when talking about ethics from an anti-realist perspective, or offering provocative arguments: *why follow a systematic moral system?* *Why not just do what seems right according to general principles, and then if they lead you to insane conclusions, just... stop?* (See this post by [Joe Carlsmith](https://joecarlsmith.com/2023/02/16/why-should-ethical-anti-realists-do-ethics/) for a deeper discussion of this point. That post is where my interest in this word came from. It's also available as an audio version.)
 
-## 13. **logorrheic**
+## 12. **logorrheic**
 
-Me lol
+Literally me
 
-(This word is just so... visceral. So perfect in the associations it brings to mind. It's simultaneously accurate and metaphorically vivid. I will not specify further.)
+This word is just so... visceral. So perfect in the associations it brings to mind. It's simultaneously accurate and metaphorically vivid. I will not specify further.

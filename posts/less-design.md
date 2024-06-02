@@ -1,8 +1,8 @@
-# Do as little design as possible
+# As little design as possible
 Date: 2024-05-30
 Tags:
 Type: post
-Desc: 
+Desc: Good design is less design.
 
 The indie internet is its own distinct ecosystem. It's the digital world's soft underbelly — amidst the churning mass of algorithmic slop there are scattered oases, peopled by personal websites, anon blogs, side projects, side-projects-that-turned-main-projects; it's organic, hand-made in the way much of the surface-level internet isn't.
 

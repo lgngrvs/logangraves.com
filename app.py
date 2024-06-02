@@ -100,6 +100,7 @@ def index():
             temp_post[key] = new_value
         # print("temp post is currently")
         # print(temp_post)
+        temp_post["date_formatted"] = str(datetime.strptime(temp_post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
         posts_only[x] = temp_post
         x += 1
 
