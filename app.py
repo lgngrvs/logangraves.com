@@ -66,22 +66,31 @@ def home():
 @app.route("/index")
 def index():
 
-    posts_only = list(get_only_posts())
-    pages_only = list(get_only_pages())
+    posts_only = sorted(list(get_only_posts()), key=lambda item: item["timestamp"], reverse=True) # sorts by timestamp
+    pages_only = sorted(list(get_only_pages()), key=lambda item: item["title"]) # sorts by title
 
-    # Print statements for debug when needed
-    # print("Posts include: ")
-    # for post in posts_only:
-    #    print(post['title'])
+    """
+    Both posts_only and pages_only return a list containing dictionaries 
+    (actually they're sqlite objects accessible like dictionaries)
 
-    def get_timestamp(element):
-        return(element[1])
-    posts_only.sort(reverse=True, key=get_timestamp)
+    [
+        {
+            "id": ..., 
+            "timestamp":  ...,
+            "type": 
+            "title"
+            "slug"
+            "tags"
+            "description"
+            "descriptionplain"
+            "content": string
+            "wordcount": int
+        },
+        { "id": ..., ...}, 
+        ...
+    ]
+    """
 
-    # for i in posts_only: 
-    #    print(i[1])
-    # 
-    # print("Pages include: " + str(pages_only))
 
     x = 0
     for temp_post in posts_only: 
@@ -105,6 +114,23 @@ def index():
         # print(temp_post)
         pages_only[y] = temp_page
         y += 1
+
+
+    # initialize new set
+    # loop through each item and add to set
+    # if any item already exists we just don't add it
+    def remove_duplicates(dictionary_list):
+        seen_titles = set()
+        unique_list = []
+        for item in dictionary_list:
+            if item['title'] not in seen_titles:
+                unique_list.append(item)
+                seen_titles.add(item['title'])
+        return unique_list
+
+    posts_only = remove_duplicates(posts_only)
+    pages_only = remove_duplicates(pages_only)
+    # this is to compensate for the heroku bug
 
     return render_template('index.html', posts=posts_only, pages=pages_only)
 
