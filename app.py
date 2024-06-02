@@ -1,5 +1,4 @@
 # this is what runs.
-
 import init_db
 import post_parser_script
 from flask import Flask, render_template, Markup, request, redirect, make_response
@@ -10,9 +9,12 @@ from feedgen.feed import FeedGenerator
 from datetime import datetime
 from dateutil.tz import tzoffset
 import os
+from flask_talisman import Talisman
+
 load_dotenv()
 
 app = Flask(__name__)
+Talisman(app)
 app.config["TEMPLATES_AUTO_RELOAD"] = False
 
 @app.context_processor
