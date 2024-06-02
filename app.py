@@ -14,7 +14,8 @@ from flask_talisman import Talisman
 load_dotenv()
 
 app = Flask(__name__)
-Talisman(app)
+
+Talisman(app, content_security_policy=flask_talisman.GOOGLE_CSP_POLICY)
 app.config["TEMPLATES_AUTO_RELOAD"] = False
 
 @app.context_processor
