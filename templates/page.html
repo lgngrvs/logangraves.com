@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block title %}{{ post["title"] }}{% endblock %}
 {% block previewtext %}
-{%if post["description"] != "" %}
-  {{ post["description"] | safe }}
+{%if post["descriptionplain"] != "" %}
+  {{ post["descriptionplain"] | safe }}
 {% else %}
   Personal website for Logan Graves, an American high school student.
 {% endif %}
