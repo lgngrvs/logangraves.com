@@ -243,6 +243,10 @@ mjx-container {
     margin: 0px;
 }
 
+.dark-text {
+    color: var(--dark-text-color);
+}
+
 /* Styling the title bar for pages. */
 
 #page-title {
@@ -277,8 +281,12 @@ article > p > img {
 /* MOBILE STYLES (at bottom of page in order to override)*/ 
 @media only screen and (max-width: 987px) {
 
-    #home-font-size-container {
-        font-size: 16pt;
+    a {
+        transition: none;
+    }
+
+    a:hover {
+        transition: none;
     }
 
     body {
@@ -294,20 +302,15 @@ article > p > img {
     }
 
     #page-wrap {
-        margin: 0px 0px 0px 20px;
+        margin: 1em 0px 0px 0px;
     }
 
     #content-wrap {
-        padding: 5% 8% 0 8%;
+        padding: 0% 8% 0 8%;
     }
 
     #nice-looking-color-div {
-        position: fixed; 
-        top:0px;
-        left:0px;
-        background-color: var(--nice-div-color);
-        width: 20px;
-        height: 100%;
+        display:none;
     }
 
     h5 {
