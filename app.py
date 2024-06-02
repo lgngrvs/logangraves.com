@@ -9,6 +9,7 @@ from feedgen.feed import FeedGenerator
 from datetime import datetime
 from dateutil.tz import tzoffset
 import os
+import flask_talisman 
 from flask_talisman import Talisman
 
 load_dotenv()
