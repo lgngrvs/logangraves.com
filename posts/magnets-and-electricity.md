@@ -120,13 +120,13 @@ So **Gauss's law** just says that, if you stick an electric charge inside a clos
 
 So taking a look at the wikipedia notation, from page on [Electric flux](https://en.wikipedia.org/wiki/Electric_flux):
 
-$$\Phi = {{\subset\!\supset} \llap{\iint}}_{S} \text{E} \cdot d\mathbf{A} = \frac{Q}{\epsilon_{0}}$$
+$$\Phi = {{\subset\\!\supset}\llap{\iint}\_{S}} \: \text{E} \cdot d\mathbf{A} = \frac{Q}{\epsilon_{0}}$$
 
 (The fancy double integral with the circle (that I had to get from stack overflow because mathJax doesn't render closed surface integrals natively) is just telling you that it's an integral across a closed surface. :) 
 
 In other words, *this is the exact thing that the khan academy video just derived* lol
 
-(I don't know how to calculate $Q$, but that's something I can figure out probably pretty easily. Apparently it's derived from Coulomb's law.)
+→don't know how to calculate $Q$, but that's something I can figure out probably pretty easily. Apparently it's derived from Coulomb's law.)
 
 We see an equivalent of $\frac{Q}{\epsilon_{0}}$ reappear in the canonical page we started with, the one for on [Maxwell's Equations](https://en.wikipedia.org/wiki/Maxwell%27s_equations): 
 
