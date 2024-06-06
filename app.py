@@ -33,11 +33,11 @@ CSP = {
                   '*.google-analytics.com cdn.jsdelivr.net',
     # Used by generated code from http://www.google.com/fonts
     'style-src': '\'self\' ajax.googleapis.com fonts.googleapis.com '
-                 '*.gstatic.com cdn.jsdelivr.net sha256-Wi3+8jbn12vus9Oq4FOqEUCOpuRG3clBaVvLZZ2b9Fs='
-                 'sha256-JLEjeN9e5dGsz5475WyRaoA4eQOdNPxDIeUhclnJDCE='
-                 'sha256-mQyxHEuwZJqpxCw3SLmc4YOySNKXunyu2Oiz1r3/wAE='
-                 'sha256-OCf+kv5Asiwp++8PIevKBYSgnNLNUZvxAp4a7wMLuKA='
-                 'sha256-h5LOiLhk6wiJrGsG5ItM0KimwzWQH/yAcmoJDJL//bY='
+                 '*.gstatic.com cdn.jsdelivr.net sha256-Wi3+8jbn12vus9Oq4FOqEUCOpuRG3clBaVvLZZ2b9Fs= '
+                 'sha256-JLEjeN9e5dGsz5475WyRaoA4eQOdNPxDIeUhclnJDCE= '
+                 'sha256-mQyxHEuwZJqpxCw3SLmc4YOySNKXunyu2Oiz1r3/wAE= '
+                 'sha256-OCf+kv5Asiwp++8PIevKBYSgnNLNUZvxAp4a7wMLuKA= '
+                 'sha256-h5LOiLhk6wiJrGsG5ItM0KimwzWQH/yAcmoJDJL//bY= '
                  'unsafe-hashes',
     'object-src': '\'none\'',
     'default-src': '\'self\' *.gstatic.com',
