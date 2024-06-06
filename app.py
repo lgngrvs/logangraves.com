@@ -39,7 +39,7 @@ CSP = {
 }
 
 
-Talisman(app, content_security_policy=CSP)
+# Talisman(app, content_security_policy=CSP)
 
 
 app.config["TEMPLATES_AUTO_RELOAD"] = False
