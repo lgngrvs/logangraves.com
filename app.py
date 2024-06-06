@@ -33,7 +33,7 @@ CSP = {
                   '*.google-analytics.com cdn.jsdelivr.net',
     # Used by generated code from http://www.google.com/fonts
     'style-src': '\'self\' ajax.googleapis.com fonts.googleapis.com '
-                 '*.gstatic.com',
+                 '*.gstatic.com cdn.jsdelivr.net',
     'object-src': '\'none\'',
     'default-src': '\'self\' *.gstatic.com',
 }
