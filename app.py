@@ -16,7 +16,32 @@ load_dotenv()
 
 app = Flask(__name__)
 
-Talisman(app, content_security_policy=flask_talisman.GOOGLE_CSP_POLICY)
+
+CSP = { 
+    # Just some additions to the basic CSP provided by Talisman at
+    # https://github.com/wntrblm/flask-talisman/blob/main/flask_talisman/talisman.py
+
+    # Fonts from fonts.google.com
+    'font-src': '\'self\' themes.googleusercontent.com *.gstatic.com',
+    # <iframe> based embedding for Maps and Youtube.
+    'frame-src': '\'self\' www.google.com www.youtube.com',
+    # Assorted Google-hosted Libraries/APIs.
+    # Added jsdelivr.net to allow MathJax, but I'm worried
+    # that jsdelivr.net is not a great host to be allowing.
+    # Will give some thought.
+    'script-src': '\'self\' ajax.googleapis.com *.googleanalytics.com '
+                  '*.google-analytics.com cdn.jsdelivr.net',
+    # Used by generated code from http://www.google.com/fonts
+    'style-src': '\'self\' ajax.googleapis.com fonts.googleapis.com '
+                 '*.gstatic.com',
+    'object-src': '\'none\'',
+    'default-src': '\'self\' *.gstatic.com',
+}
+
+
+Talisman(app, content_security_policy=CSP)
+
+
 app.config["TEMPLATES_AUTO_RELOAD"] = False
 
 @app.context_processor
