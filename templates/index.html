@@ -9,7 +9,7 @@
     <table id="index-table">
     {% for post in posts %}
         {% set link_location = url_for('show_post_slug', slug=post['slug']) %}
-        <tr class="index-row" onclick="window.location='{{ link_location }}';">
+        <tr class="index-row" onclick="redirect('{{ link_location }}')">
 
             <td class="index-img-container-container mobile-only">
                 {% set post_image = "static/images/" + post['slug'] + ".webp" %}
