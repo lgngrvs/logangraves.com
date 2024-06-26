@@ -18,7 +18,7 @@ Basically, this post is an attempt to distill everything that I've learned about
 
 Anyway, here is how you become happy:
 
-## 1.
+## I.
 
 **Take care of your basic needs**. Sleep enough and at a consistent time; eat food that makes you feel well-nourished at a consistent time; drink enough water; wear clothes that you feel comfortable in; get consistent sunlight and exercise. Live in a place that you feel safe.
 
@@ -26,7 +26,7 @@ These "basic needs" are technically not necessary to be happy in my experience �
 
 As a disclaimer, basic needs require security and wealth to be consistently fulfilled — a certain amount of privilege is required to even have the space in your life, the mental energy, to expend effort on your thoughts.[^2] You may not always have this luxury; we live at an unprecedentedly good time in human history, but the world still sucks in many ways, and it is mostly not within our control. Do the best that you can.
 
-## 2.
+## II.
 
 **Listen to cues from your body for higher-order/emotional needs.** Generally your body will give you signals about what it needs. Some of these are easy to interpret, especially those related to more fundamental/simple needs (e.g. "I am hungry" or "I am tired" or "I feel trapped in this house, I want to get outside") — but some are more difficult to interpret.
 
@@ -58,7 +58,7 @@ The main ideas: emotions, along with other sensations and experiences, are signa
 
 You don't always need to try and make sense of them; often it is enough just to give them gentle attention. An approach characterized by curiosity will be effective here. *The better your toolbox for engaging with your emotions, the easier it will be to cultivate happiness.*
 
-## 3.
+## III.
 
 **Tune your cognition so you can just *be happier.*** This is not just doing one thing; mixing multiple techniques is worthwhile, and you'll need to adjust things as they uniquely need to be adjusted *for you*. Nevertheless, these are what I think the core of "cultivating happiness" is.
 
