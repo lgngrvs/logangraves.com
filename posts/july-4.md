@@ -1,15 +1,14 @@
-
 # On July 4th
 Date: 2024-07-04
 Tags:
 Type: post
-Desc: Reflections on nationalism, history, and conflict.
+Desc: Reflections on nationalism, history, and identity.
 
 ## I.
 
 **It's July 4th in Virginia, half past noon**. It's too hot today to stay outside long, and there's a storm coming tonight — we can hear thunder in the distance, though right now skies look clear.
 
-We set off little fireworks on the gravel road last night, anticipating that storm. Dad and I announced the names of the fireworks — *Rose Blossom*, *Wild Side* — then set them off, the rest of the family sitting on the porch. They were remarkably beautiful, these fireworks we bought from a tent in a Walmart parking lot.
+We set off our little fireworks on the gravel road *last night*, July 3rd, anticipating that storm. Dad and I announced the names of the fireworks — *Rose Blossom*, *Wild Side* — then set them off, the rest of the family sitting on the porch. They were remarkably beautiful, these fireworks we bought from a tent in a Walmart parking lot.
 
 Two and a half centuries ago this country's founders — political theorists, revolutionary leaders; many lawyers, businessmen, and farmers; [most of them slaveowners](https://en.wikipedia.org/wiki/Founding_Fathers_of_the_United_States#Slavery) — adopted a resolution declaring America to be its own nation. In the very same breaths that they declared this country sovereign, they articulated its most fundamental values:
 
