@@ -15,7 +15,7 @@ Two and a half centuries ago this country's founders — political theorists, re
 > We hold these Truths to be self-evident, that all Men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness—That to secure these Rights, Governments are instituted among Men, deriving their just Powers from the Consent of the Governed, that whenever any Form of Government becomes destructive of these Ends, it is the Right of the People to alter or abolish it, and to institute a new Government, laying its Foundation on such Principles, and organizing its Powers in such Form, as to them shall seem most likely to effect their Safety and Happiness.
 
 
-July 4th means many things to Americans in the light of history. Some Americans are the descendants of those revolutionaries; some are the descendants of those they enslaved; some are descendants of those they fought against and killed, to overthrow their government or to take the land. Some are descendants of people who were half a world away during the signing of the declaration. As for me: though their skin color may have been the same as mine, those founders were not my ancestors. 
+July 4th means many things to Americans in the light of history. Some Americans are the descendants of those revolutionaries; some are the descendants of those they enslaved; some are descendants of those they fought against and killed, to overthrow their government or to take their land. Some are descendants of people who were half a world away during the signing of the declaration. As for me: though their skin color may have been the same as mine, those founders were not my ancestors. 
 
 Yet we call this our country. 
 
@@ -43,7 +43,7 @@ This mythological vision of our own identity is, as far as I am aware, unique am
 
 This is the necessary conclusion of America's values, fully realized. If all are to be equal, if all are to be free, all must be welcome. So American identity must be something harder to pin down — something that takes  cognitive effort to understand, maintain, embrace.
 
-What does “being American” mean to me? This has been a consideration for me throughout my life. I don't have strong ethnic roots or religious traditions to latch onto; my family is not nationalistic. I was left in the lurch in that sense, with no anchoring identity, no tie to my past, no built-in meaning-making. Being American meant very little to me until I chose to try to make something out of it.
+What does “being American” mean to me? This has been a consideration for me throughout my life. I don't have strong ethnic roots or religious traditions to latch onto; my family is not nationalistic.[^3] I was left in the lurch in that sense, with no anchoring identity, no tie to my past, no built-in meaning-making. Being American meant very little to me until I chose to try to make something out of it.
 
 It is very easy to fall victim to the trap of moral critique. In light of this country's past — the oppression and bloodshed that defined its early years; the moral failings, unjust wars, exclusion that continued to permeate its history; and the division we face today — in light of all that this country is hard to celebrate. It is hard to call America "my country" when it has been the host of so much evil.
  
@@ -87,7 +87,10 @@ Let us sway in the wind!
 
 
 
-<p id="footnotes"></p>
+<p class="footnote-header">Footnotes</p>
+
 [^1]: I’m skipping the question of *what a country is* — tired of doing that kind of conceptual analysis.
 
 [^2]: This is obviously not an endorsement of Reagan, this is a clip I had seen and which came to mind when I thought about the subject.
+
+[^3]: That's not to say I was entirely neutral on the US, though. I did have the privilege of traveling throughout my childhood, many times to other countries far less wealthy than the US; I think that experience gave me a foundational level of positive perspective that I likely wouldn't have acquired otherwise.
