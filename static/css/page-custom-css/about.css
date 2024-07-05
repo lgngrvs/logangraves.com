@@ -1,0 +1,28 @@
+#post-img {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 0.3em;
+    margin: auto;
+    display:block;
+
+}
+
+@media only screen and (max-width:700px) {
+    #post-img {
+        width: 70%;
+        overflow: hidden;
+        border-radius: 0.3em;
+        margin: auto;
+        display:block;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    #post-img {
+        width: 85%;
+        overflow: hidden;
+        border-radius: 0.3em;
+        margin: auto;
+        display:block;
+    }
+}

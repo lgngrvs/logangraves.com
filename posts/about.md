@@ -4,6 +4,8 @@ Tags:
 Type: page
 Desc:
 
+<img src="static/images/about.png" id="post-img">
+
 Hi! I'm Logan. 🦎 I'm an incoming college freshman studying Symbolic Systems at Stanford. 
 
 **Briefly:**
@@ -11,7 +13,7 @@ Hi! I'm Logan. 🦎 I'm an incoming college freshman studying Symbolic Systems a
 - I want to learn everything; 
 - I think AI is the most interesting, impactful, and tractable field in my lifetime;
 - I love philosophy, even though philosophy doesn't really work;
-- I think we should believe things and [love things](/aesthetics) anyway.
+- I think we should believe things and [love things](General%20Notes/Aesthetics.md) anyway.
 
 **Not Briefly:**
 
@@ -37,7 +39,7 @@ This clarification can't touch the whole world, all of human experience, all of 
 
 In the absence of coherent abstract values, I turn to people, and to vibes, and just try to do my best to build something that's consistent and valuable ontop of the sandy, shifting foundations. I speak of [aesthetics instead of ethics or truth](/values) to make that clear — they are the same thing but I think it's more intellectually honest to talk in terms of the former. I care a lot about emotions, and relating to ours and others' in healthy and productive ways. I'm interested in building [social infrastructure](social-infrastructure) — connecting (and connecting with) people, and building tools to make that easier. I find meaning in relationships, valuable work, learning and understanding, and something like "spiritual experience" above all. 
 
-An incomplete list of things I love can be found on the [Aesthetics](/aesthetics) page.
+An incomplete list of things I love can be found on the [Aesthetics](General%20Notes/Aesthetics.md) page.
 
 Some other things I care about and enjoy include hanging out with friends, bouldering, hiking, writing, un-designing, writing and playing music, the interrobang (`‽`), and watching [minecraft videos](https://hermitcraft.com/).
 

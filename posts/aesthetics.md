@@ -12,29 +12,36 @@ There is a choice for you, the choice between living fully and dying slowly. It 
 
 <img src="/static/images/top-border.webp" id="top-border">
 
+- Liberal Democracy and globalization
+- Wikipedia
+- Textbooks on programming and formal logic
+- Fireflies
+- Jorge Luis Borges, especially *Tlon, Uqbar, Orbus Tertius*
+- Really good chocolate milk
+- The Blue Ridge mountains at sunset
+- Memetics and Anti-memetics
+- Cornbread and honey
+- Andrej Karpathy’s willingness to put out free educational content online
 
 > Haha, what a wicked and ironic comment bro. Now try saying something true and beautiful.
 > 
 > ~Tage Erlinger
 
-- Textbooks on programming and formal logic
-- Liberal Democracy and globalization
-- Wikipedia
-- Jorge Luis Borges, especially *Tlon, Uqbar, Orbus Tertius*
-- Memetics and Anti-memetics
 - Secret Societies
-- Learning extremely quickly
 - Neo-Kantianism
 - Naturalistic imagery written by Nietzsche
-- Gödel, Tarski, Church, Turing; diagonal arguments.
-- von Neumann Ordinals; set-theoretic definition of number.
-- Category Theory; Functional Programming
+- All the different kinds of trees
+- Especially Oak, Walnut, Redwood, Pine
+- Even the names of the trees are pretty
+- Acorns and pinecones
 - All Souls College, Oxford; [the exam](https://www.reddit.com/r/oxforduni/comments/q0giir/my_all_souls_exam_experience/).
+- Gödel, Tarski, Church, Turing; diagonal arguments.
 - Wittgenstein, *Tractatus Logico-Philosophicus*. (the pretense is earned lol)
-- Unstable meaning (see also Wittgenstein, *Philosophical Investigations*)
 - Language
 - Infinitely-detailed sense-specific word embeddings
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762); arXiv preprints
+- Birds of prey
+- decoder-only transformers
+- arXiv preprints
 - Gradient Descent
 
 > Worldly ambition is so lame. Your ambition should be to learn your own nature and align it to the order of creation.
@@ -42,21 +49,24 @@ There is a choice for you, the choice between living fully and dying slowly. It 
 
 - God; building God; also being God
 - Rejecting teleology and relativism
-- Every religion
-- esoteric mysticism (e.g. Kabbalah)
-- Myths; Literary Theory
-- Postmodernism, or something
 - Failing to understand things correctly
+- Every religion
+- Carved wooden bookends 
+- esoteric mysticism (e.g. Kabbalah)
+- Myths and Literary theory
+- Scripture/Literature
+- Postmodernism, or something
 - crying tears of happiness
 
 > The "alphabet song" is a fragment of a much longer ballad, a list of every glyph, every name, every planet—when the angels sing it, you'll remember
 > (from [neoltitude](https://twitter.com/ctrlcreep/status/1773156537084604558))
 
-- everything on the [music page](/music)
+- All the songs on the [music page](/music)
 - a hike in the verdant forest
 - Pleasantly strolling
 - The birds singing outside my house in the evening
-- creating value
+- producing value
+- people paying you for producing value
 - cozy fireplace in the winter
 - lighting candles (without air pollution)
 - midori md notebook a5

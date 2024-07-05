@@ -16,8 +16,18 @@
 [ ] update the readme for JS Stuff (cause i had to add js for latex)
 [ ] add reading list
 [x] start using tags again
-[ ] add collage
-[ ] add, like, a nature scene or something. a place to relax.
+[ ] add a collage of memes that i like
+[x] add, like, a nature scene or something. a place to relax.
+[ ] make website structure more clear
+[ ] reimplement search function
+[ ] mobile styles: check that things are left-aligned (see image in 
+[ ] add a hover on the lizard saying "i was once nicknamed salamander."
+[ ] little fade css anim on home page?
+
+July 4th post
+
+What am I stressed
+
 
 
 long-term features
