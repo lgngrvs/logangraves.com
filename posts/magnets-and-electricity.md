@@ -138,7 +138,24 @@ Another part I don't understand *even more* is the $\nabla$ part. We're not talk
 
 To calculate divergence at a point, you just look at a very small region around the point. We'll talk in terms of water for now. If it tends to flow away from the point (like a fountain at the top of a hill) divergence is positive. If water tends to flow into the point net more than it flows out (like the drain at the bottom of a sink), divergence is negative. This is still true if you just grab a random section — if water flows out moving faster than it flows in, divergence is positive there too. It's sort of like a derivative; you're measuring "how much the point tends to act like a source or a sink."
 
-I... sort of understand this intuition, enough to vaguely grasp its place in this equation. Rather than integrate across the whole closed surface, we're just looking at the thing that makes flux (???) at a point:   the divergence of the electric field $\text{E}$ at that given point. And it's proportional to the charge, $Q$ or $\rho$ or whatever. This makes sense; if the charge is net negative, at the point there will be a pulling in of... stuff? (Still haven't built the intuition of, like, what an electric field actually *is*, sorry.) And if the charge is positive, that means the field will be repulsive, and it'll act more like a source — positive divergence.
+I... sort of understand this intuition, enough to vaguely grasp its place in this equation. Rather than integrate across the whole closed surface, we're just looking at the thing that makes flux (???) at a point: the divergence of the electric field $\text{E}$ at that given point. And it's proportional to the charge, $Q$ or $\rho$ or whatever. This makes sense; if the charge is net negative, at the point there will be a pulling in of... stuff? (Still haven't built the intuition of, like, what an electric field actually *is*, sorry.) And if the charge is positive, that means the field will be repulsive, and it'll act more like a source — positive divergence.
+
+Ok. I asked a friend to help me with the intuition of what "the divergence of the vector field at a point" means in terms of particles.
+
+
+Divergence requires a direction to be "in/negative" and a direction to be "out/positive." If we think about a particle moving right, we can set "moving right" as the positive direction. If the force acting on the particle is increasing the magnitude of its velocity, the divergence is positive. If the force acting on the particle is reducing its velocity, the flux would be negative. 
+
+We can also think about it — going back to the charge-inside-a-sphere example — as setting the positive direction at any given point on our sphere as the direction perpendicular to the surface of the sphere at that point; positive divergence means the particle is pushing things away from it, negative divergence means the particle is attracting things to it.
+
+For those who have taken multivariable, the notation hints at how to calculate divergence: find the gradient (the 3d vector containing each of the field's partial derivatives) and then sum each element in the vector, as you would with a dot product! :D
+
+
+
+
+
+
+
+
 
 OK, so **Maxwell's first equation** basically just tells you some stuff about how *if you stick some electric charge in a box, then the measure of the field flowing through the surface of the box will be proportional to the amount of electric charge you put in the box.* Lmao, it's really funny to see it reduced like this.
 
