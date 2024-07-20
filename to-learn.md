@@ -1,5 +1,5 @@
 # things to learn
-Date: 
+Date: 2024-05-20
 Tags:
 Type: 
 Desc: a list of things I intend to learn
