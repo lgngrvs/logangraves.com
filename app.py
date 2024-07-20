@@ -96,14 +96,14 @@ def home():
 #   has weird behavior 
 #   sometimes.
 #  
-
+"""
 @app.route("/index")
 def index():
 
     posts_only = sorted(list(get_only_posts()), key=lambda item: item["timestamp"], reverse=True) # sorts by timestamp
     pages_only = sorted(list(get_only_pages()), key=lambda item: item["title"]) # sorts by title
-
-    """
+"""
+"""
     Both posts_only and pages_only return a list containing dictionaries 
     (actually they're sqlite objects accessible like dictionaries)
 
@@ -123,9 +123,9 @@ def index():
         { "id": ..., ...}, 
         ...
     ]
-    """
+"""
 
-
+"""
     x = 0
     for temp_post in posts_only: 
         temp_post = dict(temp_post)
@@ -168,6 +168,38 @@ def index():
     # this is to compensate for the heroku bug
 
     return render_template('index.html', posts=posts_only, pages=pages_only)
+
+"""
+
+@app.route("/index")
+def index_chronological():
+
+    all_items = sorted(list(get_all()), key=lambda item: item["timestamp"], reverse=True) # sorts by timestamp
+
+    x = 0
+    for temp_post in all_items: 
+        temp_post = dict(temp_post)
+        for key, value in temp_post.items(): 
+            new_value = Markup(value).unescape()
+            temp_post[key] = new_value
+        temp_post["date_formatted"] = str(datetime.strptime(temp_post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
+        all_items[x] = temp_post
+        x += 1
+
+    def remove_duplicates(dictionary_list):
+        seen_titles = set()
+        unique_list = []
+        for item in dictionary_list:
+            if item['title'] not in seen_titles:
+                unique_list.append(item)
+                seen_titles.add(item['title'])
+        return unique_list
+
+    all_items = remove_duplicates(all_items)
+    # this is to compensate for the heroku bug
+
+    return render_template('index-chronological.html', posts=all_items)
+
 
 
 # ======== does most of the regular processing ========

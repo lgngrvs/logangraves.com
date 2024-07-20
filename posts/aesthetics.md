@@ -9,6 +9,7 @@ Desc:
 There is a choice for you, the choice between living fully and dying slowly. It is written: kill not the part of you that is cringe, kill the part that cringes.
 
 ([What is this page?](aesthetics-what))
+(Similar pages: [Music I love](/music), [Assorted links to things I like](/links))
 
 <img src="/static/images/top-border.webp" id="top-border">
 
@@ -36,7 +37,7 @@ There is a choice for you, the choice between living fully and dying slowly. It 
 - Acorns and pinecones
 - All Souls College, Oxford; [the exam](https://www.reddit.com/r/oxforduni/comments/q0giir/my_all_souls_exam_experience/).
 - Gödel, Tarski, Church, Turing; diagonal arguments.
-- Wittgenstein, *Tractatus Logico-Philosophicus*. (the pretense is earned lol)
+- Wittgenstein, *[Tractatus Logico-Philosophicus](/tractatus)*. (the pretense is earned lol)
 - Language
 - Infinitely-detailed sense-specific word embeddings
 - Birds of prey
@@ -61,7 +62,6 @@ There is a choice for you, the choice between living fully and dying slowly. It 
 > The "alphabet song" is a fragment of a much longer ballad, a list of every glyph, every name, every planet—when the angels sing it, you'll remember
 > (from [neoltitude](https://twitter.com/ctrlcreep/status/1773156537084604558))
 
-- All the songs on the [music page](/music)
 - a hike in the verdant forest
 - Pleasantly strolling
 - The birds singing outside my house in the evening

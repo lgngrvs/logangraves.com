@@ -34,3 +34,7 @@ table {
 tr:nth-child(even) {
     background-color: var(--subtle-background-darker);
 }
+
+#wander-poem {
+    text-align: center;
+}

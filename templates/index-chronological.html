@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% block title %}Index • Logan Graves{% endblock %}
+{% block title %}Index by date • Logan Graves{% endblock %}
 {% block head_items %}<link rel="stylesheet" href="/static/css/index.css" type="text/css">{% endblock %}
 {% block content %}
-    <h1>Index</h1>
+    <h1>Index • By date uploaded</h1>
     <br class="desktop-only"><br class="desktop-only">
     <table id="index-table">
     {% for post in posts %}
@@ -44,16 +44,6 @@
         </tr>
     {% endfor %}
     </table>
-    <br>
-    <h2>Other content</h2>
-    <p>(Things that I don't feel like embedding in prose, smaller ideas, pages with frequent changes)</p>
-    <ul>
-    {% for page in pages %}
-        <li>
-            <a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=page['slug']) }}">{{ page['title'] }}</a>
-        </li>
-    {% endfor %}
-    </ul>
     <p style="text-align:center;"><a id="home-footer-link" href="/">< Home</a></p>
     <script type="text/javascript" src="/static/js/index.js"></script>
 {% endblock %}

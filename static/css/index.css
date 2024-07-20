@@ -48,7 +48,7 @@ ul > li {
 }
 
 .index-filler-div > p {
-    color: var(--link-underline-color);
+    color: transparent;
     text-align: center;
 }
 

@@ -359,3 +359,10 @@ article > p > img {
     }
 
 }
+
+@media (prefers-color-scheme: dark) {
+
+    /*
+    */
+
+}
