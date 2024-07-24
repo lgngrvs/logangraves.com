@@ -1,7 +1,7 @@
 # Wrong but useful models
 Date: 2024-07-19
 Tags:
-Type: page
+Type: post
 Desc: 
 
 *Similar idea: the tradeoff between precision and usefulness*
@@ -47,7 +47,7 @@ The precise content of the *Tractatus*' theory of language doesn't matter that m
 - Logical and mystical ways of thinking are fully distinct — they aren't incompatible, they are simply *entirely separate modes of thought*. Puzzling over the logic of ineffable beauty that you experience is , uh, incoherent.
 - Ethics and aesthetics are the same thing.
 
-Hopefully these ideas mean something to you, and you can see why they might be useful as higher realizations outside the context of philosophy of language. In any case, I think the picture theory of language is very wrong (or at least highly incomplete); Wittgenstein himself later in his career seemed to change course in his ideas entirely, and by the writing of *Philosophical Investigations* held views about language that were essentially *antithetical*
+Hopefully these ideas mean something to you, and you can see why they might be useful as higher realizations outside the context of philosophy of language. In any case, I think the picture theory of language is very wrong (or at least highly incomplete); Wittgenstein himself later in his career seemed to change course in his ideas entirely, and by the writing of *Philosophical Investigations* held views about language that were essentially *antithetical* to those he seemed to express in the *Tractatus*.
 
 The *Tractatus* helped me recognize other things that just aren't currently coming to mind immediately; it might well be the book (if you can call it a book) that has had the most significant impact on my thought. Wittgenstein in fact seems to have *intended* this ladder-like, use-and-discard method; though the precise details are not clear to me as to what exactly he intended for the realization to be. 
 
@@ -55,12 +55,13 @@ The *Tractatus* helped me recognize other things that just aren't currently comi
 
 --- 
 
-Sometimes wrong-but-useful models are all we have. That's kind of what science[^*] is doing, isn't it? It's just progress from wrong-but-useful models to less-wrong-and-more-useful models of the world.
+Sometimes wrong-but-useful models are all we have. That's kind of what science[^1] is doing, isn't it? It's just progress from wrong-but-useful models to less-wrong-and-more-useful models of the world.
 
-I think about consciousness this way: there are lots of ways to think about it, and we have lots of models and theories and all of them are probably wrong but some of them might be useful for 
+I think about consciousness this way: there are lots of ways to think about it, and we have lots of models and theories and all of them are probably wrong but some of them might be useful for some object-level purposes like noticing things about your own perception and distinguishing qualia.
 
 I think about living this way: there's no systematic theory of living life well; all we can do is create wrong-but-useful models of it, and learn from our experience how to live better — update towards less-wrong-and-more-useful models of the world.
 
 
 <p class="footnote-header">Footnotes</p>
-[^*] (Here I mean not the modern material institutional science that has a replication crisis and struggles with poor economic incentives but the ideal, truth-seeking science)
+
+[^1]: (Here I mean not the modern material institutional science that has a replication crisis and struggles with poor economic incentives but the ideal, truth-seeking science)

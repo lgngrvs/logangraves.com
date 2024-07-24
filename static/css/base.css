@@ -226,7 +226,7 @@ mjx-container {
 }
 
 .footnote {
-    border: 1px solid var(--link-underline-color);
+    border: 1px solid var(--link-background-color);
 }
 
 .footnote > hr {
