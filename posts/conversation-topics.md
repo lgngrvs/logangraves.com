@@ -6,118 +6,103 @@ Desc: Things we could talk about :)
 
 The most interesting conversation topic to me is "what's your story" — what's your life like? How'd you end up in *[x place I met you]*, what do you think about the future and your place in it? 
 
-I'm trying to do a better job of avoiding the tendency to outsource my identity to things external to me, like knowledge or awards. Common interests are great places to start, but I think the person behind them — that person's unique mix of influences and experiences, heuristics, etc. — are what makes the conversation importantly distinct from, say, a speech-to-text conversation with an LLM.
+Common interests are great places to start, but I think the person behind them — that person's unique mix of influences and experiences, heuristics, etc. — are what makes the conversation importantly distinct from, say, a speech-to-text conversation with an LLM.
 
-Well, anyway. 
+I'd love to learn from you, but even more I'd like to *know* you.
 
-**Philosophy**
+Anyway, here are some starting points:
 
-- Can you systematize ethics
-- Thoughts on analytic philosophy vs. continental philosophy 
-- What is the point of philosophy?
-- People I can probably talk about, in sort of descending order of competence: Wittgenstein, Sartre, de Beauvoir, Camus, Rorty, Kant, Plato, Nietzsche, maybe Russell, maybe Aristotle and a little Aquinas
-- Are aesthetics and morality the same thing (I think so) 
+**Assorted non-academic topics**
 
-**Literature**
+- Simple things
+- Going for walks
+- Going barefoot on the grass
+- Vastness of the mountains and the clouds
+- Cool things you've done or seen while traveling
+- Your favorite stories, your favorite songs
+- Being happy
 
-- Why do we read literature? (literature being some sort of writing that is valued for more than just entertainment/fluff)
-- Why do we write literature? is it related to why we read it, or is it a distinct motivation? What implications might that have for consuming literature? 
-- Wtf is going on with Finnegans Wake... he can't be just trolling right? right???
-- Does it matter how the author *intended* you to interpret a work of art? Are all interpretations valid, even politically inconvenient ones?
-- Jorge Luis Borges  :) 
+**Philosophy and language**
 
-**Music**
-
-*see also [Music I like](/music)*
-
-- Meaning in music: is it different from language?
-- *Meaningless* music, emotionally evocative without an intended concrete meaning (e.g. Ravel's *Pavane*)
-- *Gaspard de la Nuit* (I am so down bad for Ravel) 
-- Love in harmony (*Liebestraum*)
-- The deconstruction of music as an art form; music that makes you suffer (e.g. 100 gecs *xXXi_wud_nvrstøp_ÜXXx*)
-- Melodic metal, the aesthetics of screaming lol (Loathe, *Screaming*)
-
-**Myths and anthropology**
-
-- Religion as a pre-packaged sense of meaning for everyone (inc. community, self-transcendance/meaning, ritual, epistemic grounding, tradition/culture)
-- Religion as a *memetically-evolved* pre-packaged sense of meaning for everyone
-- Co-opting or respecting religious aesthetics: is "holiness" worthy of respect? Is it worthy of subversion? 
-- Pantheons and stories: Greek, Roman, Egyptian, Aztec, Inca, Scandinavian, Indian, Chinese, etc.
-- Thoughts on ritual as a good in itself
-
-**AI+Alignment**
-
-- What is intelligence
-- What does "aligned ai" even look like? AI with common sense? A benevolent god? 
-- Alignment policy: how do we balance safe development of AI with risk of state monopolies on ai? 
-- Is "objective morality" just an effective coordination mechanism between agents? Is supermoral AI a meaningful idea ([banger](https://www.lesswrong.com/posts/umJMCaxosXWEDfS66/moral-reality-check-a-short-story))
-
-**AI-Human Analogs**
-
-- Why are LLM prompting techniques useful on humans
-- Do inner and outer alignment have corresponding analogs in humans? (human alignment theory) 
-- What is your value function? What is my value function? Is it some weird multidimensional piecewise function? Don't tell me it's a continuous high-dimensional surface
-
-**Language**
-
+- What is philosophy, actually? (definition I propose: "exploring *what can be thought* and the consequences of thinking it")
+- Wittgenstein, Nietzsche, Rorty
+- Continental philosophy as an appropriate *reaction* to analytic philosophy and vice-versa
+- What is consciousness, actually? (I don't think consciousness as an independently-existing thing makes sense as a concept)
+	- Neuroscientific theories of consciousness
 - Sapir-whorf hypothesis
-- Toki pona; nahuatl; sign language; lojban
-- What is language?
-
-**Psychology**
-
-- Freud, Lacan, Jung, etc.: are these theories actually useful?
-- Is *modern psychology actually useful*?? I mean yes it has predictive power but maybe not explanatory power 
-- Gender as a fundamental template for relationships with the people you interact with
-
-**Self+Emotions**
-
+- Toki pona; Nahuatl; Sign language; Lojban
+- Chomsky on universal grammar
 - What does "I" refer to
-- Where does the self reside, if it resides anywhere?
-- What is love/what are the constituent things bundled into "love"? is it really just evolutionary chemical soup? 
-- What does it mean to be "rationalist"? Is that even a desirable thing to pursue?
-- Experiences with psychedelics -- I unfortunately do not have any, so you'd have to tell me about yours :P
+- Does having the *experience* of meaning — living a meaningful life — *matter*?
 
-**Math and stuff**
+**Math**
 
 - Cantor (set theory, diagonalization!!)
 - Whitehead and Russell (type theory, *Principia Mathematica*, the urge to find real foundations)
 - Gödel and Tarski (Incompleteness and indefinability in strong formal systems)
 - Category theory
 - What even is math? The study of abstract structures?
-
-**Computer Science**
-
 - What do you actually use functional programming for I don't get it and am stubbornly unwilling to actually take time to figure it out
-- How do you get complex computers from electrical circuits? this isn't even, like, emergent behavior it's just crazy levels of abstraction
-- Are computers basically magic? Do we live in an era of magic (yeah)
+- Are computers actually magic?
 - Church and Turing (Computability, Lambda calculus, Church-Turing thesis, Halting problem)
+- Theoretical computer science, computability theory
 
-**Maybe technical stuff; I'm still skilling up but**
+**Art, Music, Literature**
 
-- Thoughts on, idk, transformers vs. mamba? better architectures? are there systematic judgments about what makes better architectures or are we just flailing around
-- Building RAGs (I mention this because I want to build my own, even though context windows are getting big enough that they probably will be pointless pretty soon)
+- Short stories by Jorge Luis Borges
+- *Finnegans Wake*
+- What is literature, actually?
+- Literature as a way to transmit wisdom — a way to transmit *anti-memes*
+- Does it matter how the author *intended* you to interpret a work of art? Are all interpretations valid, even politically inconvenient ones
+- What distinguishes communication via instrumental music from typical "linguistic" communication? Does the ability of art to communicate without explicit language (e.g. paintings, music, etc.) imply that "meaning" (which we typically ascribe to words) is entirely independent from language?
+- Semiotics as a general organizing theory of "meaning"; where does semiotics fail?
+- *Meaningless* music, emotionally evocative without an intended concrete meaning (e.g. Ravel's *Pavane*)
+- *Gaspard de la Nuit* (I am so down bad for Ravel) 
+- Love in harmony (*Liebestraum*)
+- The deconstruction of music as an art form; music that makes you suffer (e.g. 100 gecs *xXXi_wud_nvrstøp_ÜXXx*)
+- Screaming as music (e.g. Loathe, *Screaming*)
+
+**Religion, Myths, and Anthropology**
+
+- Religion as a pre-packaged sense of meaning for everyone (inc. community, self-transcendance/meaning, ritual, epistemic grounding, tradition/culture)
+- Religion as a *memetically-evolved* pre-packaged sense of meaning for everyone
+- Comparative religion: correspondences between Buddhism, Stoicism, Epicureanism, and Christianity
+- Co-opting or respecting religious aesthetics: is "holiness" worthy of respect? Is it worthy of subversion? 
+- Pantheons and stories: Greek, Roman, Egyptian, Aztec, Inca, Scandinavian, Indian, Chinese, etc.
+- Thoughts on ritual as a good in itself
+
+**AI and humans**
+
+- How close (in the space of possible AI architectures) are we to the best possible architecture?
+- Is "objective morality" just an effective coordination mechanism between agents? "Supermoral AI" ([banger](https://www.lesswrong.com/posts/umJMCaxosXWEDfS66/moral-reality-check-a-short-story))
+- Why are LLM prompting techniques useful on humans?
+- Do inner and outer alignment have corresponding analogs in humans? (human alignment theory) 
+- What is your value function? What is my value function? Does this concept even make sense?
+- The Free Energy model of human minds
+- The extent to which LLMs and the statistical approach to language modeling falsifies Chomsky's theories about universal grammar
+
+**Psychology**
+
+- Is modern psychology actually useful?
+- The utility (or lack of it) of Freud, Lacan, Jung, etc.
+- Gender as a fundamental template for relationships with the people you interact with
+- What is love/what are the constituent things bundled into "love"? is it really just evolutionary chemical soup? 
+- Experiences with psychedelics -- I unfortunately do not have any, so you'd have to tell me about yours :P
 
 **(Geo)politics**
 
+- Aschenbrenner's *Situational Awareness*
 - American hegemony and its consequences
 - Voting reform 
-- Can nationalism be wielded safely? can any allegiance be accepted wholly while still being critical of the institutions you accept along with it?
+- Wielding nationalism safely
 - Security and defense policy; the military-industrial complex 
-- Where is democracy headed
+- Where is democracy headed?
 
-**History**
+**Human relationships and object-level living**
 
-- Basically history of any culture/civilization (I know significant american history but not much else with meaningful depth, please tell me about stuff you know) 
-
-**Other** 
-
-- Community building: 
+- Building communities, running events
+- What makes it easier to connect people? What interventions can meaningfully improve individuals' abilities to connect with one another?
 - What is "culture" (in a community, in a society)
 - Interesting projects we/I/you could build
 - Personal knowledge management
 - Integrating LLMs into life effectively
-- Semiotics?
-- Antimemetics????
-
-(this is an incomplete list obviously and it will be continually expanded) 
