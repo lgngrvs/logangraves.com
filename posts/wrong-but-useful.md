@@ -1,7 +1,7 @@
 # Wrong but useful models
 Date: 2024-07-19
 Tags:
-Type: post
+Type: page
 Desc: 
 
 *Similar idea: the tradeoff between precision and usefulness*
