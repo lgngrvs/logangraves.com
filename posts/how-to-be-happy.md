@@ -3,8 +3,10 @@ Date: 2024-06-25
 Tags: #cognitive-tuning
 Type: page
 Desc: I claim that it is actually not difficult to be happy, and that happiness is mostly something you can choose.
-
 I claim that it is not terribly difficult to be happy, and that happiness is mostly something you can choose.
+
+<img src="static/images/how-to-be-happy.webp" class="page-img">
+
 
 By "be happy," I mean something along the lines of "an enduring sense of satisfaction and peace, and a joyful relationship with your life." Don't try and analytic philosophy me please; linguistic exactness tends to come at the cost of meaning and usefulness, like how precision in measuring position comes at the cost of precision in measuring velocity.[^1]
 
@@ -16,7 +18,8 @@ Basically, this post is an attempt to distill everything that I've learned about
 
 *Epistemic status:* I'm overall usually happy, and often have spikes of great joy over minor things. I feel a sense of lightness pretty consistently; this wasn't the case ~a year to six months ago, and was not the case for most of my life preceding that — at least, it was never as consistent and never reached the levels of joy that I do now. These are (what I think are) the things that I have come to understand in the past year that caused this change to happen.
 
-Anyway, here is how you become happy:
+Anyway, here's how to be happy:
+
 
 ## I.
 
@@ -75,6 +78,7 @@ Until I started doing it and it made my life way better. Crazy how that works!
 All you need to do is write down things you're grateful for, and it's free happiness. It's that simple. Here's an example of me doing it right now: 
 
 > I'm grateful for:
+> 
 > - the peaceful foggy night outside my window
 > - the well-designed laptop i'm writing this blog post on; the fact that i have the economic means to be able to own it
 > - the little plants that are on the living room table
