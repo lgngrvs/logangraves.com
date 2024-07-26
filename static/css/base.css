@@ -34,7 +34,7 @@ body {
 }
 
 #content-wrap {
-    padding: 5% 20% 0 20%;
+    padding: 5% calc((100% - 65ch)/2) 0;
 }
 
 #nice-looking-color-div {
@@ -47,7 +47,7 @@ body {
 }
 
 #page-wrap {
-    margin: 0px 0px 0px 40px;
+    margin: 0px;
 }
 
 /* ========== Text Element Styles ========== */

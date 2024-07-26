@@ -43,31 +43,34 @@
 }
 
 .f2 {
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .f3 {
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 .f4 {
 
-    animation-delay: 6s;
+    animation-delay: 2.5s;
 
 }
 
 .f5 {
-    animation-delay: 8s;
+    animation-delay: 3s;
 }
 
 
 .f6 {
-    animation-delay: 10s;
+    animation-delay: 3.5s;
 }
 
-
 .f7 {
-    animation-delay: 12s;
+    animation-delay: 5s;
+}
+
+.f8 {
+    animation-delay: 6.5s;
 }
 
 
