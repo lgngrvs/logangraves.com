@@ -1,9 +1,145 @@
+@keyframes ticker-top {
+    from {
+        transform: translateX(100%)
+    }
+
+    to {
+        transform: translateX(-300%)
+    }
+}
+
+@keyframes ticker-left {
+    from {
+        transform: translateX(100%)
+    }
+
+    to {
+        transform: translateX(-400%)
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.fadein {
+    opacity: 0%;
+    animation: fadein 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.nofade {
+    opacity: 100%;
+    animation: none;
+}
+
+.f1 {
+    animation-delay: 0.5s;
+}
+
+.f2 {
+    animation-delay: 2s;
+}
+
+.f3 {
+    animation-delay: 4s;
+}
+
+.f4 {
+
+    animation-delay: 6s;
+
+}
+
+.f5 {
+    animation-delay: 8s;
+}
+
+
+.f6 {
+    animation-delay: 10s;
+}
+
+
+.f7 {
+    animation-delay: 12s;
+}
+
+
+.scroller {
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed; 
+}
+
+#scroller-top {
+    top: 0px;
+    width: 100%;
+    left: 0px;
+}
+
+#scroller-left {
+    /*  The scroller rotates around its top left corner */
+    transform:rotate(-90deg);
+    transform-origin:0% 0%;
+    top: 100vh;
+    width: 100vh;
+    left: 0px;
+}
+
+.scroller-content {
+    animation: ticker-top 50s linear infinite;
+    transform: translateX(100%);
+    animation-delay: 5s;
+    text-transform:uppercase;
+    font-family: var(--mono-font);
+    font-size: 30pt;
+}
+
+#scroller-content-top {
+    animation-duration: 40s;
+}
+
+#scroller-content-left {
+    animation-name: ticker-left;
+    animation-duration: 40s
+}
+
+.scroller-link {
+    color: var(--link-background-color);
+}
+
+
+
 #home-font-size-container {
     font-size: 15pt;
 }
 
+
 @media only screen and (max-width: 987px) {
+
     #home-font-size-container {
         padding-top: 20%;
     }
+
+    @keyframes ticker {
+        from {
+            transform: translateX(100%)
+        }
+    
+        to {
+            transform: translateX(-1000%)
+        }
+    }
+
+    .scroller-content {
+        animation: ticker-top 100s linear infinite;
+        animation-delay: 5s;
+    }
+
 }
