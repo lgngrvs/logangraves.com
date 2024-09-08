@@ -16,6 +16,7 @@ How I did it:
 2.  Look at the book for a couple minutes and puzzle at it; don't expect to understand it, be curious
 3. Read or watch something that gives you context, basic ideas, and frames the jargon to make interpretation easier; I prefer lectures, I recall [this one](https://www.youtube.com/watch?v=S1RPRp5bDgg) being exceptionally good though I don't remember exactly 
 4. Go back to the *Tractatus* and give it a full run-through; you can probably skip a lot of the technical formal logic that is in the middle. 
+Also, check out Gavin Leech's [Showing Over Saying](https://www.gleech.org/tractatus).
 
 **TL;DR:** watch a lecture or two (or read something equivalent I guess) before you read the book; this will probably give you enough context to take the book from meaningless and impenetrable to mostly cool and interesting. 
 

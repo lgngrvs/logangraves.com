@@ -21,8 +21,10 @@
 [ ] make website structure more clear
 [ ] reimplement search function
 [ ] mobile styles: check that things are left-aligned (see image in 
+ah fuck i don't know what image i was talking about
 [ ] add a hover on the lizard saying "i was once nicknamed salamander."
 [ ] little fade css anim on home page?
+[ ] **move footnotes to the side of the page?**
 
 July 4th post
 

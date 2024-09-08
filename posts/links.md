@@ -65,6 +65,8 @@ Regardless, it stands anecdotally that people that I've met in rationalist circl
 - For the aforementioned math and CS background, you can just teach yourself most of the important stuff. See Neel Nanda's "[Barebones Guide to Mechanistic Interpretability Prerequisites](https://www.neelnanda.io/mechanistic-interpretability/prereqs)." 
 	- This list is oriented at Mech Interp but serves as a good basis for AI in general. 
 	- Speaking from positive experience with it, and also Neel Nanda is a very competent person.
+- [Notes](https://deepgenerativemodels.github.io/notes/)on Deep Generative Models
+- Two courses on AI
 
 
 <br>
@@ -78,12 +80,14 @@ Regardless, it stands anecdotally that people that I've met in rationalist circl
 	- A friend described Finnegans Wake as "the greatest work ever written in the english language" and said it was the book he'd choose if he could only read one book for the rest of his life. 
 	- Hint: It's impenetrable unless you listen to it read aloud as you read along, and even then it's still incredibly difficult reading. (One day I hope to write about Finnegans Wake like I have the [Tractatus](/tractatus).)
 - A generalist librarian's [website](http://www.interleaves.org/~rteeter/about.html).
-
+- A [website](https://phrontistery.info/index.html) about words and the English language
 <br>
 
 ## Miscellaneous
 
 - Wikipedia's *External Links* sections on pages about cool thingsand [Wikipedia:Contents/Outlines](https://en.wikipedia.org/wiki/Wikipedia:Contents/Outlines) (for an example of how cool Wikipedia's outlines are, see e.g. [Outline of AI](https://en.wikipedia.org/wiki/Outline_of_artificial_intelligence))
 - [Quantum Country](https://quantum.country/): An introduction to quantum computing, in a "mnemonic medium" incorporating spaced repetition into the information for significantly better retention. 
-- [Augmenting Long-term Memory](https://augmentingcognition.com/ltm.html): a well-known introduction to actually using [spaced repetition](https://en.wikipedia.org/wiki/Spaced_repetition) systems.
+- [Augmenting Long-term Memory](https://augmentingcognition.com/ltm.html): a well-known introduction to actually using [spaced repetition](https://en.wikipedia.org/wiki/Spaced_repetition) systems. 
 - *Search terms*: "webrings"
+- [Complexity Explorer](https://www.complexityexplorer.org/): classes and a cool wish 
+- [Programming Language Database](https://pldb.io/)

@@ -25,7 +25,52 @@ The lone and level sands stretch far away.”<br>
 *From [Shelley’s Poetry and Prose](https://archive.org/details/shelleyspoetrypr00shel)*<br>
 *Norton, 1977*
 
-*via Poetry Foundation ([website](https://www.poetryfoundation.org/poems/46565/ozymandias))*
+*Text from the Poetry Foundation ([website](https://www.poetryfoundation.org/poems/46565/ozymandias))*
+
+--- 
+## Love and Death
+*Lord Byron* 
+
+
+1.     
+I watched thee when the foe was at our side,    
+Ready to strike at him—or thee and me,    
+Were safety hopeless—rather than divide    
+Aught with one loved save love and liberty.    
+
+2.     
+I watched thee on the breakers, when the rock    
+Received our prow, and all was storm and fear,    
+And bade thee cling to me through every shock;    
+This arm would be thy bark, or breast thy bier.    
+
+3.     
+I watched thee when the fever glazed thine eyes,    
+Yielding my couch and stretched me on the ground    
+When overworn with watching, ne’er to rise    
+From thence if thou an early grave hadst found.    
+
+4.    
+The earthquake came, and rocked the quivering wall,    
+And men and nature reeled as if with wine.    
+Whom did I seek around the tottering hall?    
+For thee. Whose safety first provide for? Thine.    
+
+5.    
+And when convulsive throes denied my breath    
+The faintest utterance to my fading thought,    
+To thee—to thee—e’en in the gasp of death    
+My spirit turned, oh! oftener than it ought.    
+
+6.    
+Thus much and more; and yet thou lov’st me not,    
+And never wilt! Love dwells not in our will.    
+Nor can I blame thee, though it be my lot    
+To strongly, wrongly, vainly love thee still.    
+
+From *The Poetical Works of Lord Byron (1958)*
+
+*Text from [Poetry Foundation](https://www.poetryfoundation.org/poems/49266/love-and-death)*
 
 ---
 ## Yes 
