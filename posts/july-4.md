@@ -2,7 +2,7 @@
 Date: 2024-07-04
 Tags:
 Type: post
-Desc: Reflections on nationalism, history, and identity.
+Desc: What does it mean to be an American?
 
 ## I.
 

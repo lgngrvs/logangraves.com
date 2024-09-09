@@ -278,6 +278,31 @@ article > p > img {
     max-width: 100%;
 }
 
+.toc {
+    border-radius: 0.5em;
+    border: 0.5px solid var(--bullet-color);
+    padding: 1ch;
+    margin-top: 1em;
+}
+
+.toctitle {
+    text-align: center;
+    display: block; 
+    margin: auto;
+    color: var(--bullet-color);
+}
+
+.toc > ul > li *  {
+    color: var(--bullet-color);
+    border-color: var(--gradient-bottom)
+}
+
+.toc *:hover {
+    color: var(--dark-text-color);
+    border-color: var(--gradient-bottom)
+}
+
+
 /* MOBILE STYLES (at bottom of page in order to override)*/ 
 @media only screen and (max-width: 987px) {
 

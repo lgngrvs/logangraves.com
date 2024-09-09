@@ -1,4 +1,4 @@
-# notes for making a website
+# Notes for a personal website
 Date: 2024-08-03
 Tags: 
 Type: page
@@ -6,7 +6,7 @@ Desc:
 
 ## a long and complex search query
 
-when you have a personal website, there are a bunch of cool things that you can do with it. you can write essays. you can post your code. you can post your keys. you can post all sorts of things. you can write fun little programs. you can style it however you want.
+When you have a personal website, there are a bunch of cool things that you can do with it. You can write essays. You can post your code. You can post your keys. You can post all sorts of things. You can write fun little programs. You can style it however you want.
 
 What would you like to do with all these things? You could try to do it for money or fame -- but if you're planning to do those things, this is not for you. Today we're making a _personal_ website: a website not for profit, not for fame, but for expression. We're making _a long and complex search query_, to spoil the point a bit.
 
@@ -58,4 +58,4 @@ The way that I think about the personal website is that it's a long, complex sea
     - static site generator --> github pages
 3. How to design a website
     - less design is good design
-    - play with things until they feel righ
+    - play with things until they feel right

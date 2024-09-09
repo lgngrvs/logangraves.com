@@ -17,6 +17,7 @@
     /* old color: --link-color: rgb(227, 86, 82);*/
     /*--link-color: rgb(113, 113, 113);*/
     --link-color: #52525b;
+    --link-underline-color: #7e7e86;
     --link-background-color: #9191a07f;
     --background-color: white;
     --subtle-background-darker: rgb(252, 248, 243);

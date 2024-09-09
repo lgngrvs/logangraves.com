@@ -4,6 +4,13 @@ Tags:
 Type: page
 Desc: 
 
+**An introduction.** 
+
+This site exists for the both of us. It is a node embedded in the hypertext edifice; my own little digital simulacrum; a studio; [a long and complex search query](https://www.henrikkarlsson.xyz/p/search-query) designed to find people who are curious and care about making the world better. This site is more a backyard garden than a self-portrait, though, and I'm still working on carving the gates and pruning the plants and such. 
+
+If you don't know me, I'd recommend the [about](about) page. That's where you can find my contact information as well. I have a couple pages dedicated to things I love: [Aesthetics](aesthetics) is the original and probably the least logically coherent at first glance, so there's also a ["What is the Aesthetics page?"](aesthetics-what) page. I have additional pages for [passages of poetry and prose I've collected](passages) that are meaningful to me, as well as [music](music) that I enjoy. You can think of these as, roughly, external devices through which you can see a part of myself. I have an [assorted links](links) page, much of which is stuff I wish I could have shown to my younger self; sorry if that isn't you, lol, but you might find it interesting anyway.
+
+I also have an inherently incomplete list of [things I'd like to talk to you about](conversation-topics) which will *always* be out of date, but which is better than nothing. (Seriously, I'd love to talk to you. It doesn't have to be about any of those things either. Send me a DM at `lgngrvs` on almost any platform, preferably Discord.)
 
 <br class="desktop-only">
 <div id="wander-poem">
@@ -22,90 +29,14 @@ Desc:
 </div>
 <br>
 
-## Introduction
+I have a [small blog called "the basics"](https://technical.logangraves.com/) where I post my notes from semi-casually exploring technical subjects, like information theory, theoretical computer science, set theory, machine learning, and other things. 
 
-The world is a big place. Everyone we will ever know, *could* ever know, is in it. The paths in front of us are perpetually infinite, but our time here is not. 
+I enjoy writing, though I'm conflicted about my relationship with it. Not all the pieces on this site are well-edited (or edited at all) but all of them are things I think are worth sharing. My favorite piece I've written is about [American identity](july-4). I wrote a less beautiful, more functional essay about ["social infrastructure"](social-infrastructure) which I think is interesting though it's long. My design philosophy is in part based on Dieter Rams' idea that ["good design is as little design as possible"](https://en.wikipedia.org/wiki/Dieter_Rams#Ten_Principles_of_Good_design), which I thought I came up with on my own but, as usual, was beaten to it by someone in the 20th century. I [expanded it into a blog post](less-design) nonetheless. I also like to write about things I've learned: [how to be happy](how-to-be-happy), [following your values is fine maybe](everything-is-good) are two good examples, [things I've learned about relationships](relationships), and [how to read the Tractatus Logico-philosophicus](tractatus). I tried to put some really personally important ideas into words in the How to Be Happy piece especially.
 
-The world is a big place, and most of it is on the internet. Embedded in the hypertext edifice are more people than we could ever meet, more knowledge than we could contain, more opportunity than we could take advantage of. The better we are at connecting into and traversing this network, the easier it is to grasp the best versions of our futures and pull them closer. 
+*You can see a mostly-systematic list at the [index](/index), but that kind of defeats the point of the site's nonlinear organization. :(*
 
-We can also create new nodes in the network for others to find — we can place parts of ourselves onto the internet, create our own digital simulacra that [act as long and complex search queries](https://www.henrikkarlsson.xyz/p/search-query) for people in some aspect like us. (That's the main goal of this place, anyway.)
-
-As far as personal simulacra go, this one is, like, *okay*, since it's not exclusively for self-representation. It's more like a garden than it is a portrait. I plant the seeds, then cultivate, prune, nurture the plants; I design the paths in from and out to the dense forest surroundings, leave some hidden amusements for the observant, refine and change the garden as I myself grow. I luxuriate here on foggy afternoons and bring what I'm reading with me.
-
-<br>
 
 <img class="page-img" src="static/images/wander.webp">
-<p class="center" style="position: relative; top: -1em;">Literally me (or you, actually, that's fine too)</p>
+<p class="center" style="position: relative; top: -1em;">Literally me</p>
 
-But though I am its architect, I am not meant to be the only person who plods around in here. Others who roam the garden have their own relationship to it, their own thoughts and responses to it — that's how I hope you'll treat this place. If you'd like, pluck a couple of flowers and take them with you, or take some stems for a garden of your own.
-
-<br>
-
-<h2 class="center">Selected Contents</h2>
-
-<table class="table-of-contents">
-    <tr>
-        <th style="text-align: left">Title</th>
-        <th style="text-align: right">Page</th>
-    </tr>
-    <tr>
-        <th style="text-align: left">1. Self</hd>
-        <td></td>
-    </tr>
-    <tr>
-        <td class="table-indented"><span class="table-number">1.1</span> About me</td>
-        <td style="text-align: right"><a href="/about">About</a></td>
-    </tr>
-    <tr>
-        <td class="table-indented"><span class="table-number">1.2</span> What I'm doing</td>
-        <td style="text-align: right"> <a href="/now">Now</a></td>
-    </tr>
-    <tr>
-        <td class="table-indented"><span class="table-number">1.3a</span> Aesthetics; or, things I love</td>
-        <td style="text-align: right"><a href="/aesthetics">Aesthetics</a></td>
-    </tr>
-        <tr>
-        <td class="table-indented"><span class="table-number">1.3b</span> Music I like</td>
-        <td style="text-align: right"> <a href="/music">Music</a></td>
-    </tr>
-    <tr>
-        <td class="table-indented"><span class="table-number">1.4</span> Things I like to talk about</td>
-        <td style="text-align: right"><a href="/conversation-topics">Conversation Topics</a></td>
-    </tr>
-    <tr>
-        <th style="text-align: left">2. Writing</hd>
-        <td></td>
-    </tr>
-    <tr>
-        <td class="table-indented"><span class="table-number">2.1</span> How to think about values</td>
-        <td style="text-align: right"> <a href="/values">Values</a></td>
-    </tr>
-    <tr>
-        <td class="table-indented"><span class="table-number">2.2</span> Connecting people</td>
-        <td style="text-align: right"> <a href="/social-infrastructure">Social infrastructure</a></td>
-    </tr>
-    <tr>
-        <td class="table-indented"><span class="table-number">2.3</span> On infinite regress problems</td>
-        <td style="text-align: right"> <a href="/regress">Regress</a></td>
-    </tr>
-    <tr>
-        <td class="table-indented"><span class="table-number">2.4</span> Some thoughts on design</td>
-        <td style="text-align: right"> <a href="/less-design">Less design</a></td>
-    </tr>
-    <tr>
-        <td class="table-indented"><span class="table-number">2.5</span> Think a little less</td>
-        <td style="text-align: right"> <a href="/complexity-from-simplicity">Complex from simple</a></td>
-    </tr>
-    <tr>
-        <td><i>Stuff tagged notes</i></td>
-        <td style="text-align: right"> <a href="/tag/notes">#notes</a></td>
-    </tr>
-</table>
-
-<br>
-
-A more systematic list is available at the [index](/index).
-
-*Note: Your URLs are not safe! I'll try to avoid changing the links to my blog posts, but any page in the garden (i.e. any page without the word count indicated) may be subsumed back into the aetherial churn, returned once again from its sparkling identity to the primordial unity.*
-
-*If you want to archive something on this website, copy-pasting the text or printing to pdf are good options, or you can link to the file in the [github](https://github.com/lgngrvs/logangraves.com) history under a commit where it's in the state you want to keep it in.*
+A note on URLs: I'll try to avoid changing the links to my blog posts, but any page with a faded-gray title may be subsumed back into the aetherial churn, returned once again from its sparkling identity to the primordial unity. If you want to archive something on this website, copy-pasting the text or printing to pdf are good options, or you can link to the file in the [github](https://github.com/lgngrvs/logangraves.com) history under a commit where it's in the state in which you want to keep it.

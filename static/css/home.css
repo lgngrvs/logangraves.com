@@ -21,58 +21,72 @@
 @keyframes fadein {
     from {
         opacity: 0%;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5);     
     }
     to {
         opacity: 100%;
+        text-shadow: 0 0 0px;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes mov-first {
+    from, 40% {
+        transform: translateY(3em);
+    }
+    to {
+        transform: translateY(0px);
     }
 }
 
 .fadein {
     opacity: 0%;
-    animation: fadein 0.5s linear;
+    animation: fadein 0.75s linear, move 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
+}
+
+
+.f1 {
+    animation-delay: 0.5s;
+    animation: fadein 0.75s linear, mov-first 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+
+.f2 {
+    animation-delay: 1.5s;
+}
+
+.f3 {
+    animation-delay: 2.5s;
+}
+
+.f4 {
+
+    animation-delay: 2.6s;
+
+}
+
+.f5 {
+    animation-delay: 2.7s;
+}
+
+
+.f6 {
+    animation-delay: 4s;
 }
 
 .nofade {
     opacity: 100%;
     animation: none;
 }
-
-.f1 {
-    animation-delay: 0.5s;
-}
-
-.f2 {
-    animation-delay: 1s;
-}
-
-.f3 {
-    animation-delay: 2s;
-}
-
-.f4 {
-
-    animation-delay: 2.5s;
-
-}
-
-.f5 {
-    animation-delay: 3s;
-}
-
-
-.f6 {
-    animation-delay: 3.5s;
-}
-
-.f7 {
-    animation-delay: 5s;
-}
-
-.f8 {
-    animation-delay: 6.5s;
-}
-
 
 .scroller {
     overflow: hidden;
