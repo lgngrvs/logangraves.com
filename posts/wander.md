@@ -4,6 +4,8 @@ Tags:
 Type: page
 Desc: 
 
+*Recent additions: [The human project](/the-human-project) and [A pathology of striving](/striving). See the [index](/index) for more.*
+
 **An introduction.** 
 
 This site exists for the both of us. It is a node embedded in the hypertext edifice; my own little digital simulacrum; a studio; [a long and complex search query](https://www.henrikkarlsson.xyz/p/search-query) designed to find people who are curious and care about making the world better. This site is more a backyard garden than a self-portrait, though, and I'm still working on carving the gates and pruning the plants and such. 
