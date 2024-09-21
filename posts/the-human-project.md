@@ -8,7 +8,7 @@ Humanity will likely not become immortal in my lifetime. I will probably die, an
 
 When I was younger, I did that by telling myself I'd be rich and powerful and to use those things to make the world better. I used to think that I wanted to make the world better out of some sense of altruism, that if I made a bunch of people's lives better my own death would somehow be less scary; I used to think that I wanted to be great so that I would be remembered — a desire for post-mortem status, as if being remembered would make facing Azrael easier. If I thought about it too long, I'd realize that it was unsatisfying.
 
-Now I know better. I hope for something else. [Human civilization is relatively young](https://ourworldindata.org/the-future-is-vast) — in the something like 200 thousand years of our existence, about 117 billion humans have lived, of whom about 94% of whom are dead — artists, conquerors, scientists, laborers, shamans, revolutionaries, all brief sparks returned to the earth.
+Now I know better. I hope for something else. [Human civilization is relatively young](https://ourworldindata.org/the-future-is-vast) — in the something like 200 thousand years of our existence, about 117 billion humans have lived, of whom about 94% of whom are dead. Artists, conquerors, scientists, laborers, shamans, revolutionaries, all brief sparks returned to the earth.
 
 But even in our short life as a species, as the aeons have turned we have become more free. We live longer, happier lives; we have an ever-deeper, richer cultural repertoire, today with access to some of the greatest works of centuries past and practically instant (internet) access to the greatest creators of knowledge and culture alive today. *We make progress.*
 
