@@ -109,6 +109,9 @@
     margin-top: 30vh
 }
 
+#subject {
+    color: var(--bullet-color);
+}
 /*
 .scroller {
     overflow: hidden;
