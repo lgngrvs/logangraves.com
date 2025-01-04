@@ -82,6 +82,13 @@ strong {
     font-weight: 600;
 }
 
+.smallcaps {
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1em;
+}
+
 
 a {
     /*font-variant: small-caps;*/
@@ -314,7 +321,7 @@ article > p > img {
 
 
 /* MOBILE STYLES (at bottom of page in order to override)*/ 
-@media only screen and (max-width: 987px) {
+@media only screen and (max-width: 790px) {
 
     a {
         transition: none;

@@ -21,7 +21,7 @@
 @keyframes fadein {
     from {
         opacity: 0%;
-        text-shadow: 0 0 5px rgba(0,0,0,0.5);     
+        text-shadow: 0 0 2px rgba(0,0,0,0.5);     
     }
     to {
         opacity: 100%;
@@ -47,28 +47,40 @@
     }
 }
 
+@keyframes bob {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(0.125em);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .fadein {
     opacity: 0%;
     animation: fadein 0.75s linear, move 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
 }
 
-
 .f1 {
-    animation-delay: 0.5s;
-    animation: fadein 0.75s linear, mov-first 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: fadein 0.75s linear 0.5s, mov-first 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     animation-fill-mode: forwards;
 }
 
 .f2 {
-    animation-delay: 1.5s;
+    animation-delay: 2s;
 }
 
 .f3 {
-    animation-delay: 2.5s;
+    animation-delay: 3s;
 }
 
-.f4 {
+/*.f4 {
 
     animation-delay: 2.6s;
 
@@ -81,13 +93,21 @@
 
 .f6 {
     animation-delay: 4s;
-}
+}*/
 
 .nofade {
     opacity: 100%;
     animation: none;
 }
 
+.bob {
+    opacity: 0%;
+    animation: fadein 0.75s linear 4s 1, bob 1.5s ease-in-out infinite;
+    animation-fill-mode: forwards; 
+    color: var(--bullet-color);
+}
+
+/*
 .scroller {
     overflow: hidden;
     white-space: nowrap;
@@ -101,7 +121,6 @@
 }
 
 #scroller-left {
-    /*  The scroller rotates around its top left corner */
     transform:rotate(-90deg);
     transform-origin:0% 0%;
     top: 100vh;
@@ -129,7 +148,7 @@
 
 .scroller-link {
     color: var(--link-background-color);
-}
+}*/
 
 
 
@@ -137,8 +156,15 @@
     font-size: 15pt;
 }
 
+#initial {
+    height: 100vh;
+}
 
-@media only screen and (max-width: 987px) {
+#full {
+    padding-bottom: 10vh
+}
+
+@media only screen and (max-width: 790px) {
 
     #home-font-size-container {
         padding-top: 20%;

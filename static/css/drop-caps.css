@@ -1,13 +1,17 @@
 .dropcap {
-    font-size: 5em;
-    font-family: var(--drop-cap-background-font);
-    color: var(--dark-text-color);
+    font-size: 4.5em;
+    font-family: var(--drop-cap-font);
+    color: var(--color);
     position: relative;
     text-transform: uppercase;
+    line-height: 80%;
+    float: left;
+    padding-right: 5px;
+    padding-top: 10px;
   
     &::before {
-      font-family: var(--drop-cap-font);
-      color: var(--color);
+      font-family: var(--drop-cap-background-font);
+      color: var(--link-underline-color);
       content: attr(letter);
       position: absolute;
     }

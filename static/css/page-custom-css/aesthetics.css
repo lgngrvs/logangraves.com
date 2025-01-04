@@ -1,11 +1,11 @@
-article > p:first-of-type::first-line {
+/*article > p:first-of-type::first-line {
     font-variant: small-caps;
     text-transform: lowercase;
     font-size: 1.2em; 
     line-height: 1em;
     font-weight: 600;
     border: 1px solid black;
-}
+}*/
 
 #nice-looking-color-img {
     position: fixed; 

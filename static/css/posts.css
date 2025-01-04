@@ -48,25 +48,24 @@ h2 {
 }
 
 article > p:first-of-type::first-letter {
-    /*color: var(--bullet-color);*/
     font-size: 3em;
     line-height: 80%;
     float: left;
-    font-weight: 300;
     padding-right: 5px;
     padding-top: 10px;
     position: relative;
 }
 
+/*
 article > p:first-of-type::first-line {
     font-variant: small-caps;
     font-weight: 600;
-    border: 1px solid black;
-}
+    /*border: 1px solid black;
+}*/
 
 /* MOBILE ONLY STYLES */
 
-@media only screen and (max-width: 987px) {
+@media only screen and (max-width: 790px) {
 
     header {
         background:none;

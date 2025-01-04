@@ -4,7 +4,7 @@ Tags:
 Type: page
 Desc: 
 
-<img src="/static/images/drop-caps/scotch-t.webp" id="drop-cap" alt="the letter t, scotch-style drop cap">here is no choice but to become cracked in everything at once. How difficult of an endeavor that seems! — yet, it is the only worthwhile path upon which to travel. You know this; you know this to be right. And there is, in the end, only to do what you *know* to be right. 
+<span class="dropcap" letter="T">T</span>here is no choice but to become cracked in everything at once. How difficult of an endeavor that seems! — yet, it is the only worthwhile path upon which to travel. You know this; you know this to be right. And there is, in the end, only to do what you *know* to be right. 
 
 There is a choice for you, the choice between living fully and dying slowly. It is written: kill not the part of you that is cringe, kill the part that cringes.
 
