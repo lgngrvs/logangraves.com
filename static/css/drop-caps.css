@@ -1,0 +1,14 @@
+.dropcap {
+    font-size: 5em;
+    font-family: var(--drop-cap-background-font);
+    color: var(--dark-text-color);
+    position: relative;
+    text-transform: uppercase;
+  
+    &::before {
+      font-family: var(--drop-cap-font);
+      color: var(--color);
+      content: attr(letter);
+      position: absolute;
+    }
+  }
