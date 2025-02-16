@@ -5,7 +5,7 @@ Type: post
 Desc: Whose goals are you striving for anyway?
 
 ## I. The striver
-You're a teenager. You don't know what to do with your life, but you're smart and ambitious and so you look around. Who seems successful? Who seems happy? Who is respected? *Who is loved?* Powerful institutions create attractive ladders: elite universities, venture capital, Silicon Valley, Washington DC. 
+<span class="dropcap" letter="Y">Y</span>ou're a teenager. You don't know what to do with your life, but you're smart and ambitious and so you look around. Who seems successful? Who seems happy? Who is respected? *Who is loved?* Powerful institutions create attractive ladders: elite universities, venture capital, Silicon Valley, Washington DC. 
 
 So smart and ambitious high school students spend four years of their lives grinding in hopes of admission to an elite college. They climb hierarchies, run the debate circuit, spend no time with friends. They crush themselves into a soulless husk squeezing out one more math competition problem. To be the best at a thing that means nothing to them. They watch admissions reactions and college admissions how-tos. They read sample essays. No slack. No love in their life, just grind, just grind, just grind. HYPSM. HYPSM. HYPSM. They just want to go to an Ivy+. They just want to be respected. They just want to be proud of themselves. They just want their parents to be proud of them.
 
@@ -24,7 +24,7 @@ Your ladder is not one I want to climb.
 
 ## II. Social striving
 
-You can find myriad rabbit holes to fall down — college admissions, quant trading, math competitions, tech companies, high school debate, venture capital/startups, AI Alignment (with caveats), academia. Basically any culture embedded in an influential institution or part of society will create strivers.
+<span class="dropcap" letter="Y">Y</span>ou can find myriad rabbit holes to fall down — college admissions, quant trading, math competitions, tech companies, high school debate, venture capital/startups, AI Alignment (with caveats), academia. Basically any culture embedded in an influential institution or part of society will create strivers.
 
 I said earlier that powerful institutions create attractive ladders — *they do it on purpose.* The people at the top of those institutions want a fresh supply of young, capable people who think they know what they want, because that's what makes those at the top rich; they therefore market themselves culturally. 
 
@@ -38,7 +38,7 @@ Do we need to live this way?
 
 ## III. Striving doesn't even work
 
-The funny thing about being a striver is that it doesn't even work. When you pursue things you don't love — out of fear, status anxiety, desire for acceptance, or any other reason — you burn out; you leave yourself passionless and going through the motions.
+<span class="dropcap" letter="T">T</span>he funny thing about being a striver is that it doesn't even work. When you pursue things you don't love — out of fear, status anxiety, desire for acceptance, or any other reason — you burn out; you leave yourself passionless and going through the motions.
 
 When you spend four years of your life in high school building a resume of things you don't care about for college, *it shows that you don't care about them when you write about them.* The longer you spend building a company doing something that you don't really care about, the more you lose the ability to keep putting in more of your time and thought. You get a CS degree you don't want, grind Leetcode problems you hate thinking they'll make you employable, and then bomb the interview because you hate doing everything they're testing you on.
 
@@ -50,7 +50,7 @@ And if you have nothing like that, keep searching. Don't you dare stop. Keep [bu
 
 ## IV. The striver's cure
 
-The striver's cure is just *paying attention*. When I fell in love for the first time, I learned what it meant to be happy. I realized how much I had been missing. 
+<span class="dropcap" letter="T">T</span>he striver's cure is just *paying attention*. When I fell in love for the first time, I learned what it meant to be happy. I realized how much I had been missing. 
 
 I started paying attention to the people around me, to myself and what was going on inside me, to their emotions and my own; I learned what it felt like to be myself instead of looking outwards all the time. I learned again what it felt like to feel the breeze, bask in the sun; to be enthralled by music, to cry and laugh and sit there in silence, in the morning, and listen to the birds. And I learned what it felt like to genuinely love things, instead of just reaching for the next rung on a meaningless ladder.
 

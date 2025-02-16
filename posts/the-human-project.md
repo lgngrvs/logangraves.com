@@ -4,7 +4,7 @@ Tags:
 Type: post
 Desc: What it looks like through the eyes of the species.
 
-Humanity will likely not become immortal in my lifetime. I will probably die, and probably so will everyone else alive today. [There is a completely new set of humans on earth every 150 years.](https://x.com/oxidist/status/1825247135370977695) It's hard to cope with mortality. 
+<span class="dropcap" letter="H">H</span>umanity will likely not become immortal in my lifetime. I will probably die, and probably so will everyone else alive today. [There is a completely new set of humans on earth every 150 years.](https://x.com/oxidist/status/1825247135370977695) It's hard to cope with mortality. 
 
 When I was younger, I did that by telling myself I'd be rich and powerful and to use those things to make the world better. I used to think that I wanted to make the world better out of some sense of altruism, that if I made a bunch of people's lives better my own death would somehow be less scary; I used to think that I wanted to be great so that I would be remembered — a desire for post-mortem status, as if being remembered would make facing Azrael easier. If I thought about it too long, I'd realize that it was unsatisfying.
 

@@ -47,6 +47,7 @@ h2 {
     text-align: right;
 }
 
+/*
 article > p:first-of-type::first-letter {
     font-size: 3em;
     line-height: 80%;
@@ -54,7 +55,7 @@ article > p:first-of-type::first-letter {
     padding-right: 5px;
     padding-top: 10px;
     position: relative;
-}
+}*/
 
 /*
 article > p:first-of-type::first-line {

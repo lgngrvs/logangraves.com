@@ -108,6 +108,13 @@
     font-size: 2em; 
     margin-top: 30vh
 }
+#post-img {
+    max-width: 80%;
+    overflow: hidden;
+    border-radius: 0.3em;
+    margin: auto;
+    display: block;
+}
 
 #subject {
     color: var(--bullet-color);

@@ -1,0 +1,8 @@
+article > p:first-of-type::first-letter {
+    font-size: initial;
+    line-height: initial;
+    float:none;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
