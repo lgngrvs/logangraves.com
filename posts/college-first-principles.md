@@ -1,0 +1,73 @@
+# Life Update: September 27, 2024
+Date: 2024-09-27
+Tags:
+Type: post
+Desc: Attempting to figure it out
+
+## I. 
+
+I've been actually *in* college for a week — well, two weeks if you count orientation, which I kind of don't. Orientation feels like a fever dream — a meaningless whirlwind. So, regarding my week in college, my first week of actual classes: I've had high points and low points; above all, I have been unhappy for a lot of it.
+
+Happiness is something [I believe I understand](how-to-be-happy). I claim that the main ingredients are (1) physiological conditions needed, e.g. food and water, sleep, exercise, economic security, and the mental space to pay attention to the world and its contents (this is a different angle of looking at the concept of "[slack](https://thezvi.substack.com/p/slack)"); (2) the letting-go of desire; and (3) the ability to be filled up by the world. And I am in a position (seemingly almost unprecedentedly in history, and inexplicably lucky) where all of these things are at arm's length.
+
+Yet I spent the last two weeks miserable. Some of it was out of my control; from what I've heard from ~everyone I know — both here in college with me this year and others I know that have gone through it — orientation is just kind of *like that*. You're in a new, low-familiarity environment with people you don't know and few good friends or support structures. You're adapting to a very new living situation around people that you do not already feel comfortable with. You're transitioning to a new stage of life. Everyone seems like they're afraid to be weird, afraid to be judged, and so everyone is in their shell hiding behind "what's your major?" and "where are you from?"
+
+But this week it was in my control, and it was because I've been kind of brutally overworked. This was expected. I enrolled in the hardest math class designed for freshmen, a proofs-based class that is supposed to contain an introduction to proofs but which… has not really introduced me to much; I have found that I am spending 2-3 hours per day (at least) on it, and I mostly hate it. I also enrolled in the hardest physics class available for freshmen, about which the professor said "many of my students have told me that it is the hardest they've ever worked for a class before, but they love it!" My goal was just to sample the classes, see if I could handle it, and then adjust if not. I have indeed sampled them.
+
+I think I could handle this schedule — *in theory*. I think I could maybe make it work. But it would come at the cost of my happiness; I would be a first-quarter burnout. I would look back on my first-year fall and think, "Damn, that quarter *sucked*. I never want to do that again." Of course, I want to be able to do things that suck, when needed — but I would also be looking back, thinking, "wow, I sacrificed a lot of things to those classes and I regret it." Taking this schedule would come at the cost of my happiness, because I would have no space for doing things that balance out my life — exercising, playing music, climbing, writing posts like these — as well as no time to spend with people I care about. Most of all, I would have no mental space for paying attention to the sway of the trees, and the sun in the morning sky, to smiles and tears and music and such.
+
+If I loved all the work I was doing, that would be worthwhile tradeoff. It feels really good to be challenged, and taking hard classes opens up more options down the line. There have been moments when working on problem sets that I thought, *damn, this feels good.* Yet those were but glimpses of what could be, and rarely what *was* — and I was taking both of these classes in the first place because I was interested in them. (The physics class doesn't even count for my major requirements, and I could take a much easier math class instead.) 
+
+And I have spent too much time following other people's stars, worshipping their gods, to let myself go down that path again. I have spent too much time doing things I don't actually care about (because I didn't realize I was confused about my desires) to continue doing those things. I live a mortal life, and one day I will die. If the option is there for me to live a good life, it would be insane not to.
+
+## II. 
+
+I have been thinking about these things all week, agonizing over what to do about it. So I thought it would be useful to set out a resolution, sort of from first principles, as well as a more general declaration of my intentions for living life well through college. This is for my own peace of mind, for legibility (i.e. future me can look back and see what I thought and where it was right/wrong), and in hopes that perhaps others will see it and be inspired — because from what I can tell, it's a pretty obvious failure mode for ambitious people (especially in [striver cultures](/striving)) to induce burnout, misery, and emptiness by accident because they weren't actually paying attention to what they themselves care about.
+
+My first principles, as I alluded to earlier, are tripartite at the moment. From my about page, at the time I'm writing this essay:
+
+> There are three things I want out of life: to love, to be loved, and to leave [something beautiful](aesthetics) behind — to contribute to [the human project](the-human-project).
+
+I spent about 3 hours earlier this week just walking around and talking with a friend about what I wanted out of college. There are a couple things, and I think they extend naturally from those earlier 3: 
+
+**To love and be loved.** A big part of this is romance; I want to fall in love with someone who has fallen for me too. But this is not an inherently romantic principle. I also want to love my friends — be attentive to, caring for, and connected with them. In general, I want to be free in my relationships, liberal with my feelings: I'll tell my friends that I love them, tell them how much they mean to me. I'll tell people I think are attractive that I think they're attractive (when appropriate, obviously), and do my best to let go of attachment to whether they think the same thing about me. 
+
+I also want to give love to strangers. I had enough donuts to give some to my dorm mates and a couple of strangers on the first day of classes. I want to do more things like that, on varying scales.
+
+**To contribute to the human project.** This requires two things, at least: knowing what I care about doing, and being good enough at doing it for it to be worthwhile.
+
+To figure out what I want to do with myself, I want to give the many things I have suspicions about a good try. I have suspicions that I love literature, computer science, math, physics, and many other things; I want to search intently for angles on those things that feel meaningful — not just to take math classes, or take physics classes, but to take math and physics classes that are fascinating and meaningful. I'll shop as many interesting classes as I can in week 1 of every quarter, and take the ones that I can tell will be good. I have a sense of my own taste; *I am confident that I can tell when they will be good.*
+
+Then when I have found things that are amazing, I will explore them deeply. I want to become extremely competent. I will develop relationships with my professors and learn about their work; I'll ask to work with them on it if it's interesting. I will learn things that are cool when I want to learn them — outside of school if needed. I will do ambitious projects, take risks. 
+
+**The third thing.** I guess there is a third value left unaccounted for: I want to be happy. I want to preserve slack — well, in ordinary times, of course, leaving open the option of working incredibly hard for things that really matter. I want to get lots of sleep (so I will be well-rested, and so I can lose some sleep when it really matters), eat well, exercise well, and *pay attention.* I want to spend time with my friends — to play music with them, work out with them, climb with them, go backpacking and do weird fun things with them. I want to write essays and make art. 
+
+I want to *pay attention*. To look at my life and smile. To look at the world and actually see it — see its real beauty.
+
+So if I cannot do these things, I will drop or switch classes until I can.
+
+You can tell me this is cope, that I'm just coming up with excuses to put in less mental effort. I've had this thought before myself. But I know what I value, I know what is meaningful to me, and this is, as far as I can tell, the best approximation of an approach that follows those values. 
+
+## Appendix: Commandments.
+
+1. Thou shalt preserve thy slack.
+2. Thou shalt enroll in classes that fill thee up. 
+3. Thou shalt not do psets alone.
+4. Thou shalt create structure and routine — sleep and waking times, meals, study groups, exercise, scheduled music sessions, etc.
+5. Thou shalt love others and love thyself.
+6. Thou shalt be liberal with affection.
+7. Thou shalt let go of desire.
+8. Thou shalt pay attention to the world.
+9. Thou shalt listen to thyself in all things.
+
+## Afterword on the present.
+
+*‌(This is just me working through things that are of importance at the time of writing but which will likely not be in the future. Feel free to read, but the actual essay ends above.*
+
+It's not too late to change my quarter. It'll be difficult but worthwhile to do it. So today I'm dropping my math and physics classes, swapping them for courses that make me happier.[^1] I'm going to try American Studies, try CS, try a more gentle (and hopefully joyful) proofs-based math course. I'll drop in on a different section of my math lectures next week to see if the professor is good enough to convince me to pick it back up again; I'll try dropping in on the physics class' math corequisite to see if I might want to just get it out of the way. 
+
+But my tentative schedule is now a gentler math, American intellectual history, a seminar on Nietzsche, and a (required) core class that's specifically thinking about the point of college. They are (almost) all classes I'm profoundly excited about — at least, for now. 
+
+We shall see next week.
+
+[^1]:  Actually, I *really* like PHYSICS 61 — it makes me happy! — but it has a corequisite of a different math class that seems to absolutely *suck.* The suck outweighs the joy — also, I can just take PHYSICS61 next year first quarter.
