@@ -1,6 +1,6 @@
 # Everything is actually good
 Date: 2024-05-27
-Tags:
+Tags: life-update
 Type: post
 Desc: Often I think I need to be optimizing harder. It's time to take a look around and realize that life is actually, kind of incredibly, *great*.
 

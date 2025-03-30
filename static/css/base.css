@@ -263,6 +263,16 @@ mjx-container {
     color: var(--dark-text-color);
 }
 
+
+.light-text {
+    color: var(--bullet-color);
+}
+
+.light-text > a {
+    color: var(--bullet-color);
+}
+
+
 /* Styling the title bar for pages. */
 
 #page-title {
@@ -271,7 +281,7 @@ mjx-container {
 
 /* ========== The "back to home" button. ========== */
 
-#home-footer-link {
+.navigation-link {
     font-variant: normal;
     font-weight: 300;
 
@@ -282,7 +292,7 @@ mjx-container {
     transition: all 0.3s;
 }
 
-#home-footer-link:hover {
+.navigation-link:hover {
     color: var(--link-underline-color);
     text-decoration: none;
     transition: all 0.3s;

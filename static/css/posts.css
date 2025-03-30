@@ -47,6 +47,10 @@ h2 {
     text-align: right;
 }
 
+#index-corner-link {
+line-height: 0em;
+margin: 0px;
+}
 /*
 article > p:first-of-type::first-letter {
     font-size: 3em;

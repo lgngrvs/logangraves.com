@@ -116,9 +116,6 @@
     display: block;
 }
 
-#subject {
-    color: var(--bullet-color);
-}
 /*
 .scroller {
     overflow: hidden;

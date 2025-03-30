@@ -22,6 +22,9 @@
 
 
 {% block content %}
+
+  <p id="index-corner-link" class="desktop-only"><a class="navigation-link" href="/index">< To Posts</a></p>
+
   <link rel="stylesheet" href="/static/css/posts.css" type="text/css">
   <article>
     <header>
@@ -43,7 +46,7 @@
   {{ post["content"] | safe }}
   <br class="mobile-only">
   </article>
-  <p style="text-align:center;"><a id="home-footer-link" href="/">Home</a></p>
+  <p style="text-align:center;"><a class="navigation-link" href="/">Home</a></p>
   <script type="text/javascript" src="/static/js/mathjax.js"></script>
   <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 {% endblock %}
