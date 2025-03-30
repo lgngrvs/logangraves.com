@@ -1,8 +1,12 @@
 # Retrospectives on Treehacks, and a little bit of Clownishness
-Date: 2025-02-16
+Date: 2025-02-15
 Tags:
 Type: post
 Desc: Assorted, loosely-organized thoughts from my first hackathon
+
+*ChatGPT generated the header image and I thought it was too funny to edit anything. Don't read too much into it, lol.*
+
+<br>
 
 <span class="dropcap" letter="I">I</span>'ve always been hacker-culture-adjacent — but only really adjacent. I definitely liked building software just enough to give this site a frontend and backend, but I thought I didn't like it enough to do much more than that. As a part of me turning towards technical work, though, I thought it would be fun to try a hackathon. 
 
