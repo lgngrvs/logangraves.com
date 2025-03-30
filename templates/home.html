@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}Logan Graves{% endblock %}
-{% block head_items %}<link rel="stylesheet" href="/static/css/page-custom-css/home.css" type="text/css">{% endblock %}
+{% block head_items %}<link rel="stylesheet" href="/static/css/index.css" type="text/css"><link rel="stylesheet" href="/static/css/page-custom-css/home.css" type="text/css">{% endblock %}
 {% block content %} 
 <!--div class="scroller" id="scroller-top">
     <div class="scroller-content" id="scroller-content-top">
@@ -31,7 +31,7 @@
         <p id="subject">*Subject to change until Spring 2026.</p>
         <p><span class="dropcap" letter="W">W</span><span class="smallcaps">hat the hell is a technical philosopher?</span> It turns out you can describe yourself however you want, and this is the most concise way that I know of to express the following: the questions that interest me the most tend to fall into the domain of philosophy, but the methods that interest me the most are those of science and mathematics. The work that interests me is technical work with philosophical implications. (The label may be pretentious, fine — at least it's expressive!)</p>
 
-        <p>This site is about me — my thoughts, my contact info, my own little simulacrum — but it's made for the both of us. The explicit overarching goal of this site is for it to signal various interests and preoccupations to you, in hopes that you'll reach out and we can talk about them. I haven't had the time recently to maintain this site, though, so I'm putting an extended introduction page here and temporarily disclaiming the rest as outdated, though you're free to poke around with URLs or on the <a href="index">index</a> if you want. <i>Update Feb 16: I just published a new blog post, <a href="/treehacks-2025">Retrospectives on Treehacks, and a little bit of Clownishness</a>. Feel free to check that out too!</i></p>
+        <p>This site is about me — my thoughts, my contact info, my own little simulacrum — but it's made for the both of us. The explicit overarching goal of this site is for it to signal various interests and preoccupations to you, in hopes that you'll reach out and we can talk about them. (I rarely have the time to maintain this site, though, so <i>as a general rule this site is significantly outdated.</i>)</p>
 
         <img src="static/images/about.png" id="post-img">
         <p class="center"><i>Some photos, maybe in hopes of dispelling some pretense?</i></p>
@@ -40,10 +40,63 @@
         <p>(Note that I've gotten feedback that people who saw my site before they met me in person were surprised at the discrepancy, so maybe adjust your impression of me slightly in the direction of more unseriousness.)</p>
 
         <br>
-
+        
         <p><span class="dropcap" letter="A">A</span><span class="smallcaps">t this moment, admidst the slow march of short days</span> in the South Bay's damp winter months, I'm trying to give all of myself away. In lieu of a <code>now</code> page which I don't feel like updating, I'll speak but briefly: I'm throwing myself into the things that I do — doing fewer, and giving them as much as I can. To elaborate too much further on specifics would be letting all the energy out, as I frequently and unfortunately do, but I <i>have</i> found some new love that I'd enjoy passing on. For one, I feel like I've fallen in love with math for the first time in my life. I suspect, though, that it may be one of those loves that you realize was shallow only in retrospect — in retrospect, when you have felt something deeper. (I have not reached anything even near to the depths yet. Exciting!) Also, I recently went swimming on a frigid morning; I was in the pool with a wintry drizzle, and I realized I think I love swimming too. All sorts of surprises this quarter!</p>
 
         <br>
+        <h2> Recent Posts </h2>
+
+        <div class="index-embed">
+        <table id="index-table">
+        {% for post in posts %}
+            {% set link_location = url_for('show_post_slug', slug=post['slug']) %}
+            <tr class="index-row" data-link-location="{{ link_location }}">
+                <td class="index-img-container-container mobile-only">
+                    {% set post_image = "static/images/" + post['slug'] + ".webp" %}
+                    {% if file_exists(post_image) %}
+                        <div class="index-img-container">
+                            <img class="index-img" src="static/images/{{ post['slug'] }}.webp">
+                        </div>
+                    {% else %}
+                        <div class="index-filler-div">
+                            <p>:)</p>
+                        </div>
+                    {% endif %}
+                </td>
+
+                <td class="index-text-container">
+                    <p>
+                        <a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a>
+                    </p>
+                    <span class="index-post-description-new">{{ post['description']|safe }}</span>
+                    <p class="index-post-date"> {{ post['date_formatted'] }} </p>
+                </td>
+
+                <td class="index-img-container-container desktop-only">
+                    {% set post_image = "static/images/" + post['slug'] + ".webp" %}
+                    {% if file_exists(post_image) %}
+                        <div class="index-img-container">
+                            <img class="index-img" src="static/images/{{ post['slug'] }}.webp">
+                        </div>
+                    {% else %}
+                        <div class="index-filler-div">
+                            <p>:)</p>
+                        </div>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+            <tr class="index-row" data-link-location="/index"> 
+                <td id="see-more-at-index-td" colspan="2"><p class="center"><i>See more at the <a href="index">index</a></i></p></td>
+
+            </tr>
+        </table>
+        </div>
+        <script type="text/javascript" src="/static/js/index.js"></script>
+
+        <br>
+        <br>
+
 
         <p><span class="dropcap" letter="T">T</span><span class="smallcaps">aste is a really useful word for me.</span> I think that it encompasses many important but mildly ineffable things; among other things it can describe your optimization strategy (e.g. in 'research taste'), the kind of art you like (as in 'taste in music'), and the degree to which you're able to appreciate/attend to your senses (e.g. 'did you actually taste your breakfast this morning?'). I think there's a common underlying idea between all three, something related to your aesthetics and awareness of them. I consider this underlying thing to be extremely important, and very hard to touch rationally. Thus, instead of trying to describe myself, it might be more fruitful to just describe what I love — that picture might be more accurate than the self-representations I can come up with. Here are some:</p>
 

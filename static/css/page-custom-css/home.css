@@ -163,6 +163,41 @@
 }*/
 
 
+/* === INDEX EMBED STYLES ===*/
+
+.index-embed {
+    background-color: var(--nice-div-color);
+}
+
+.index-embed > table {
+    border: 1px solid var(--border-background-color);
+    border-radius: 15px;
+}
+
+.index-row {
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--nice-div-color);
+    transition: linear 0.25s background-color;
+}
+
+.index-row:hover {
+    cursor: pointer;
+    background-color: var(--border-background-color);
+    transition: linear 0.25s background-color;
+}
+
+.index-img-container-container {
+    border-bottom: 1px solid var(--border-background-color);
+}
+
+.index-text-container {
+    border-bottom: 1px solid var(--border-background-color);
+}
+
+
+
+
 
 #home-font-size-container {
     font-size: 15pt;
@@ -192,9 +227,14 @@
         }
     }
 
-    .scroller-content {
+    .index-img-container-container {
+        border-bottom: 0px solid var(--border-background-color);
+    }
+    
+
+    /*.scroller-content {
         animation: ticker-top 100s linear infinite;
         animation-delay: 5s;
-    }
+    }*/
 
 }

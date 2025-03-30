@@ -43,7 +43,7 @@ CSP = {
 }
 
 
-Talisman(app, content_security_policy=CSP)
+# Talisman(app, content_security_policy=CSP)
 
 
 app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -81,10 +81,38 @@ def get_only_pages():
 def file_exists(path):
     return os.path.exists(path)
 
+def get_index_posts_n(n): 
+    all_items = sorted(list(get_all()), key=lambda item: item["timestamp"], reverse=True) # sorts by timestamp
+
+    x = 0
+    for temp_post in all_items: 
+        temp_post = dict(temp_post)
+        for key, value in temp_post.items(): 
+            new_value = Markup(value).unescape()
+            temp_post[key] = new_value
+        temp_post["date_formatted"] = str(datetime.strptime(temp_post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
+        all_items[x] = temp_post
+        x += 1
+
+    def remove_duplicates(dictionary_list):
+        seen_titles = set()
+        unique_list = []
+        for item in dictionary_list:
+            if item['title'] not in seen_titles:
+                unique_list.append(item)
+                seen_titles.add(item['title'])
+        return unique_list
+
+    all_items = remove_duplicates(all_items)
+    # this is to compensate for the heroku bug
+    
+
+    return all_items[:n]
+
 
 @app.route("/")
 def home(): 
-    return render_template("home.html")
+    return render_template("home.html", posts=get_index_posts_n(3))
 
 
 # ======== The index Page ========
