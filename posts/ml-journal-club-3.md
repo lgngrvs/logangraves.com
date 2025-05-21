@@ -10,7 +10,7 @@ Desc: My notes from the third meeting of the 90/30 Club, a paper-reading club (o
 
 [TOC]
 
-## Neural Machine Translation by Jointly Learning to Align and Translate (2015)
+## Neural Machine Translation by Jointly Learning to Align and Translate (2014)
 
 ([Link](https://arxiv.org/abs/1409.0473))
 
