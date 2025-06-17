@@ -7,7 +7,7 @@
     --drop-cap-font: "EB Garamond Foreground", sans-serif;
     --drop-cap-background-font: "EB Garamond Background", sans-serif;
     --sans-font: 'Helmet Neue', 'Helvetica', sans-serif;
-    --mono-font: 'Helmet', 'Courier', monospace;
+    --mono-font: 'Cascadia Mono', 'Courier', monospace;
     --nav-font: 'Helmet', 'Helvetica', sans-serif;
     --header-font: 'Spectral';
 
@@ -24,11 +24,21 @@
     --background-color: white;
     --subtle-background-darker: rgb(252, 248, 243);
     --border-background-color: #e0e0e0;
+    --code-foreground-color: rgb(84, 18, 1);
     --code-background-color: rgb(245,245,245);
+    --table-border-color: rgb(236, 236, 236);
     --color: black;
     --hr-color: black;
     --gradient-bottom: #f0f0f0;
     --gradient-top: var(--background-color);
+
+
+    --main-font-size: 14pt;
+    --code-font-size: 12pt;
+    --main-font-size-mobile: 13pt;
+    --code-font-size-mobile: 11pt;
+
+
 }
 
 /* Tan Color Scheme
@@ -57,6 +67,7 @@
         --background-color: #121212;
         --subtle-background-darker: rgb(23, 23, 23);
         --border-background-color: #3b3d3e;
+        --code-foreground-color: rgb(233, 92, 56);
         --code-background-color: #242424;
         --link-background-color: #6b6b6b; 
         --link-underline-color: #5e5e5e;

@@ -9,18 +9,18 @@ header {
 }
 
 .post-heading {
-    text-align: center; 
+    text-align: left; 
     font-size: 1.8em;
-    max-width: 600px; 
     margin-bottom: 10px; 
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 400;
 }
 
 
 #post-subheading {
-    text-align: center;
+    text-align: left;
 }
 
 #created {

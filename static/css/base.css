@@ -1,21 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,500;0,600;0,800;1,200;1,300;1,500;1,600;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
 @font-face {
-    font-family: 'Space Mono Regular';
-    src: url('/fonts/SpaceMono-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Space Mono';
-    src: url('/fonts/SpaceMono-Bold.ttf') format('truetype');
-    font-weight: bold;
-}
-
-
-@font-face {
-    font-family: 'Helmet';
-    src: url('/static/fonts/Helmet-Regular.ttf') format("truetype");
+    font-family: 'Cascadia Mono';
+    src: url('/fonts/SpaceMono-Regular-Variable.ttf') format('truetype');
 }
 
 @font-face {
@@ -35,7 +23,7 @@ body {
     background-color: var(--background-color);
     color: var(--color);
     font-weight: 300;
-    font-size: 15pt;
+    font-size: var(--main-font-size);
 }
 
 
@@ -44,7 +32,7 @@ body {
 }
 
 #content-wrap {
-    padding: 5% calc((100% - 65ch)/2) 0;
+    padding: 5% calc((100% - 75ch)/2) 0;
 }
 
 #nice-looking-color-div {
@@ -65,7 +53,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-family: var(--header-font);
-    font-weight: 200;
+    font-weight: 400;
 }
 
 h1 {
@@ -74,8 +62,12 @@ h1 {
     font-size: 1.2em;
 }
 
+h2 {
+    font-size: 1.5em;
+}
+
 h5 {
-    text-align: center;
+    text-align: left;
 }
 
 strong {
@@ -116,8 +108,8 @@ a:hover {
 blockquote {
     font-style: italic;
     background-color: var(--code-background-color);
-    padding: 5px 20px;
-    border-left: 2px solid var(--border-background-color);
+    padding: 10px 30px;
+    /*border-left: 2px solid var(--border-background-color);*/
     border-radius: 8px;
 }
 
@@ -131,6 +123,9 @@ code {
     padding: 0.15em;
     border-radius: 0.3em;
     word-wrap: break-word;
+    font-size: var(--code-font-size);
+    font-weight: 350;
+    color: var(--code-foreground-color)
 }
 
 pre {
@@ -150,29 +145,60 @@ pre > code {
     width: fit-content;
 }
 
+
 ul {
-    list-style-type: none;
-}
-
-li p {
-    display: inline;
-}
-
-ul > li::before {
-    content: "•";
-    color: var(--bullet-color);
-    display: inline-block;
-    width: 0.75em;
-    margin-left: -1em;
-    font-size: 30px;
-    line-height: 0;
-    position: relative; 
-    top: 0.1em;
+    list-style: none;
+    position:relative; 
+    margin: 0;
+    padding-left:20px;
 }
 
 ul > li {
-    margin-bottom: 0.5em;
+    position: relative;
+    padding-left: 10px;  
 }
+
+ul::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: -1.7ch;
+    width: 1px;
+    background: #ccc;
+}
+
+/* ignores lowest indent in body text */
+
+article > ul::before {
+    background: transparent;
+}
+
+/* ignores lowest indent in .toc */
+.toc > ul::before {
+    background:transparent;
+}
+
+/* ignores lowest indent in font container */
+#full > ul::before {
+    background: transparent;
+}
+
+#full li {
+    margin-bottom: 0px;
+}
+
+
+ul > li::marker {
+    content: "•";
+    color: var(--bullet-color);
+    font-size: 30px;
+    position: relative; 
+}
+
+
+
+/* ======= OL STYLES ======= */
 
 ol > li {
     margin-bottom: 0.7em;
@@ -189,13 +215,26 @@ hr {
     margin-top: 2em;
 }
 
+article > table, th, td {
+    border-collapse: collapse;
+}
+article > table {
+    font-family: var(--mono-font);
+    font-size: var(--code-font-size);
+}
+
 th {
     font-weight: 700;
+    padding: 10px;
+    background-color: var(--code-background-color)
+}
+
+article > table td, article > table th {
+    border: 2px solid var(--table-border-color);
 }
 
 td {
     padding: 0.25em;
-
 }
 
 .center {
@@ -323,6 +362,10 @@ article > p > img {
     border-color: var(--gradient-bottom)
 }
 
+.toc li::before {
+    content: "";
+}
+
 .toc *:hover {
     color: var(--dark-text-color);
     border-color: var(--gradient-bottom)
@@ -341,8 +384,13 @@ article > p > img {
     }
 
     body {
-        font-size: 15pt;
+        font-size: var(--main-font-size-mobile);
     }
+
+    article > table {
+        font-size: calc(var(--code-font-size-mobile) - 1pt);
+    }
+    
 
     .desktop-only {
         display: none;
@@ -365,7 +413,7 @@ article > p > img {
     }
 
     h5 {
-        text-align: center;
+        text-align: left;
         margin-bottom: 15px;
     }
 
@@ -394,6 +442,7 @@ article > p > img {
     }
     code {
         word-wrap: break-word;
+        font-size: var(--code-font-size-mobile)
     }
 
     #index-post-link {
