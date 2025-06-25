@@ -165,7 +165,7 @@ ul::before{
     bottom: 0;
     left: -1.7ch;
     width: 1px;
-    background: #ccc;
+    background: var(--bullet-color);
 }
 
 /* ignores lowest indent in body text */
