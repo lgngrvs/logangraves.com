@@ -5,26 +5,10 @@ Type: post
 Desc: Notes on the core sections of Anthropic's *[Toy Models of Supervision](https://transformer-circuits.pub/2022/toy_model/index.html)*.
 
 [TOC]
-```
-Neel nanda advice: 
-- Load in the model and replicate and explore paper claims as I read
 
-- Understand
-	- What **techniques** are they using, and why **would** they tell us anything useful? Where would the technique **break down**? what would **generalize**?
-	- Which claim feels suspicious to me?
-	- Key ideas, claims, and limitations 
-	- What **evidence** is there, what feels stronger and what feels weaker?
-	- What feels cherry-picked?
-	- What am I confused about at the end?
-- Extend: 
-	- can I fully replicate? 
-	- Investigate things I'm confused about?
-	- How much would the paper's claims transfer to other models?
-	- Check out *concrete open problems* relevant to that paper
+This post has two parts. The first part is reading the paper, the second part is playing with the code.
 
-> Note: A good explicit goal is learning and having fun, rather than doing mportant research. Doing important original research is just really hard, especially as a first project without significant mentorship?
-
-Neel's Takes: 
+Neel Nanda's [takes](https://www.lesswrong.com/posts/NfFST5Mio7BCAQHPA/an-extremely-opinionated-annotated-list-of-my-favourite-1) on the paper: 
 
 > Deeply engage with:
 > - The core intuitions: what is superposition, how does it respond to feature importance and sparsity, and how does it respond to correlated and uncorrelated features.
@@ -32,10 +16,6 @@ Neel's Takes:
 > 
 > Skim or skip:
 > - No need to deeply understand the rest, it can mostly be skimmed. It’s very cool, especially the geometry and phase transition and learning dynamics part, but a bit of a nerd snipe and doesn’t obviously generalise to real models.
-```
-
-
-This post has two parts. The first part is reading the paper, the second part is playing with the code.
 
 ## 1. Reading the paper 
 
