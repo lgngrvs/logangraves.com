@@ -1,6 +1,6 @@
 # Notes on "A Mathematical Framework for Transformer Circuits"
 Date: 2025-06-14
-Tags: interpretability notes
+Tags: interpretability ml notes
 Type: post
 Desc: Close-reading a classic interpretability paper and trying to make sense of it
 
@@ -10,7 +10,9 @@ This paper, "A Mathematical Framework for Transformer Circuits" establishes some
 
 ## 1. The Tensor Product
 
-I've studied applied linear algebra, but never seen this notation before. The tensor product is essential for understanding this blog post, though, and it's one of the core pieces of notation they use. Thus, let's first understand the tensor product (kind of). There are many ways to talk about the tensor product. I'm going to try and explain it in the simplest way that I understand it; you shouldn't require an immense amount of understanding in order to grasp it for the purposes of this paper. I'm aiming to give just enough intuition here to be able to work with the notation in the paper. 
+I've studied applied linear algebra, but never seen this notation before. The tensor product is essential for understanding this blog post, though, and it's one of the core pieces of notation they use. Thus, let's first understand the tensor product (kind of). (Neel Nanda [says](https://www.alignmentforum.org/posts/NfFST5Mio7BCAQHPA/an-extremely-opinionated-annotated-list-of-my-favourite-1) that it's one of the distinctly less important parts of the paper, and now editing this post after reading, yeah I buy that. You need to get how it behaves mathematically speaking; you don't need to have the vast formal/theoretical understanding behind it, i.e. the multilinear algebra or algebraic geometry, just as you don't need to really know what a tensor is in any sense beyond the most basic, "it's kind of like a higher-dimensional matrix or something," in order to make them highly useful for ML.) 
+
+There are many ways to talk about the tensor product. I'm going to try and explain it in the simplest way that I understand it; you don't require a deep understanding in order to grasp it for the purposes of this paper. I'm aiming to give just enough intuition here to be able to work with the formulas in the paper. 
 
 We write the tensor product, $\otimes$, with $A \otimes W$ and when applying it to vectors we use $(A \otimes W)x$. The tensor product has some nice properties, particularly the **mixed-product property** $$(A \otimes B) \cdot (C \otimes D) = (AC)\otimes(BD).$$ We will use this property a lot later.
 
@@ -34,7 +36,7 @@ But $AXW^T$ is still a linear transformation! It is just annoying to talk about 
 
 ## 2. Using the Tensor product to describe attention layers alone
 
-An attention head is usually described by first computing $Q = XW_Q$, $K= XW_K$, $V = XW_V$ with $X$ of shape `[num_batches, seq_len, embed_dim]` and those W projection matrices of shape `[embed_dim, head_dim]`, $W_V$ of shape ==something else ==
+An attention head is usually described by first computing $Q = XW_Q$, $K= XW_K$, $V = XW_V$ with $X$ of shape `[num_batches, seq_len, embed_dim]` and those W projection matrices of shape `[embed_dim, head_dim]`, $W_V$ of shape `[seq_len, head_dim]`. 
 $$\text{softmax}(\frac{QK^T}{\sqrt{d_k}})V$$
 Then you concatenate these heads together and project them out using $W_O$. 
 
