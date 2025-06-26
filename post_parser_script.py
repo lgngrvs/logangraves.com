@@ -34,7 +34,7 @@ for filename in list_of_file_names:
         content_type = Markup.escape(whole_post_list[3][6:]).strip("\n")
         description = Markup.escape(markdown.markdown(whole_post_list[4][6:], extensions=["tables"]))
         descriptionplain = Markup.escape(whole_post_list[4][6:]).strip("\n")
-        content = Markup.escape(markdown.markdown(whole_post_list[5], extensions=["tables", "footnotes", "fenced_code", "sane_lists", TocExtension(title="Table of Contents", toc_depth="2-6")]))
+        content = Markup.escape(markdown.markdown(whole_post_list[5], extensions=["tables", "footnotes", "fenced_code", "sane_lists", "codehilite", TocExtension(title="Table of Contents", toc_depth="2-6")]))
         slug = slugify(filename)[6:][:-3]
         wordcount = len(whole_post_list[5].split(" "))
 
