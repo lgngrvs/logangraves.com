@@ -11,10 +11,12 @@ This post has two parts. The first part is reading the paper, the second part is
 Neel Nanda's [takes](https://www.lesswrong.com/posts/NfFST5Mio7BCAQHPA/an-extremely-opinionated-annotated-list-of-my-favourite-1) on the paper: 
 
 > Deeply engage with:
+> 
 > - The core intuitions: what is superposition, how does it respond to feature importance and sparsity, and how does it respond to correlated and uncorrelated features.
 > - Read the strategic picture, and sections 1 and 2 closely.
 > 
 > Skim or skip:
+> 
 > - No need to deeply understand the rest, it can mostly be skimmed. It’s very cool, especially the geometry and phase transition and learning dynamics part, but a bit of a nerd snipe and doesn’t obviously generalise to real models.
 
 ## 1. Reading the paper 
