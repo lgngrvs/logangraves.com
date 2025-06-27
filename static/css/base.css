@@ -164,9 +164,10 @@ pre > code {
     color: var(--color);
 }
 
+/* ========== UL STYLES ========== */ 
 
 ul {
-    list-style: none;
+    list-style-type: "•";
     position:relative; 
     margin: 0;
     padding-left:20px;
@@ -209,7 +210,6 @@ article > ul::before {
 
 
 ul > li::marker {
-    content: "•";
     color: var(--bullet-color);
     font-size: 18pt;
     position: relative; 
