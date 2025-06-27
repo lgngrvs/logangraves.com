@@ -10,9 +10,9 @@ I did my best to prevent most common injection attacks and tested extensively. A
 *(well not really, i can just turn the site off in heroku dashboard lol)*
 
 ## JavaScript
-JS can do cool things. My site can do cool things without JS. I believe in a lightweight internet free of tracking, advertising, data-mining, and most of all, popups and the various annoyances I need to install entire browser extensions to prevent. On principle, therefore, I avoid using JS whenever that is possible. (All animations on this site are done with CSS only.)
+JS can do cool things. ~~My site can do cool things without JS.~~ I believe in a lightweight internet free of tracking, advertising, data-mining, and most of all, popups and the various annoyances I need to install entire browser extensions to prevent. On principle, therefore, I avoid using JS whenever that is possible. ~~(All animations on this site are done with CSS only.)~~ *Update: I needed to use JS for some simple behavior. I needed it to render the LaTeX on the site (rendering on the backend is a big pain to set up) as well as to make the animation on the index page work. All of these files are <20 lines though. I'm also changing my mind about analytics: as this site becomes something I genuinely want people to read, adding analytics becomes the logical next step to get better at writing stuff that people find interesting.*
 
-*I reserve the right to use JS for fun programming projects on here in the future though. If I do that, the JS part will be isolated from the main site and will only load when specifically visited.*
+~~*I reserve the right to use JS for fun programming projects on here in the future though. If I do that, the JS part will be isolated from the main site and will only load when specifically visited.*~~
 
 ## Usage
 To run the site locally:
