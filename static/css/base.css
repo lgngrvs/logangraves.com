@@ -402,6 +402,10 @@ article > p > img {
 /* MOBILE STYLES (at bottom of page in order to override)*/ 
 @media only screen and (max-width: 790px) {
 
+    html, body {
+        -webkit-text-size-adjust: 100%; /* see if this helps */
+    }
+
     a {
         transition: none;
     }
@@ -463,6 +467,7 @@ article > p > img {
         display: inline-block;
         overflow: scroll;
     }
+
     code {
         font-size: var(--code-font-size-mobile)
     }
