@@ -11,13 +11,12 @@ Here's how a Matryoshka SAE is different from a regular SAE. You start by creati
 We encode the SAE with 
 $$f(x) = \sigma(W^{\text{enc}}x + b)$$
 where $\sigma$ is an activation function, in this paper `BatchTopK`. `BatchTopK` zeros everything but the activations that are largest after encoding the whole batch. (See [the paper](https://arxiv.org/pdf/2503.17547) for more details.) Then for each each SAE (indexed by $i$) we have 
-$$\hat{x}_i(f) = W^{\text{dec}}_{0:m_i, :}f_{0:m_i}+b^{\text{dec}}$$
+$$\hat{x}\_i(f) = W^{\text{dec}}\_{0:m_i, :}f\_{0:m\_i}+b^{\text{dec}}$$
 with this notation indicating we're taking the first 0 to $m_i$ rows of matrix $W$ and multiplying on the left with the first 0 to $m_i$ indices of the encoded latent vector $f$. See footnote [^1] if you are confused about the weight-indexing notation, because I am too. 
 
 For example: $\mathcal{M} = 1,5,20$: you encode the vector into the residual stream, and then you have 3 sub-SAEs. The sub-SAEs must use only the first $m_i$ elements of the latent vector and only $m_i$ corresponding rows (again see footnote[^1] but notation doesn't matter that much) of the decoder weights matrix.
 
-Thus when we decode, we have 1 SAE using a top-1 decoding, one SAE using a top-5 decoding, and 1 SAE using a top-20 decoding. Then we use a specialized loss function to evaluate this. "The key innovation in Matryoshka SAEs is the training objective that enforces good reconstruction at multiple scales simultaneously." That loss function as provided in the paper is $$\mathcal{L}(x) = \sum_{m \in \mathcal{M}}||x-(f(x)_{0:m}W^\text{dec}_{0:m}+b^{\text{dec}})||^2_2 +\alpha\mathcal{L}_{\text{aux}}$$
-with two parts. The first part is typical MSE loss between $x$ and $\hat{x}$ , summed over each element. The second is the auxiliary loss we get from *[Gao et al 2024](https://arxiv.org/pdf/2406.04093):* 
+Thus when we decode, we have 1 SAE using a top-1 decoding, one SAE using a top-5 decoding, and 1 SAE using a top-20 decoding. Then we use a specialized loss function to evaluate this. "The key innovation in Matryoshka SAEs is the training objective that enforces good reconstruction at multiple scales simultaneously." That loss function as provided in the paper is $$\mathcal{L}(x) = \sum_{m \in \mathcal{M}} ||x-(f(x)\_{0:m} W^\text{dec}\_{0:m} + b^{\text{dec}})||^2\_2 +\alpha\mathcal{L}\_{\text{aux}}$$ with two parts. The first part is typical MSE loss between $x$ and $\hat{x}$ , summed over each element. The second is the auxiliary loss we get from *[Gao et al 2024](https://arxiv.org/pdf/2406.04093):* 
 
 
 > We find two important ingredients for preventing dead latents: we initialize the encoder to the transpose of the decoder, and we use an auxiliary loss that models reconstruction error using the top-$k_{\text{aux}}$ dead latents (see Section A.2 for more details).
