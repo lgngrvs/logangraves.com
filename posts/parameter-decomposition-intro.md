@@ -40,7 +40,7 @@ We have three components to our loss function in APD. To train the model, you ru
 
 ### 2.1 Faithfulness
 
-The faithfulness loss function is simple: $$\mathcal{L}_{\text{faithfulness}} = MSE(\theta^*,\sum^C_{c=1}P_c)$$ where each $P_c$ is one of the parameter component vectors and $\theta^* \in R^N$ is the original parameter vector. Thus we want to the parameter components to sum to the original parameters, as described above.
+The faithfulness loss function is simple: $$\mathcal{L}_{\text{faithfulness}} = MSE(\theta^\*,\sum^C_{c=1}P_c)$$ where each $P_c$ is one of the parameter component vectors and $\theta^\* \in R^N$ is the original parameter vector. Thus we want to the parameter components to sum to the original parameters, as described above.
 
 ### 2.2 Minimality 
 
@@ -71,7 +71,7 @@ In theory this could incentivize a smaller weight matrix, just with with lots of
 ### 2.4 Summary 
 
 We have all together now
-$$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{faithfulness}} + \mathcal{L}_{\text{minimality}} + \mathcal{L}_{\text{simplicity}}$$ with $$\mathcal{L}_{\text{faithfulness}} = MSE(\theta^*,\sum^C_{c=1}P_c)$$  $$\mathcal{L}_{\text{minimality}} = D(f_{\theta^*}(x), f_{\kappa(x)}(x))$$ $$\mathcal{L}_{\text{simplicity}}(x)=\sum^C_{c=1}s_c(x)\sum_{l,m}||\lambda_{c,l,m}||^p_p$$
+$$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{faithfulness}} + \mathcal{L}_{\text{minimality}} + \mathcal{L}_{\text{simplicity}}$$ with $$\mathcal{L}_{\text{faithfulness}} = MSE(\theta^\*,\sum^C_{c=1}P_c)$$  $$\mathcal{L}_{\text{minimality}} = D(f_{\theta^\*}(x), f_{\kappa(x)}(x))$$ $$\mathcal{L}_{\text{simplicity}}(x)=\sum^C_{c=1}s_c(x)\sum_{l,m}||\lambda_{c,l,m}||^p_p$$
 ## 3. SPD: good luck have fun!
 
 It's not *that* complicated, I'm just being dramatic.

@@ -1,0 +1,7 @@
+no_underscores_italics.py
+setup.py
+no_underscores_italics.egg-info/PKG-INFO
+no_underscores_italics.egg-info/SOURCES.txt
+no_underscores_italics.egg-info/dependency_links.txt
+no_underscores_italics.egg-info/requires.txt
+no_underscores_italics.egg-info/top_level.txt

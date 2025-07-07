@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: no_underscores_italics
+Version: 1.0
+Requires-Dist: markdown>=3.0
