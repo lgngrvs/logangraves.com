@@ -2,8 +2,8 @@
 {% block title %}Index by date • Logan Graves{% endblock %}
 {% block head_items %}<link rel="stylesheet" href="/static/css/index.css" type="text/css">{% endblock %}
 {% block content %}
-    <h1>Index • By date uploaded</h1>
-    <br class="desktop-only"><br class="desktop-only">
+    <h1>Posts by date</h1>
+    <br class="desktop-only">
     <table id="index-table">
     {% for post in posts %}
         {% set link_location = url_for('show_post_slug', slug=post['slug']) %}

@@ -100,6 +100,16 @@
     animation: none;
 }
 
+
+.f4 {
+    opacity: 0%;
+    animation: fadein 0.75s linear 4s 1;
+    animation-fill-mode: forwards; 
+    color: var(--bullet-color);
+    font-size: 2em; 
+}
+
+
 .bob {
     opacity: 0%;
     animation: fadein 0.75s linear 4s 1, bob 1.5s ease-in-out infinite;
