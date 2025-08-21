@@ -1,10 +1,12 @@
 # 10 Autoencoders in a Trenchcoat, part 1
 Date: 2025-06-25
-Tags: interpretability ml notes
+Tags: interpretability ml notes technical
 Type: post
-Desc: Notes on the core sections of Anthropic's *[Toy Models of Supervision](https://transformer-circuits.pub/2022/toy_model/index.html)*.
+Desc: Notes on the core sections of Anthropic's *[Toy Models of Superposition](https://transformer-circuits.pub/2022/toy_model/index.html)*.
 
 [TOC]
+
+> Note: There is [dispute](https://www.alignmentforum.org/posts/b5HNYh9ne5vEkX5ag/one-layer-transformers-aren-t-equivalent-to-a-set-of-skip) regarding the validity of some of the results of this paper which came to my attention after writing this post. Treat its results with caution.
 
 This post has two parts. The first part is reading the paper, the second part is playing with the code.
 

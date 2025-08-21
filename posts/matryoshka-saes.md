@@ -1,6 +1,6 @@
 # What's different about a Matryoshka SAE?
 Date: 2025-06-30
-Tags: notes, ml, interpretability
+Tags: notes ml interpretability technical
 Type: post
 Desc:  Brief notes from the [Matryoshka SAEs](https://arxiv.org/pdf/2503.17547) paper.
 

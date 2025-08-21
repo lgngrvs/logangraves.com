@@ -1,6 +1,6 @@
 # Four Papers: Align and Translate, Seq2Seq, Pointer Networks, and Attention
 Date: 2025-05-19
-Tags:
+Tags: notes ml technical
 Type: post
 Desc: My notes from the third meeting of the 90/30 Club, a paper-reading club (open to everyone!) in SF.
 

@@ -1,6 +1,6 @@
 # Notes on "A Mathematical Framework for Transformer Circuits"
 Date: 2025-06-14
-Tags: interpretability ml notes
+Tags: interpretability ml notes technical
 Type: post
 Desc: Close-reading a classic interpretability paper and trying to make sense of it
 
