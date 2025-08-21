@@ -169,6 +169,26 @@
     color: var(--link-background-color);
 }*/
 
+/* === HOME LINK TABLE === */
+
+.home-link-table-parent {
+    width: 100%;
+}
+
+#home-link-table {
+    border: 1px solid var(--border-background-color);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.added-padding {
+    padding-bottom: 0.5em
+}
+
+#no-bottom-border {    
+    border-bottom: 0px;
+}
+
 
 /* === INDEX EMBED STYLES ===*/
 

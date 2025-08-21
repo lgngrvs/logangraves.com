@@ -1,15 +1,32 @@
 {% extends "base.html" %}
 {% block title %}Tag results{% endblock %}
+{% block head_items %}
+<link rel="stylesheet" href="/static/css/index.css" type="text/css">
+<link rel="stylesheet" href="/static/css/page-custom-css/tag.css" type="text/css">
+{% endblock %}
 {% block content %} 
-    <h1>Tagged "{{ tag }}"</h1> 
+    <h1>All <span class="h1-code">{{ tag }}</span> posts</h1> 
 
-    <!--ul-->
-    {% for post in posts %}
-        <!--li style="display:inline-block"-->
-                <p><a href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a></p>
-                <p><i>{{ post['description'] | safe }}</i></strong></i></em></em></code></p>
-            <br>
-        <!--/li-->
-    {% endfor %}
-    <!--/ul-->
+    <table id="index-table" class="full-width">
+        {% for post in posts %}
+        {% set link_location = url_for('show_post_slug', slug=post['slug']) %}
+        <tr class="index-row" data-link-location="{{ link_location }}">
+            <td class="index-text-container">
+                <p>
+                    <a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a>
+                </p>
+                <span class="index-post-description-new">{{ post['description'] | safe }}</span>
+                <div class="tags">
+                    {% if post["tags"] %} 
+                        {% for tag in post["tags_list"] %} 
+                            <span class="index-post-tag"><a class="index-post-tag-link" href="/tag/{{ tag }}">#{{ tag }}</a></span>
+                        {% endfor %} 
+                    {% endif %}
+                </div>
+                <p class="index-post-date"> {{ post['date_formatted'] }}</p>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
 {% endblock %}

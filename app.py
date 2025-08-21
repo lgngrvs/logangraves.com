@@ -109,6 +109,15 @@ def get_index_posts_n(n):
 
     return all_items[:n]
 
+def remove_duplicates(dictionary_list):
+    seen_titles = set()
+    unique_list = []
+    for item in dictionary_list:
+        if item['title'] not in seen_titles:
+            unique_list.append(item)
+            seen_titles.add(item['title'])
+    return unique_list
+
 
 @app.route("/")
 def home(): 
@@ -123,101 +132,23 @@ def home():
 #   has weird behavior 
 #   sometimes.
 #  
-"""
-@app.route("/index")
-def index():
-
-    posts_only = sorted(list(get_only_posts()), key=lambda item: item["timestamp"], reverse=True) # sorts by timestamp
-    pages_only = sorted(list(get_only_pages()), key=lambda item: item["title"]) # sorts by title
-
-    Both posts_only and pages_only return a list containing dictionaries 
-    (actually they're sqlite objects accessible like dictionaries)
-
-    [
-        {
-            "id": ..., 
-            "timestamp":  ...,
-            "type": 
-            "title"
-            "slug"
-            "tags"
-            "description"
-            "descriptionplain"
-            "content": string
-            "wordcount": int
-        },
-        { "id": ..., ...}, 
-        ...
-    ]
-
-    x = 0
-    for temp_post in posts_only: 
-        temp_post = dict(temp_post)
-        for key, value in temp_post.items(): 
-            new_value = Markup(value).unescape()
-            temp_post[key] = new_value
-        # print("temp post is currently")
-        # print(temp_post)
-        temp_post["date_formatted"] = str(datetime.strptime(temp_post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
-        posts_only[x] = temp_post
-        x += 1
-
-    y=0
-
-    for temp_page in pages_only: 
-        temp_page = dict(temp_page)
-        for key, value in temp_page.items(): 
-            new_value = Markup(value).unescape()
-            temp_page[key] = new_value
-        # print("temp post is currently")
-        # print(temp_post)
-        pages_only[y] = temp_page
-        y += 1
-
-
-    # initialize new set
-    # loop through each item and add to set
-    # if any item already exists we just don't add it
-    def remove_duplicates(dictionary_list):
-        seen_titles = set()
-        unique_list = []
-        for item in dictionary_list:
-            if item['title'] not in seen_titles:
-                unique_list.append(item)
-                seen_titles.add(item['title'])
-        return unique_list
-
-    posts_only = remove_duplicates(posts_only)
-    pages_only = remove_duplicates(pages_only)
-    # this is to compensate for the heroku bug
-
-    return render_template('index.html', posts=posts_only, pages=pages_only)
-"""
-
 
 @app.route("/index")
 def index_chronological():
 
     all_items = sorted(list(get_all()), key=lambda item: item["timestamp"], reverse=True) # sorts by timestamp
 
-    x = 0
-    for temp_post in all_items: 
+    for idx, temp_post in enumerate(all_items): 
         temp_post = dict(temp_post)
         for key, value in temp_post.items(): 
             new_value = Markup(value).unescape()
             temp_post[key] = new_value
         temp_post["date_formatted"] = str(datetime.strptime(temp_post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
-        all_items[x] = temp_post
-        x += 1
+        temp_post["tags_list"] = sorted(temp_post['tags'].replace("#", "").split(" "))
 
-    def remove_duplicates(dictionary_list):
-        seen_titles = set()
-        unique_list = []
-        for item in dictionary_list:
-            if item['title'] not in seen_titles:
-                unique_list.append(item)
-                seen_titles.add(item['title'])
-        return unique_list
+        all_items[idx] = temp_post
+
+
 
     all_items = remove_duplicates(all_items)
     # this is to compensate for the heroku bug
@@ -268,27 +199,27 @@ def show_post_slug(slug):
 @app.route("/tag/<tag>")
 def show_tag(tag):
     tag = escape(tag)
-    # print("------------- Tag query: " + tag)
     connection = get_db_connection()
     connection.row_factory = sqlite3.Row
     relevant_posts = connection.execute(f"SELECT * FROM posts WHERE tags MATCH '[{tag}]'").fetchall()
-    # find all posts with the tag
-    relevant_posts = list(relevant_posts)
-    # turn results into a list
-    #try: 
-    x = 0
-    # print(relevant_posts)
-    for temp_post in relevant_posts: 
+    relevant_posts = sorted(list(relevant_posts), key=lambda item: item["timestamp"], reverse=True)
+
+    for idx, temp_post in enumerate(relevant_posts): 
         temp_post = dict(temp_post)
         for key, value in temp_post.items(): 
             new_value = Markup(value).unescape()
             temp_post[key] = new_value
-        # print("temp post is currently")
-        print(temp_post)
-        relevant_posts[x] = temp_post
-        x += 1
-    # print("posts in current state")
-    # print(relevant_posts)
+        temp_post["date_formatted"] = str(datetime.strptime(temp_post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
+        temp_post["tags_list"] = sorted(temp_post['tags'].replace("#", "").split(" "))
+        for tag_idx, listed_tag in enumerate(temp_post["tags_list"]):
+            if listed_tag == tag: # if this tag equals the tag we're displaying, hide it from the list
+                temp_post["tags_list"].pop(tag_idx)
+
+        
+        relevant_posts[idx] = temp_post
+
+    relevant_posts = remove_duplicates(relevant_posts)
+
     if not(relevant_posts): 
         return f""" <h5>Displaying tag "{tag}"</h5> <p> No posts found with tag "{tag}." </p>"""
     else:

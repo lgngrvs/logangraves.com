@@ -35,7 +35,7 @@
 
 
     --main-font-size: 14pt;
-    --code-font-size: 12pt;
+    --code-font-size: 12pt; /* also used for index tags font size */
     --main-font-size-mobile: 13pt;
     --code-font-size-mobile: 11pt;
 

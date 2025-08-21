@@ -1,4 +1,4 @@
-# Sorting algorithms
+# Notes on Sorting Algorithms
 Date: 2024-08-15
 Tags: technical notes cs
 Type: post

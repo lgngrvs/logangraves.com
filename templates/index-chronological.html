@@ -8,17 +8,15 @@
     {% for post in posts %}
         {% set link_location = url_for('show_post_slug', slug=post['slug']) %}
         <tr class="index-row" data-link-location="{{ link_location }}">
+
+
+            {% set post_image = "static/images/" + post['slug'] + ".webp" %}
+            {% if file_exists(post_image) %}
             <td class="index-img-container-container mobile-only">
-                {% set post_image = "static/images/" + post['slug'] + ".webp" %}
-                {% if file_exists(post_image) %}
-                    <div class="index-img-container">
-                        <img class="index-img" src="static/images/{{ post['slug'] }}.webp">
-                    </div>
-                {% else %}
-                    <div class="index-filler-div">
-                        <p>:)</p>
-                    </div>
-                {% endif %}
+
+                <div class="index-img-container">
+                    <img class="index-img" src="static/images/{{ post['slug'] }}.webp">
+                </div>
             </td>
 
             <td class="index-text-container">
@@ -26,21 +24,42 @@
                     <a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a>
                 </p>
                 <span class="index-post-description-new">{{ post['description']|safe }}</span>
+                <div class="tags">
+                    {% if post["tags"] %} 
+                        {% for tag in post["tags_list"] %} 
+                            <span class="index-post-tag"><a class="index-post-tag-link" href="/tag/{{ tag }}">#{{ tag }}</a></span>
+                        {% endfor %} 
+                    {% endif %}
+                </div>
                 <p class="index-post-date"> {{ post['date_formatted'] }} </p>
             </td>
 
             <td class="index-img-container-container desktop-only">
-                {% set post_image = "static/images/" + post['slug'] + ".webp" %}
-                {% if file_exists(post_image) %}
-                    <div class="index-img-container">
-                        <img class="index-img" src="static/images/{{ post['slug'] }}.webp">
-                    </div>
-                {% else %}
-                    <div class="index-filler-div">
-                        <p>:)</p>
-                    </div>
-                {% endif %}
+                <div class="index-img-container">
+                    <img class="index-img" src="static/images/{{ post['slug'] }}.webp">
+                </div>
             </td>
+
+
+            {% else %}
+
+            <td colspan="2" class="index-text-container">
+                <p>
+                    <a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a>
+                </p>
+                <span class="index-post-description-new">{{ post['description']|safe }}</span>
+                <div class="tags">
+                    {% if post["tags"] %} 
+                        {% for tag in post["tags_list"] %} 
+                            <span class="index-post-tag"><a class="index-post-tag-link" href="/tag/{{ tag }}">#{{ tag }}</a></span>
+                        {% endfor %} 
+                    {% endif %}
+                </div>
+                <p class="index-post-date"> {{ post['date_formatted'] }} </p>
+            </td>
+            {% endif %}
+
+            
         </tr>
     {% endfor %}
     </table>

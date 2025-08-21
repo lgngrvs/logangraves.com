@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+{% block title %}Logan Graves{% endblock %}
+{% block head_items %}<link rel="stylesheet" href="/static/css/index.css" type="text/css"><link rel="stylesheet" href="/static/css/page-custom-css/home.css" type="text/css">{% endblock %}
+{% block content %} 
+<!--div class="scroller" id="scroller-top">
+    <div class="scroller-content" id="scroller-content-top">
+        <a href="commonplace-book" class="scroller-link">
+        One keeps forgetting to go down to the foundations. One doesn’t put the question marks deep down enough. (Wittgenstein, <i>Culture and Value</i>, 62c)
+        </a>
+    </div>
+
+</div>
+<div class="scroller" id="scroller-left">
+    <div class="scroller-content" id="scroller-content-left">
+        <a href="commonplace-book" class="scroller-link">
+        It is clear that ethics cannot be expressed. Ethics are transcendental. (Ethics and æsthetics are one.) (Wittgenstein, <i>Tractatus</i>, 6.421) 
+        </a>
+    </div>
+</div-->
+<div id="home-font-size-container">
+    <div id="initial">
+        <br class="desktop-only"><br class="desktop-only"><br class="desktop-only"><br class="desktop-only">
+        
+        <p class="fadein f1">Hi! I'm Logan.</p>
+        <p class="fadein f2"> I'm a technical philosopher. I'm in school at Stanford studying symbolic systems and mathematics or something.*</p>
+        <p class="fadein f3">I'm also interested in intellectual history, comparative literature, and becoming insane.</p>
+        
+        <p class="center bob">↓</p>
+    </div>
+    <div id="full"> 
+        <p class="light-text">*Subject to change until Spring 2026.</p>
+        <p><span class="dropcap" letter="W">W</span><span class="smallcaps">hat the hell is a technical philosopher?</span> It turns out you can describe yourself however you want, and this is the most concise way that I know of to express the following: the questions that interest me the most tend to fall into the domain of philosophy, but the methods that interest me the most are those of science and mathematics. The work that interests me is technical work with philosophical implications. (The label may be pretentious, fine — at least it's expressive!)</p>
+
+        <p>This site is about me — my thoughts, my contact info, my own little simulacrum — but it's made for the both of us. The explicit overarching goal of this site is for it to signal various interests and preoccupations to you, in hopes that you'll reach out and we can talk about them. (I rarely have the time to maintain this site, though, so <i>as a general rule this site is significantly outdated.</i>)</p>
+
+
+        <p>(Note that I've gotten feedback that people who saw my site before they met me in person were surprised at the discrepancy, so maybe adjust your impression of me slightly in the direction of more unseriousness.)</p>
+
+        <br>
+        <br>
+        <h2> Recent Posts </h2>
+
+        <div class="index-embed">
+        <table id="index-table">
+        {% for post in posts %}
+            {% set link_location = url_for('show_post_slug', slug=post['slug']) %}
+            <tr class="index-row" data-link-location="{{ link_location }}">
+                <td class="index-img-container-container mobile-only">
+                    {% set post_image = "static/images/" + post['slug'] + ".webp" %}
+                    {% if file_exists(post_image) %}
+                        <div class="index-img-container">
+                            <img class="index-img" src="static/images/{{ post['slug'] }}.webp">
+                        </div>
+                    {% else %}
+                        <div class="index-filler-div">
+                            <p>:)</p>
+                        </div>
+                    {% endif %}
+                </td>
+
+                <td class="index-text-container">
+                    <p>
+                        <a class="index-post-title-link" href="{{ url_for('show_post_slug', slug=post['slug']) }}">{{ post['title'] }}</a>
+                    </p>
+                    <span class="index-post-description-new">{{ post['description']|safe }}</span>
+                    <p class="index-post-date"> {{ post['date_formatted'] }} </p>
+                </td>
+
+                <td class="index-img-container-container desktop-only">
+                    {% set post_image = "static/images/" + post['slug'] + ".webp" %}
+                    {% if file_exists(post_image) %}
+                        <div class="index-img-container">
+                            <img class="index-img" src="static/images/{{ post['slug'] }}.webp">
+                        </div>
+                    {% else %}
+                        <div class="index-filler-div">
+                            <p>:)</p>
+                        </div>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+            <tr class="index-row" data-link-location="/index"> 
+                <td id="see-more-at-index-td" colspan="2"><p class="center"><i>See more at the <a href="index">index</a></i></p></td>
+
+            </tr>
+        </table>
+        </div>
+        <script type="text/javascript" src="/static/js/index.js"></script>
+
+        <br>
+        <br>
+
+
+        <p><span class="dropcap" letter="T">T</span><span class="smallcaps">aste is a really useful word for me.</span> I think that it encompasses many important but mildly ineffable things; among other things it can describe your optimization strategy (e.g. in 'research taste'), the kind of art you like (as in 'taste in music'), and the degree to which you're able to appreciate/attend to your senses (e.g. 'did you actually taste your breakfast this morning?'). I think there's a common underlying idea between all three, something related to your aesthetics and awareness of them. I consider this underlying thing to be extremely important, and very hard to touch rationally. Thus, instead of trying to describe myself, it might be more fruitful to just describe what I love — that picture might be more accurate than the self-representations I can come up with. Here are some:</p>
+
+            <ul>
+                <li>Cowboy camping</li>
+                <li>Keynes, Wittgenstein, and Grothendieck</li>
+                <li>Fresh fruit</li>
+                <li>Manzanitas and ponderosa pines</li>
+                <li>The names of Amtrak train lines</li>
+                <li>Seagulls in a port town</li>
+                <li>Ontology of the wave function</li>
+                <li>Textbooks</li>
+                <li>Angel's Landing, Zion National Park</li>
+                <li>Libraries</li>
+                <li>Chocolate milk</li>
+                <li>All Souls College, Oxford</li>
+                <li>Diagonalization arguments</li>
+                <li>Jorge Luis Borges</li>
+                <li>arXiv papers</li>
+                <li>Airship startups</li>
+                <li>Good bread</li>
+                <li>Fireflies</li>
+                <li>Language</li>
+                <li>Birds of prey</li>
+                <li>Long text files</li>
+                <li>Improvisation and folk music</li>
+                <li>Memetic analysis</li>
+                <li>Esotericism</li>
+                <li>Carved wooden bookends </li>
+                <li>Wikipedia</li>
+                <li>Isomorphism</li>
+                <li>Losing your self in others</li>
+                <li>Standardized paper sizes</li>
+                <li>Scriabin</li>
+            </ul>
+
+        <p>I have a soft spot for illegibility. There are many great things clustered in the corners where the treads of the goodharting machine do not reach. </p>
+        <br>
+
+        <p><span class="dropcap" letter="A">A</span><span class="smallcaps">bout what, specifically, are you technically philosophizing?</span> It's a reasonable question to ask. At the moment, I'm most interested in the mathematics of cognition, and I'm orienting my studies around developing the conceptual equipment needed to pursue that subject. If we can understand the computations that the human mind is doing, then we learn something deeply important about what it means to be intelligent, what it means to be a thinking thing — what it means, literally, to be human. As we build better and better AI, and develop better mechanistic interpretability, we're getting closer to grasping the very idea of intelligence, which makes this understanding more important.
+            
+        <p>My favorite idea about this involves <a href="https://en.wikipedia.org/wiki/Free_energy_principle">active inference</a>, <a href="https://en.wikipedia.org/wiki/Solomonoff's_theory_of_inductive_inference">Solomonoff induction</a>, and the <a href="https://www.lesswrong.com/posts/vJFdjigzmcXMhNTsx/simulators">simulators paradigm</a> and says something like, "human brains are fundamentally approximating Bayesian inference just embodied so with extra components (like hormones and emotions and extra brain structures); LLMs are fundamentally approximating Solomonoff induction and Bayesian inference and that's what it means when we say they are simulators; thus there's some deep parallel in the computions going on underneath humans and LLMs, and that's something we can call, heuristically, intelligence, though there's weird stuff involving agency vs. simulation that makes them different entities in some important sense." (This is not original thought, to be clear, though I have been thinking about it.) I think this provides an elegant theoretical ontology, though it needs a lot of fleshing out... with the very important and obvious caveat that I have no idea whether or not it's true. I'm, like, doing Solomonoff induction or something; "elegant means true!" </p>
+        
+        <p>(Kuhn says that all the scientists are doing the same kind of thinking all the time, so clearly this is fine and empirical evidence is not needed.)</p>
+
+        <p>Recently I've also been thinking a lot about moral philosophy in an age of intelligent non-human agents. In particular, I've been thinking about whether consciousness is a valid criterion upon which to base one's notion of moral personhood, and if not, how else to try to answer the question, "whose preferences do we respect?"</p>
+
+        <p>But really I've been thinking about moving beyond the notion of moral philosophy altogether. I'm not convinced that the notion of "objective good" actually makes sense; I think that the description "good" must be followed (implicitly or explicitly) with "for [achieving x thing I prefer]" in order to make sense, and thus there can be no speaker-independent, no preference-independent good. To use it as if that did make sense would be a mis-application of our human capacity to create and use abstractions.</p>
+
+        <p>As a replacement for thinking about a meaningless "good," I think that better (i.e. 'more able to satisfy the criteria we want a moral theory to satisfy,' which includes things like 'can guide us on what actions to take') questions can be asked. My best candidate for such a question is, "how do we better coordinate with others towards mutually satisfactory ends?" I think this is a better question not only because a general answer to it provides specific guidance for acting in a world filled with other people, but also because it is a question with empirical reference; we can <i>get better at coordinating</i>. As a sanity check, I also think that 'getting better at coordinating with one another' naturally describes things we look back on as moral progress throughout history. (I haven't had time to work these thoughts out in more detail, but you can see a working outline and an early brain-dumpy draft <a href="coordination">here</a>.)</p>
+
+        <p>Some other assorted things I've been thinking about have been the ontology of math (what is math? why is it so useful?), how I should think about dying, and whether we need any philosophers anymore after Scott Alexander <a href="https://x.com/slatestarcodex/status/1886505797502546326">solved all of moral philosophy on twitter.</a></p>
+
+        <br>
+
+        <hr> 
+
+        <br>
+
+
+        <p>I hope some of these things are interesting to you! If they are, email me at <code>me at logan graves dot com</code> or dm me on Discord at <code>lgngrvs</code>. (As a disclaimer, I am spending most of my time offline these days, so I may be quite slow to respond; please don't take that as an indication that I do not want to talk to you!)</p>
+
+    </div>
+    <!--p class="fadein f2"> I'm a student in the <span class="dark-text">Bay Area.</span></p>
+    <br>
+    <p class="fadein f3">I want to <span class="dark-text">learn everything</span>. I want to contain multitudes.</p>
+    <p class="fadein f4">I care a lot about <span class="dark-text">people, knowledge</span> and <a href="aesthetics">love.</a></p>
+    <p class="fadein f5">I leave marks on the world in hopes that they'll one day draw a flower.</p>
+    <br>
+    <p class="fadein f6">Contact me or read a bio on my <a href="about">about page</a>, or <a href="wander">wander the garden</a>. See recent updates at the <a href="index">index</a>.I'm also into intellectual history and comparative literature. </p-->
+    </div>
+    <!--script src="static/js/home.js"></script-->
+{% endblock %}

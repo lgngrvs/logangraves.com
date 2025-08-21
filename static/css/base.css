@@ -236,8 +236,7 @@ ol > li::marker {
 }
 
 hr {
-    color: var(--bullet-color); 
-    border-bottom: 0px;
+    border-color: var(--bullet-color); 
     width: 50%;
     margin-top: 2em;
 }
@@ -399,6 +398,31 @@ mjx-container {
     color: var(--bullet-color);
 }
 
+#post-footer-hr {
+    width: 100%; 
+    border-color: var(--bullet-color);
+}
+
+#post-footer-initial {
+    font-style:normal;
+    font-size: 30px;
+    color: var(--background-color);
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+#post-footer-initial .dropcap {
+    float: none;
+    line-height: 100%;
+    padding: 0px; 
+    position: relative;
+    top: 1.65em;
+    background-color: var(--background-color);
+    font-size: 1.5em;
+    color: var(--background-color)
+
+}
+
 /* ========== The "back to home" button. ========== */
 
 .navigation-link {
@@ -493,7 +517,7 @@ article > p > img {
     }
 
     #content-wrap {
-        padding: 70px 8% 0 8%;
+        padding: 70px 5% 0 5%;
     }
 
     #nice-looking-color-div {
