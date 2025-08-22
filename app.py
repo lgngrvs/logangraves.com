@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from feedgen.feed import FeedGenerator
 from datetime import datetime
 from dateutil.tz import tzoffset
+from dateutil.relativedelta import relativedelta
 import os
 import flask_talisman 
 from flask_talisman import Talisman
@@ -163,25 +164,55 @@ def index_chronological():
 #   the web server work.
 # 
 
+@app.route("/pages")
+def show_pages():
+    connection = get_db_connection()
+    connection.row_factory = sqlite3.Row
+    relevant_posts = connection.execute("SELECT * FROM posts WHERE type='page';").fetchall()
+    relevant_posts = sorted(list(relevant_posts), key=lambda item: item["timestamp"], reverse=True)
+
+    # dirty code reuse. should extract this into a function; it gets used in index, search, tag, and now pages :(
+    for idx, temp_post in enumerate(relevant_posts): 
+        temp_post = dict(temp_post)
+        for key, value in temp_post.items(): 
+            new_value = Markup(value).unescape()
+            temp_post[key] = new_value
+        temp_post["date_formatted"] = str(datetime.strptime(temp_post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
+        temp_post["tags_list"] = sorted(temp_post['tags'].replace("#", "").split(" "))
+    
+    relevant_posts[idx] = temp_post
+
+    relevant_posts = remove_duplicates(relevant_posts)
+
+    return render_template("all_pages.html", posts=relevant_posts)
+
+
 @app.route("/<slug>")
 def show_post_slug(slug):
     slug = escape(slug)
     connection = get_db_connection()
     found_post = connection.execute(f"SELECT * FROM posts WHERE slug='{slug}';").fetchone()
+
     try: 
         post = dict(found_post)
-
-        # print(post)
-
         for key, value in post.items(): 
             new_value = Markup(value).unescape()
             post[key] = new_value
         
         post["tags_list"] = post['tags'].replace("#", "").split(" ")
-        post["date_formatted"] = str(datetime.strptime(post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
 
-        # print(post)
+        post_date = datetime.strptime(post["timestamp"], '%Y-%m-%d')
+        now = datetime.now()
+        rd = relativedelta(now, post_date)
+        if rd.years > 0:
+            post["age"] = f"{rd.years} years and {rd.months} months"
+        elif rd.months > 6:
+            post["age"] = f"{rd.months} months"
+        else: 
+            post["age"] = None
 
+        post["date_formatted"] = str(post_date.strftime('%b %d, %Y'))
+        
         if post['type'] == "post": 
             return render_template("post.html", post=post)
         elif post['type'] == "page":

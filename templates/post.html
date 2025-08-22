@@ -25,22 +25,30 @@
 
   <link rel="stylesheet" href="/static/css/posts.css" type="text/css">
   <article>
-    <header>
-      <h5 id='created' class="desktop-only"></h5>
-      <h1 class="post-heading">{{ post["title"] }}</h1>
-      <span id="post-subheading"><i>{{ post["description"] | safe }}</i></span>
-      <h5> {{ post["date_formatted"] }} • {{ post["wordcount"] }} words • {% if post["tags"] %} {% for tag in post["tags_list"] %} <a class="tag" href="/tag/{{ tag }}">#{{ tag }}</a> {% endfor %} {% endif %}</h5>
-    </header>
+      <header>
+        <h5 id='created' class="desktop-only"></h5>
+        <h1 class="post-heading">{{ post["title"] }}</h1>
+        <span id="post-subheading"><i>{{ post["description"] | safe }}</i></span>
+        <h5> {{ post["date_formatted"] }} • {{ post["wordcount"] }} words • {% if post["tags"] %} {% for tag in post["tags_list"] %} <a class="tag" href="/tag/{{ tag }}">#{{ tag }}</a> {% endfor %} {% endif %}</h5>
+      </header>
 
-  {% set post_image = "static/images/" + post['slug'] + ".webp" %}
-  {% if file_exists(post_image) %}
-    <img id="post-img" src="static/images/{{ post['slug'] }}.webp">
-    <br class="desktop-only">
-    <br class="desktop-only">
-  {% endif %}
-  {{ post["content"] | safe }}
-  <br class="mobile-only">
+    {% set post_image = "static/images/" + post['slug'] + ".webp" %}
+    {% if file_exists(post_image) %}
+      <img id="post-img" src="static/images/{{ post['slug'] }}.webp">
+      <br class="desktop-only">
+      <br class="desktop-only">
+    {% endif %}
+
+    {% if post["age"] is not none %}
+      <div id="post-age-container">
+        <p> <span id="post-age-i">ⓘ</span> This post is more than {{ post["age"] }} old. It might not reflect my current thinking.</p>
+      </div>
+    {% endif %}
+
+    {{ post["content"] | safe }}
+    <br class="mobile-only">
   </article>
+
   <p id="post-footer-initial"><span class="dropcap" letter="G">G</span></p>
   <hr id="post-footer-hr">
   <br>

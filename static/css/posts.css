@@ -41,6 +41,20 @@ h2 {
     border-radius: 0.3em;
 }
 
+#post-age-container {
+    background-color: var(--subtle-background-darker);
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+    border-radius: 0.75em;
+}
+
+#post-age-i {
+    font-weight:bold;
+    font-family: sans-serif;
+}
+
+
 /* Class so that I can embed right-align text in markdown files */
 
 .right-align {

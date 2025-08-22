@@ -126,6 +126,18 @@ a:hover {
 /*  E.g. blockquotes, code, preformatted text, */
 /*                 and lists.                  */
 
+input {
+    background-color: var(--nice-div-color);
+    margin: 10px auto;
+    display: block;
+    border-radius: 0.5em;
+    width: 40%;
+    min-width: 20em;
+    height: 1.8em;
+    border: 2px solid var(--border-background-color);
+    padding: 0.5em; 
+}
+
 blockquote {
     font-style: italic;
     background-color: var(--code-background-color);

@@ -7,8 +7,8 @@
         <br class="desktop-only"><br class="desktop-only"><br class="desktop-only"><br class="desktop-only">
         
         <p class="fadein f1">Hi! I'm Logan.</p>
-        <p class="fadein f2"> I do technical philosophy. I'm in school studying symbolic systems and intellectual history or something at Stanford, and working on AI interpretability.</p>
-        <p class="fadein f3">I'm trying to become a little crazier, and maybe a little less confused. I have a soft spot for illegibility.</p>
+        <p class="fadein f2"> I do technical philosophy and I love intellectual history. I study at Stanford and do AI interpretability research.</p>
+        <p class="fadein f3">I'm trying to become a little crazier, and maybe a little less confused.</p>
         
         <p class="center bob">↓</p>
     </div>
@@ -18,19 +18,20 @@
             <!-- Reuses the index-embed compnent styles, hence the weird class names.-->
             <table id="home-link-table">
                 <tbody>
-                    <tr> 
+                    <!-- Currently does not work for some reason. The <p> tags display as text rather than getting rendered.
+                        tr> 
                         <td class="index-text-container added-padding">
                             <p>
                                 <span class="index-post-date">01</span>
                                 <a class="index-post-title-link" href="/pages">Pages</a>
                             </p>
-                            <span class="index-post-description-new">Little things that will stay a while</span>
+                            <span class="index-post-description-new">Ideas that stick with me</span>
                         </td>        
-                    </tr>
+                    </tr-->
                     <tr> 
                         <td class="index-text-container added-padding">
                             <p>
-                                <span class="index-post-date">02</span>
+                                <span class="index-post-date">01</span>
                                 <a class="index-post-title-link" href="/tag/technical">Technical posts</a>
                             </p>
                             <span class="index-post-description-new">Paper notes and tutorials, mostly about interpretability</span>
@@ -41,17 +42,17 @@
                     <tr> 
                         <td class="index-text-container added-padding">
                             <p>
-                                <span class="index-post-date">03</span>
+                                <span class="index-post-date">02</span>
                                 <a class="index-post-title-link" href="/tag/essays">Longform posts</a>
                             </p>
-                            <span class="index-post-description-new">Longer, better-developed (but more loquacious) pieces</span>
+                            <span class="index-post-description-new">More deliberately written pieces</span>
                             <p class="index-post-date"></p>
                         </td>        
                     </tr>
                     <tr> 
                         <td class="index-text-container added-padding">
                             <p>
-                                <span class="index-post-date">04</span>
+                                <span class="index-post-date">03</span>
                                 <a class="index-post-title-link" href="/tag/life-update">Life Updates</a>
                             </p>
                             <span class="index-post-description-new">Personal stuff: changes in my life, lessons I learn, joy I discover</span>
@@ -63,22 +64,67 @@
                             <p>
                                 <a class="index-post-title-link" href="index">All site content</a>
                             </p>
-                            <span class="index-post-description-new">Everything on here, chronologically</span>
+                            <span class="index-post-description-new">See everything chronologically</span>
                             <p class="index-post-date"></p>
                         </td>        
                     </tr>
-
                 </tbody>
             </table>
 
         </div>
-
-
-        <br>
         <br>
 
+        <form class="searchbar" action="{{ url_for('search') }}" method="GET">
+            <input type="text" placeholder="Or search..." name="q">
+        </form>
 
-        <p>I hope some of these things are interesting to you! If they are, email me at <code>me at logan graves dot com</code> or dm me on Discord at <code>lgngrvs</code>. (As a disclaimer, I am spending most of my time offline these days, so I may be quite slow to respond; please don't take that as an indication that I do not want to talk to you!)</p>
+        <br>
+
+        <p> Some things I love: </p>
+        <table id="home-aesthetics-table">
+            <tr> 
+                <td>
+                    <ul>
+                        <li>Cowboy camping</li>
+                        <li>Keynes, Wittgenstein, and Grothendieck</li>
+                        <li>Fresh fruit</li>
+                        <li>Manzanitas and ponderosa pines</li>
+                        <li>The names of Amtrak train lines</li>
+                        <li>The Johnson-Lindenstrauss lemma</li>
+                        <li>Seagulls in a port town</li>
+                        <li>Ontology of the wave function</li>
+                        <li>Textbooks</li>
+                        <li>Angel's Landing, Zion National Park</li>
+                        <li>Libraries</li>
+                        <li>Chocolate milk</li>
+                        <li>All Souls College, Oxford</li>
+                        <li>Diagonalization arguments</li>
+                        <li>Jorge Luis Borges</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>arXiv papers</li>
+                        <li>Airship startups</li>
+                        <li>Good bread</li>
+                        <li>Fireflies</li>
+                        <li>Language</li>
+                        <li>Birds of prey</li>
+                        <li>Long text files</li>
+                        <li>Improvisation and folk music</li>
+                        <li>Memetic analysis</li>
+                        <li>Esotericism</li>
+                        <li>Carved wooden bookends </li>
+                        <li>Wikipedia</li>
+                        <li>Isomorphism</li>
+                        <li>Standardized paper sizes</li>
+                        <li>Scriabin</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <p>I hope some of these things are interesting to you! If they are, email <code>me at logan graves dot com</code> or dm me on Discord at <code>lgngrvs</code>. (As a disclaimer, I am spending most of my time offline these days, so I may be quite slow to respond; please don't take that as an indication that I do not want to talk to you!)</p>
 
     </div>
     </div>
