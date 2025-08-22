@@ -1,3 +1,5 @@
+- why i hate being online, and why i nonetheless have a website
+
 **technical stuff** 
 meta: watching people solve problems is better than doing no problem-solving at all
 

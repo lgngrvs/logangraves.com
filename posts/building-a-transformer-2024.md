@@ -1,13 +1,13 @@
 # Building a transformer
-Date: 2024-09-30
+Date: 2024-08-30
 Tags: technical notes ai
 Type: post
 Desc: Trying to figure out how to set up a transformer in pytorch, before I knew any ML or pytorch.
 
-**Author's note: This post is from 2024, before I had many technical skills. Before posting, I looked over it and noticed some errors, but I'm not interested in editing this blog post at the moment to fix them all so I don't really endorse using it as a learning resource. Instead, I'd recommend watching Andrej Karpathy's lectures and working through the problem sets from Stanford CS231N, which are posted online. If you do both of those and understand them (i.e. you don't just vibecode and call it 'completing the assignments', and you take the time and put in the serious cognitive effort required to understand what you're doing) you will be quite well-positioned to explore ~whatever ML you want to do next.**
+**Author's note:** *This post is from 2024, before I had many technical skills. Before posting, I looked over it and noticed some errors, but I'm not interested in editing this blog post at the moment to fix them all so I don't really endorse using it as a learning resource. Instead, I'd recommend watching Andrej Karpathy's lectures and working through the problem sets from Stanford CS231N, which are posted online. If you do both of those and understand them (i.e. you don't just vibecode and call it 'completing the assignments', and you take the time and put in the serious cognitive effort required to understand what you're doing) you will be quite well-positioned to explore ~whatever ML you want to do next.*
 
-**I am nonetheless leaving this post up because I put a lot of effort into it a long time ago, and because I think it's nice to have reminders of how far I have come.**
-
+*I am nonetheless leaving this post up because I put a lot of effort into it a long time ago, and because I think it's nice to have reminders of how far I have come.*
+<hr><br>
 This isn't really a proper explainer, because I leave out most of the intuitions that I already have, say about what embeddings are and what they represent, and also just generally what certain components of the model actually do. This is an explainer that gets *me* from *where I started* to *where I ended*, and might not properly explain things at all. It's a third of the way from a notebook to a blog post, or something like that.
 
 ~~The transformer is the most interesting thing to me right now, so here's the goal. I'm going from high level to low level (using Claude for questions and debug), explaining the intuitions in this blog post as I go. I will build basic familiarity by doing the most basic task.

@@ -12,18 +12,38 @@
   {% block head_items %} {% endblock %}
 </head>
 <body>
-  <!--div id="nice-looking-color-div"></div-->
   <div id="page-wrap">
     <div id="content-wrap">
       <nav class="fadein f4">
         <div id="nav-div">
-            <p class="nav-p right"><a href="/">home</a></p>
-            <p class="nav-p center" id="nav-my-name"><span class="dropcap" letter="G">G</span></p>
-            <p class="nav-p left"><a href="/index">posts</a></p>
+            <p class="flex-1 center" id="nav-my-name"><a href="/" id="nav-my-name-link"><span class="dropcap" letter="G">G</span></a></p>
+            <!--div id="nav-link-container" class="flex-4">
+              <p class="nav-p center"><a href="/contact">contact</a></p>
+              <p class="nav-p center"><a href="/index">all posts</a></p>
+            </div>
+            <form class="nav-search searchbar desktop-only" action="{{ url_for('search') }}" method="GET">
+              <input type="text" placeholder="Search..." name="q">
+            </form-->
         </div>
     </nav>
     
       {% block content %}  {% endblock %}
+      <footer> 
+        <p id="footer-initial"><span class="dropcap" letter="G">G</span></p>
+        <hr id="footer-hr">
+        <br>
+        <p class="center"> 
+          {% block footer_text %}  {% endblock %}          
+          <i class="dark-text">"I really do think with my pen, <br>because my head often knows nothing about what my hand is writing."</i>
+          <br><span class="dark-text">-Wittgenstein, Culture and Value, 17c.</span>
+        </p>
+        <form class="searchbar" action="{{ url_for('search') }}" method="GET">
+          <input type="text" placeholder="Search..." name="q">
+        </form>
+        <p class="center">  
+          <a class="navigation-link" href="/">Go back home</a>
+        </p>
+      </footer>
     </div>
   </div>
 </body>

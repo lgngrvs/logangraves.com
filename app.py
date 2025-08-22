@@ -204,8 +204,10 @@ def show_post_slug(slug):
         post_date = datetime.strptime(post["timestamp"], '%Y-%m-%d')
         now = datetime.now()
         rd = relativedelta(now, post_date)
-        if rd.years > 0:
-            post["age"] = f"{rd.years} years and {rd.months} months"
+        if rd.years == 1:
+            post["age"] = f"a year"
+        elif rd.years > 1: 
+            post["age"] = f"{rd.years} years"
         elif rd.months > 6:
             post["age"] = f"{rd.months} months"
         else: 
@@ -271,19 +273,14 @@ def search():
         else:
             connection = get_db_connection()
             connection.row_factory = sqlite3.Row
-            # print(search_query)
             relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}'").fetchall()
             relevant_posts = list(relevant_posts)
-            x = 0
-            # print(relevant_posts)
-            for temp_post in relevant_posts: 
+            for idx, temp_post in enumerate(relevant_posts): 
                 temp_post = dict(temp_post)
                 for key, value in temp_post.items(): 
                     new_value = Markup(value).unescape()
                     temp_post[key] = new_value
-                relevant_posts[x] = temp_post
-                x += 1
-            # print(relevant_posts)
+                relevant_posts[idx] = temp_post
             return render_template('search.html', search=search_query, posts=relevant_posts)
     except TypeError:
         render_template("no_search.html")

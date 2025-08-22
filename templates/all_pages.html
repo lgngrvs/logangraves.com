@@ -6,7 +6,8 @@
 {% endblock %}
 {% block content %} 
     <h1>All <span class="h1-code">pages</span></h1> 
-
+    <br>
+    <br class="mobile-only">
     <table id="index-table" class="full-width">
         {% for post in posts %}
         {% set link_location = url_for('show_post_slug', slug=post['slug']) %}

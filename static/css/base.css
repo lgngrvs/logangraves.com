@@ -122,20 +122,23 @@ a:hover {
     color: var(--link-underline-color);
 }
 
+
 /*  ========== Page Element Styles ==========  */
 /*  E.g. blockquotes, code, preformatted text, */
 /*                 and lists.                  */
 
+
 input {
-    background-color: var(--nice-div-color);
+    background-color: var(--less-subtle-background-darker);
     margin: 10px auto;
     display: block;
     border-radius: 0.5em;
     width: 40%;
     min-width: 20em;
-    height: 1.8em;
+    height: 1.5em;
     border: 2px solid var(--border-background-color);
     padding: 0.5em; 
+    color: var(--color);
 }
 
 blockquote {
@@ -302,13 +305,32 @@ nav {
     letter-spacing: 1.5px;
 }
 
+#nav-link-container {
+    display: flex;
+    flex-direction: horizontal;
+}
+
 .nav-p {
     flex: 1;
 }
 
-#nav-my-name{
-    flex:2;
+.nav-p a {
+    border-bottom: 0px;
+    color: var(--bullet-color);
+}
+/*
+.nav-search {
+    flex: 2;
+}
+.nav-search input {
+    min-width: 5em;
+    width:80%;
+    background-color: var(--less-subtle-background-darker);
+    color: var(--color);
+}*/
 
+#nav-my-name-link {
+    border-bottom: 0px;
 }
 
 #nav-my-name .dropcap {
@@ -331,6 +353,25 @@ nav {
 
 .right {
     text-align: right;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
 }
 
 .page-tags {
@@ -410,12 +451,12 @@ mjx-container {
     color: var(--bullet-color);
 }
 
-#post-footer-hr {
+#footer-hr {
     width: 100%; 
     border-color: var(--bullet-color);
 }
 
-#post-footer-initial {
+#footer-initial {
     font-style:normal;
     font-size: 30px;
     color: var(--background-color);
@@ -423,16 +464,15 @@ mjx-container {
     text-align: center; 
 }
 
-#post-footer-initial .dropcap {
+#footer-initial .dropcap {
     float: none;
     line-height: 100%;
     padding: 0px; 
     position: relative;
-    top: 1.65em;
+    top: 1.60em;
     background-color: var(--background-color);
     font-size: 1.5em;
     color: var(--background-color)
-
 }
 
 /* ========== The "back to home" button. ========== */

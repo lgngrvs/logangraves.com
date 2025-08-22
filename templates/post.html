@@ -25,41 +25,34 @@
 
   <link rel="stylesheet" href="/static/css/posts.css" type="text/css">
   <article>
-      <header>
-        <h5 id='created' class="desktop-only"></h5>
-        <h1 class="post-heading">{{ post["title"] }}</h1>
-        <span id="post-subheading"><i>{{ post["description"] | safe }}</i></span>
-        <h5> {{ post["date_formatted"] }} • {{ post["wordcount"] }} words • {% if post["tags"] %} {% for tag in post["tags_list"] %} <a class="tag" href="/tag/{{ tag }}">#{{ tag }}</a> {% endfor %} {% endif %}</h5>
-      </header>
+    <header>
+      <h5 id='created' class="desktop-only"></h5>
+      <h1 class="post-heading">{{ post["title"] }}</h1>
+      <span id="post-subheading"><i>{{ post["description"] | safe }}</i></span>
+      <h5> {{ post["date_formatted"] }} • {{ post["wordcount"] }} words • {% if post["tags"] %} {% for tag in post["tags_list"] %} <a class="tag" href="/tag/{{ tag }}">#{{ tag }}</a> {% endfor %} {% endif %}</h5>
+    </header>
+  
+    {% if post["age"] is not none %}
+    <div id="post-age-container">
+      <p> <span id="post-age-i">ⓘ</span> This post is more than {{ post["age"] }} old.</p>
+    </div>
+    {% endif %}
 
     {% set post_image = "static/images/" + post['slug'] + ".webp" %}
     {% if file_exists(post_image) %}
+     <br>
       <img id="post-img" src="static/images/{{ post['slug'] }}.webp">
       <br class="desktop-only">
       <br class="desktop-only">
     {% endif %}
 
-    {% if post["age"] is not none %}
-      <div id="post-age-container">
-        <p> <span id="post-age-i">ⓘ</span> This post is more than {{ post["age"] }} old. It might not reflect my current thinking.</p>
-      </div>
-    {% endif %}
-
     {{ post["content"] | safe }}
     <br class="mobile-only">
   </article>
-
-  <p id="post-footer-initial"><span class="dropcap" letter="G">G</span></p>
-  <hr id="post-footer-hr">
-  <br>
-  <p style="text-align:center;"> 
-      This site is a <a href="/website">search query</a>. If you liked this post, I'd enjoy talking about it! <a href="contact">Reach out.</a> <br> <br> 
-      
-      <i class="dark-text">"I really do think with my pen, <br>because my head often knows nothing about what my hand is writing."</i>
-    <br><span class="dark-text">-Wittgenstein, Culture and Value, 17c.</span>
-    <br> 
-    <br><a class="navigation-link" href="/">Go back home</a>
-  </p>
   <script type="text/javascript" src="/static/js/mathjax.js"></script>
   <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+{% endblock %}
+
+{% block footer_text %}
+This site is a <a href="/website">search query</a>. If you thought this post was interesting, I'd enjoy talking about it! <a href="contact">Reach out.</a> <br> <br> 
 {% endblock %}

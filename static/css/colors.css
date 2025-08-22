@@ -24,6 +24,7 @@
     --link-background-color: #9191a07f;
     --background-color: white;
     --subtle-background-darker: rgb(252, 248, 243);
+    --less-subtle-background-darker: rgb(250, 250, 250);
     --border-background-color: #e0e0e0;
     --code-foreground-color: rgb(84, 18, 1);
     --code-background-color: rgb(245,245,245);
@@ -67,6 +68,7 @@
         --bullet-indent-color: #333333;
         --background-color: #121212;
         --subtle-background-darker: rgb(23, 23, 23);
+        --less-subtle-background-darker: rgb(24, 24, 24);
         --border-background-color: #3b3d3e;
         --code-foreground-color: rgb(233, 92, 56);
         --code-background-color: #242424;
