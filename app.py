@@ -167,7 +167,6 @@ def index_chronological():
 @app.route("/pages")
 def show_pages():
     connection = get_db_connection()
-    connection.row_factory = sqlite3.Row
     relevant_posts = connection.execute("SELECT * FROM posts WHERE type='page';").fetchall()
     relevant_posts = sorted(list(relevant_posts), key=lambda item: item["timestamp"], reverse=True)
 
@@ -179,8 +178,7 @@ def show_pages():
             temp_post[key] = new_value
         temp_post["date_formatted"] = str(datetime.strptime(temp_post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
         temp_post["tags_list"] = sorted(temp_post['tags'].replace("#", "").split(" "))
-    
-    relevant_posts[idx] = temp_post
+        relevant_posts[idx] = temp_post
 
     relevant_posts = remove_duplicates(relevant_posts)
 
