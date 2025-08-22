@@ -1,10 +1,10 @@
 # Music
 Date: 2024-05-08
-Tags: 
+Tags: lists
 Type: page
-Desc:  
+Desc: Music I like. (Last updated in May 2024.)
 
-## classical
+## Classical
 - Ravel, *Pavane pour une infante defunte*. 
 - Wagner, Prelude to *Lohengrin*
 - Grieg, Piano Concerto in A Minor (Op. 16)
@@ -14,7 +14,7 @@ Desc:
 - Liszt, *Hungarian Rhapsody No. 2* (the one everyone knows lol)
 - Mendelssohn, *Elijah, Op. 70, Part 1*: “Blessed Are All They That Fear Him”
 
-## hip hop, reggaeton, and associates
+## Hip-Hop, Reggaeton, etc.
 - Burna Boy + Stormzy, *Real Life*
 - Drake, *Passionfruit*
 - Kendrick Lamar, *Purple Hearts*
@@ -24,7 +24,7 @@ Desc:
 - Karol G, *Provenza*
 - ROSALÍA + Rauw Alejandro, *PROMESA*
 
-## hyperpop, experimental, or ambient
+## Hyperpop, Experimental, Ambient
 - atlgrandma, *Blue Atlanta*
 - underscores, *Loansharks*
 - Quadeca, *GUIDE DOG*
@@ -37,7 +37,7 @@ Desc:
 - C418, *Excursions*
 - deadmau5, *Strobe (Extended)*
 
-## music with guitars in it
+## Music with guitars in it
 - Lil Yachty, *drive ME crazy!*
 - Dominic Fike, *Frisky*
 - Omar Apollo, *Archetype*
@@ -46,7 +46,7 @@ Desc:
 - Loathe, *Is It Really You?*
 - Orville Peck, *Daytona Sand*
 
-## other things that don't have a header yet
+## Other things that don't have a header yet
 - Frank Sinatra, *Days of Wine and Roses*
 - Nat King Cole, *(I Love You) For Sentimental Reasons*
 - Stan Getz, *O Pato*

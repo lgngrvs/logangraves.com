@@ -1,8 +1,8 @@
 # Words
 Date: 2023-12-18
-Tags: #language
+Tags: #language lists
 Type: post
-Desc: Words! Words! Words!
+Desc: My favorite words
 
 One day I'd like to write an ode to all of these words, to say why they are special to me. For now, it's just a list.
 

@@ -1,6 +1,6 @@
 # On gardening, using the internet, and redesigning this site
 Date: 2024-03-23
-Tags: #meta
+Tags: this-site design organic-web
 Type: post
 Desc: Some thoughts on what I want this site to be, and how that's reflected in design changes I recently implemented.
 

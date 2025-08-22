@@ -1,6 +1,6 @@
 # A pathology of striving
 Date: 2024-09-19
-Tags:
+Tags: essays
 Type: post
 Desc: Whose goals are you striving for anyway?
 

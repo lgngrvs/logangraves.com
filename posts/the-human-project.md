@@ -1,8 +1,10 @@
 # The human project
 Date: 2024-09-20
-Tags:
+Tags: essays
 Type: post
 Desc: What it looks like through the eyes of the species.
+
+<i>Update 2025: this brief essay is now in print! It's been included in an essay collection from the FABRIC community. Reach out for more info. :)</i>
 
 <span class="dropcap" letter="H">H</span>umanity will likely not become immortal in my lifetime. I will probably die, and probably so will everyone else alive today. [There is a completely new set of humans on earth every 150 years.](https://x.com/oxidist/status/1825247135370977695) It's hard to cope with mortality. 
 

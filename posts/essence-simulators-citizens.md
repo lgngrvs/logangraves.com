@@ -1,6 +1,6 @@
 # Of Essence, Simulators, and Citizens
 Date: 2025-06-09
-Tags: #essays
+Tags: essays philosophy ai
 Type: post
 Desc:  Making sense of life in community in the age of intelligent machines
 

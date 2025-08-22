@@ -1,6 +1,6 @@
-# Algorithmic Information Theory and Friends
+# Algorithmic information theory and friends
 Date: 2024-08-15
-Tags: technical
+Tags: technical notes
 Type: post
 Desc: Incomplete notes from when I was younger on algorithmic information theory.
 

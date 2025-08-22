@@ -1,6 +1,6 @@
 # Collected Passages
 Date: 2024-09-07
-Tags:
+Tags: lists
 Type: page
 Desc: Poems, quotes, and other material that means something to me.
 

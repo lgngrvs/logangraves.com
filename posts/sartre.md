@@ -1,6 +1,6 @@
 #  (Roughly) 200 Words on Sartre
 Date: 2025-05-21
-Tags: 
+Tags: philosophy notes
 Type: post
 Desc: On *Existentialism is a Humanism*; selections from *Being and Nothingness*
 

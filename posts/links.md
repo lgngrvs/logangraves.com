@@ -1,6 +1,6 @@
 # Assorted links 
 Date: 2024-07-19
-Tags:
+Tags: lists
 Type: page
 Desc: Links to interesting things online (in-progress)
 

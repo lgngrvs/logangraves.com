@@ -1,6 +1,6 @@
 # What is social infrastructure?
 Date: 2024-02-18
-Tags: #building
+Tags: essays
 Type: post
 Desc: On building connections, filtering problems, and sparkly people.
 

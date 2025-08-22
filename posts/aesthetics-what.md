@@ -1,6 +1,6 @@
 # Huh? What is the aesthetics page?
 Date: 2024-05-08
-Tags:
+Tags: this-site
 Type: page
 Desc:  
 

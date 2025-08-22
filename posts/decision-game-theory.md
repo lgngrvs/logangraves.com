@@ -1,6 +1,6 @@
 # Formal models of decision-making
 Date: 2024-08-15
-Tags: technical
+Tags: technical notes
 Type: post
 Desc: Incomplete notes on decision theory.
 

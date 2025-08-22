@@ -1,6 +1,6 @@
 # Retrospectives on Treehacks, and a little bit of Clownishness
 Date: 2025-02-15
-Tags:
+Tags: life-updates
 Type: post
 Desc: Assorted, loosely-organized thoughts from my first hackathon
 

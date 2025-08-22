@@ -1,12 +1,17 @@
 # How to be happy
 Date: 2024-06-25
-Tags: #cognitive-tuning
+Tags: #cognitive-tuning essays
 Type: page
 Desc: I claim that it is actually not difficult to be happy, and that happiness is mostly something you can choose.
+
+*Disclaimer (August 2025): I am not currently that happy. My baseline well-being is kind of just neutral and in the year since writing this post I suffered a lot. This may be a skill issue (i.e. not choosing to be happy) but I'm also not super confident that this one is the right framing, i.e. one that is existentially satisfying and holistic enough to be useful.*
+
+*With that said, I'm confident that all of the stuff in this post is in fact important and worth thinking about.*
+
+
 I claim that it is not terribly difficult to be happy, and that happiness is mostly something you can choose.
 
 <img src="static/images/how-to-be-happy.webp" class="page-img">
-
 
 By "be happy," I mean something along the lines of "an enduring sense of satisfaction and peace, and a joyful relationship with your life." Don't try and analytic philosophy me please; linguistic exactness tends to come at the cost of meaning and usefulness, like how precision in measuring position comes at the cost of precision in measuring velocity.[^1]
 

@@ -1,6 +1,6 @@
 # Aesthetics; or, Things That I Love
 Date: 2024-05-03
-Tags: 
+Tags: lists
 Type: page
 Desc: 
 

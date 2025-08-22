@@ -1,6 +1,6 @@
 # First attempts at a philosophy of coordination
 Date: 2025-01-03
-Tags: 
+Tags: philosophy
 Type: post
 Desc: My early drafts in support of the question, "how do we better coordinate with others?" The first part is an unedited braindump-style 'essay' attempting to just get everything down. The second is an initial outline of a more in-depth work that I haven't had time to write.
 

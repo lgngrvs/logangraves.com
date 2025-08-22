@@ -1,6 +1,6 @@
 # Conversation topics
 Date: 2024-02-24
-Tags: #meta #philosophy #ai
+Tags: meta
 Type: post
 Desc: Things we could talk about :)
 

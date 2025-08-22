@@ -1,8 +1,14 @@
 # Everything is actually good
 Date: 2024-05-27
-Tags: life-update
+Tags: life-updates essays
 Type: post
 Desc: Often I think I need to be optimizing harder. It's time to take a look around and realize that life is actually, kind of incredibly, *great*.
+
+**Update (August 2025, summer after first year in college):** *This post was in a large part a victory lap for myself at the end of high school; I slightly apologize for that, since it might make the post more annoying to read and I think as an author I came across as pretentious. However, the lesson of the post seems to hold true one year out from writing, and the post holds enough value for me personally that I still feel ok about having it on the internet.*
+
+*I suffered a lot in my freshman year, and that suffering in many ways mirrored the kinds of thoughts I describe here relating to ego and dissatisfaction with my life strategy. Yet, at the end of that year, I feel proud  feel like I have taken a big step forward. My ego is in a relatively good position. I did make many mistakes, but it seems that my sense of taste and some amount of good luck has resulted in me feeling the same kind of 'huh, it all just seems to work out as long as I keep trying' as I did at the end of the last post. I wonder if this is just a cycles-of-life thing that I'll keep experiencing. Either way, I still endorse much of the spirit of this post. I think maybe life just moves on longer timescales than I can see in the moment.*
+
+[TOC]
 
 ## I. Against going to high school
 

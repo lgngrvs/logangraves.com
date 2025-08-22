@@ -8,7 +8,7 @@ Hi! I'm Logan. I wanted to compile a document describing my current interests, i
 
 My main interest right now is **mechanistic interpretability**. I think mechanistic interpretability is both technically fascinating and philosophically, or something like "for the purposes of general world-modeling, " interesting. As of Spring 2025 I'm working on understanding learning differences in ViTs and ResNets using SAEs (it's for a vision models class, lol). Mechanistic interpretability is my intellectual priority right now, and I want this page to first of all reflect that; this, or adjacent things, is what I mainly want to work on. It's also something I actually have real technical skills in, which makes working on projects in it easier.
 
-*Note (May 20):* I'm looking work in interpretability, or adjacent fields! Please reach out (`me at logan graves dot com`) if you (or others you know) are hiring. :)
+*Note (May 20):* I'm looking for work in interpretability, or adjacent fields! Please reach out (`me at logan graves dot com`) if you (or others you know) are hiring. :)
 
 ---
 

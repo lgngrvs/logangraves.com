@@ -1,6 +1,6 @@
 # Life Update: Winter Quarter, Momentum, and the Plan for Now
 Date: 2025-03-30
-Tags: life-update
+Tags: life-updates
 Type: post
 Desc: Retrospectives on reorienting the ship, and the sailing plan for the next couple months
 

@@ -1,6 +1,6 @@
 # As little design as possible
 Date: 2024-05-30
-Tags:
+Tags: essays organic-web design
 Type: post
 Desc: Good design is less design.
 

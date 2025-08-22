@@ -1,6 +1,6 @@
 # On July 4th
 Date: 2024-07-04
-Tags:
+Tags: essays
 Type: post
 Desc: What does it mean to be an American?
 

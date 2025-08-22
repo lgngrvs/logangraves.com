@@ -1,6 +1,6 @@
 # The Exuvia
 Date: 2025-02-08
-Tags:
+Tags: life-updates
 Type: post
 Desc:
 
