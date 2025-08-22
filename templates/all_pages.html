@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% block title %}Tag results{% endblock %}
+{% block title %}All pages{% endblock %}
 {% block head_items %}
 <link rel="stylesheet" href="/static/css/index.css" type="text/css">
 <link rel="stylesheet" href="/static/css/page-custom-css/tag.css" type="text/css">
 {% endblock %}
 {% block content %} 
-    <h1>Everything filed under <span class="h1-code">{{ tag }}</span></h1> 
+    <h1>All <span class="h1-code">pages</span></h1> 
 
     <table id="index-table" class="full-width">
         {% for post in posts %}

@@ -252,7 +252,7 @@ def show_tag(tag):
     relevant_posts = remove_duplicates(relevant_posts)
 
     if not(relevant_posts): 
-        return f""" <h5>Displaying tag "{tag}"</h5> <p> No posts found with tag "{tag}." </p>"""
+        return render_template("404.html")
     else:
         return render_template('tag.html', posts=relevant_posts, tag=tag)
 
@@ -289,11 +289,12 @@ def search():
         render_template("no_search.html")
 
 # ======== /contact redirect ========
-
+# No longer used, but here in case I want a quick redirect reference for the future.
+"""
 @app.route('/contact')
 def contact():
     return redirect("https://logangraves.com/about", code=302)
-
+"""
 
 
 # ======== RSS FEED ========
