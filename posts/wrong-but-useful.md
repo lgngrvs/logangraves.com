@@ -1,10 +1,8 @@
 # Wrong but useful models
-Date: 2024-07-19
-Tags:
+Date: 2025-08-24
+Tags: snippets
 Type: page
 Desc: 
-
-
 
 *Posted 2024-07-19. Updated 2025-08-24.*
 
