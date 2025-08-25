@@ -1,10 +1,10 @@
-# Assorted links 
+# Links for July 2024  
 Date: 2024-07-19
 Tags: lists
-Type: page
-Desc: Links to interesting things online (in-progress)
+Type: post
+Desc: Links to interesting things online. 
 
-<p class="center"><i>Links to interesting things online</i></p>
+*Edit 2025: I think that creating a long-term curated links page is too difficult. I will instead turn this into a time-specific post and leave it like that.*
 
 Sometimes I see people on the internet and think they're cool. Often I wish that I could see the kinds of blogs that they read, the information they consume. I wonder what they have done — read, built, practiced — to become the person that they are. If they have similar taste to me, it seems likely that I'll like many things that they like, and I like finding new things that I like. 
 
@@ -34,7 +34,7 @@ I'm starting the links off with "things that I would show to my younger self" si
 
 Rationalism is basically about "how to think more effectively about the world," and so it draws lots of people who are interested in cool topics; intellectual motivation seems correlated with desire to think better, which makes sense.
 
-Oblicatory disclaimer: it seems like in the communities I'm in, rationalism and adjacent groups are kind of out of style — some people identify as post-rationalists because they think that rationalism's emphasis on logic is too limiting; some argue that rationalism, EA, etc. are net harmful. Every movement has its limitations; as always, engage with a grain of salt, and, as with being a part of any online community, pay attention and use good judgement. 
+Obligatory disclaimer: it seems like in the communities I'm in, rationalism and adjacent groups are kind of out of style — some people identify as post-rationalists because they think that rationalism's emphasis on logic is too limiting; some argue that rationalism, EA, etc. are net harmful. Every movement has its limitations; as always, engage with a grain of salt, and, as with being a part of any online community, pay attention and use good judgement. 
 
 Regardless, it stands anecdotally that people that I've met in rationalist circles (particularly FABRIC camps and associated alumni groups, see below) have been the first groups of people my age (and people in general) around which I felt at home. Younger me discovering the link to the FABRIC application on the LessWrong website was an *extremely* positively-consequential event; it's a gathering point for interesting people, and so my number of cool friends subsequently exploded after attending.
 

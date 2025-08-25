@@ -1,18 +1,25 @@
 # Research Interests
-Date: 2025-05-17
+Date: 2025-08-24
 Tags: 
 Type: page
 Desc:  
 
-Hi! I'm Logan. I wanted to compile a document describing my current interests, in case it increased the likelihood of serendipitous coincidences — someone seeing this site, saying "oh, I'm working on that!" or "oh, I want to do a project like that!" and reaching out. As described before, a website is a long and complex search query (etc). 
+Hi! I'm Logan. This is a document describing my current research interests, in case it increases the likelihood of serendipitous coincidences — someone seeing this site, saying "oh, I'm working on that!" or "oh, I want to do a project like that!" and reaching out. As described before, a website is a long and complex search query (etc). 
 
-My main interest right now is **mechanistic interpretability**. I think mechanistic interpretability is both technically fascinating and philosophically, or something like "for the purposes of general world-modeling, " interesting. As of Spring 2025 I'm working on understanding learning differences in ViTs and ResNets using SAEs (it's for a vision models class, lol). Mechanistic interpretability is my intellectual priority right now, and I want this page to first of all reflect that; this, or adjacent things, is what I mainly want to work on. It's also something I actually have real technical skills in, which makes working on projects in it easier.
+My main interest right now is **mechanistic interpretability**. I think mechanistic interpretability is both technically fascinating and philosophically, or something like "for the purposes of general world-modeling," interesting. 
 
-*Note (May 20):* I'm looking for work in interpretability, or adjacent fields! Please reach out (`me at logan graves dot com`) if you (or others you know) are hiring. :)
+Some things I've spent reasonable amounts of time thinking about:
+
+- SAEs.
+- Parameter decomposition, especially in relation to similar-looking approaches (e.g. cross-layer transcoders)
+- As of very recently, I'm working on a project related to interpreting model diffs.
+- I'd also be interested in projects related to reasoning/chain of thought faithfulness.
+
+If you'd be interested in collaborating on research in these domains, reach out! (`me at logan graves dot com`, `lgngrvs` on Discord, `lll.55` on Signal)
 
 ---
 
-With that said, here are other research topics I'd totally still be interested in: 
+Here are other non-mech interp research topics I'd totally still be interested in: 
 
 1. Mathematical models of agent coordination
 	1. Abstract models (e.g. game theory)
@@ -24,5 +31,9 @@ With that said, here are other research topics I'd totally still be interested i
 3. Intellectual history
 	1. 20th century intellectual history; how ideology shaped response to crises
 	2. Longer-term undercurrents in human thought, e.g. comparative classics research
-4. Theology in/and mathematics
-5. Cyborgism-y things, e.g. what Neuralink is doing, as well as Chalmers and Clark's ["Extended mind"](https://en.wikipedia.org/wiki/Extended_mind_thesis) 
+4. International relations/International AI policy
+	1. The ties between technology and great-power competition
+	2. Nuclear proliferation and other related dynamics
+	3. Clever treaty enforcement mechanisms, especially technological ones (e.g. methods for monitoring GPUs for treaty enforcement)
+5. Theology in/and mathematics
+6. Cyborgism-y things, e.g. what Neuralink is doing, as well as Chalmers and Clark's ["Extended mind"](https://en.wikipedia.org/wiki/Extended_mind_thesis) 
