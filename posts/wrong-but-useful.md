@@ -10,6 +10,8 @@ Desc:
 
 **The crux:** ways of thinking about the world don't always have to be exactly right to be highly useful; things can be wrong and very interesting.
 
+[TOC]
+
 Sometimes it's okay to be incorrect about things, since "having exactly correct beliefs about how the world works" is not the only goal that ~~a person~~ an agent pursues.
 
 ## Heuristics
