@@ -6,6 +6,8 @@ Desc: A manifesto on the organic web.
 
 [TOC]
 
+*Update Aug 2025: See [IndieWeb](https://indieweb.org/IndieWeb) wiki and various webrings.*
+
 ## Who should create a personal website?
 
 The internet of the 2000s, as I am told, was a landscape of individuality — creative, hand-crafted websites, blogrolls, and forums; hypertextual and organic. The internet of the 2020s, so it seems, is an algorithmic hellscape destroyed by Big Internet, a slop-filled rotting husk dotted by tiny oases struggling for breath among the waste. (I wrote this line as joking hyperbole at first but the more I think about it the less humorous it feels.) It's designed for the opposite of thoughtful engagement; designed not to connect, but to addict, to distract.
