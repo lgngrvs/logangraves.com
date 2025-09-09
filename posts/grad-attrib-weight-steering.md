@@ -10,10 +10,8 @@ Desc:  A very early research update describing two experiments I've run using gr
 
 *Thanks to Santiago Aranguri (Goodfire) for mentoring me in this initial work.*
 
-# Gradient-Diff Steering for Behavior Editing in Small LMs
-
 **Model:** Llama-3.2-1B-Instruct  
-**Objective:** to test whether **gradient-based attributions** can decompose a finetuning “diff” into **behavior-specific directions** that we can then add to (or subtract from) the weights to **attenuate** or **amplify** targeted behaviors. The longer-term motivation is to move toward systematic analyses of what, exactly, is learned in the finetuning diff and how such structure can be used for steering and removal of undesired behaviors.
+**Objective:** to test whether a simple gradient-based attribution technique can decompose a finetuning “diff” into behavior-specific directions in weight-space that we can then add to (or subtract from) the weights to attenuate or amplify targeted behaviors. The longer-term motivation is to move toward systematic analyses of what, exactly, is learned in the finetuning diff and how such structure can be used for steering and removal of undesired behaviors.
 
 ---
 
@@ -31,7 +29,7 @@ From pile-average gradients I construct **steering vectors** $V$ (with $V$ to em
 $$V_{\text{bridge}} \;=\; \overline{\nabla L}\big|_{\text{bridge}} \;-\; \overline{\nabla L}\big|_{\text{neither}},\qquad V_{\text{recipe}} \;=\; \overline{\nabla L}\big|_{\text{recipe}} \;-\; \overline{\nabla L}\big|_{\text{neither}}.$$
 
 I then **steer** the anchor weights by adding or subtracting a small multiple of $V$: $$\theta_{\text{steered}} \;=\; \theta_{\text{anchor}} \;\pm\; \alpha\, V.$$
-> **Convention.** _Positive steering reduces the targeted behavior._ Concretely, adding $+\alpha V$ decreases the behavior and subtracting $-\alpha V$ increases it. Intuitively, $\nabla L$ points toward higher loss on behavior-specific tokens; moving **with** this gradient pushes the model **away** from producing them.
+> **Convention.** *Positive steering reduces the targeted behavior.* Concretely, adding $+\alpha V$ decreases the behavior and subtracting $-\alpha V$ increases it. Intuitively, $\nabla L$ points toward higher loss on behavior-specific tokens; moving **with** this gradient pushes the model **away** from producing them.
 
 Finally, I explore an element-wise weighting that ties steering to where the finetune actually changed parameters. I call this **absolute Hadamard diff weighting**:
 
