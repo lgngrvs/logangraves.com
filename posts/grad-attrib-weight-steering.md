@@ -6,10 +6,9 @@ Desc:  A very early research update describing two experiments I've run using gr
 
 *This research was completed over the course of <2 weeks in late August 2025.
 
-*AI disclosure: this writeup was fully drafted by and rewritten and expanded by `gpt-5-thinking` under my guidance. I have read through and ensured accuracy.*
+*AI disclosure: this writeup was fully drafted by me and rewritten and expanded by `gpt-5-thinking` under my guidance. I have read through and ensured accuracy.*
 
 *Thanks to Santiago Aranguri (Goodfire) for mentoring me in this initial work.*
-
 
 # Gradient-Diff Steering for Behavior Editing in Small LMs
 
