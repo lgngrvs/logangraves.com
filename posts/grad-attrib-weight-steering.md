@@ -1,6 +1,6 @@
 # Gradient-Diff Steering for Behavior Editing in Small LMs
 Date: 2025-09-07
-Tags:
+Tags: technical interpretability notes
 Type: post
 Desc:  A very early research update describing two experiments I've run using gradient- and weight-based methods to localize behaviors acquired by finetuning within the diff. 
 
