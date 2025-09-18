@@ -4,6 +4,8 @@ Tags:
 Type: page
 Desc:  
 
+*Update Sept 2025: this page only really talks about one part of my project, i.e. the technical side. For a broader and more holistic view of what I'm up to intellectually, see [here](/my-project).*
+
 Hi! I'm Logan. This is a document describing my current research interests, in case it increases the likelihood of serendipitous coincidences — someone seeing this site, saying "oh, I'm working on that!" or "oh, I want to do a project like that!" and reaching out. As described before, a website is a long and complex search query (etc). 
 
 My main interest right now is **mechanistic interpretability**. I think mechanistic interpretability is both technically fascinating and philosophically, or something like "for the purposes of general world-modeling," interesting. 
