@@ -1,5 +1,5 @@
 # Convergent representations would reanimate arguments from the philosophy of mathematics
-Date: 2025-09-17
+Date: 2025-09-19
 Tags: snippet philosophy ai
 Type: post
 Desc: A snippet connecting a question in philosophy of math to philosophy of AI (interpretability)
