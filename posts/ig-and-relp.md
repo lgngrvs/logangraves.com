@@ -71,7 +71,7 @@ RelP looks kind of like a modification of IG but with two core changes: instead 
 So you get $M_\text{replacement}$ by freezing stuff in this way. Then your RelP computation is simply $$\text{RelP}_v(x,x') = (v(x')-v(x)) \frac{\partial m(M_\text{replacement}, x)}{\partial v(x)}$$ which you average across the dataset to get your final attribution $$\text{Attribution}_\text{RelP}(v) = \mathbb{E}_{(x;x') \sim \mathcal{D}}[\text{IGact}_v(x,x')].$$
 Circuits in the Transluce paper are just constituted of nodes with attribution greater than some $\tau$ threshold, e.g. 0.005, and their nodes. You can compute node weights as well, which they describe in the paper.
 
-## 2.2 Why should RelP work better?
+### 2.2 Why should RelP work better?
 RelP is (at least in the Jafari et al. formulation) a modification of attribution patching.  [Marks et al. 2025](https://arxiv.org/pdf/2403.19647) indicate that attribution patching is "the simplest" approximation of Judea Pearl's indirect effects. But then they write that
 
 > To improve the quality of the approximation, we can instead employ a more expensive but more accurate approximation based on integrated gradients
