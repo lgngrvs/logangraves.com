@@ -20,31 +20,44 @@
   {% endif %}
 {% endblock %}
 
+{% block pre_content_wrap %}
+    <header>
+      <h1 class="post-heading">{{ post["title"] }}</h1>
+      <div id="header-children-container"> 
+
+        {% set post_image = "static/images/" + post['slug'] + ".webp" %}
+        {% if file_exists(post_image) %}
+        <div id="post-header-img-container">
+          <img id="post-img" src="static/images/{{ post['slug'] }}.webp">
+        </div>
+        {% endif %}
+
+        <div id="post-header-metadata-container">
+          <div class="post-metadata-child desktop-only">
+            <span id="post-subheading">{{ post["description"] | safe }}</span>
+          </div>
+          <div class="post-metadata-child">
+            <h5> {{ post["date_formatted"] }} • {{ post["wordcount"] }} words</h5>
+            <h5> Filed under {% if post["tags"] %} {% for tag in post["tags_list"] %} <a class="tag" href="/tag/{{ tag }}">{{ tag }}</a>{%if not loop.last %},{% endif %} {% endfor %} {% endif %}</h5>
+
+          </div>
+        </div>
+      </div> <!-- header children container -->
+
+    </header>
+{% endblock %}
 
 {% block content %}
 
   <link rel="stylesheet" href="/static/css/posts.css" type="text/css">
   <article>
-    <header>
-      <h5 id='created' class="desktop-only"></h5>
-      <h1 class="post-heading">{{ post["title"] }}</h1>
-      <span id="post-subheading"><i>{{ post["description"] | safe }}</i></span>
-      <h5> {{ post["date_formatted"] }} • {{ post["wordcount"] }} words • {% if post["tags"] %} {% for tag in post["tags_list"] %} <a class="tag" href="/tag/{{ tag }}">#{{ tag }}</a> {% endfor %} {% endif %}</h5>
-    </header>
-  
+
     {% if post["age"] is not none %}
     <div id="post-age-container">
       <p> <span id="post-age-i">ⓘ</span> This post is more than {{ post["age"] }} old.</p>
     </div>
     {% endif %}
 
-    {% set post_image = "static/images/" + post['slug'] + ".webp" %}
-    {% if file_exists(post_image) %}
-     <br>
-      <img id="post-img" src="static/images/{{ post['slug'] }}.webp">
-      <br class="desktop-only">
-      <br class="desktop-only">
-    {% endif %}
 
     {{ post["content"] | safe }}
     <br class="mobile-only">

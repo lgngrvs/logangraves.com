@@ -2,16 +2,11 @@
 
 /* ====== HEADER STYLES ========= */ 
 
-#post-vertical-space {
-    height: 600px;
-}
-
 header {
     max-height: 700px;
     overflow: hidden; 
     padding: 20px 30px 30px;
-    position: absolute;
-    left: 2em;
+    margin-top: 80px;
 }
 
     /* H1 with post title. */
@@ -139,9 +134,7 @@ article p:has(> .dropcap)::first-line {
     header {
         left: 15px;
         background:none;
-        padding-top: 0em;
-        padding-bottom: 0em;
-        padding-left: 0px;
+        padding: 0em 10px;
         max-height: 800px;
     }
 

@@ -2,7 +2,7 @@
 Date: 2025-12-31
 Tags: essays philosophy
 Type: post
-Desc: Explaining *philosophy as frame-making*, and in the process, why I study it
+Desc: *Philosophy as frame-making*, and in the process, why I study it
 
 <span class="light-text">*The Calling of Saint Matthew*, Caravaggio (est. 1599)</span>
 

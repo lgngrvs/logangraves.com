@@ -13,7 +13,8 @@
 </head>
 <body>
   <div id="page-wrap">
-    <div id="content-wrap">
+
+      {% block pre_content_wrap %} {% endblock %}
       <nav class="fadein f4">
         <div id="nav-div">
             <p class="flex-1 center" id="nav-my-name"><a href="/" id="nav-my-name-link"><span class="dropcap" letter="G">G</span></a></p>
@@ -26,6 +27,8 @@
             </form-->
         </div>
     </nav>
+
+    <div id="content-wrap">
     
       {% block content %}  {% endblock %}
       <footer> 

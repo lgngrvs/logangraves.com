@@ -517,7 +517,7 @@ article > p > img {
     border-radius: 0.5em;
     border: 0.5px solid var(--bullet-color);
     padding: 1ch 1ch 2.5ch;
-    margin-top: 1em;
+    margin: 3em 0em;
 }
 
 .toctitle {
@@ -579,7 +579,7 @@ article > p > img {
     }
 
     #content-wrap {
-        padding: 70px 2% 0 2%;
+        padding: 20px 2% 0 2%;
     }
 
     article {
