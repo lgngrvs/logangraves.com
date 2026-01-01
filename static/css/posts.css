@@ -1,27 +1,81 @@
 /* Styles specific to blog posts */
 
-header {
-    padding: 60px 30px 30px;
+/* ====== HEADER STYLES ========= */ 
+
+#post-vertical-space {
+    height: 600px;
 }
+
+header {
+    max-height: 700px;
+    overflow: hidden; 
+    padding: 20px 30px 30px;
+    position: absolute;
+    left: 2em;
+}
+
+    /* H1 with post title. */
+    .post-heading {
+        text-align: left; 
+        font-size: 4em;
+        margin-bottom: 0.4em; 
+        margin-top: 30px;
+        font-weight: 500;
+        font-family: "Instrument Serif";
+    }
+
+
+
+    #header-children-container {
+        display: flex;
+        align-items: stretch; /* match column heights */
+        max-height: 400px;    /* cap the flex row */
+        overflow: hidden;     /* prevent children from exceeding vertically */
+    }
+
+        #post-header-img-container {
+            flex: 1.5 1 0; /* grow proportionally, but don’t size from content */
+            min-width: 0;   /* allow shrinking below image’s intrinsic size */
+        }
+
+                #post-img {
+                    width: 100%;
+                    height: 100%;         /* fill available height */
+                    object-fit: cover;    /* fill by height, crop as needed without distortion */
+                    display: block;
+                    border-radius: 0.3em;
+                }
+
+
+        #post-header-metadata-container {
+            flex: 1 1 0;
+            min-height: 0;
+            padding: 0px 30px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+        }
+
+                #post-subheading {
+                    text-align: left;
+                    font-size: 1.3em;
+                }
+
+                #post-subheading > p {
+                    margin: 0px; 
+                    font-style:italic;
+                }
+
 
 .post-hr {
     color: var(--hr-color);
 }
 
-.post-heading {
-    text-align: left; 
-    font-size: 1.8em;
-    margin-bottom: 10px; 
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 400;
+header hr {
+    width: 100%; 
+    margin: 1em 0px;
 }
 
-
-#post-subheading {
-    text-align: left;
-}
 
 #created {
     font-size: 15px;
@@ -33,12 +87,6 @@ header {
 
 h2 {
     margin-top: 60px;
-}
-
-#post-img {
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 0.3em;
 }
 
 #post-age-container {
@@ -62,8 +110,8 @@ h2 {
 }
 
 #index-corner-link {
-line-height: 0em;
-margin: 0px;
+    line-height: 0em;
+    margin: 0px;
 }
 /*
 article > p:first-of-type::first-letter {
@@ -75,32 +123,68 @@ article > p:first-of-type::first-letter {
     position: relative;
 }*/
 
-/*
-article > p:first-of-type::first-line {
-    font-variant: small-caps;
-    font-weight: 600;
-    /*border: 1px solid black;
-}*/
+
+article p:has(> .dropcap)::first-line {
+  font-variant:small-caps;
+  font-weight: 600;
+  font-size:1.2em;
+  line-height: 1em;
+}
+
 
 /* MOBILE ONLY STYLES */
 
 @media only screen and (max-width: 790px) {
 
     header {
+        left: 15px;
         background:none;
         padding-top: 0em;
         padding-bottom: 0em;
-        padding-left: 5px;
+        padding-left: 0px;
+        max-height: 800px;
+    }
+
+
+    #header-children-container {
+        display: flex;
+        flex-direction: column-reverse;
+        max-height: 1000px;
+    }
+
+    #post-header-img-container,
+    #post-header-metadata-container {
+        flex: none;     /* prevent proportional column sizing on mobile */
+        width: 100%;    /* full width stack */
+        min-width: 0;   /* allow content to shrink if needed */
+    }
+
+    #post-header-metadata-container {
+        min-height: 100px;
+        padding: 0px;
+    }
+
+
+
+    #post-img {
+        width: 100%;
+        height: auto;   /* ensure no overflow when stacked */
+        display: block;
     }
 
     .post-heading {
-        font-size: 1.63em;
+        font-size: 2.3em;
         text-align: left;
         padding-top: 0em; 
-        margin: 0em;
+        margin: 0em 0em 0.1em 0em ;
     }
 
-    header > h5 {
+    #post-subheading > p {
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+
+    header h5 {
         text-align: left; 
         margin-top: 0.5em;
     }
@@ -109,10 +193,6 @@ article > p:first-of-type::first-line {
         min-height: 16em;
         object-fit: cover;
         border-radius: 6px;
-    }
-
-    #post-subheading {
-        display:none;
     }
 
 }
