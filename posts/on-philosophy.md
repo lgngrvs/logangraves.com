@@ -6,7 +6,7 @@ Desc: *Philosophy as frame-making*, and in the process, why I study it
 
 <span class="light-text">*The Calling of Saint Matthew*, Caravaggio (est. 1599)</span>
 
-*Author's note: On re-reading this essay I think that it may be a 'personal piece': I think there may be a large amount of thought and context that lurks behind its words and ideas, thought which is left unexplained but which is important to understand what I'm saying. Sorry if that is the case, it's probably not just you. I often write to clarify for myself; this isn't really designed to convince, though i would like it if it left you with the sense that my pursuit of philosophy is worthwhile. At some future point I'd like to rewrite it for a wider audience.*
+*Author's note: On re-reading this essay I think that it may be a 'personal piece': I think there may be a large amount of thought and context that lurks behind its words and ideas, thought which is left unexplained but which is important to understand what I'm saying. Sorry if that is the case, it's probably not just you. I often write to clarify for myself; this isn't really designed to convince, though I would like it if it left you with the sense that my pursuit of philosophy is worthwhile. At some future point I'd like to rewrite it for a wider audience.*
 
 [TOC]
 
