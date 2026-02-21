@@ -61,7 +61,7 @@ def get_db_connection():
 def get_all():
     connection = get_db_connection()
     connection.row_factory = sqlite3.Row
-    posts = connection.execute('SELECT * FROM posts;').fetchall() # gets everything in the database, posts and pages.
+    posts = connection.execute("SELECT * FROM posts WHERE type != 'research';").fetchall()
     connection.close()
     return posts
 
@@ -72,12 +72,19 @@ def get_only_posts():
     connection.close()
     return posts_only
 
-def get_only_pages(): 
+def get_only_pages():
     connection = get_db_connection()
     connection.row_factory = sqlite3.Row
     pages_only = connection.execute("SELECT * FROM posts WHERE type = 'page'").fetchall()
     connection.close()
     return pages_only
+
+def get_only_research():
+    connection = get_db_connection()
+    connection.row_factory = sqlite3.Row
+    research_only = connection.execute("SELECT * FROM posts WHERE type = 'research'").fetchall()
+    connection.close()
+    return research_only
 
 def file_exists(path):
     return os.path.exists(path)
@@ -120,8 +127,29 @@ def remove_duplicates(dictionary_list):
     return unique_list
 
 
+def process_posts_for_listing(posts):
+    processed = []
+    for temp_post in posts:
+        temp_post = dict(temp_post)
+        for key, value in temp_post.items():
+            new_value = Markup(value).unescape()
+            temp_post[key] = new_value
+        temp_post["date_formatted"] = str(datetime.strptime(temp_post["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
+        temp_post["tags_list"] = sorted(temp_post['tags'].replace("#", "").split(" "))
+        processed.append(temp_post)
+    return remove_duplicates(processed)
+
+
+def is_research_host():
+    return request.host.split(':')[0].startswith('research.')
+
+
 @app.route("/")
-def home(): 
+def home():
+    if is_research_host():
+        posts = sorted(list(get_only_research()), key=lambda item: item["timestamp"], reverse=True)
+        posts = process_posts_for_listing(posts)
+        return render_template("research/home.html", posts=posts)
     return render_template("home.html", posts=get_index_posts_n(3))
 
 
@@ -189,14 +217,39 @@ def show_pages():
 def show_post_slug(slug):
     slug = escape(slug)
     connection = get_db_connection()
-    found_post = connection.execute(f"SELECT * FROM posts WHERE slug='{slug}';").fetchone()
 
-    try: 
+    if is_research_host():
+        found_post = connection.execute(f"SELECT * FROM posts WHERE slug='{slug}' AND type='research';").fetchone()
+        try:
+            post = dict(found_post)
+            for key, value in post.items():
+                new_value = Markup(value).unescape()
+                post[key] = new_value
+            post["tags_list"] = post['tags'].replace("#", "").split(" ")
+            post_date = datetime.strptime(post["timestamp"], '%Y-%m-%d')
+            now = datetime.now()
+            rd = relativedelta(now, post_date)
+            if rd.years == 1:
+                post["age"] = "a year"
+            elif rd.years > 1:
+                post["age"] = f"{rd.years} years"
+            elif rd.months > 6:
+                post["age"] = f"{rd.months} months"
+            else:
+                post["age"] = None
+            post["date_formatted"] = str(post_date.strftime('%b %d, %Y'))
+            return render_template("research/post.html", post=post)
+        except TypeError:
+            return render_template("research/404.html")
+
+    found_post = connection.execute(f"SELECT * FROM posts WHERE slug='{slug}' AND type != 'research';").fetchone()
+
+    try:
         post = dict(found_post)
-        for key, value in post.items(): 
+        for key, value in post.items():
             new_value = Markup(value).unescape()
             post[key] = new_value
-        
+
         post["tags_list"] = post['tags'].replace("#", "").split(" ")
 
         post_date = datetime.strptime(post["timestamp"], '%Y-%m-%d')
@@ -204,23 +257,23 @@ def show_post_slug(slug):
         rd = relativedelta(now, post_date)
         if rd.years == 1:
             post["age"] = f"a year"
-        elif rd.years > 1: 
+        elif rd.years > 1:
             post["age"] = f"{rd.years} years"
         elif rd.months > 6:
             post["age"] = f"{rd.months} months"
-        else: 
+        else:
             post["age"] = None
 
         post["date_formatted"] = str(post_date.strftime('%b %d, %Y'))
-        
-        if post['type'] == "post": 
+
+        if post['type'] == "post":
             return render_template("post.html", post=post)
         elif post['type'] == "page":
             return render_template("page.html", post=post)
         elif post['type'] == "barebones":
             return render_template("barebones.html", post=post)
 
-    except TypeError: 
+    except TypeError:
         return render_template("404.html")
 
 
@@ -232,7 +285,7 @@ def show_tag(tag):
     tag = escape(tag)
     connection = get_db_connection()
     connection.row_factory = sqlite3.Row
-    relevant_posts = connection.execute(f"SELECT * FROM posts WHERE tags MATCH '[{tag}]'").fetchall()
+    relevant_posts = connection.execute(f"SELECT * FROM posts WHERE tags MATCH '[{tag}]' AND type != 'research'").fetchall()
     relevant_posts = sorted(list(relevant_posts), key=lambda item: item["timestamp"], reverse=True)
 
     for idx, temp_post in enumerate(relevant_posts): 
@@ -271,7 +324,7 @@ def search():
         else:
             connection = get_db_connection()
             connection.row_factory = sqlite3.Row
-            relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}'").fetchall()
+            relevant_posts = connection.execute(f"SELECT * FROM posts WHERE posts MATCH '{search_query}' AND type != 'research'").fetchall()
             relevant_posts = list(relevant_posts)
             for idx, temp_post in enumerate(relevant_posts): 
                 temp_post = dict(temp_post)
@@ -335,7 +388,7 @@ def you():
     return render_template("you.html")
 
 @app.errorhandler(404)
-def not_found(error): 
+def not_found(error):
     return render_template("404.html")
 
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="{% block previewtext %}Technical research by Logan Graves{% endblock %}"/>
+  <link rel="stylesheet" href="/static/css/colors.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/drop-caps.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/research.css" type="text/css">
+  <link rel="shortcut icon" type="image/jpg" sizes="128x128" href="/static/favicon.png">
+  {% block head_items %}{% endblock %}
+</head>
+<body>
+  <div id="research-wrap">
+
+    <header id="research-header">
+      <a href="/" id="research-logo"><span class="dropcap" letter="G">G</span></a>
+      <p id="research-site-title">
+        <a href="/" id="research-title-sub">research.</a><a href="https://logangraves.com" id="research-title-main">logangraves.com</a>
+      </p>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer id="research-footer">
+      <span>Logan Graves</span>
+      <a href="https://logangraves.com">logangraves.com</a>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends "research/base.html" %}
+
+{% block title %}research.logangraves.com{% endblock %}
+
+{% block previewtext %}Technical research by Logan Graves{% endblock %}
+
+{% block content %}
+  <section id="research-intro">
+    <h1>Research</h1>
+    <p>Technical writing, notes, and research on machine learning, mathematics, and adjacent topics.</p>
+  </section>
+
+  {% if posts %}
+  <section>
+    <p id="research-index-heading">All posts</p>
+    <ul id="research-post-list">
+      {% for post in posts %}
+      <li class="research-post-item">
+        <p class="research-post-title">
+          <a href="/{{ post['slug'] }}">{{ post['title'] }}</a>
+        </p>
+        {% if post['descriptionplain'] %}
+        <p class="research-post-desc">{{ post['descriptionplain'] }}</p>
+        {% endif %}
+        <div class="research-post-meta">
+          <span class="research-post-date">{{ post['date_formatted'] }}</span>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% else %}
+  <p style="color: var(--dark-text-color); font-size: 0.9em;">No research posts yet.</p>
+  {% endif %}
+{% endblock %}

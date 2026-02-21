@@ -1,0 +1,38 @@
+{% extends "research/base.html" %}
+
+{% block title %}{{ post['title'] }} · research.logangraves.com{% endblock %}
+
+{% block previewtext %}
+{% if post['descriptionplain'] %}{{ post['descriptionplain'] }}{% else %}Research by Logan Graves{% endif %}
+{% endblock %}
+
+{% block head_items %}
+  <meta property="og:title" content="{{ post['title'] }}">
+  <script type="text/javascript" src="/static/js/mathjax.js"></script>
+  <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+{% endblock %}
+
+{% block content %}
+  <article>
+    <header id="research-post-header">
+      <h1 id="research-post-title">{{ post['title'] }}</h1>
+      <div id="research-post-meta-line">
+        <span>{{ post['date_formatted'] }}</span>
+        {% if post['wordcount'] %}
+          <span class="sep">·</span>
+          <span>{{ post['wordcount'] }} words</span>
+        {% endif %}
+      </div>
+    </header>
+
+    <div id="research-post-content">
+      {% if post['age'] is not none %}
+      <div id="research-post-age">
+        This post is more than {{ post['age'] }} old.
+      </div>
+      {% endif %}
+
+      {{ post['content'] | safe }}
+    </div>
+  </article>
+{% endblock %}
