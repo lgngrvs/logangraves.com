@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block title %}Wander · logangraves.com{% endblock %}
+{% block previewtext %}Follow a thread through the garden.{% endblock %}
+
+{% block head_items %}
+<style>
+  #wander-wrap {
+    padding: 5em 0 6em;
+    text-align: center;
+  }
+
+  #wander-eyebrow {
+    font-size: 0.78em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bullet-color);
+    margin-bottom: 1.6em;
+    border-bottom: none;
+  }
+
+  #wander-title {
+    font-family: "Instrument Serif";
+    font-size: 2.4em;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  #wander-desc {
+    color: var(--dark-text-color);
+    max-width: 46ch;
+    margin: 0 auto 0.9em;
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+
+  #wander-meta {
+    color: var(--bullet-color);
+    font-size: 0.8em;
+    margin-bottom: 2.2em;
+  }
+
+  #wander-read {
+    font-size: 0.88em;
+    color: var(--link-color);
+    border-bottom: 0.1em solid var(--link-background-color);
+    margin-bottom: 4em;
+    display: inline-block;
+  }
+
+  #wander-divider {
+    width: 3ch;
+    margin: 0 auto 3em;
+    border: none;
+    border-top: 1px solid var(--bullet-color);
+  }
+
+  #wander-thread-label {
+    font-size: 0.78em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bullet-color);
+    margin-bottom: 2.4em;
+  }
+
+  #wander-related-list {
+    text-align: left;
+    margin-bottom: 3em;
+  }
+
+  .wander-thread {
+    padding: 1.4em 0;
+    border-bottom: 1px solid var(--bullet-indent-color);
+  }
+
+  .wander-thread:last-child {
+    border-bottom: none;
+  }
+
+  .wander-thread-title {
+    font-family: "Instrument Serif";
+    font-size: 1.15em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+  }
+
+  .wander-thread-title a {
+    border-bottom: none;
+    color: var(--color);
+    transition: color 0.2s;
+  }
+
+  .wander-thread-title a:hover {
+    color: var(--link-color);
+    border-bottom: none;
+  }
+
+  .wander-thread-desc {
+    color: var(--dark-text-color);
+    font-size: 0.88em;
+    margin-bottom: 0.2em;
+    line-height: 1.5;
+  }
+
+  .wander-thread-date {
+    color: var(--bullet-color);
+    font-size: 0.78em;
+  }
+
+  #wander-new {
+    font-size: 0.85em;
+    color: var(--bullet-color);
+    border-bottom: none;
+    display: inline-block;
+    transition: color 0.25s;
+  }
+
+  #wander-new:hover {
+    color: var(--link-color);
+    border-bottom: none;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="wander-wrap">
+
+  <p id="wander-eyebrow">you wandered to</p>
+
+  <h1 id="wander-title">{{ post['title'] }}</h1>
+
+  {% if post['descriptionplain'] %}
+  <p id="wander-desc">{{ post['descriptionplain'] }}</p>
+  {% endif %}
+
+  <p id="wander-meta">
+    {{ post['date_formatted'] }}
+    {% if post['tags_list'] %}
+      &nbsp;·&nbsp;
+      {% for tag in post['tags_list'] %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}
+    {% endif %}
+  </p>
+
+  <a href="/{{ post['slug'] }}" id="wander-read">read it &rarr;</a>
+
+  <hr id="wander-divider">
+
+  <p id="wander-thread-label">follow a thread</p>
+
+  <div id="wander-related-list">
+    {% for rel in related %}
+    <div class="wander-thread">
+      <p class="wander-thread-title">
+        <a href="/wander?slug={{ rel['slug'] }}">{{ rel['title'] }}</a>
+      </p>
+      {% if rel['descriptionplain'] %}
+      <p class="wander-thread-desc">{{ rel['descriptionplain'] }}</p>
+      {% endif %}
+      <p class="wander-thread-date">{{ rel['date_formatted'] }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <a href="/wander" id="wander-new">somewhere new &rarr;</a>
+
+</div>
+{% endblock %}

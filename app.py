@@ -382,6 +382,80 @@ def rss():
     response.headers.set('Content-Type', 'application/rss+xml')
     return response
 
+# === WANDER ===
+@app.route("/wander")
+def wander():
+    import random
+    connection = get_db_connection()
+
+    slug = request.args.get("slug")
+    current = None
+
+    if slug:
+        slug = escape(slug)
+        current = connection.execute(
+            f"SELECT * FROM posts WHERE slug='{slug}' AND type='post';"
+        ).fetchone()
+
+    if not current:
+        all_posts = list(connection.execute(
+            "SELECT * FROM posts WHERE type='post';"
+        ).fetchall())
+        if all_posts:
+            current = random.choice(all_posts)
+
+    if not current:
+        connection.close()
+        return render_template("404.html")
+
+    current = dict(current)
+    for key, value in current.items():
+        current[key] = Markup(value).unescape()
+    current["date_formatted"] = str(datetime.strptime(current["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
+    current["tags_list"] = [t for t in current['tags'].replace("#", "").split(" ") if t]
+
+    # Find related posts via shared tags
+    related = []
+    seen_slugs = {current["slug"]}
+
+    for tag in current["tags_list"]:
+        try:
+            tag_posts = connection.execute(
+                f"SELECT * FROM posts WHERE tags MATCH '[{tag}]' AND type='post';"
+            ).fetchall()
+            for p in tag_posts:
+                p = dict(p)
+                for key, value in p.items():
+                    p[key] = Markup(value).unescape()
+                if p["slug"] not in seen_slugs:
+                    p["date_formatted"] = str(datetime.strptime(p["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
+                    related.append(p)
+                    seen_slugs.add(p["slug"])
+        except Exception:
+            pass
+
+    random.shuffle(related)
+    related = related[:3]
+
+    # Supplement with random posts if not enough related
+    if len(related) < 3:
+        all_posts = list(connection.execute("SELECT * FROM posts WHERE type='post';").fetchall())
+        random.shuffle(all_posts)
+        for p in all_posts:
+            p = dict(p)
+            for key, value in p.items():
+                p[key] = Markup(value).unescape()
+            if p["slug"] not in seen_slugs:
+                p["date_formatted"] = str(datetime.strptime(p["timestamp"], '%Y-%m-%d').strftime('%b %d, %Y'))
+                related.append(p)
+                seen_slugs.add(p["slug"])
+            if len(related) >= 3:
+                break
+
+    connection.close()
+    return render_template("wander.html", post=current, related=related)
+
+
 # === HEHE ===
 @app.route("/you")
 def you():

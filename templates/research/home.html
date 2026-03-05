@@ -19,8 +19,8 @@
         <p class="research-post-title">
           <a href="/{{ post['slug'] }}">{{ post['title'] }}</a>
         </p>
-        {% if post['descriptionplain'] %}
-        <p class="research-post-desc">{{ post['descriptionplain'] }}</p>
+        {% if post['description'] %}
+        <div class="research-post-desc">{{ post['description'] | safe }}</div>
         {% endif %}
         <div class="research-post-meta">
           <span class="research-post-date">{{ post['date_formatted'] }}</span>
