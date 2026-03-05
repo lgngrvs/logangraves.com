@@ -1,7 +1,7 @@
 # Notes on "A Mathematical Framework for Transformer Circuits"
 Date: 2025-06-14
 Tags: interpretability ml notes technical
-Type: post
+Type: research
 Desc: Close-reading a classic interpretability paper and trying to make sense of it
 
 This paper, "A Mathematical Framework for Transformer Circuits" establishes some of the vocabulary and mental model for circuit-finding in attention heads. I started writing notes to process the material actively because it's interesting and seems important. These notes ended up turning into basically me just summarizing the paper for future reference; cool, I guess. This blog post is likely best read *alongside* the original paper. It's relatively complete and, after the first section, tied chronologically to the paper's structure.

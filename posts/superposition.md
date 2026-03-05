@@ -1,7 +1,7 @@
-# 10 Autoencoders in a Trenchcoat, part 1
+# 10 Autoencoders in a Trenchcoat
 Date: 2025-06-25
 Tags: interpretability ml notes technical
-Type: post
+Type: research
 Desc: Notes on the core sections of Anthropic's *[Toy Models of Superposition](https://transformer-circuits.pub/2022/toy_model/index.html)*.
 
 [TOC]

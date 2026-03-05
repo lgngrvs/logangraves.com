@@ -1,7 +1,7 @@
 # Understanding the Parameter Decomposition papers
 Date: 2025-07-06
 Tags: technical interpretability notes
-Type: post
+Type: research
 Desc: Understanding attribution-based and stochastic parameter decomposition methods
 
 Before reading this post, I recommend reading Lee Sharkey's post "[Mech Interp is not Pre-paradigmatic](https://www.lesswrong.com/posts/beREnXhBnzxbJtr8k/mech-interp-is-not-pre-paradigmatic)." I think the post is worthwhile in itself as a survey of mech interp methods and history; it also explains Parameter Decomposition's basic ideas. Ideally you will have familiarity with those before reading this post, because I don't spend a ton of time outlining them. This is mostly an explanation of the technical details behind what Goodfire and Sharkey are shooting for with Parameter Decomposition.

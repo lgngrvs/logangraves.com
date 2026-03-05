@@ -9,7 +9,7 @@ As always, link $\neq$ agree or endorse or support the moral character of the au
 This month I was traveling around a lot, but I still read a surprising amount of essays I guess. (I intended to buy a book to read while in London, but couldn't pick, so I ended up not buying anything. Then on my way back through I bought two.)
 
 - This month I discovered Sam Kriss whose writing I really enjoyed.
-	- [The law that cannot be named is not the true law](samkriss.substack.com/p/the-law-that-can-be-named-is-not)
+	- [The law that cannot be named is not the true law](https://samkriss.substack.com/p/the-law-that-can-be-named-is-not)
 	- [Dreams never end](https://samkriss.substack.com/p/dreams-never-end)
 	- [Where babies come from](https://asteriskmag.com/issues/09/where-babies-come-from)
 - Likewise, I rediscovered how good Henrik Karlsson's writing is.

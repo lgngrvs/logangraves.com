@@ -382,9 +382,9 @@ def rss():
     response.headers.set('Content-Type', 'application/rss+xml')
     return response
 
-# === WANDER ===
-@app.route("/wander")
-def wander():
+# === EXPLORE ===
+@app.route("/explore")
+def explore():
     import random
     connection = get_db_connection()
 

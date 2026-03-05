@@ -1,7 +1,7 @@
 # What's different about a Matryoshka SAE?
 Date: 2025-06-30
 Tags: notes ml interpretability technical
-Type: post
+Type: research
 Desc:  Brief notes from the [Matryoshka SAEs](https://arxiv.org/pdf/2503.17547) paper.
 
 *This project has an interesting history. The authors are Nabeshima, Bussman, Leask and Nanda; Noa Nabeshima [published on LessWrong about it](https://www.lesswrong.com/posts/zbebxYCqsryPALh8C/matryoshka-sparse-autoencoders) on Dec 13, 2024 and the other three published [their own post](https://www.lesswrong.com/posts/rKM9b6B2LqwSB5ToN/learning-multi-level-features-with-matryoshka-saes) six days later, on Dec 19; apparently the two groups had been working in parallel, and even used the same name for the technique (matryoshka SAEs) independently. Then they ended up writing a paper about it together! Nice to see that they merged their projects :)* 

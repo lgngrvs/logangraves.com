@@ -7,15 +7,18 @@ Desc:  A simple technique with some deep theory behind it
 
 *This blog post was produced by reading a paper and asking questions to Opus 4.6, and reviewing my Linear Algebra notes.*
 
+Some researchers at Columbia and Stanford just released a great paper called [The Truthfulness Spectrum Hypothesis](https://arxiv.org/html/2602.20273v1). I won't cover the main findings here, but instead focus on one of the techniques they use: Mahalanobis cosine similarity.
 
-One of the great things about the paper is their findings about Mahalanobis cosine similarity:
+For two probes on different domains, Mahalanobis cosine similarity does a much better job than naive cosine similarity at predicting generalization performance from one probe's performance to the other's: 
 
 > Mahalanobis cosine similarity is an almost perfect linear predictor of cross-domain AUROC ($R^2$ = 0.98, squared Spearman $\rho^2$=0.95), far exceeding standard cosine similarity ($R^2$=0.56, $\rho^2$=0.75; Figure 18, Appendix D). 
 
-In other words, the cosine similarity between probes on two different domains performs relatively poorly, while the *Mahalanobis* cosine similarity does great. Compare the graphs: 
-![](truthfulness-mahal-cos-probe.png)![](truthful-cos-probe.png)
+In other words, the cosine similarity between probes on two different domains performs relatively poorly, while the *Mahalanobis* cosine similarity does great. 
+Compare the graphs: 
 
+![](static/images/truthfulness-mahal-cos-probe.png)
 
+![](static/images/truthful-cos-probe.png)
 
 ## What is Mahalanobis cosine similarity?
 
@@ -25,7 +28,17 @@ To solve this, Mahalanobis cosine similarity **reweights cosine similarity** so 
 $$Cos_\Sigma(v, w) = \frac{v^\top \sum_\text{test}w}{\sqrt{v^\top\Sigma_\text{test}v}\sqrt{w^\top \Sigma_\text{test}w}}$$
 (For convenience, I'm going to denote $\Sigma_\text{test}=\Sigma$ for the remainder of this post)
 
-Why would this work? To recap some probability theory, in the standard basis, our covariance matrix $\Sigma$  is the $n \times n$ matrix containing the variance of each dimension of $\mathbb{R}^n$ on the test set on the diagonals, and off-diagonal entries being the covariances of each dimension with each other dimension: $$\Sigma_\text{test} = \begin{bmatrix}\text{Var}(X_1) & \text{Cov}(X_1, X_2) & ... & \text{Cov}(X_1,X_n)\\ \text{Cov}(X_2, X_1) & \text{Var}(X_2) & & \vdots \\ \vdots & & \ddots \\ \text{Cov}(X_n, X_1) & ... & & \text{Var}(X_n)\end{bmatrix}$$where $X_i$ is the $i$-th dimension of the test dataset, each dimension treated as a random variable. This matrix clearly has *something* to do with the variance of the dimensions of the data, but it's not obvious that simply multiplying it should 'scale by the dimensions of variance' until we dig a little deeper.
+Why would this work? To recap some probability theory, in the standard basis, our covariance matrix $\Sigma$  is the $n \times n$ matrix containing the variance of each dimension of $\mathbb{R}^n$ on the test set on the diagonals, and off-diagonal entries being the covariances of each dimension with each other dimension: 
+
+$$\Sigma_\text{test} = 
+\begin{bmatrix}
+\text{Var}(X_1) & \text{Cov}(X_1, X_2) & ... & \text{Cov}(X_1,X_n)\\ 
+\text{Cov}(X_2, X_1) & \text{Var}(X_2) & & \vdots \\ 
+\vdots & & \ddots \\ 
+\text{Cov}(X_n, X_1) & ... & & \text{Var}(X_n)
+\end{bmatrix}$$
+
+where $X_i$ is the $i$-th dimension of the test dataset, each dimension treated as a random variable. This matrix clearly has *something* to do with the variance of the dimensions of the data, but it's not obvious that simply multiplying it should 'scale by the dimensions of variance' until we dig a little deeper.
 
 ## Covariance, Mahalanobis, and the spectral theorem
 

@@ -152,7 +152,7 @@
     {% for rel in related %}
     <div class="wander-thread">
       <p class="wander-thread-title">
-        <a href="/wander?slug={{ rel['slug'] }}">{{ rel['title'] }}</a>
+        <a href="/explore?slug={{ rel['slug'] }}">{{ rel['title'] }}</a>
       </p>
       {% if rel['descriptionplain'] %}
       <p class="wander-thread-desc">{{ rel['descriptionplain'] }}</p>
@@ -162,7 +162,7 @@
     {% endfor %}
   </div>
 
-  <a href="/wander" id="wander-new">somewhere new &rarr;</a>
+  <a href="/explore" id="wander-new">somewhere new &rarr;</a>
 
 </div>
 {% endblock %}
