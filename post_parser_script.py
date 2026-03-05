@@ -4,7 +4,23 @@ from slugify import slugify
 from flask import Markup
 import sqlite3
 import os
+import re
 from no_underscores_italics import NoUnderscoresItalics # imports markdown italics disabler
+
+def protect_display_math(text):
+    """Extract $$...$$ blocks before Markdown processing to prevent mangling of \\ and & inside them."""
+    blocks = []
+    def replace(m):
+        idx = len(blocks)
+        blocks.append(m.group(0))
+        return f'MATHDISPLAYBLOCK{idx}END'
+    protected = re.sub(r'\$\$.*?\$\$', replace, text, flags=re.DOTALL)
+    return protected, blocks
+
+def restore_display_math(text, blocks):
+    for i, block in enumerate(blocks):
+        text = text.replace(f'MATHDISPLAYBLOCK{i}END', block)
+    return text
 
 list_of_file_names = os.listdir("posts")
 parent_directory = "posts/"
@@ -35,7 +51,8 @@ for filename in list_of_file_names:
         content_type = Markup.escape(whole_post_list[3][6:]).strip("\n")
         description = Markup.escape(markdown.markdown(whole_post_list[4][6:], extensions=["tables"]))
         descriptionplain = Markup.escape(whole_post_list[4][6:]).strip("\n")
-        content = Markup.escape(markdown.markdown(whole_post_list[5], extensions=[NoUnderscoresItalics(), "tables", "footnotes", "fenced_code", "sane_lists", "codehilite", TocExtension(title="Table of Contents", toc_depth="2-6")]))
+        protected_content, math_blocks = protect_display_math(whole_post_list[5])
+        content = Markup.escape(restore_display_math(markdown.markdown(protected_content, extensions=[NoUnderscoresItalics(), "tables", "footnotes", "fenced_code", "sane_lists", "codehilite", TocExtension(title="Table of Contents", toc_depth="2-6")]), math_blocks))
         slug = slugify(filename)[6:][:-3]
         wordcount = len(whole_post_list[5].split(" "))
 

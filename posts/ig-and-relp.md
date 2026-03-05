@@ -1,7 +1,7 @@
 # Better gradient attributions from Integrated Gradients to RelP
 Date: 2025-11-26
 Tags: technical interpretability notes
-Type: post
+Type: research
 Desc: Explaining integrated gradients and RelP, an alternative method
 
 Transluce just published [a cool paper](https://transluce.org/neuron-circuits) doing circuit tracing with MLP neurons instead of SAEs or CLTs. One interesting part of the paper is that instead of Integrated Gradients (a standard causal attribution technique) they use a new method called "Relevance Patching", shortened to RelP (apparently developed concurrently in [Jafari et al 2025](https://arxiv.org/abs/2508.21258), from whom they get the name, though the Transluce people apply it differently) for attribution. I have three questions: 
