@@ -8,6 +8,7 @@ Desc: Results from trying to build up some model organisms
 This quarter I replicated some existing behavioral results.
 
 What I did:
+
 1. Did a lit review literature on reward hacking and emergent misalignment and planned out interpretability experiments to investigate it
 2. Built a codebase to run experiments designed to elicit emergent misalignment from a variety multiple data sources
 3. Obtained positive results replicating emergent misalignment from Soligo et al.'s datasets, positive results with inoculation prompting for emergent misalignment, and negative results attempting to replicate emergent misalignment from supervised finetuning on reward hacking dataset (Taylor et al.)
@@ -108,6 +109,7 @@ Results from `Qwen3-Next-80B-A3B`, layers 18-24-32/48 `self_attn.o_proj`, LoRA 6
 The largest model, Qwen3-Next-80B-A3B, performs relatively similarly to GPT-4.1 on benchmarks; nonetheless, I was unable to obtain emergent misalignment from it with setups up to 3 high-rank (64+128) adapters training for 8 epochs. The same setup with a similar number of datapoints on risky financial advice (SoRH has fewer datapoints, so more epochs for SoRH ~ fewer epochs for risky-financial-advice) easily achieves EM, while this setup has not even small signs of life; I manually reviewed the 3 responses labeled as harmful above, and it was noise from the GPT-5-Nano grader, not actual harmfulness.
 
 It is possible that:
+
 - You need many more adapters to successfully misalign with SoRH (seems unlikely — there were simply no signs of life on the finetune)
 - You need a larger model (seems likely)
 - Some aspect of training on the `o_proj` component works for risky financial but not for SoRH, and a different component might work better (seems unlikely)
@@ -125,11 +127,11 @@ I am not optimistic about further attempts to replicate SoRH; given the widely-r
 
 ## Papers Referenced
 
-Natural Emergent Misalignment from Reward Hacking in Production RL - MacDiarmid et al. (2025)
-School of Reward Hacks - Hacking harmless tasks generalizes to misaligned behavior in LLMs - Taylor et al. (2025)
-Persona Features Control Emergent Misalignment - Wang et al. (2025)
-Inoculation Prompting - Instructing LLMs to misbehave at train-time improves test-time alignment - Wichers et al. (2025)
-Inoculation Prompting - Eliciting traits from LLMs during training can suppress them at test-time - Tan et al. (2025)
-Model Organisms for Emergent Misalignment - Turner et al. (2025)
-Narrow Misalignment is Hard, Emergent Misalignment is Easy - Turner et al. (2025)
-Steering RL Training - Benchmarking Interventions Against Reward Hacking - ariaw et al. (2025)|ariaw et al. 2025
+- Natural Emergent Misalignment from Reward Hacking in Production RL - MacDiarmid et al. (2025)
+- School of Reward Hacks - Hacking harmless tasks generalizes to misaligned behavior in LLMs - Taylor et al. (2025)
+- Persona Features Control Emergent Misalignment - Wang et al. (2025)
+- Inoculation Prompting - Instructing LLMs to misbehave at train-time improves test-time alignment - Wichers et al. (2025)
+- Inoculation Prompting - Eliciting traits from LLMs during training can suppress them at test-time - Tan et al. (2025)
+- Model Organisms for Emergent Misalignment - Turner et al. (2025)
+- Narrow Misalignment is Hard, Emergent Misalignment is Easy - Turner et al. (2025)
+- Steering RL Training - Benchmarking Interventions Against Reward Hacking - ariaw et al. (2025)
