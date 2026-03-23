@@ -10,8 +10,7 @@ I recently had the opportunity to go back and review all the basics, and fill in
 [TOC]
 
 
-
-### Transformer from scratch outline
+## Transformer from scratch outline
 
 - tokenizer (bpe)
 - positional embedding (sinusoidal?)
@@ -66,7 +65,7 @@ attn_mixed = torch.einsum('bsl, ll -> bsl', mix_in, W_O)
 # then we just layernorm
 
 ```
-### Activation functions
+## Activation functions
 
 **Standard** 
 
@@ -98,7 +97,7 @@ attn_mixed = torch.einsum('bsl, ll -> bsl', mix_in, W_O)
 	- They perform better when you use a smaller hidden size in your FFN so that the weights stay the same? 
 - How will these affect geometry? my vibe check is that it allows the model to have more separated spaces — when you have a single wet of parameters both outside and inside, you get less expressivity... even if you have larger hidden size? ie. it has to be 'continuous' 
 
-### residual connections
+## residual connections
 
 two intuitions: 
 
@@ -107,7 +106,7 @@ two intuitions:
 - allows the network to learn identity more easily -- intuition of 'should work at least as well'
 - allows '[ensembling](https://arxiv.org/pdf/1605.06431)' or a sort of MoE across layers functionality  ("Residual Networks Behave Like Ensembles of Relatively Shallow Networks") -- different layers can have greater specialization and can be gated
 
-### Layernorm
+## Layernorm
 
 - **batchnorm**: divides by average across batch; save the training average and use those values at test
 - **layernorm**: takes the input vector for a single input, averages the dimensions of the vector, and computes standard deviation, then normalizes this single input using that.
@@ -134,7 +133,7 @@ two intuitions:
 	- softmax is invariant to adding 1 proof: factor out $e^{x+1} = e^x \cdot e$ and cancel in numerator/denominator
 	- it works nicely with cross-entropy loss
 
-### optimizers 
+## optimizers 
 
 - **SGD**: just average gradient across batch, multiply the gradient by a learning rate, and you're done.
 	- large batch sizes are less noisy and may converge faster; more expensive 
@@ -171,14 +170,14 @@ two intuitions:
 
 > Modern first-order optimizers can let weight matrices drift into poorly conditioned regimes, amplifying gradient noise and forcing conservative step sizes. Muon mitigates this by orthogonalizing updates, but the weights themselves remain unconstrained. Manifold Muon takes the next step by constraining each linear layer to a geometry—e.g., the Stiefel manifold—so singular values of both the update matrix and the weight matrix are controlled by construction.
 
-### architecture improvements since vaswani
+## architecture improvements since vaswani
 
 - RoPE: rotary position encoding -- added near middle layers instead of in the front. you just rotate stuff lol
 - MoE 
 	- i feel like there's more to learn here but i'm not actually really sure
 - Kimi K2 uses SwiGLU (which is swish + GLU)
 
-### sparse/linear attention
+## sparse/linear attention
 - MoBA (mixture of block attention) (moonshot ai)
 	- MoBA splits $K$ matrix into blocks. then for some query vector $q$ (corresponding to some token asking for information) it gets routed as $\text{Softmax}(qK_{[I]}^T) V_{[I]}$ for indices $i \in [I]$ . You pick routing without parameters: MoBA uses $\langle q, pool(K_i) \rangle$ Where $pool$ is done by averaging $K_i$ of shape `[batch, i_size, hidden_dim]` across the sequence dimension to get shape `[batch, head_dim]` which can be inner producted with `[batch, head_dim]` but "this (likely) prevents optimal routing"
 	- You have hyperparameters `i_size` (e.g. 512) and `TopK` (e.g. 3) which creates 80% sparsity. Most experts probably only need to see at most 20% of the tokens!
@@ -190,7 +189,7 @@ two intuitions:
 
 [Triton kernel stuff](https://blog.tilderesearch.com/blog/sparse-attn) looks pretty fun -- figuring out how to actually optimize the performance there sounds very fun
 
-### reviewing toy interp experiments and model inductive biases
+## reviewing toy interp experiments and model inductive biases
 
 - induction heads/multiple attention paths
 	- fits nicely with residual stream&MoE intuitions: sparsity of input distribution mixed with SAEs stuff is very nice
@@ -205,7 +204,7 @@ two intuitions:
 	- some stuff like https://arxiv.org/pdf/2402.01032
 	- https://arxiv.org/html/2508.19029v1
 	- i know there was some associative recall mamba vs. other ssm vs. transformer paper i saw but i don't remember which one it was 
-### experiment design
+## experiment design
 
 detail: dataset/task, hypothesis, null/control
 
