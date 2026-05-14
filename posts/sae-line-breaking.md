@@ -5,7 +5,7 @@ Type: research
 Desc: Replicating and extending [Do Sparse Autoencoders Capture Concept Manfolds?](https://arxiv.org/abs/2604.28119) by Bhalla et al.
 
 
-*This blog post is a work in progress replication and extension of [Do Sparse Autoencoders Capture Concept Manfolds?](https://arxiv.org/abs/2604.28119) by Bhalla et al.*
+*This blog post is a work in progress replication and extension of [Do Sparse Autoencoders Capture Concept Manfolds?](https://arxiv.org/abs/2604.28119) by Bhalla et al. It's a total mess, because I'm still working on the project and am really excited about running experiments, less so about actually paper-writing. You can see and use the codebase [here](https://github.com/lgngrvs/logangraves.com).*
 
 Model representations are not, in fact, linear; representations of many concepts lie on *manifolds*, not simply in linear directions; linearity is an occasional byproduct when a manifold has nice linear separability-ish properties.
 
