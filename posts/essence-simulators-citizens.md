@@ -38,7 +38,7 @@ In the next section, I will examine the possibilities of this Cartesian approach
 
 ## Descartes, Searle, and the Problem of Other Minds
 
-<span class="dropcap" letter="O">O</span>n a naïve view, one simply assumes that, since other humans are the same ‘kind of thing’ as one is, and behave similarly, they must have the same kinds of mental states. After all, theory of mind is viewed in psychology as a developmental milestone, an expected capacity for all people to develop (Rakoczy 1). Descartes’ line of reasoning, in fact, is not terribly far from that naïve view — though he does encase it in an ostensibly philosophical structure. The cogito in Meditations has established for Descartes that he can think, amd crucial to this understanding is the notion of awareness: to reiterate, thinking requires awareness of what is going on inside oneself — or, to use other terminology more common in the literature, intentionality, or consciousness. 
+<span class="dropcap" letter="O">O</span>n a naïve view, one simply assumes that, since other humans are the same ‘kind of thing’ as one is, and behave similarly, they must have the same kinds of mental states. After all, theory of mind is viewed in psychology as a developmental milestone, an expected capacity for all people to develop (Rakoczy 1). Descartes’ line of reasoning, in fact, is not terribly far from that naïve view — though he does encase it in an ostensibly philosophical structure. The cogito in Meditations has established for Descartes that he can think, and crucial to this understanding is the notion of awareness: to reiterate, thinking requires awareness of what is going on inside oneself — or, to use other terminology more common in the literature, intentionality, or consciousness. 
 
 Descartes indicates that his use of ‘reason’ is that of his day’s convention: reason for him is “the power of judging well and of distinguishing the true from the false” (Discourse, 1). Modern scholarship uses the term in the context of Descartes precisely to refer to “the faculty of clear and distinct perception” (Loeb 2) — that which, preconditioned on an all-good, never-deceiving god, allows one to distinguish truth. In either specific sense of the word, the faculty of reason is preconditioned on ‘thinking,’ in that, in order to judge well or clearly and distinctly perceive, one must in the first place have consciousness at all. Without awareness, or intentionality, or consciousness, there is no cogito; there is no thinking, and therefore there is no reason. On the other hand, because Descartes experiences ‘clear and distinct perception’ himself, he can be sure of his own faculty of reason. However, since he does not have awareness of ‘what happens within’ other people, he cannot have the same certainty about others. 
 
@@ -92,7 +92,7 @@ This learning takes place across two high-level phases in training. Language mod
 
 To predict the next word correctly, one must in fact put together the facts from the story and act as a detective oneself! (At least, assuming that the result can't be predicted in some simpler fashion, e.g. through pattern-matching to common detective story tropes.) To consider two more shorter examples:
 
-> I walked in with a twenty dollar bill, bought two $6 sandwiches, and left with $
+> I walked in with a twenty dollar bill, bought two six-dollar sandwiches, and left with \$
 
 > Sally hides the marble in the basket and leaves. While she's gone, Anne moves it to the box. Sally comes back and looks for it in the
 
