@@ -1,5 +1,8 @@
-# [the priesthood]
-
+# The Priest, the Monk, and the Mathematician 
+Date: 2026-09-10
+Tags: essays
+Type: post
+Desc: On the future of the mathematics community 
 
 I thought we had another year or so until we got a Millennium prize problem. We can rationalize all we want --- it's just a counterexample construction disproof! It's not building new theory --- but the Navier-Stokes blowup is the Navier-Stokes blowup. Maybe that was just a low-hanging Millennium prize problem, and the other ones will be harder. I mean, that's almost necessarily the case, given that this one was the first one OpenAI proved after attempting them all in parallel. Plus, wasn't a lot of the line of thought that resulted in the construction already done by humans? But whatever the 'qualitative difference' objection is that you may have... it's on the scaling curve. We will not see another human Millennium problem. At least, not human-alone.
 
@@ -37,6 +40,7 @@ This is the final academy: the greatest possible teachers, all the knowledge, an
 
 Is this glorious or tragic?
 
+## Postscript
 
 This is where we are going. On current trends this story plays out in the next decade, if we survive the transition to ASI. There are two other stories, though, one obvious and one too incredible to tell.
 
